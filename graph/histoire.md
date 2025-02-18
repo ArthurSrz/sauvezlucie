@@ -1,7 +1,7 @@
 ---
 partieDe: "[[education]]"
 différent de:
-  - "[[Histologie___]]"
+  - "[[histologie]]"
 ---
 ![Histoire Thumbnail](https://upload.wikimedia.org/wikipedia/commons/5/53/Nikolaos_Gyzis_-_Historia.jpg)
 [Histoire](https://fr.wikipedia.org/wiki/Histoire)
