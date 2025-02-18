@@ -1,5 +1,8 @@
 ---
 partOf: "[[education]]"
+different from:
+  - "[[graph/study of history]]"
+  - "[[graph/histology]]"
 ---
 ![Histoire Thumbnail](https://upload.wikimedia.org/wikipedia/commons/5/53/Nikolaos_Gyzis_-_Historia.jpg)
 [Histoire](https://fr.wikipedia.org/wiki/Histoire)
