@@ -1,4 +1,12 @@
+---
+est l'etude de:
+  - "[[loi de probabilite]]"
+  - "[[statistical data]]"
+---
+
+
 ![Statistique Thumbnail](https://upload.wikimedia.org/wikipedia/commons/4/44/Standard_Normal_Distribution.png)
+
 [Statistique](https://fr.wikipedia.org/wiki/Statistique)
 
 La statistique ou les statistiques est la discipline qui étudie des phénomènes à travers la collecte de données, leur traitement, leur analyse, l'interprétation des résultats et leur présentation afin de rendre ces données compréhensibles par tous. C'est à la fois une branche des mathématiques appliquées, une méthode et un ensemble de techniques.
