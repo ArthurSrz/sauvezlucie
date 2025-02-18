@@ -5,7 +5,7 @@ hashtag: statistics
 studied in: "[[graph/sociolinguistics]]"
 is the study of:
   - "[[loi de probabilite]]"
-  - "[[statistical data]]"
+  - "[[donnees statistiques]]"
 has part(s):
   - "[[graph/descriptive statistics]]"
   - "[[graph/inferential statistics]]"

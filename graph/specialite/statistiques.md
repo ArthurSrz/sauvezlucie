@@ -1,7 +1,7 @@
 ---
 est l'etude de:
   - "[[loi de probabilite]]"
-  - "[[statistical data]]"
+  - "[[donnees statistiques]]"
 ---
 
 
