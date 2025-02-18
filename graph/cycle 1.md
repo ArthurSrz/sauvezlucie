@@ -1,0 +1,5 @@
+---
+enseigne:
+  - "[[langage oral]]"
+  - "[[vocabulaire]]"
+---
