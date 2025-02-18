@@ -28,13 +28,14 @@ described by source:
   - "[[graph/Real'nyj slovar' klassicheskih drevnostej po Ljubkeru]]"
 different from:
   - "[[graph/study of history]]"
-  - "[[graph/histology]]"
+  - "[[histologie]]"
 subclass of:
   - "[[graph/occurrence]]"
   - "[[graph/object of study]]"
   - "[[graph/chain of events]]"
 Wikimedia outline: "[[graph/outline of history]]"
-topic's main template: "[[graph/Template_History of science and technology in the United States]]"
+topic's main template:
+  - "[[graph/Template_History of science and technology in the United States]]"
 permanent duplicated item:
   - "[[graph/Q20829341]]"
   - "[[graph/Q58237100]]"
