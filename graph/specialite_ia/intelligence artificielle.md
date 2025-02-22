@@ -1,14 +1,7 @@
 ---
 vise:
-  - "[[motion planning]]"
-  - "[[graph/affective computing]]"
   - "[[intelligence artificielle generale]]"
-  - "[[graph/automated reasoning]]"
-  - "[[graph/automated planning and scheduling]]"
-  - "[[graph/knowledge representation and reasoning]]"
-  - "[[graph/machine perception]]"
-  - "[[graph/knowledge representation]]"
-  - "[[natural language processing]]"
+  - "[[traitement automatique des langues]]"
 ---
 
 ![Intelligence artificielle Thumbnail](https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png)
