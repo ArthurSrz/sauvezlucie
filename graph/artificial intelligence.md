@@ -17,15 +17,15 @@ instance of:
   - "[[graph/branch of computer science]]"
   - "[[graph/type of intelligence]]"
 has goal:
-  - "[[graph/motion planning]]"
+  - "[[motion planning]]"
   - "[[graph/affective computing]]"
-  - "[[graph/artificial general intelligence]]"
+  - "[[intelligence artificielle generale]]"
   - "[[graph/automated reasoning]]"
   - "[[graph/automated planning and scheduling]]"
   - "[[graph/knowledge representation and reasoning]]"
   - "[[graph/machine perception]]"
   - "[[graph/knowledge representation]]"
-  - "[[graph/natural language processing]]"
+  - "[[natural language processing]]"
 has use:
   - "[[graph/recommender system]]"
   - "[[graph/autonomous car]]"
