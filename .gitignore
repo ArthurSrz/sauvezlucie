@@ -34,3 +34,6 @@ DS_Store
 
 # to exclude rag settings
 rag/
+
+venv
+Statistique.md
