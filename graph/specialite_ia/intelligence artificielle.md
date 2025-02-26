@@ -1,7 +1,7 @@
 ---
 vise:
-  - "[[intelligence artificielle generale]]"
-  - "[[traitement automatique des langues]]"
+  - "[[Intelligence Artificielle Générale (AGI)]]"
+  - "[[Traitement du langage naturel (NLP)]]"
 ---
 
 ![Intelligence artificielle Thumbnail](https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png)

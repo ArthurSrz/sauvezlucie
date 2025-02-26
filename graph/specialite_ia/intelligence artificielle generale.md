@@ -1,6 +1,0 @@
-![Intelligence artificielle générale Thumbnail](https://upload.wikimedia.org/wikipedia/commons/1/11/Comparaison_des_performances_de_l%27IA_et_des_humains_-_Our_World_in_Data.svg)
-[Intelligence artificielle générale](https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale)
-
-Une intelligence artificielle générale (IAG) est une intelligence artificielle capable d'effectuer ou d'apprendre pratiquement n'importe quelle tâche cognitive propre aux humains ou autres animaux,. La création d'intelligences artificielles générales est un des principaux objectifs de certaines entreprises comme OpenAI, Meta et DeepMind. C'est aussi un thème majeur de la science-fiction et de la futurologie. Même si GPT-4 a été décrit comme ayant des « étincelles d'intelligence artificielle générale », il n'existe pas en 2024 d'IA consensuellement considérée comme générale.
-
-Bien que l'intelligence artificielle générale puisse être très utile dans de nombreux domaines, elle présente également des risques, notamment de désinformation et de chômage de masse. Selon des experts en IA comme Stuart Russell, Yoshua Bengio ou Geoffrey Hinton et d'autres chercheurs en IA, une perte de contrôle pourrait également causer des risques existentiels tels que la fin de l'humanité.
