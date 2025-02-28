@@ -1,0 +1,10 @@
+streamlit
+pyvis
+networkx
+pyyaml
+pandas
+sentence-transformers
+scikit-learn
+openai
+rank-bm25
+python-dotenv
