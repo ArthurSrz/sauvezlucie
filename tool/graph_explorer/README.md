@@ -1,6 +1,8 @@
 # Knowledge Graph Explorer & RAG Toolkit
+
 Un outil interactif pour créer, explorer et exploiter des graphes de connaissances à partir de documents Markdown structurés, avec intégration d'un outil d'aide à la création de RAG (Retrieval-Augmented Generation) pour l'exploitation intelligente des connaissances.
-Il a été conçu pour fonctionner avec le projet #sauvezlucie. 
+
+Conçu spécifiquement pour fonctionner avec le projet #sauvezlucie, cet outil transforme vos documents en un réseau de connaissances navigable et exploitable par les modèles de langage.
 
 ## 📋 À propos
 
@@ -8,29 +10,33 @@ Ce projet a été conçu pour faciliter la gestion et l'exploitation de bases de
 
 - Transformer une collection de documents Markdown en un graphe de connaissances interactif
 - Explorer visuellement les relations entre les entités
-- De tester différents algorithmes d'explorations et d'extraction de document
+- Tester différents algorithmes d'exploration et d'extraction de documents
+- Améliorer les capacités d'un LLM grâce au RAG en connectant vos connaissances structurées
 
-Au fil du temps, il évoluera pour devenir un outil complet de création, d'entretien et d'exploitation des graphes de connaissances.
+L'outil évoluera progressivement vers une solution complète de création, maintenance et exploitation des graphes de connaissances avec des capacités d'IA augmentée.
 
 ## ✨ Fonctionnalités
 
 ### Disponibles actuellement
 
-- **Analyse de documents Markdown** avec métadonnées YAML pour construire un graphe
-- **Visualisation interactive** des nœuds et relations du graphe
-- **Recherche par pertinence** combinant plusieurs techniques:
+- **Analyse de documents Markdown** avec métadonnées YAML pour construire un graphe de connaissances
+- **Visualisation interactive** des nœuds et relations du graphe avec navigation intuitive
+- **Recherche multi-méthodes** combinant:
   - Embeddings vectoriels (similarité cosinus)
-  - TF-IDF
-  - BM25
-  - Similarité de Jaccard sur les tags
-- **Extraction contextuelle** de documents pour les requêtes LLM
-- **Interface RAG** pour poser des questions sur le contenu du graphe
+  - TF-IDF pour l'importance des termes
+  - BM25 pour la recherche avancée basée sur la fréquence
+  - Similarité de Jaccard sur les tags pour les associations thématiques
+- **Extraction contextuelle intelligente** des documents les plus pertinents pour les requêtes LLM
+- **Interface RAG complète** pour interroger le contenu du graphe avec des réponses enrichies
+- **Assistant de création de nœuds** avec suggestions automatisées de tags et de liaisons (bêta)
 
 ### À venir
 
-- Fonctions avancées de création et d'édition du graphe
-- Mécanismes d'inférence pour déduire de nouvelles relations
+- Fonctions avancées d'édition du graphe avec UI simplifiée
+- Mécanismes d'inférence pour déduire automatiquement de nouvelles relations
 - Importation/exportation dans différents formats standards (RDF, JSON-LD, etc.)
+- Moteur de règles pour la validation et l'enrichissement du graphe
+- API pour intégrer le graphe de connaissances dans d'autres applications
 
 ## 🔧 Installation
 
@@ -38,6 +44,7 @@ Au fil du temps, il évoluera pour devenir un outil complet de création, d'entr
 
 - Python 3.8 ou version ultérieure
 - Un LLM accessible via API (local ou distant)
+- 8 Go de RAM minimum recommandés
 
 ### Étapes d'installation
 
@@ -75,9 +82,13 @@ Au fil du temps, il évoluera pour devenir un outil complet de création, d'entr
 streamlit run app.py
 ```
 
-### Structure attendue des fichiers Markdown
+L'interface web s'ouvrira automatiquement dans votre navigateur par défaut.
 
-Pour une intégration optimale, structurez vos fichiers Markdown comme suit:
+### Guide de structuration des documents
+
+Pour tirer le meilleur parti du graphe de connaissances, vos documents Markdown doivent suivre une structure cohérente. Vous pouvez regarder le fichier template.md Voici un guide détaillé:
+
+#### Structure de base attendue
 
 ```markdown
 ---
@@ -89,6 +100,8 @@ relations:
     target: "[[Document parent]]"
   - type: "rdfs:seeAlso"
     target: ["[[Document connexe 1]]", "[[Document connexe 2]]"]
+  - type: "dcterms:requires"
+    target: ["[[Document prérequis 1]]", "[[Document prérequis 2]]"]
 date_creation: "YYYY-MM-DD"
 date_modification: "YYYY-MM-DD"
 ---
@@ -96,13 +109,41 @@ date_modification: "YYYY-MM-DD"
 Contenu du document...
 ```
 
-### Fonctionnalités principales
+#### Explications des champs
 
-1. **Analyse d'un répertoire**: Sélectionnez un répertoire contenant vos fichiers Markdown pour construire le graphe.
-2. **Visualisation**: Explorez interactivement les relations entre vos documents.
-3. **Recherche par pertinence**: Utilisez la recherche pour trouver les documents les plus pertinents par rapport à une requête.
-4. **Extraction contextuelle**: Sélectionnez un sous-ensemble du graphe pour l'utiliser comme contexte dans des requêtes LLM.
-5. **Questions & Réponses**: Posez des questions basées sur le contenu de votre graphe de connaissances.
+- **title**: Titre unique du document, utilisé comme identifiant principal
+- **type**: Catégorie du document. Valeurs recommandées:
+  - `concept`: Idée ou notion théorique
+  - `technique`: Méthode ou procédé
+  - `application`: Outil ou logiciel
+  - `acteur`: Personne ou organisation
+  - `document`: Document de référence
+  - `événement`: Événement historique ou planifié
+- **tags**: Liste de mots-clés pour la catégorisation et la recherche
+- **relations**: Connexions avec d'autres documents
+  - `type`: Type de relation (voir vocabulaires recommandés ci-dessous)
+  - `target`: Document(s) cible(s), entouré(s) de doubles crochets `[[...]]`
+- **date_creation/date_modification**: Dates au format YYYY-MM-DD
+
+#### Vocabulaires recommandés pour les relations
+
+Pour une meilleure interopérabilité, utilisez ces vocabulaires standards:
+
+- **RDFS/OWL**:
+  - `rdfs:subClassOf`: Relation hiérarchique de type "est un sous-type de"
+  - `rdfs:seeAlso`: Document connexe ou complémentaire
+  - `owl:sameAs`: Document équivalent ou identique
+  
+- **Dublin Core (dcterms)**:
+  - `dcterms:requires`: Prérequis ou dépendance
+  
+#### Bonnes pratiques
+
+1. **Nommage cohérent**: Utilisez des titres clairs et consistants
+2. **Granularité**: Préférez plusieurs documents spécifiques à un document générique trop long
+3. **Liens bidirectionnels**: Établissez des relations dans les deux sens quand c'est pertinent
+4. **Richesse des métadonnées**: Plus vous ajoutez d'informations structurées, meilleur sera le graphe
+5. **Mise à jour régulière**: Actualisez les `date_modification` lors des changements significatifs
 
 ## 📁 Structure du projet
 
@@ -110,21 +151,31 @@ Contenu du document...
 knowledge-graph-explorer/
 ├── app.py                  # Application Streamlit principale
 ├── config.py               # Configuration et variables d'environnement
-├── prompts.py              # Définitions des prompts pour les LLM
-├── markdown_parser.py      # Analyse des fichiers Markdown
-├── graph_builder.py        # Construction et manipulation du graphe
-├── search_engine.py        # Moteur de recherche basique
-├── relevance_scoring.py    # Algorithmes de scoring de pertinence
-├── visualization.py        # Visualisation du graphe
+├── domain/                 # Fonctions métier et modèles
+├── services/               # Services externes (LLM, embeddings, etc.)
+├── ui/                     # Composants d'interface utilisateur
+├── utils/                  # Fonctions utilitaires
 ├── .env                    # Configuration locale (non versionné)
 └── requirements.txt        # Dépendances
 ```
 
 ## 🛣️ Roadmap
 
-- [ ] Ajout de fonctionnalités d'édition du graphe directement dans l'interface
-- [ ] Mécanismes d'inférence pour déduire de nouvelles relations
+- [ ] Amélioration de l'interface d'édition des nœuds et relations
+- [ ] Système de versionnement du graphe de connaissances
+- [ ] Moteur d'inférence pour déduire automatiquement de nouvelles relations
 - [ ] Support pour l'importation/exportation dans des formats standards (RDF, JSON-LD)
-- [ ] Amélioration des algorithmes de recherche avec apprentissage par retour d'utilisateur
-- [ ] Extension des capacités RAG avec chunking intelligent et indexation avancée
-- [ ] Support multi-utilisateurs et collaboration
+- [ ] Algorithmes de recherche adaptatifs avec apprentissage par retour d'utilisateur
+- [ ] Chunking intelligent avec conservation du contexte pour le RAG
+- [ ] Amélioration des visualisations avec filtres et regroupements
+- [ ] Intégration d'outils d'analyse de graphe pour identifier les patterns et incohérences
+- [ ] Support multi-utilisateurs avec fonctionnalités collaboratives
+- [ ] API REST pour intégration dans d'autres applications
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues! N'hésitez pas à ouvrir une issue pour signaler des bugs ou proposer des améliorations, ou à soumettre une pull request.
+
+## 📄 Licence
+
+?
