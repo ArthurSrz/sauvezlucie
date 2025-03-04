@@ -14,8 +14,9 @@ Tu peux citer des extraits pertinents des documents pour justifier tes réponses
 Si l'information demandée ne figure pas dans les documents, indique-le clairement. Tu es pédagogique et tu arrives facilement a vulgariser quand il le faut."""
 
 # Format pour construire le prompt utilisateur pour la réponse aux questions
-QA_USER_PROMPT_TEMPLATE = """Voici ma question: {query}
-
-Utilise les documents suivants pour y répondre:
-
-{context}"""
+QA_USER_PROMPT_TEMPLATE = """Voici des documents:
+<document>
+    {context}
+</document>
+    {query}. Attention de bien répondre à la question de façon naturelle.
+"""
