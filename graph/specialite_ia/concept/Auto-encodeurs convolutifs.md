@@ -29,7 +29,7 @@ Les auto-encodeurs convolutifs (CAE - Convolutional Autoencoders) sont une varia
 
 ### Architecture
 
-L'architecture d'un auto-encodeur convolutif se compose de deux parties principales :
+L'architecture d'un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) convolutif se compose de deux parties principales :
 
 1. **Encodeur** : Constitué de couches de convolution suivies généralement de fonctions d'activation non linéaires (comme ReLU) et parfois de couches de pooling. L'encodeur réduit progressivement la résolution spatiale tout en augmentant la profondeur des caractéristiques, transformant l'image d'entrée en une représentation latente compacte.
 
@@ -40,16 +40,16 @@ L'architecture d'un auto-encodeur convolutif se compose de deux parties principa
 Les auto-encodeurs convolutifs présentent plusieurs avantages pour le traitement d'images :
 
 - **Partage de paramètres** : Les filtres de convolution sont partagés sur l'ensemble de l'image, réduisant considérablement le nombre de paramètres à apprendre.
-- **Préservation de la topologie** : Ils maintiennent les relations spatiales entre les pixels, ce qui est crucial pour les données visuelles.
+- **[Préservation de la topologie](https://fr.wikipedia.org/wiki/Préservation_de_la_topologie)** : Ils maintiennent les relations spatiales entre les pixels, ce qui est crucial pour les données visuelles.
 - **Invariance à la translation** : Les caractéristiques apprises sont relativement invariantes aux petites translations dans l'image d'entrée.
 
 ### Applications
 
 Les auto-encodeurs convolutifs sont utilisés dans de nombreuses applications :
 
-- **Débruitage d'images** : En entraînant le modèle à reconstruire des images propres à partir d'images bruitées.
+- **[Débruitage](https://fr.wikipedia.org/wiki/Débruitage) d'images** : En entraînant le modèle à reconstruire des images propres à partir d'images bruitées.
 - **Compression d'images** : La représentation latente peut servir de format compressé de l'image originale.
-- **Inpainting** : Reconstruction de parties manquantes dans les images.
+- **[Inpainting](https://fr.wikipedia.org/wiki/Inpainting)** : Reconstruction de parties manquantes dans les images.
 - **Extraction de caractéristiques** : L'espace latent peut fournir des représentations utiles pour d'autres tâches d'apprentissage.
 - **Pré-entraînement** : Ils peuvent être utilisés pour initialiser les poids des CNN pour des tâches supervisées avec peu de données étiquetées.
 

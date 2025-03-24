@@ -52,7 +52,7 @@ L'application de ces techniques implique généralement un compromis entre :
 - Taille du modèle et consommation mémoire
 - Vitesse d'inférence
 - Précision et qualité des prédictions
-- Consommation énergétique
+- [Consommation](https://fr.wikipedia.org/wiki/Consommation) énergétique
 
 Pour les modèles de langage de grande taille (LLM), des techniques spécifiques comme la quantification à bits mixtes sont développées, où différentes parties du modèle sont quantifiées à différentes précisions selon leur sensibilité.
 

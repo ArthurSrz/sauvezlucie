@@ -19,7 +19,7 @@ precedes: '[[Algorithme C4.5]]'
 ---
 ## Généralité
 
-L'algorithme ID3 (Iterative Dichotomiser 3) est un algorithme d'apprentissage supervisé développé par Ross Quinlan en 1986. Il s'agit d'une méthode fondamentale pour la construction d'arbres de décision, utilisée pour classer des instances en se basant sur leurs attributs. ID3 utilise l'entropie et le gain d'information pour sélectionner les attributs les plus discriminants à chaque étape de la construction de l'arbre, ce qui permet de créer un modèle prédictif efficace à partir de données d'entraînement.
+L'algorithme ID3 (Iterative Dichotomiser 3) est un algorithme d'apprentissage supervisé développé par [Ross Quinlan](https://fr.wikipedia.org/wiki/Ross_Quinlan) en 1986. Il s'agit d'une méthode fondamentale pour la construction d'arbres de décision, utilisée pour classer des instances en se basant sur leurs attributs. ID3 utilise l'entropie et le gain d'information pour sélectionner les attributs les plus discriminants à chaque étape de la construction de l'arbre, ce qui permet de créer un modèle prédictif efficace à partir de données d'entraînement.
 
 ## Points clés
 

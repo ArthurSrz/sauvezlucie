@@ -24,7 +24,7 @@ hasPart:
 ---
 ## Généralité
 
-Les Transformers sont une architecture de réseau neuronal introduite en 2017 par Vaswani et al. dans l'article "Attention is All You Need". Cette architecture a révolutionné le traitement du langage naturel (NLP) en remplaçant les réseaux récurrents (RNN) par un mécanisme d'attention qui permet de traiter les séquences en parallèle plutôt que séquentiellement. Le mécanisme d'attention permet au modèle de se concentrer sur différentes parties d'une séquence d'entrée lors de la génération de chaque élément de sortie, ce qui améliore considérablement les performances sur diverses tâches linguistiques.
+Les [Transformers](https://fr.wikipedia.org/wiki/Transformers) sont une architecture de réseau neuronal introduite en 2017 par Vaswani et al. dans l'article "Attention is All You Need". Cette architecture a révolutionné le traitement du langage naturel (NLP) en remplaçant les réseaux récurrents (RNN) par un mécanisme d'attention qui permet de traiter les séquences en parallèle plutôt que séquentiellement. Le mécanisme d'attention permet au modèle de se concentrer sur différentes parties d'une séquence d'entrée lors de la génération de chaque élément de sortie, ce qui améliore considérablement les performances sur diverses tâches linguistiques.
 
 ## Points clés
 
@@ -64,7 +64,7 @@ Les Transformers présentent plusieurs avantages par rapport aux RNN et LSTM:
 
 Les Transformers ont donné naissance à de nombreux modèles influents:
 - BERT (Bidirectional Encoder Representations from Transformers): préentraîné pour comprendre le contexte bidirectionnel
-- GPT (Generative Pre-trained Transformer): spécialisé dans la génération de texte
+- GPT ([Generative Pre-trained Transformer](https://fr.wikipedia.org/wiki/Generative_Pre-trained_Transformer)): spécialisé dans la génération de texte
 - T5 (Text-to-Text Transfer Transformer): qui reformule toutes les tâches NLP en problèmes de texte à texte
 - XLNet, RoBERTa, ALBERT: variantes améliorées de BERT
 

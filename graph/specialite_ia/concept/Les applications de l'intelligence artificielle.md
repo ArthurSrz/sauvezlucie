@@ -35,20 +35,20 @@ L'intelligence artificielle (IA) désigne la capacité des machines à simuler l
 
 **Santé** : L'IA révolutionne le domaine médical en permettant un diagnostic plus précis et plus rapide des maladies. Des algorithmes d'apprentissage profond analysent les images médicales pour détecter des cancers à un stade précoce avec une précision parfois supérieure à celle des médecins. L'IA aide également à la découverte de médicaments, réduisant considérablement le temps et les coûts de développement. Des systèmes de prédiction permettent d'anticiper les épidémies ou les complications chez les patients.
 
-**Transport** : Les véhicules autonomes représentent l'une des applications les plus visibles de l'IA. Des entreprises comme Tesla, Waymo et Uber investissent massivement dans cette technologie. L'IA optimise également la gestion du trafic urbain, réduisant les embouteillages et la pollution. Dans la logistique, elle permet d'optimiser les itinéraires de livraison et la gestion des flottes.
+**[Transport](https://fr.wikipedia.org/wiki/Transport)** : Les véhicules autonomes représentent l'une des applications les plus visibles de l'IA. Des entreprises comme Tesla, [Waymo](https://fr.wikipedia.org/wiki/Waymo) et [Uber](https://fr.wikipedia.org/wiki/Uber) investissent massivement dans cette technologie. L'IA optimise également la gestion du trafic urbain, réduisant les embouteillages et la pollution. Dans la logistique, elle permet d'optimiser les itinéraires de livraison et la gestion des flottes.
 
-**Finance** : Les algorithmes d'IA analysent d'énormes volumes de données financières pour détecter les fraudes, évaluer les risques de crédit et automatiser le trading. Les chatbots et assistants virtuels transforment le service client bancaire. L'IA aide également à la conformité réglementaire, un enjeu crucial dans ce secteur fortement régulé.
+**[Finance](https://fr.wikipedia.org/wiki/Finance)** : Les algorithmes d'IA analysent d'énormes volumes de données financières pour détecter les fraudes, évaluer les risques de crédit et automatiser le trading. Les chatbots et assistants virtuels transforment le service client bancaire. L'IA aide également à la conformité réglementaire, un enjeu crucial dans ce secteur fortement régulé.
 
-**Éducation** : Des systèmes d'apprentissage adaptatif personnalisent l'enseignement en fonction des besoins de chaque élève. L'IA permet l'automatisation de tâches administratives comme la notation, libérant du temps pour les enseignants. Elle facilite également l'accès à l'éducation via des tuteurs virtuels et des plateformes d'apprentissage intelligentes.
+**[Éducation](https://fr.wikipedia.org/wiki/Éducation)** : Des systèmes d'apprentissage adaptatif personnalisent l'enseignement en fonction des besoins de chaque élève. L'IA permet l'automatisation de tâches administratives comme la notation, libérant du temps pour les enseignants. Elle facilite également l'accès à l'éducation via des tuteurs virtuels et des plateformes d'apprentissage intelligentes.
 
-**Divertissement** : Les plateformes de streaming comme Netflix et Spotify utilisent l'IA pour recommander du contenu personnalisé. Dans le jeu vidéo, l'IA crée des personnages non-joueurs plus réalistes et des environnements dynamiques. Elle révolutionne aussi la création artistique avec des outils de génération d'images, de musique et de textes.
+**Divertissement** : Les plateformes de streaming comme Netflix et [Spotify](https://fr.wikipedia.org/wiki/Spotify) utilisent l'IA pour recommander du contenu personnalisé. Dans le jeu vidéo, l'IA crée des personnages non-joueurs plus réalistes et des environnements dynamiques. Elle révolutionne aussi la création artistique avec des outils de génération d'images, de musique et de textes.
 
 ### Technologies d'IA principales
 
 - **Apprentissage automatique (Machine Learning)** : Permet aux systèmes d'apprendre à partir de données sans être explicitement programmés
 - **Apprentissage profond (Deep Learning)** : Utilise des réseaux de neurones artificiels multicouches pour analyser des données complexes
 - **Traitement du langage naturel (NLP)** : Permet aux machines de comprendre et générer du langage humain
-- **Vision par ordinateur** : Donne aux machines la capacité d'interpréter et de comprendre des informations visuelles
+- **Vision par ordinateur** : [Donne](https://fr.wikipedia.org/wiki/Donne) aux machines la capacité d'interpréter et de comprendre des informations visuelles
 
 ### Défis et considérations éthiques
 

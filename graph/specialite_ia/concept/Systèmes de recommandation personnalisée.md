@@ -25,7 +25,7 @@ Les systèmes de recommandation personnalisée sont des algorithmes et technique
 
 - Les systèmes de recommandation utilisent principalement trois approches: le filtrage collaboratif, le filtrage basé sur le contenu et les méthodes hybrides
 - Ils améliorent l'expérience utilisateur en réduisant la surcharge cognitive liée à un trop grand choix tout en augmentant la découvrabilité
-- Ces systèmes génèrent en moyenne 35% des revenus d'Amazon et 75% du contenu visionné sur Netflix
+- Ces systèmes génèrent en moyenne 35% des revenus d'[Amazon](https://fr.wikipedia.org/wiki/Amazon) et 75% du contenu visionné sur Netflix
 - Les défis majeurs incluent le démarrage à froid, la protection de la vie privée et les biais algorithmiques
 
 ## Détails

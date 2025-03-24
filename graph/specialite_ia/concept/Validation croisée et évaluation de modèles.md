@@ -34,7 +34,7 @@ La validation croisée et l'évaluation de modèles sont des techniques essentie
 
 1. **K-fold cross-validation** : Les données sont divisées en k sous-ensembles (folds) de taille égale. Le modèle est entraîné sur k-1 sous-ensembles et testé sur le sous-ensemble restant. Ce processus est répété k fois, chaque sous-ensemble servant une fois de test. La performance finale est la moyenne des k évaluations.
 
-2. **Leave-one-out cross-validation (LOOCV)** : Cas particulier où k est égal au nombre d'observations. Chaque observation sert une fois de test, tandis que toutes les autres sont utilisées pour l'entraînement. Cette méthode est coûteuse en calcul mais utile pour les petits jeux de données.
+2. **[Leave-one-out cross-validation](https://fr.wikipedia.org/wiki/Leave-one-out_cross-validation) (LOOCV)** : Cas particulier où k est égal au nombre d'observations. Chaque observation sert une fois de test, tandis que toutes les autres sont utilisées pour l'entraînement. Cette méthode est coûteuse en calcul mais utile pour les petits jeux de données.
 
 3. **Stratified k-fold** : Variante du k-fold qui préserve la proportion des classes dans chaque fold, particulièrement importante pour les problèmes de classification avec des classes déséquilibrées.
 
@@ -52,7 +52,7 @@ La validation croisée et l'évaluation de modèles sont des techniques essentie
 
 2. **Hyperparamètres** : Utiliser la validation croisée pour optimiser les hyperparamètres du modèle, mais jamais sur l'ensemble de test final.
 
-3. **Reproductibilité** : Fixer une graine aléatoire (random seed) pour assurer la reproductibilité des résultats.
+3. **[Reproductibilité](https://fr.wikipedia.org/wiki/Reproductibilité)** : Fixer une graine aléatoire (random seed) pour assurer la reproductibilité des résultats.
 
 4. **Équilibrage des classes** : Pour les problèmes de classification déséquilibrée, utiliser des techniques comme la stratification ou le rééchantillonnage.
 

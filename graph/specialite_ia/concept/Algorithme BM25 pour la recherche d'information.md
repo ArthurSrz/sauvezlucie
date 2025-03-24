@@ -17,7 +17,7 @@ subClassOf: '[[TF-IDF et pondération de termes]]'
 ---
 ## Généralité
 
-BM25 (Best Matching 25) est un algorithme de classement utilisé dans les systèmes de recherche d'information pour évaluer la pertinence d'un document par rapport à une requête. Développé par Stephen E. Robertson et Karen Spärck Jones comme une évolution du modèle probabiliste TF-IDF, BM25 est devenu l'un des algorithmes de référence dans les moteurs de recherche modernes. Il équilibre la fréquence des termes dans les documents avec leur rareté dans la collection, tout en tenant compte de la longueur des documents.
+BM25 (Best Matching 25) est un algorithme de classement utilisé dans les systèmes de recherche d'information pour évaluer la pertinence d'un document par rapport à une requête. Développé par Stephen E. Robertson et Karen Spärck Jones comme une évolution du modèle probabiliste [TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF), BM25 est devenu l'un des algorithmes de référence dans les moteurs de recherche modernes. Il équilibre la fréquence des termes dans les documents avec leur rareté dans la collection, tout en tenant compte de la longueur des documents.
 
 ## Points clés
 

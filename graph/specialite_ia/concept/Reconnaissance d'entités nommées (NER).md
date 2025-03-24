@@ -28,7 +28,7 @@ La Reconnaissance d'Entités Nommées (NER) est une sous-tâche du traitement au
 
 ## Détails
 
-La NER fonctionne en analysant le contexte dans lequel apparaissent les mots pour déterminer leur catégorie d'entité. Par exemple, dans la phrase "Apple a lancé un nouveau produit à New York mardi dernier", un système NER identifierait "Apple" comme une organisation, "New York" comme un lieu et "mardi dernier" comme une expression temporelle.
+La NER fonctionne en analysant le contexte dans lequel apparaissent les mots pour déterminer leur catégorie d'entité. Par exemple, dans la phrase "Apple a lancé un nouveau produit à [New York](https://fr.wikipedia.org/wiki/New_York) mardi dernier", un système NER identifierait "Apple" comme une organisation, "[New York](https://fr.wikipedia.org/wiki/New_York)" comme un lieu et "mardi dernier" comme une expression temporelle.
 
 Historiquement, les premières approches de NER reposaient sur des règles manuelles et des dictionnaires. Ces méthodes ont progressivement évolué vers des techniques statistiques comme les Modèles de Markov Cachés (HMM) et les Champs Aléatoires Conditionnels (CRF). Aujourd'hui, les approches dominantes utilisent l'apprentissage profond.
 
@@ -47,7 +47,7 @@ Les applications de la NER sont nombreuses:
 - Systèmes de recherche d'information améliorés
 - Analyse de sentiments ciblée sur des entités spécifiques
 - Extraction d'information structurée à partir de documents
-- Anonymisation automatique de données sensibles
+- [Anonymisation](https://fr.wikipedia.org/wiki/Anonymisation) automatique de données sensibles
 - Indexation et classification de documents
 - Systèmes de recommandation basés sur les entités
 

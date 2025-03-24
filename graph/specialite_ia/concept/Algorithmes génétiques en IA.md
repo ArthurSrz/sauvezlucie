@@ -34,7 +34,7 @@ Les algorithmes génétiques (AG) sont des méthodes d'optimisation et de recher
 Un algorithme génétique typique fonctionne selon les étapes suivantes:
 
 1. **Initialisation**: Création d'une population initiale de solutions candidates (individus) généralement de façon aléatoire.
-2. **Évaluation**: Calcul de la valeur d'adaptation (fitness) de chaque individu selon une fonction objectif.
+2. **[Évaluation](https://fr.wikipedia.org/wiki/Évaluation)**: Calcul de la valeur d'adaptation (fitness) de chaque individu selon une fonction objectif.
 3. **Sélection**: Choix des individus qui participeront à la reproduction, avec une probabilité proportionnelle à leur fitness.
 4. **Croisement**: Combinaison de paires d'individus pour créer de nouveaux individus (enfants).
 5. **Mutation**: Modification aléatoire de certains gènes pour maintenir la diversité génétique.
@@ -51,9 +51,9 @@ Les algorithmes génétiques sont utilisés dans de nombreux domaines de l'IA:
 
 - **Apprentissage automatique**: Optimisation des hyperparamètres des modèles
 - **Réseaux de neurones**: Détermination des poids et de l'architecture optimale
-- **Planification et ordonnancement**: Résolution de problèmes comme le voyageur de commerce
+- **[Planification](https://fr.wikipedia.org/wiki/Planification) et ordonnancement**: Résolution de problèmes comme le voyageur de commerce
 - **Conception assistée par ordinateur**: Optimisation de structures et de systèmes
-- **Robotique**: Développement de comportements adaptatifs et évolutifs
+- **[Robotique](https://fr.wikipedia.org/wiki/Robotique)**: Développement de comportements adaptatifs et évolutifs
 
 ### Avantages et limitations
 

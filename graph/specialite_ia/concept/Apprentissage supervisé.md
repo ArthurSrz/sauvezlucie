@@ -36,22 +36,23 @@ L'apprentissage supervisé est une branche fondamentale du machine learning où 
 
 ### Types de problèmes d'apprentissage supervisé
 
-#### Classification
+#### [Classification](https://fr.wikipedia.org/wiki/Classification)
 Dans les problèmes de classification, l'algorithme apprend à attribuer des entrées à des catégories prédéfinies. Les exemples incluent:
 - Classification binaire: spam/non-spam, malade/sain
 - Classification multi-classes: reconnaissance de chiffres manuscrits, catégorisation d'articles
 - Classification multi-labels: étiquetage d'images avec plusieurs objets
 
-#### Régression
-La régression vise à prédire des valeurs numériques continues:
+#### [Régression
+La régression vise à prédire des valeurs numériques continues](https://fr.wikipedia.org/wiki/Régression
+La_régression_vise_à_prédire_des_valeurs_numériques_continues):
 - Prédiction de prix immobiliers
 - Estimation de la consommation énergétique
-- Prévision des ventes
+- [Prévision](https://fr.wikipedia.org/wiki/Prévision) des ventes
 
 ### Algorithmes courants
 
 Plusieurs algorithmes sont utilisés en apprentissage supervisé:
-- Régression linéaire et logistique
+- [Régression linéaire](https://fr.wikipedia.org/wiki/Régression_linéaire) et logistique
 - Arbres de décision et forêts aléatoires
 - Machines à vecteurs de support (SVM)
 - Réseaux de neurones
@@ -69,11 +70,11 @@ Le processus typique comprend:
 
 ### Défis et considérations
 
-- **Surapprentissage (overfitting)**: le modèle apprend "par cœur" les données d'entraînement et généralise mal
+- **[Surapprentissage](https://fr.wikipedia.org/wiki/Surapprentissage) (overfitting)**: le modèle apprend "par cœur" les données d'entraînement et généralise mal
 - **Sous-apprentissage (underfitting)**: le modèle est trop simple pour capturer la complexité des données
 - **Déséquilibre des classes**: certaines classes sont sous-représentées dans les données
 - **Dimensionnalité élevée**: trop de caractéristiques par rapport au nombre d'exemples
-- **Qualité des données**: les étiquettes incorrectes ou bruitées peuvent dégrader les performances
+- **[Qualité](https://fr.wikipedia.org/wiki/Qualité) des données**: les étiquettes incorrectes ou bruitées peuvent dégrader les performances
 
 ### Applications
 
@@ -83,6 +84,6 @@ L'apprentissage supervisé est omniprésent dans de nombreux domaines:
 - Analyse de sentiments et traitement du langage naturel
 - Systèmes de recommandation
 - Détection de fraudes
-- Prévision financière
+- [Prévision](https://fr.wikipedia.org/wiki/Prévision) financière
 
 L'apprentissage supervisé reste l'une des approches les plus utilisées en intelligence artificielle, offrant un cadre puissant pour résoudre des problèmes où des données étiquetées sont disponibles.

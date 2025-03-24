@@ -57,9 +57,9 @@ Cette distinction conceptuelle fondamentale structure de nombreux débats:
 
 Cette dichotomie soulève des questions profondes sur les conditions d'émergence de la conscience et l'importance du substrat matériel (le problème du "cerveau dans une cuve").
 
-### Intelligence Artificielle Générale (AGI) et au-delà
+### [Intelligence Artificielle Générale](https://fr.wikipedia.org/wiki/Intelligence_Artificielle_Générale) (AGI) et au-delà
 
-Les concepts d'AGI et d'ASI (Intelligence Artificielle Superintelligente) alimentent les réflexions prospectives:
+Les concepts d'AGI et d'ASI ([Intelligence Artificielle Superintelligente](https://fr.wikipedia.org/wiki/Intelligence_Artificielle_Superintelligente)) alimentent les réflexions prospectives:
 
 - **L'AGI** représente une forme d'IA dotée de capacités d'apprentissage et d'adaptation transversales, équivalentes à celles de l'humain, capable de résoudre une grande diversité de problèmes.
     

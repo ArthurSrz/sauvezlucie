@@ -19,7 +19,7 @@ relatedTo:
 ---
 ##Généralité
 
-L'Intelligence Artificielle Générale (IAG), également connue sous le nom d'Intelligence Artificielle Forte, désigne un système d'intelligence artificielle hypothétique capable de comprendre, apprendre et appliquer des connaissances dans différents domaines avec la même flexibilité et polyvalence que l'intelligence humaine. Contrairement aux systèmes d'IA actuels qui sont spécialisés dans des tâches spécifiques (IA étroite ou faible), l'IAG pourrait résoudre n'importe quel problème intellectuel qu'un être humain peut résoudre, voire le surpasser.
+L'[Intelligence Artificielle Générale](https://fr.wikipedia.org/wiki/Intelligence_Artificielle_Générale) (IAG), également connue sous le nom d'[Intelligence Artificielle Forte](https://fr.wikipedia.org/wiki/Intelligence_Artificielle_Forte), désigne un système d'intelligence artificielle hypothétique capable de comprendre, apprendre et appliquer des connaissances dans différents domaines avec la même flexibilité et polyvalence que l'intelligence humaine. Contrairement aux systèmes d'IA actuels qui sont spécialisés dans des tâches spécifiques (IA étroite ou faible), l'IAG pourrait résoudre n'importe quel problème intellectuel qu'un être humain peut résoudre, voire le surpasser.
 
 ## Points clés
 
@@ -32,13 +32,13 @@ L'Intelligence Artificielle Générale (IAG), également connue sous le nom d'In
 
 ### Caractéristiques fondamentales de l'IAG
 
-Une véritable Intelligence Artificielle Générale devrait posséder plusieurs capacités fondamentales :
+Une véritable [Intelligence Artificielle Générale](https://fr.wikipedia.org/wiki/Intelligence_Artificielle_Générale) devrait posséder plusieurs capacités fondamentales :
 
-1. **Apprentissage autonome** : capacité d'apprendre sans supervision humaine et d'améliorer ses propres algorithmes
-2. **Raisonnement abstrait** : aptitude à former des concepts abstraits et à raisonner sur des problèmes complexes
+1. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) autonome** : capacité d'apprendre sans supervision humaine et d'améliorer ses propres algorithmes
+2. **[Raisonnement](https://fr.wikipedia.org/wiki/Raisonnement) abstrait** : aptitude à former des concepts abstraits et à raisonner sur des problèmes complexes
 3. **Transfert de connaissances** : application des connaissances acquises dans un domaine à des problèmes dans d'autres domaines
-4. **Conscience contextuelle** : compréhension du contexte et adaptation appropriée des réponses
-5. **Créativité et innovation** : génération d'idées nouvelles et résolution de problèmes de façon originale
+4. **[Conscience](https://fr.wikipedia.org/wiki/Conscience) contextuelle** : compréhension du contexte et adaptation appropriée des réponses
+5. **[Créativité](https://fr.wikipedia.org/wiki/Créativité) et innovation** : génération d'idées nouvelles et résolution de problèmes de façon originale
 
 ### Approches de recherche actuelles
 
@@ -62,9 +62,9 @@ Le développement de l'IAG fait face à d'importants obstacles :
 
 L'avènement potentiel de l'IAG soulève des questions fondamentales :
 
-- **Risque existentiel** : une IAG pourrait-elle représenter une menace pour l'humanité si ses objectifs divergent des nôtres?
-- **Impact économique** : comment gérer les bouleversements économiques liés à l'automatisation généralisée?
-- **Gouvernance et contrôle** : quelles structures de gouvernance seraient nécessaires pour encadrer le développement de l'IAG?
+- **[Risque](https://fr.wikipedia.org/wiki/Risque) existentiel** : une IAG pourrait-elle représenter une menace pour l'humanité si ses objectifs divergent des nôtres?
+- **[Impact](https://fr.wikipedia.org/wiki/Impact) économique** : comment gérer les bouleversements économiques liés à l'automatisation généralisée?
+- **[Gouvernance](https://fr.wikipedia.org/wiki/Gouvernance) et contrôle** : quelles structures de gouvernance seraient nécessaires pour encadrer le développement de l'IAG?
 - **Alignement des valeurs** : comment s'assurer que les systèmes d'IAG agissent conformément aux valeurs humaines?
 
 La recherche sur l'alignement des valeurs et la sécurité de l'IA est devenue un domaine crucial, visant à garantir que tout système d'IAG futur reste bénéfique et contrôlable par l'humanité.

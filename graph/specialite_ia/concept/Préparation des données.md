@@ -61,7 +61,7 @@ Création de nouvelles caractéristiques pour améliorer les performances du mod
 
 ### Partitionnement des données
 
-Division stratégique du jeu de données:
+[Division](https://fr.wikipedia.org/wiki/Division) stratégique du jeu de données:
 - Ensemble d'entraînement (60-80%): pour l'apprentissage du modèle
 - Ensemble de validation (10-20%): pour l'ajustement des hyperparamètres
 - Ensemble de test (10-20%): pour l'évaluation finale des performances

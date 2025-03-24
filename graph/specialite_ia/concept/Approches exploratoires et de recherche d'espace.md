@@ -50,7 +50,7 @@ Les approches exploratoires et de recherche d'espace constituent un pilier fonda
 
 Ces algorithmes plus sophistiqués s'attaquent à des problèmes d'optimisation complexes:
 
-- **Recuit simulé**: Inspiré du processus métallurgique, accepte occasionnellement des solutions moins bonnes pour échapper aux optima locaux
+- **[Recuit](https://fr.wikipedia.org/wiki/Recuit) simulé**: Inspiré du processus métallurgique, accepte occasionnellement des solutions moins bonnes pour échapper aux optima locaux
 - **Recherche tabou**: Utilise une "liste taboue" pour éviter de revisiter des solutions récentes
 - **Optimisation par colonies de fourmis**: Simule le comportement collectif des fourmis pour trouver des chemins optimaux
 - **Optimisation par essaims particulaires**: Modélise un système où des particules "volent" dans l'espace de recherche

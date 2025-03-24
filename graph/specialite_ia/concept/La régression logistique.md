@@ -44,7 +44,7 @@ Les coefficients β sont généralement estimés par la méthode du maximum de v
 
 Un avantage majeur de la régression logistique est l'interprétabilité de ses coefficients. Le coefficient βᵢ représente le changement dans le logarithme du rapport de cotes (log-odds) lorsque la variable xᵢ augmente d'une unité, toutes les autres variables restant constantes. L'exponentielle de βᵢ donne directement le rapport de cotes.
 
-### Évaluation du modèle
+### [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) du modèle
 
 La performance d'un modèle de régression logistique peut être évaluée par diverses métriques:
 - Précision (accuracy): proportion de prédictions correctes
@@ -61,7 +61,7 @@ Pour éviter le surapprentissage, particulièrement avec de nombreuses variables
 ### Extensions
 
 La régression logistique peut être étendue à:
-- Classification multi-classes via la régression logistique multinomiale
+- [Classification](https://fr.wikipedia.org/wiki/Classification) multi-classes via la régression logistique multinomiale
 - Problèmes ordinaux via la régression logistique ordinale
 - Données séquentielles via des modèles logistiques conditionnels
 

@@ -18,11 +18,11 @@ isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
 ## Généralité
 
-L'Allen Institute for AI (AI2) est un institut de recherche à but non lucratif fondé en 2014 par Paul Allen, co-fondateur de Microsoft. Basé à Seattle, Washington, AI2 se consacre à la recherche fondamentale en intelligence artificielle avec pour mission de contribuer au bien commun et de faire progresser la science. L'institut vise à développer une IA capable de raisonner, d'apprendre et de lire pour comprendre le monde, tout en abordant des défis scientifiques et sociétaux complexes.
+L'Allen Institute for AI (AI2) est un institut de recherche à but non lucratif fondé en 2014 par [Paul Allen](https://fr.wikipedia.org/wiki/Paul_Allen), co-fondateur de [Microsoft](https://fr.wikipedia.org/wiki/Microsoft). Basé à [Seattle](https://fr.wikipedia.org/wiki/Seattle), Washington, AI2 se consacre à la recherche fondamentale en intelligence artificielle avec pour mission de contribuer au bien commun et de faire progresser la science. L'institut vise à développer une IA capable de raisonner, d'apprendre et de lire pour comprendre le monde, tout en abordant des défis scientifiques et sociétaux complexes.
 
 ## Points clés
 
-- Fondé par Paul Allen en 2014 avec la mission de conduire une recherche en IA de haute qualité et de haut impact pour le bien commun
+- Fondé par [Paul Allen](https://fr.wikipedia.org/wiki/Paul_Allen) en 2014 avec la mission de conduire une recherche en IA de haute qualité et de haut impact pour le bien commun
 - Se concentre sur plusieurs domaines clés incluant le traitement du langage naturel, la vision par ordinateur, le raisonnement commun et l'IA pour la science
 - Développe des outils et ressources open-source largement utilisés par la communauté scientifique, comme Semantic Scholar et AllenNLP
 - Combine la recherche fondamentale avec des applications pratiques visant à résoudre des problèmes concrets dans des domaines comme la médecine, l'éducation et la recherche scientifique
@@ -37,7 +37,7 @@ L'institut a également développé Aristo, un système conçu pour répondre à
 
 AI2 Incubator est une autre initiative importante qui soutient les entrepreneurs construisant des startups basées sur l'IA, en leur fournissant financement, mentorat et accès à l'expertise technique.
 
-L'institut maintient des collaborations étroites avec des universités de premier plan, notamment l'Université de Washington, et publie régulièrement dans les conférences et revues les plus prestigieuses du domaine de l'IA comme NeurIPS, ICML, ACL et CVPR.
+L'institut maintient des collaborations étroites avec des universités de premier plan, notamment l'[Université de Washington](https://fr.wikipedia.org/wiki/Université_de_Washington), et publie régulièrement dans les conférences et revues les plus prestigieuses du domaine de l'IA comme NeurIPS, ICML, ACL et CVPR.
 
 Contrairement à de nombreuses organisations de recherche en IA, AI2 met fortement l'accent sur la création d'une IA bénéfique et responsable. L'institut s'engage dans des discussions sur l'éthique de l'IA et travaille à développer des technologies qui augmentent les capacités humaines plutôt que de les remplacer.
 

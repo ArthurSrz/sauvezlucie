@@ -42,10 +42,10 @@ Le diagnostic médical assisté par IA repose principalement sur trois familles 
 L'IA diagnostique est particulièrement développée dans plusieurs spécialités :
 
 1. **Radiologie** : détection de nodules pulmonaires, classification de tumeurs, identification de fractures
-2. **Dermatologie** : analyse de lésions cutanées et détection précoce de mélanomes
-3. **Ophtalmologie** : diagnostic de rétinopathie diabétique et de dégénérescence maculaire
+2. **[Dermatologie](https://fr.wikipedia.org/wiki/Dermatologie)** : analyse de lésions cutanées et détection précoce de mélanomes
+3. **[Ophtalmologie](https://fr.wikipedia.org/wiki/Ophtalmologie)** : diagnostic de rétinopathie diabétique et de dégénérescence maculaire
 4. **Cardiologie** : interprétation d'ECG et prédiction de risques cardiovasculaires
-5. **Pathologie** : analyse automatisée de lames histologiques
+5. **[Pathologie](https://fr.wikipedia.org/wiki/Pathologie)** : analyse automatisée de lames histologiques
 
 ### Avantages et limites
 
@@ -53,11 +53,11 @@ L'IA diagnostique est particulièrement développée dans plusieurs spécialité
 - Amélioration de la précision diagnostique, notamment pour les pathologies rares
 - Réduction des délais d'analyse et d'interprétation
 - Standardisation des pratiques et réduction de la variabilité inter-praticiens
-- Accessibilité accrue à l'expertise médicale dans les zones sous-dotées
+- [Accessibilité](https://fr.wikipedia.org/wiki/Accessibilité) accrue à l'expertise médicale dans les zones sous-dotées
 
 **Limites** :
 - Dépendance à la qualité et à la représentativité des données d'entraînement
-- Risque de "boîte noire" avec des décisions algorithmiques difficiles à interpréter
+- [Risque](https://fr.wikipedia.org/wiki/Risque) de "boîte noire" avec des décisions algorithmiques difficiles à interpréter
 - Questions de responsabilité en cas d'erreur diagnostique
 - Nécessité d'une validation clinique rigoureuse avant déploiement
 

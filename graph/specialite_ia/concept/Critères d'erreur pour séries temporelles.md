@@ -54,7 +54,7 @@ Les critères d'erreur pour séries temporelles sont des métriques quantitative
 
 ### Critères spécifiques aux séries temporelles
 
-- **MASE (Mean Absolute Scaled Error)** : Compare l'erreur du modèle à celle d'une méthode naïve (généralement la prévision par persistance). Particulièrement utile pour les séries temporelles saisonnières.
+- **MASE ([Mean Absolute Scaled Error](https://fr.wikipedia.org/wiki/Mean_Absolute_Scaled_Error))** : Compare l'erreur du modèle à celle d'une méthode naïve (généralement la prévision par persistance). Particulièrement utile pour les séries temporelles saisonnières.
 
 - **Theil's U** : Mesure la précision relative d'un modèle par rapport à une prévision naïve, avec des valeurs entre 0 et 1 indiquant une performance supérieure à la méthode naïve.
 

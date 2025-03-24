@@ -45,7 +45,7 @@ Les techniques d'interprétabilité se divisent en deux catégories principales:
 
 2. **Méthodes d'explicabilité post-hoc**: Ces techniques expliquent les décisions des modèles complexes après leur entraînement:
    - LIME (Local Interpretable Model-agnostic Explanations)
-   - SHAP (SHapley Additive exPlanations)
+   - [SHAP](https://fr.wikipedia.org/wiki/SHAP) (SHapley Additive exPlanations)
    - Cartes de saillance et visualisation des caractéristiques activées
    - Contre-exemples et exemples contrastifs
 

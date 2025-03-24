@@ -26,16 +26,16 @@ La régression linéaire est un modèle statistique qui établit une relation li
 ## Détails
 
 ### Formes du modèle
-- **Régression linéaire simple**: utilise une seule variable explicative (y = β₀ + β₁x + ε)
-- **Régression linéaire multiple**: utilise plusieurs variables explicatives
+- **[Régression linéaire simple](https://fr.wikipedia.org/wiki/Régression_linéaire_simple)**: utilise une seule variable explicative (y = β₀ + β₁x + ε)
+- **[Régression linéaire multiple](https://fr.wikipedia.org/wiki/Régression_linéaire_multiple)**: utilise plusieurs variables explicatives
 
 ### Estimation
 L'estimateur des moindres carrés ordinaires minimise la somme des carrés des résidus:
 - Sous forme matricielle: β̂ = (X'X)⁻¹X'y
 - Selon le théorème de Gauss-Markov, c'est le meilleur estimateur linéaire sans biais
 
-### Évaluation du modèle
-- **Coefficient de détermination (R²)**: mesure la proportion de variance expliquée par le modèle
+### [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) du modèle
+- **[Coefficient de détermination](https://fr.wikipedia.org/wiki/Coefficient_de_détermination) (R²)**: mesure la proportion de variance expliquée par le modèle
 - **Test de Fisher**: évalue la significativité globale du modèle
 - **Test de Student**: teste la significativité de chaque coefficient
 

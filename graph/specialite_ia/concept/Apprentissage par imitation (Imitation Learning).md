@@ -36,7 +36,7 @@ L'apprentissage par imitation se décline en plusieurs approches principales :
 
 **Behavioral Cloning (BC)** : La méthode la plus simple qui traite l'imitation comme un problème d'apprentissage supervisé. L'agent apprend directement une correspondance entre les états et les actions en imitant les démonstrations de l'expert. Bien que simple à mettre en œuvre, cette approche souffre du problème de "distribution shift" - l'agent peut dévier de la trajectoire optimale et se retrouver dans des états jamais rencontrés pendant l'entraînement.
 
-**Inverse Reinforcement Learning (IRL)** : Cette approche tente d'abord d'inférer la fonction de récompense implicite que l'expert optimise, puis utilise cette récompense reconstruite pour entraîner un agent par apprentissage par renforcement. L'IRL permet une meilleure généralisation mais est computationnellement plus intensive.
+**[Inverse Reinforcement Learning](https://fr.wikipedia.org/wiki/Inverse_Reinforcement_Learning) (IRL)** : Cette approche tente d'abord d'inférer la fonction de récompense implicite que l'expert optimise, puis utilise cette récompense reconstruite pour entraîner un agent par apprentissage par renforcement. L'IRL permet une meilleure généralisation mais est computationnellement plus intensive.
 
 **Generative Adversarial Imitation Learning (GAIL)** : Inspiré des réseaux antagonistes génératifs (GANs), GAIL entraîne simultanément un discriminateur qui distingue les comportements de l'expert de ceux de l'agent, et un générateur (l'agent) qui tente de produire des comportements indiscernables de ceux de l'expert. Cette méthode offre souvent de meilleures performances que le BC simple.
 

@@ -22,7 +22,7 @@ Le perceptron multicouche (PMC ou MLP pour Multi-Layer Perceptron en anglais) es
 
 - Architecture composée d'une couche d'entrée, une ou plusieurs couches cachées, et une couche de sortie
 - Utilise des fonctions d'activation non linéaires (comme la sigmoïde, tanh ou ReLU) pour traiter les données
-- Apprentissage par rétropropagation du gradient pour ajuster les poids des connexions
+- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par rétropropagation du gradient pour ajuster les poids des connexions
 - Capable de résoudre des problèmes non linéairement séparables, contrairement au perceptron simple
 - Forme la base de l'apprentissage profond moderne lorsqu'il comporte de nombreuses couches cachées
 
@@ -34,7 +34,7 @@ Un perceptron multicouche est structuré en couches successives de neurones. Cha
 
 Chaque connexion entre deux neurones possède un poids qui détermine l'importance du signal transmis. Chaque neurone applique une fonction d'activation à la somme pondérée de ses entrées pour produire sa sortie. Les fonctions d'activation non linéaires comme la sigmoïde, la tangente hyperbolique (tanh) ou la ReLU (Rectified Linear Unit) permettent au réseau de modéliser des relations complexes.
 
-### Apprentissage par rétropropagation
+### [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par rétropropagation
 
 L'apprentissage d'un perceptron multicouche se fait généralement par l'algorithme de rétropropagation du gradient (backpropagation). Ce processus comporte deux phases principales :
 
@@ -47,8 +47,8 @@ L'objectif est de minimiser une fonction de coût (ou fonction de perte) qui mes
 
 Le perceptron multicouche est utilisé dans de nombreux domaines :
 
-- Classification d'images et reconnaissance de formes
-- Prévision de séries temporelles
+- [Classification](https://fr.wikipedia.org/wiki/Classification) d'images et reconnaissance de formes
+- [Prévision](https://fr.wikipedia.org/wiki/Prévision) de séries temporelles
 - Traitement du langage naturel
 - Approximation de fonctions complexes
 - Systèmes de recommandation
@@ -56,7 +56,7 @@ Le perceptron multicouche est utilisé dans de nombreux domaines :
 ### Limites et évolutions
 
 Malgré sa puissance, le perceptron multicouche présente certaines limitations :
-- Risque de surapprentissage (overfitting) sur des données d'entraînement limitées
+- [Risque](https://fr.wikipedia.org/wiki/Risque) de surapprentissage (overfitting) sur des données d'entraînement limitées
 - Difficulté à déterminer l'architecture optimale (nombre de couches et de neurones)
 - Problèmes de disparition ou d'explosion du gradient dans les réseaux profonds
 

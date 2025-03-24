@@ -28,7 +28,7 @@ Les auto-encodeurs pour la réduction de bruit (Denoising Autoencoders ou DAE) s
 
 ## Détails
 
-Le fonctionnement d'un auto-encodeur débruiteur repose sur un processus en trois étapes. Premièrement, les données d'origine sont artificiellement corrompues par l'ajout de bruit (par exemple, en ajoutant un bruit gaussien, en masquant aléatoirement certaines parties, ou en appliquant d'autres types de perturbations). Deuxièmement, ces données bruitées sont passées à travers l'encodeur qui les compresse en une représentation latente de dimension inférieure. Troisièmement, le décodeur tente de reconstruire les données originales non bruitées à partir de cette représentation latente.
+Le fonctionnement d'un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) débruiteur repose sur un processus en trois étapes. Premièrement, les données d'origine sont artificiellement corrompues par l'ajout de bruit (par exemple, en ajoutant un bruit gaussien, en masquant aléatoirement certaines parties, ou en appliquant d'autres types de perturbations). Deuxièmement, ces données bruitées sont passées à travers l'encodeur qui les compresse en une représentation latente de dimension inférieure. Troisièmement, le décodeur tente de reconstruire les données originales non bruitées à partir de cette représentation latente.
 
 La fonction de perte typiquement utilisée est l'erreur quadratique moyenne entre la sortie reconstruite et les données originales propres (non les données bruitées). Cette approche force le réseau à apprendre à distinguer le signal du bruit plutôt que de simplement copier l'entrée.
 

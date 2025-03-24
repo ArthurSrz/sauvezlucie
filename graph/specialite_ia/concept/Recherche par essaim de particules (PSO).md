@@ -24,11 +24,11 @@ La Recherche par Essaim de Particules (Particle Swarm Optimization ou PSO) est u
 
 ## Points clés
 
-- Algorithme bio-inspiré qui exploite l'intelligence collective d'un groupe de particules pour explorer efficacement un espace de solutions
+- [Algorithme](https://fr.wikipedia.org/wiki/Algorithme) bio-inspiré qui exploite l'intelligence collective d'un groupe de particules pour explorer efficacement un espace de solutions
 - Chaque particule ajuste sa position en fonction de sa propre expérience (meilleure position personnelle) et de l'expérience du groupe (meilleure position globale)
 - Particulièrement efficace pour les problèmes d'optimisation non linéaires et dans les espaces de recherche continus
 - Facile à implémenter avec peu de paramètres à ajuster (vitesse d'inertie, coefficients d'apprentissage personnel et social)
-- Converge généralement plus rapidement que d'autres algorithmes évolutionnaires pour de nombreux problèmes d'optimisation
+- [Converge](https://fr.wikipedia.org/wiki/Converge) généralement plus rapidement que d'autres algorithmes évolutionnaires pour de nombreux problèmes d'optimisation
 
 ## Détails
 

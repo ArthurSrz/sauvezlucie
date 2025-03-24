@@ -15,12 +15,12 @@ subClassOf: '[[Les auto-encodeurs]]'
 ---
 ## Généralité
 
-Un auto-encodeur contractif (CAE - Contractive Autoencoder) est une variante spécialisée des auto-encodeurs qui ajoute une contrainte de régularisation particulière pendant l'apprentissage. Son objectif principal est de rendre la représentation apprise robuste aux petites variations dans les données d'entrée, ce qui permet d'extraire des caractéristiques plus stables et plus significatives.
+Un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) contractif (CAE - Contractive Autoencoder) est une variante spécialisée des auto-encodeurs qui ajoute une contrainte de régularisation particulière pendant l'apprentissage. Son objectif principal est de rendre la représentation apprise robuste aux petites variations dans les données d'entrée, ce qui permet d'extraire des caractéristiques plus stables et plus significatives.
 
 ## Points clés
 
 - Utilise un terme de régularisation basé sur la norme de la matrice jacobienne pour encourager la robustesse des représentations
-- Combine les avantages des auto-encodeurs débruitants et des auto-encodeurs classiques
+- [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages des auto-encodeurs débruitants et des auto-encodeurs classiques
 - Produit des représentations invariantes aux petites perturbations locales des données d'entrée
 - Particulièrement efficace pour l'apprentissage de manifolds de données complexes
 
@@ -50,7 +50,7 @@ Les auto-encodeurs contractifs sont particulièrement utiles dans :
 
 ### Limitations
 - Complexité computationnelle accrue due au calcul de la matrice jacobienne
-- Nécessité d'un réglage précis de l'hyperparamètre de régularisation
+- [Nécessité](https://fr.wikipedia.org/wiki/Nécessité) d'un réglage précis de l'hyperparamètre de régularisation
 - Peut être plus difficile à optimiser que les auto-encodeurs classiques
 
 Cette approche s'est révélée particulièrement efficace dans des domaines où la robustesse des représentations est cruciale, comme la reconnaissance d'images et le traitement du signal.

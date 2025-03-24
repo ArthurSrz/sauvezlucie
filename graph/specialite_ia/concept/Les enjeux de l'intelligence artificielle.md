@@ -38,7 +38,7 @@ Les enjeux de l'intelligence artificielle touchent à de nombreux domaines essen
 
 L'intégration croissante de l'IA dans nos vies quotidiennes soulève des questions fondamentales:
 
-- **Éthique et responsabilité**: Qui est responsable des décisions prises par des systèmes autonomes? Comment établir un cadre éthique adapté aux spécificités de l'IA?
+- **[Éthique](https://fr.wikipedia.org/wiki/Éthique) et responsabilité**: Qui est responsable des décisions prises par des systèmes autonomes? Comment établir un cadre éthique adapté aux spécificités de l'IA?
   
 - **Biais et discrimination**: Les systèmes d'IA, entraînés sur des données historiques reflétant les inégalités sociales, risquent de perpétuer voire d'amplifier ces biais dans leurs décisions.
   
@@ -56,7 +56,7 @@ L'IA transforme profondément le monde du travail et les modèles économiques:
   
 - **Développement durable**: L'empreinte environnementale croissante des infrastructures d'IA (centres de données, consommation énergétique) pose question face aux enjeux climatiques.
 
-### Gouvernance et régulation
+### [Gouvernance](https://fr.wikipedia.org/wiki/Gouvernance) et régulation
 
 Le développement rapide de l'IA appelle à des réponses institutionnelles adaptées:
 

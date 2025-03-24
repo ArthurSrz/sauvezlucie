@@ -17,7 +17,7 @@ subClassOf: '[[Entreprises technologiques et géants du numérique dans le domai
 ---
 ##Généralité
 
-Google est une entreprise technologique multinationale américaine fondée en 1998 par Larry Page et Sergey Brin. Initialement conçue comme un moteur de recherche, Google s'est développée pour devenir l'une des plus grandes entreprises technologiques au monde, offrant une multitude de produits et services dans les domaines de la recherche en ligne, du cloud computing, des logiciels, de la publicité en ligne, et du matériel informatique. En 2015, Google est devenue une filiale d'Alphabet Inc., une holding créée pour restructurer l'entreprise.
+[Google](https://fr.wikipedia.org/wiki/Google) est une entreprise technologique multinationale américaine fondée en 1998 par [Larry Page](https://fr.wikipedia.org/wiki/Larry_Page) et [Sergey Brin](https://fr.wikipedia.org/wiki/Sergey_Brin). Initialement conçue comme un moteur de recherche, Google s'est développée pour devenir l'une des plus grandes entreprises technologiques au monde, offrant une multitude de produits et services dans les domaines de la recherche en ligne, du cloud computing, des logiciels, de la publicité en ligne, et du matériel informatique. En 2015, Google est devenue une filiale d'[Alphabet](https://fr.wikipedia.org/wiki/Alphabet) Inc., une holding créée pour restructurer l'entreprise.
 
 ## Points clés
 
@@ -25,13 +25,13 @@ Google est une entreprise technologique multinationale américaine fondée en 19
 - Propriétaire de nombreux services populaires comme Gmail, Google Maps, YouTube, Android et Google Cloud
 - Modèle économique principalement basé sur la publicité en ligne via Google Ads
 - Pionnier dans les domaines de l'intelligence artificielle et de l'apprentissage automatique
-- Acteur majeur dans le développement des technologies d'information et de communication
+- [Acteur](https://fr.wikipedia.org/wiki/Acteur) majeur dans le développement des technologies d'information et de communication
 
 ## Détails
 
 ### Histoire et évolution
 
-Fondée dans un garage en Californie, Google a connu une croissance fulgurante grâce à son algorithme PageRank qui a révolutionné la pertinence des résultats de recherche. L'entreprise est entrée en bourse en 2004 et a rapidement diversifié ses activités par le développement interne et l'acquisition de nombreuses entreprises.
+Fondée dans un garage en [Californie](https://fr.wikipedia.org/wiki/Californie), Google a connu une croissance fulgurante grâce à son algorithme PageRank qui a révolutionné la pertinence des résultats de recherche. L'entreprise est entrée en bourse en 2004 et a rapidement diversifié ses activités par le développement interne et l'acquisition de nombreuses entreprises.
 
 ### Produits et services principaux
 
@@ -45,7 +45,7 @@ Google propose un écosystème complet de services interconnectés :
 
 ### Modèle économique
 
-Le modèle économique de Google repose principalement sur la publicité ciblée. En 2022, plus de 80% des revenus d'Alphabet provenaient de la publicité. Google collecte des données sur les utilisateurs pour proposer des publicités personnalisées via ses plateformes comme Google Search et YouTube.
+Le modèle économique de Google repose principalement sur la publicité ciblée. En 2022, plus de 80% des revenus d'[Alphabet](https://fr.wikipedia.org/wiki/Alphabet) provenaient de la publicité. Google collecte des données sur les utilisateurs pour proposer des publicités personnalisées via ses plateformes comme Google Search et YouTube.
 
 ### Influence et controverses
 
@@ -61,7 +61,7 @@ Google investit massivement dans la recherche et le développement, notamment vi
 - L'intelligence artificielle et l'apprentissage profond
 - L'informatique quantique
 - Les technologies de santé
-- Les véhicules autonomes (via Waymo)
+- Les véhicules autonomes (via [Waymo](https://fr.wikipedia.org/wiki/Waymo))
 - Les technologies durables et l'énergie renouvelable
 
 Google continue d'exercer une influence considérable sur l'évolution d'Internet et des technologies numériques, façonnant la manière dont nous accédons à l'information, communiquons et interagissons avec la technologie au quotidien.

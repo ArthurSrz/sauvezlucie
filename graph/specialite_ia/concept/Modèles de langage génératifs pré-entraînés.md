@@ -34,7 +34,7 @@ Les modèles de langage génératifs pré-entraînés (ou Pre-trained Generative
 
 ### Architecture et fonctionnement
 
-La plupart des modèles de langage génératifs modernes reposent sur l'architecture Transformer, introduite par Google en 2017. Cette architecture utilise des mécanismes d'attention qui permettent au modèle de se concentrer sur différentes parties du texte d'entrée lors de la génération de chaque mot de sortie. Les modèles comme GPT (Generative Pre-trained Transformer), BERT, T5 ou LLaMA sont tous basés sur cette architecture, avec des variations dans leur conception.
+La plupart des modèles de langage génératifs modernes reposent sur l'architecture Transformer, introduite par [Google](https://fr.wikipedia.org/wiki/Google) en 2017. Cette architecture utilise des mécanismes d'attention qui permettent au modèle de se concentrer sur différentes parties du texte d'entrée lors de la génération de chaque mot de sortie. Les modèles comme GPT ([Generative Pre-trained Transformer](https://fr.wikipedia.org/wiki/Generative_Pre-trained_Transformer)), BERT, T5 ou LLaMA sont tous basés sur cette architecture, avec des variations dans leur conception.
 
 Le processus de pré-entraînement consiste à exposer le modèle à des milliards, voire des trillions de mots provenant de sources diverses comme des livres, des articles, des sites web ou des conversations. Durant cette phase, le modèle apprend à prédire le mot suivant dans une séquence (modèles auto-régressifs comme GPT) ou à reconstituer des mots masqués (modèles comme BERT).
 

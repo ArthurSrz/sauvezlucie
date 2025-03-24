@@ -28,7 +28,7 @@ Le choix de la mesure d'erreur détermine comment évaluer et quantifier les per
 ## Points clés
 
 - Doit être alignée avec l'objectif métier du projet d'IA
-- Varie selon le type de problème (classification, régression, ranking, etc.)
+- [Varie](https://fr.wikipedia.org/wiki/Varie) selon le type de problème (classification, régression, ranking, etc.)
 - Influence directement le comportement du modèle pendant l'apprentissage
 - Peut nécessiter des ajustements pour les cas déséquilibrés ou les coûts d'erreur asymétriques
 
@@ -46,7 +46,7 @@ Pour les problèmes prédisant des valeurs continues:
   
 - **Erreur Relative Moyenne (MAPE)**: Exprime l'erreur en pourcentage relatif à la valeur réelle, utile quand l'échelle des valeurs est importante.
   
-- **R²**: Coefficient de détermination indiquant la proportion de variance expliquée par le modèle. Varie entre 0 et 1 (ou négatif si le modèle est pire qu'une simple moyenne).
+- **R²**: Coefficient de détermination indiquant la proportion de variance expliquée par le modèle. [Varie](https://fr.wikipedia.org/wiki/Varie) entre 0 et 1 (ou négatif si le modèle est pire qu'une simple moyenne).
 
 ### Métriques pour les problèmes de classification
 

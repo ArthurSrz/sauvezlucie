@@ -43,11 +43,11 @@ L'initialisation des centroïdes peut influencer considérablement le résultat 
 
 Bien que K-means soit populaire, il présente certaines limitations, notamment sa sensibilité aux valeurs aberrantes et sa tendance à créer des clusters de taille similaire et de forme sphérique. D'autres algorithmes de clustering offrent des alternatives :
 
-- **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) : identifie les clusters comme des zones de haute densité séparées par des zones de faible densité, sans nécessiter de spécifier le nombre de clusters
+- **DBSCAN** (Density-Based Spatial Clustering of Applications with [Noise](https://fr.wikipedia.org/wiki/Noise)) : identifie les clusters comme des zones de haute densité séparées par des zones de faible densité, sans nécessiter de spécifier le nombre de clusters
 - **Clustering hiérarchique** : construit une hiérarchie de clusters, soit par agglomération (bottom-up) soit par division (top-down)
 - **Gaussian Mixture Models (GMM)** : modélise les clusters comme un mélange de distributions gaussiennes
 - **Mean-shift** : algorithme non paramétrique qui ne nécessite pas de spécifier le nombre de clusters
-- **OPTICS** : extension de DBSCAN qui gère mieux les clusters de densités variables
+- **[OPTICS](https://fr.wikipedia.org/wiki/OPTICS)** : extension de DBSCAN qui gère mieux les clusters de densités variables
 
 ### Évaluation des clusters
 

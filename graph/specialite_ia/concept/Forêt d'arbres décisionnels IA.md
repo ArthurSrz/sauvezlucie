@@ -20,7 +20,7 @@ Une forêt d'arbres décisionnels (Random Forest) est un algorithme d'apprentiss
 
 ## Points clés
 
-- Combine plusieurs arbres de décision entraînés sur différents sous-ensembles de données (bagging)
+- [Combine](https://fr.wikipedia.org/wiki/Combine) plusieurs arbres de décision entraînés sur différents sous-ensembles de données (bagging)
 - Réduit significativement le risque de surapprentissage par rapport à un arbre de décision unique
 - Fournit une mesure d'importance des variables qui aide à l'interprétabilité du modèle
 - Performant sur des données à haute dimensionnalité et des ensembles de données déséquilibrés
@@ -49,7 +49,7 @@ La prédiction finale est obtenue par vote majoritaire (pour la classification) 
 
 - **Interprétabilité réduite** : Bien que l'importance des variables soit fournie, le modèle global est moins interprétable qu'un arbre unique
 - **Ressources computationnelles** : Nécessite plus de mémoire et de puissance de calcul que les modèles simples
-- **Prédictions limitées à la plage des données d'entraînement** : Pour les problèmes de régression, les prédictions sont bornées par les valeurs observées
+- **[Prédictions](https://fr.wikipedia.org/wiki/Prédictions) limitées à la plage des données d'entraînement** : Pour les problèmes de régression, les prédictions sont bornées par les valeurs observées
 
 ### Hyperparamètres importants
 
@@ -66,6 +66,6 @@ Les forêts d'arbres décisionnels sont largement utilisées dans divers domaine
 - Prédiction de maladies en médecine
 - Analyse de sentiments
 - Systèmes de recommandation
-- Prévision de la demande en logistique et commerce
+- [Prévision](https://fr.wikipedia.org/wiki/Prévision) de la demande en logistique et commerce
 
 Cette méthode reste l'un des algorithmes les plus polyvalents et efficaces en apprentissage automatique, souvent utilisé comme référence pour évaluer d'autres approches plus complexes.

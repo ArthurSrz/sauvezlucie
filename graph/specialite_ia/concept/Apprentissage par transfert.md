@@ -34,7 +34,7 @@ L'apprentissage par transfert repose sur l'idée que les caractéristiques appri
 
 1. **Transfert inductif** : les domaines source et cible sont les mêmes, mais les tâches diffèrent.
 2. **Transfert transductif** : les tâches source et cible sont les mêmes, mais les domaines diffèrent.
-3. **Apprentissage non supervisé par transfert** : similaire au transfert inductif, mais se concentre sur des tâches non supervisées.
+3. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) non supervisé par transfert** : similaire au transfert inductif, mais se concentre sur des tâches non supervisées.
 
 ### Méthodes courantes
 
@@ -45,7 +45,7 @@ L'apprentissage par transfert repose sur l'idée que les caractéristiques appri
 ### Applications pratiques
 
 L'apprentissage par transfert est largement utilisé dans:
-- **Vision par ordinateur** : Des modèles comme ResNet, VGG ou Inception pré-entraînés sur ImageNet sont adaptés à des tâches spécifiques.
+- **Vision par ordinateur** : Des modèles comme ResNet, VGG ou Inception pré-entraînés sur [ImageNet](https://fr.wikipedia.org/wiki/ImageNet) sont adaptés à des tâches spécifiques.
 - **Traitement du langage naturel** : Des modèles comme BERT, GPT ou Word2Vec sont affinés pour des tâches spécifiques comme la classification de texte ou la réponse aux questions.
 - **Reconnaissance vocale** : Des modèles pré-entraînés sur de grandes quantités de données audio sont adaptés à des langues ou accents spécifiques.
 

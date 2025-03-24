@@ -18,7 +18,7 @@ isPartOf: '[[Arbre de décision]]'
 ---
 ## Généralité
 
-CHAID (CHi-squared Automatic Interaction Detector) est une technique d'analyse prédictive et de segmentation qui appartient à la famille des arbres de décision. Développée par Gordon V. Kass en 1980, cette méthode permet d'identifier les relations entre variables catégorielles et de créer des segments homogènes en fonction de la variable cible. CHAID utilise le test du chi-carré (χ²) comme critère statistique pour déterminer les meilleures divisions dans l'arbre, ce qui le rend particulièrement adapté aux variables qualitatives.
+[CHAID](https://fr.wikipedia.org/wiki/CHAID) (CHi-squared Automatic Interaction Detector) est une technique d'analyse prédictive et de segmentation qui appartient à la famille des arbres de décision. Développée par Gordon V. Kass en 1980, cette méthode permet d'identifier les relations entre variables catégorielles et de créer des segments homogènes en fonction de la variable cible. CHAID utilise le test du chi-carré (χ²) comme critère statistique pour déterminer les meilleures divisions dans l'arbre, ce qui le rend particulièrement adapté aux variables qualitatives.
 
 ## Points clés
 
@@ -37,7 +37,7 @@ Le processus CHAID se déroule en trois étapes principales :
 
 2. **Division** : CHAID sélectionne le prédicteur ayant la plus forte interaction avec la variable cible (selon la p-value du test du chi-carré) pour créer une division.
 
-3. **Arrêt** : Le processus continue récursivement sur chaque sous-groupe jusqu'à ce qu'aucune division significative ne puisse être trouvée ou que les critères d'arrêt soient atteints (profondeur maximale, taille minimale des nœuds, etc.).
+3. **Arrêt** : Le processus continue récursivement sur chaque [sous-groupe](https://fr.wikipedia.org/wiki/sous-groupe) jusqu'à ce qu'aucune division significative ne puisse être trouvée ou que les critères d'arrêt soient atteints (profondeur maximale, taille minimale des nœuds, etc.).
 
 ### Avantages et limites
 
@@ -50,7 +50,7 @@ Le processus CHAID se déroule en trois étapes principales :
 **Limites :**
 - Moins performant avec des variables continues (nécessite une discrétisation préalable)
 - Sensibilité aux petits échantillons où le test du chi-carré peut être moins fiable
-- Risque de surapprentissage si les critères d'arrêt ne sont pas bien paramétrés
+- [Risque](https://fr.wikipedia.org/wiki/Risque) de surapprentissage si les critères d'arrêt ne sont pas bien paramétrés
 - Instabilité potentielle : de petits changements dans les données peuvent produire des arbres très différents
 
 ### Applications pratiques

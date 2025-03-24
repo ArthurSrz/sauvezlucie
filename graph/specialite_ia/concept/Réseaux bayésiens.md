@@ -18,7 +18,7 @@ relatedTo: '[[Apprentissage supervisé]]'
 ---
 ## Généralité
 
-Les réseaux bayésiens sont des modèles graphiques probabilistes qui représentent des variables aléatoires et leurs dépendances conditionnelles via un graphe orienté acyclique (DAG). Nommés d'après Thomas Bayes, ces réseaux combinent la théorie des graphes et la théorie des probabilités pour modéliser l'incertitude dans des systèmes complexes. Ils permettent de calculer la probabilité d'événements en fonction d'observations partielles et de connaissances préalables, ce qui en fait des outils puissants pour le raisonnement sous incertitude.
+Les réseaux bayésiens sont des modèles graphiques probabilistes qui représentent des variables aléatoires et leurs dépendances conditionnelles via un graphe orienté acyclique (DAG). Nommés d'après [Thomas Bayes](https://fr.wikipedia.org/wiki/Thomas_Bayes), ces réseaux combinent la théorie des graphes et la théorie des probabilités pour modéliser l'incertitude dans des systèmes complexes. Ils permettent de calculer la probabilité d'événements en fonction d'observations partielles et de connaissances préalables, ce qui en fait des outils puissants pour le raisonnement sous incertitude.
 
 ## Points clés
 
@@ -39,8 +39,8 @@ Pour construire un réseau bayésien, deux éléments sont nécessaires :
 2. Les paramètres numériques (tables de probabilités conditionnelles pour chaque nœud)
 
 L'apprentissage de ces réseaux peut se faire de plusieurs façons :
-- Apprentissage des paramètres : estimation des probabilités conditionnelles à partir de données
-- Apprentissage de structure : détermination des relations de dépendance entre variables
+- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) des paramètres : estimation des probabilités conditionnelles à partir de données
+- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) de structure : détermination des relations de dépendance entre variables
 - Approche hybride : combinaison de connaissances d'experts et d'apprentissage automatique
 
 Les réseaux bayésiens sont utilisés dans de nombreux domaines :

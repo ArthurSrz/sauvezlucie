@@ -21,23 +21,23 @@ relatedTo: '[[Entreprises technologiques et géants du numérique dans le domain
 ---
 ##Généralité
 
-Yann LeCun est un informaticien français, né le 8 juillet 1960 à Soisy-sous-Montmorency. Il est considéré comme l'un des pionniers et leaders mondiaux dans le domaine de l'intelligence artificielle, particulièrement en apprentissage profond (deep learning) et en réseaux de neurones convolutifs. Actuellement, il occupe le poste de Chief AI Scientist chez Meta (anciennement Facebook) et est professeur à l'Université de New York. En 2018, il a reçu le prix Turing, considéré comme le "Nobel de l'informatique", conjointement avec Geoffrey Hinton et Yoshua Bengio, formant ce que l'on appelle souvent les "parrains du deep learning".
+Yann LeCun est un informaticien français, né le 8 juillet 1960 à [Soisy-sous-Montmorency](https://fr.wikipedia.org/wiki/Soisy-sous-Montmorency). Il est considéré comme l'un des pionniers et leaders mondiaux dans le domaine de l'intelligence artificielle, particulièrement en apprentissage profond (deep learning) et en réseaux de neurones convolutifs. Actuellement, il occupe le poste de Chief AI Scientist chez Meta (anciennement Facebook) et est professeur à l'[Université de New York](https://fr.wikipedia.org/wiki/Université_de_New_York). En 2018, il a reçu le prix Turing, considéré comme le "Nobel de l'informatique", conjointement avec [Geoffrey Hinton](https://fr.wikipedia.org/wiki/Geoffrey_Hinton) et [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio), formant ce que l'on appelle souvent les "parrains du deep learning".
 
 ## Points clés
 
 - Co-lauréat du prix Turing 2018 pour ses contributions fondamentales à l'apprentissage profond
-- Inventeur des réseaux de neurones convolutifs (CNN), technologie fondamentale pour la reconnaissance d'images et la vision par ordinateur
+- [Inventeur](https://fr.wikipedia.org/wiki/Inventeur) des réseaux de neurones convolutifs (CNN), technologie fondamentale pour la reconnaissance d'images et la vision par ordinateur
 - Directeur scientifique de l'IA chez Meta (Facebook) depuis 2013
 - Défenseur d'une approche de l'IA basée sur l'apprentissage auto-supervisé et critique du tout-transformers
-- Membre de l'Académie des sciences française et de l'Académie nationale d'ingénierie américaine
+- Membre de l'[Académie des sciences française](https://fr.wikipedia.org/wiki/Académie_des_sciences_française) et de l'Académie nationale d'ingénierie américaine
 
 ## Détails
 
 ### Parcours académique et professionnel
 
-Yann LeCun a obtenu un diplôme d'ingénieur de l'ESIEE Paris en 1983 et un doctorat en informatique de l'Université Pierre et Marie Curie en 1987. Après un post-doctorat à l'Université de Toronto auprès de Geoffrey Hinton, il a rejoint les Bell Labs en 1988, où il a développé certains de ses travaux les plus influents.
+Yann LeCun a obtenu un diplôme d'ingénieur de l'[ESIEE Paris](https://fr.wikipedia.org/wiki/ESIEE_Paris) en 1983 et un doctorat en informatique de l'Université Pierre et [Marie Curie](https://fr.wikipedia.org/wiki/Marie_Curie) en 1987. Après un post-doctorat à l'[Université de Toronto](https://fr.wikipedia.org/wiki/Université_de_Toronto) auprès de [Geoffrey Hinton](https://fr.wikipedia.org/wiki/Geoffrey_Hinton), il a rejoint les Bell Labs en 1988, où il a développé certains de ses travaux les plus influents.
 
-En 1996, il devient chef du département de recherche en apprentissage machine chez AT&T Labs. En 2003, il rejoint l'Université de New York comme professeur d'informatique et de sciences neuronales. En 2013, Mark Zuckerberg le recrute pour diriger le laboratoire de recherche en IA de Facebook (devenu Meta), tout en conservant son poste à NYU.
+En 1996, il devient chef du département de recherche en apprentissage machine chez AT&T Labs. En 2003, il rejoint l'[Université de New York](https://fr.wikipedia.org/wiki/Université_de_New_York) comme professeur d'informatique et de sciences neuronales. En 2013, [Mark Zuckerberg](https://fr.wikipedia.org/wiki/Mark_Zuckerberg) le recrute pour diriger le laboratoire de recherche en IA de Facebook (devenu Meta), tout en conservant son poste à NYU.
 
 ### Contributions scientifiques majeures
 
@@ -51,7 +51,7 @@ LeCun est connu pour sa vision distinctive de l'avenir de l'IA. Contrairement à
 
 Il travaille actuellement sur le concept de "World Models" ou modèles du monde, des systèmes d'IA capables de prédire et de comprendre leur environnement de manière similaire aux humains. Il a également développé le framework d'apprentissage par énergie (Energy-Based Learning), une approche unifiée pour divers algorithmes d'apprentissage machine.
 
-### Impact et héritage
+### [Impact](https://fr.wikipedia.org/wiki/Impact) et héritage
 
 L'influence de Yann LeCun dépasse largement le cadre académique. Ses innovations ont contribué à la renaissance de l'IA dans les années 2010 et ont transformé des industries entières. Il est également connu pour son engagement en faveur de la recherche ouverte, ayant rendu publiques de nombreuses bibliothèques logicielles et ensembles de données.
 

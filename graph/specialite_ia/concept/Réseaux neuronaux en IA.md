@@ -41,15 +41,15 @@ L'apprentissage d'un réseau neuronal se déroule généralement en trois phases
 2. **Calcul de l'erreur**: comparaison entre la sortie prédite et la sortie attendue
 3. **Rétropropagation**: ajustement des poids synaptiques en remontant le réseau pour minimiser l'erreur
 
-Ce processus est répété sur de nombreux exemples (époques) jusqu'à ce que le réseau atteigne une performance satisfaisante. L'optimisation utilise généralement des variantes de la descente de gradient comme Adam ou SGD.
+Ce processus est répété sur de nombreux exemples (époques) jusqu'à ce que le réseau atteigne une performance satisfaisante. L'optimisation utilise généralement des variantes de la descente de gradient comme [Adam](https://fr.wikipedia.org/wiki/Adam) ou SGD.
 
 ### Principales architectures
 
-- **Perceptron multicouche (MLP)**: architecture de base avec des couches entièrement connectées
+- **[Perceptron](https://fr.wikipedia.org/wiki/Perceptron) multicouche (MLP)**: architecture de base avec des couches entièrement connectées
 - **Réseaux convolutifs (CNN)**: spécialisés dans le traitement d'images grâce à des filtres qui détectent des caractéristiques locales
 - **Réseaux récurrents (RNN)**: adaptés aux données séquentielles avec des connexions formant des boucles
 - **LSTM/GRU**: variantes de RNN conçues pour capturer les dépendances à long terme
-- **Transformers**: architecture basée sur l'attention qui a révolutionné le traitement du langage naturel
+- **[Transformers](https://fr.wikipedia.org/wiki/Transformers)**: architecture basée sur l'attention qui a révolutionné le traitement du langage naturel
 - **Réseaux antagonistes génératifs (GAN)**: deux réseaux en compétition pour générer des données synthétiques réalistes
 
 ### Applications majeures
@@ -65,7 +65,7 @@ Les réseaux neuronaux sont au cœur de nombreuses avancées en IA:
 ### Défis et limitations
 
 Malgré leurs performances impressionnantes, les réseaux neuronaux présentent certaines limitations:
-- Besoin de grandes quantités de données d'entraînement
+- [Besoin](https://fr.wikipedia.org/wiki/Besoin) de grandes quantités de données d'entraînement
 - Coût computationnel élevé
 - Manque d'interprétabilité ("boîte noire")
 - Vulnérabilité aux attaques adverses

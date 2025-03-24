@@ -26,7 +26,7 @@ L'algorithme du gradient (ou descente de gradient) est une méthode d'optimisati
 - L'algorithme du gradient modifie itérativement les paramètres dans la direction opposée au gradient pour minimiser une fonction de coût
 - Il existe plusieurs variantes: gradient batch, stochastique (SGD) et mini-batch
 - Le taux d'apprentissage est un hyperparamètre crucial qui détermine la taille des pas d'optimisation
-- Des techniques comme le momentum, RMSprop et Adam améliorent la convergence et évitent les minima locaux
+- Des techniques comme le momentum, RMSprop et [Adam](https://fr.wikipedia.org/wiki/Adam) améliorent la convergence et évitent les minima locaux
 
 ## Détails
 
@@ -57,7 +57,7 @@ Pour surmonter ces limitations, plusieurs améliorations ont été développées
 
 - **Momentum**: Ajoute une fraction du vecteur de mise à jour précédent pour accélérer la convergence et éviter les oscillations
 - **RMSprop**: Adapte le taux d'apprentissage pour chaque paramètre en fonction de l'historique des gradients
-- **Adam**: Combine les avantages du momentum et de RMSprop pour une optimisation plus efficace
+- **[Adam](https://fr.wikipedia.org/wiki/Adam)**: [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages du momentum et de RMSprop pour une optimisation plus efficace
 
 ### Applications
 

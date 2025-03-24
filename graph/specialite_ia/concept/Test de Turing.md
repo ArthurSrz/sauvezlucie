@@ -18,7 +18,7 @@ isPartOf: '[[La philosophie de l''intelligence artificielle]]'
 ---
 ##Généralité
 
-Le test de Turing est une méthode d'évaluation proposée par le mathématicien et informaticien britannique Alan Turing en 1950 pour déterminer si une machine peut démontrer un comportement intelligent équivalent à celui d'un être humain. Dans son article "Computing Machinery and Intelligence", Turing propose ce test comme une façon de répondre à la question "Les machines peuvent-elles penser?", en remplaçant cette question philosophique par un test empirique plus concret.
+Le test de Turing est une méthode d'évaluation proposée par le mathématicien et informaticien britannique [Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) en 1950 pour déterminer si une machine peut démontrer un comportement intelligent équivalent à celui d'un être humain. Dans son article "Computing Machinery and Intelligence", Turing propose ce test comme une façon de répondre à la question "Les machines peuvent-elles penser?", en remplaçant cette question philosophique par un test empirique plus concret.
 
 ## Points clés
 
@@ -35,12 +35,12 @@ Dans sa forme classique, le test de Turing se déroule comme suit : un évaluate
 
 ### Contexte historique
 
-Alan Turing a proposé ce test en 1950, à une époque où l'informatique en était à ses balbutiements. Il a estimé qu'à l'horizon 2000, des machines disposant de 100 Mo de mémoire pourraient tromper 30% des juges lors d'un test de 5 minutes. Cette prédiction s'est révélée remarquablement perspicace, bien que le développement de l'IA ait suivi un chemin différent de celui qu'il avait imaginé.
+[Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) a proposé ce test en 1950, à une époque où l'informatique en était à ses balbutiements. Il a estimé qu'à l'horizon 2000, des machines disposant de 100 Mo de mémoire pourraient tromper 30% des juges lors d'un test de 5 minutes. Cette prédiction s'est révélée remarquablement perspicace, bien que le développement de l'IA ait suivi un chemin différent de celui qu'il avait imaginé.
 
 ### Critiques et limites
 
 Le test de Turing a fait l'objet de nombreuses critiques :
-- L'argument de la "chambre chinoise" de John Searle suggère qu'une machine pourrait simuler la compréhension sans réellement comprendre
+- L'argument de la "chambre chinoise" de [John Searle](https://fr.wikipedia.org/wiki/John_Searle) suggère qu'une machine pourrait simuler la compréhension sans réellement comprendre
 - Le test se concentre uniquement sur le comportement linguistique, ignorant d'autres aspects de l'intelligence
 - Une machine pourrait réussir le test en imitant des comportements humains (comme faire des erreurs délibérées) sans posséder une véritable intelligence
 
@@ -51,8 +51,8 @@ Plusieurs variantes du test ont été proposées :
 - Le test de Loebner, un concours annuel basé sur le test de Turing
 - Le test de Winograd, qui se concentre sur la compréhension du langage naturel et la résolution d'ambiguïtés
 
-### Impact sur l'IA contemporaine
+### [Impact](https://fr.wikipedia.org/wiki/Impact) sur l'IA contemporaine
 
-Aujourd'hui, avec l'avènement des grands modèles de langage comme GPT, BERT et LaMDA, la capacité des machines à produire du texte indiscernable de celui d'un humain s'est considérablement améliorée. Cependant, la question demeure : cette capacité reflète-t-elle une véritable intelligence ou simplement une simulation convaincante? Le test de Turing continue d'alimenter ce débat fondamental dans le domaine de l'intelligence artificielle.
+Aujourd'hui, avec l'avènement des grands modèles de langage comme GPT, BERT et [LaMDA](https://fr.wikipedia.org/wiki/LaMDA), la capacité des machines à produire du texte indiscernable de celui d'un humain s'est considérablement améliorée. Cependant, la question demeure : cette capacité reflète-t-elle une véritable intelligence ou simplement une simulation convaincante? Le test de Turing continue d'alimenter ce débat fondamental dans le domaine de l'intelligence artificielle.
 
 Le test reste pertinent comme jalon dans le développement de l'IA, même si la communauté scientifique reconnaît désormais qu'il ne constitue qu'une mesure partielle de l'intelligence artificielle.

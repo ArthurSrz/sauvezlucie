@@ -50,8 +50,8 @@ L'analyse de sentiments peut être effectuée à différents niveaux de granular
 - **Négation et modificateurs**: "Ce n'est pas bon" ou "C'est à peine acceptable" nécessitent une compréhension de la façon dont certains mots modifient le sentiment.
 - **Sarcasme et ironie**: "Quelle journée merveilleuse" peut être positif ou sarcastique selon le contexte.
 - **Expressions idiomatiques**: "Ça coûte les yeux de la tête" ne peut pas être analysé littéralement.
-- **Ambiguïté lexicale**: Des mots comme "impressionnant" peuvent avoir différentes connotations selon le contexte.
-- **Multilinguisme**: Les outils développés pour une langue ne sont pas directement transférables à d'autres.
+- **[Ambiguïté](https://fr.wikipedia.org/wiki/Ambiguïté) lexicale**: Des mots comme "impressionnant" peuvent avoir différentes connotations selon le contexte.
+- **[Multilinguisme](https://fr.wikipedia.org/wiki/Multilinguisme)**: Les outils développés pour une langue ne sont pas directement transférables à d'autres.
 
 ### Applications pratiques
 

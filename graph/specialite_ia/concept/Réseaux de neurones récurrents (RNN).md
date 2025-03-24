@@ -48,7 +48,7 @@ y_t = g(W_hy · h_t + b_y)
 
 où f et g sont des fonctions d'activation, W représente les matrices de poids et b les biais.
 
-### Problèmes et limitations
+### [Problèmes](https://fr.wikipedia.org/wiki/Problèmes) et limitations
 
 Le principal défi des RNN classiques est leur difficulté à capturer les dépendances à long terme dans les séquences. Ce phénomène, connu sous le nom de problème de disparition ou d'explosion du gradient, se produit lors de la rétropropagation du gradient à travers de nombreuses couches temporelles. Lorsque les gradients deviennent trop petits, l'apprentissage devient inefficace; lorsqu'ils explosent, les poids oscillent de manière chaotique.
 

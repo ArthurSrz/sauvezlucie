@@ -51,7 +51,7 @@ Les techniques d'intelligence artificielle peuvent être catégorisées selon pl
    - **Raisonnement automatique**: Méthodes déductives, inférences et résolution de problèmes
    - **Planification**: Formulation et exécution de séquences d'actions pour atteindre des objectifs
 
-2. **Apprentissage automatique (Machine Learning)**:
+2. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) automatique (Machine Learning)**:
    - **Apprentissage supervisé**: Entraînement sur des exemples étiquetés pour la classification et la régression
    - **Apprentissage non supervisé**: Découverte de structures et patterns sans labels prédéfinis
    - **Apprentissage par renforcement**: Optimisation des actions basée sur des récompenses
@@ -65,9 +65,9 @@ Les techniques d'intelligence artificielle peuvent être catégorisées selon pl
 
 4. **Techniques bio-inspirées**:
    - **Algorithmes génétiques**: Optimisation inspirée par l'évolution naturelle
-   - **Réseaux neuronaux**: Architectures imitant les connexions neuronales du cerveau
-   - **Intelligence en essaim**: Modèles basés sur les comportements collectifs (colonies de fourmis, essaims d'abeilles)
-   - **Systèmes immunitaires artificiels**: Approches s'inspirant des défenses biologiques
+   - **Réseaux neuronaux**: [Architectures](https://fr.wikipedia.org/wiki/Architectures) imitant les connexions neuronales du cerveau
+   - **[Intelligence](https://fr.wikipedia.org/wiki/Intelligence) en essaim**: Modèles basés sur les comportements collectifs (colonies de fourmis, essaims d'abeilles)
+   - **[Systèmes immunitaires artificiels](https://fr.wikipedia.org/wiki/Systèmes_immunitaires_artificiels)**: Approches s'inspirant des défenses biologiques
 
 ### Architectures et modèles spécifiques
 
@@ -76,7 +76,7 @@ Ces paradigmes généraux se concrétisent dans diverses architectures spéciali
 1. **Architectures neuronales avancées**:
    - **Réseaux convolutifs (CNN)**: Spécialisés dans le traitement d'images et données en grille
    - **Réseaux récurrents (RNN, LSTM, GRU)**: Pour les séquences et données temporelles
-   - **Transformers**: Architecture basée sur l'attention pour le traitement de séquences
+   - **[Transformers](https://fr.wikipedia.org/wiki/Transformers)**: Architecture basée sur l'attention pour le traitement de séquences
    - **Réseaux antagonistes génératifs (GAN)**: Pour la génération de contenus nouveaux
    - **Autoencodeurs**: Pour la réduction de dimensionnalité et la détection d'anomalies
 
@@ -89,7 +89,7 @@ Ces paradigmes généraux se concrétisent dans diverses architectures spéciali
 3. **Méthodes d'optimisation et de recherche**:
    - **Descente de gradient**: Optimisation itérative de fonctions différentiables
    - **Algorithmes évolutionnaires**: Recherche inspirée par la sélection naturelle
-   - **Recuit simulé**: Technique probabiliste pour l'optimisation globale
+   - **[Recuit](https://fr.wikipedia.org/wiki/Recuit) simulé**: [Technique](https://fr.wikipedia.org/wiki/Technique) probabiliste pour l'optimisation globale
    - **Recherche tabou et locale**: Exploration efficace d'espaces de solutions
 
 ### Processus méthodologique de développement
@@ -100,22 +100,22 @@ La conception d'un système d'intelligence artificielle suit généralement un p
    - Collecte, nettoyage et annotation de données pertinentes
    - Transformation et normalisation pour l'exploitation algorithmique
    - Augmentation et enrichissement des jeux de données
-   - Division en ensembles d'entraînement, validation et test
+   - [Division](https://fr.wikipedia.org/wiki/Division) en ensembles d'entraînement, validation et test
 
 2. **Sélection et conception de modèle**:
-   - Choix de l'architecture adaptée à la nature du problème
-   - Définition des hyperparamètres initiaux
-   - Ingénierie des caractéristiques (feature engineering)
+   - [Choix](https://fr.wikipedia.org/wiki/Choix) de l'architecture adaptée à la nature du problème
+   - [Définition](https://fr.wikipedia.org/wiki/Définition) des hyperparamètres initiaux
+   - [Ingénierie](https://fr.wikipedia.org/wiki/Ingénierie) des caractéristiques (feature engineering)
    - Conception des pipelines de traitement
 
 3. **Entraînement et optimisation**:
-   - Définition des fonctions de coût et métriques d'évaluation
+   - [Définition](https://fr.wikipedia.org/wiki/Définition) des fonctions de coût et métriques d'évaluation
    - Application d'algorithmes d'optimisation appropriés
    - Validation croisée et ajustement des hyperparamètres
    - Techniques de régularisation pour éviter le surapprentissage
 
-4. **Évaluation et interprétation**:
-   - Benchmarking sur des ensembles de test indépendants
+4. **[Évaluation](https://fr.wikipedia.org/wiki/Évaluation) et interprétation**:
+   - [Benchmarking](https://fr.wikipedia.org/wiki/Benchmarking) sur des ensembles de test indépendants
    - Analyse des erreurs et comportements du modèle
    - Méthodes d'explicabilité et d'interprétation
    - Tests de robustesse et d'équité
@@ -130,8 +130,8 @@ La conception d'un système d'intelligence artificielle suit généralement un p
 
 Le domaine des techniques d'IA évolue rapidement, avec plusieurs directions notables:
 
-1. **Efficience et frugalité**:
-   - Distillation de modèles pour réduire leur taille
+1. **[Efficience](https://fr.wikipedia.org/wiki/Efficience) et frugalité**:
+   - [Distillation](https://fr.wikipedia.org/wiki/Distillation) de modèles pour réduire leur taille
    - Quantification et pruning pour l'optimisation computationnelle
    - Architectures spécifiquement conçues pour les contraintes de ressources
    - Apprentissage fédéré et distribué

@@ -35,14 +35,14 @@ Le recuit simulé fonctionne en simulant le processus physique de recuit des mé
 
 Cette probabilité est généralement calculée selon la formule de Metropolis : P(accepter) = exp(-ΔE/T), où ΔE représente la différence d'énergie (ou de coût) entre les deux solutions et T la température.
 
-### Algorithme de base
+### [Algorithme](https://fr.wikipedia.org/wiki/Algorithme) de base
 
 1. Initialiser une solution aléatoire S et une température initiale T élevée
 2. Tant que le critère d'arrêt n'est pas atteint :
    - Générer une solution voisine S'
    - Calculer ΔE = f(S') - f(S) où f est la fonction objectif
    - Si ΔE < 0 (amélioration), accepter S' comme nouvelle solution courante
-   - Sinon, accepter S' avec une probabilité exp(-ΔE/T)
+   - [Sinon](https://fr.wikipedia.org/wiki/Sinon), accepter S' avec une probabilité exp(-ΔE/T)
    - Réduire la température T selon un schéma de refroidissement prédéfini
 3. Retourner la meilleure solution trouvée
 

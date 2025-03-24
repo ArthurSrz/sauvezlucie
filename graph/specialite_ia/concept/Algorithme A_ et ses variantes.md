@@ -21,7 +21,7 @@ subClassOf: '[[Algorithmes de recherche heuristique en IA]]'
 ---
 ## Généralité
 
-L'algorithme A* (prononcé "A étoile") est un algorithme de recherche de chemin qui combine les avantages de l'algorithme de Dijkstra et des algorithmes de recherche heuristique. Développé en 1968 par Peter Hart, Nils Nilsson et Bertram Raphael, A* est largement utilisé dans les domaines de l'intelligence artificielle, de la robotique et des jeux vidéo pour trouver le chemin optimal entre deux points dans un graphe. Sa popularité vient de son efficacité et de sa complétude, garantissant de trouver le chemin le plus court lorsqu'une heuristique admissible est utilisée.
+L'algorithme A* (prononcé "A étoile") est un algorithme de recherche de chemin qui combine les avantages de l'[algorithme de Dijkstra](https://fr.wikipedia.org/wiki/algorithme_de_Dijkstra) et des algorithmes de recherche heuristique. Développé en 1968 par Peter Hart, [Nils Nilsson](https://fr.wikipedia.org/wiki/Nils_Nilsson) et [Bertram Raphael](https://fr.wikipedia.org/wiki/Bertram_Raphael), A* est largement utilisé dans les domaines de l'intelligence artificielle, de la robotique et des jeux vidéo pour trouver le chemin optimal entre deux points dans un graphe. Sa popularité vient de son efficacité et de sa complétude, garantissant de trouver le chemin le plus court lorsqu'une heuristique admissible est utilisée.
 
 ## Points clés
 
@@ -40,7 +40,7 @@ La fonction d'évaluation f(n) = g(n) + h(n) combine:
 - g(n): le coût réel du chemin depuis le nœud de départ jusqu'au nœud n
 - h(n): une estimation heuristique du coût pour atteindre la destination depuis n
 
-### Principales variantes d'A*
+### [Principales](https://fr.wikipedia.org/wiki/Principales) variantes d'A*
 
 1. **IDA* (Iterative Deepening A*)**: Utilise moins de mémoire en effectuant des recherches en profondeur itératives avec des limites de coût croissantes. Particulièrement utile pour les problèmes avec un grand espace d'états.
 

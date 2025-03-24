@@ -37,10 +37,10 @@ Les agents conversationnels et chatbots sont des systèmes informatiques conçus
 ### Technologies sous-jacentes
 
 Les agents conversationnels modernes s'appuient sur plusieurs technologies clés :
-- **NLP (Natural Language Processing)** : Pour comprendre et interpréter le langage humain
-- **NLU (Natural Language Understanding)** : Pour saisir l'intention derrière les requêtes
-- **NLG (Natural Language Generation)** : Pour formuler des réponses cohérentes et contextuelles
-- **Apprentissage automatique** : Pour améliorer les performances au fil du temps
+- **NLP ([Natural Language Processing](https://fr.wikipedia.org/wiki/Natural_Language_Processing))** : Pour comprendre et interpréter le langage humain
+- **NLU ([Natural Language Understanding](https://fr.wikipedia.org/wiki/Natural_Language_Understanding))** : Pour saisir l'intention derrière les requêtes
+- **NLG ([Natural Language Generation](https://fr.wikipedia.org/wiki/Natural_Language_Generation))** : Pour formuler des réponses cohérentes et contextuelles
+- **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) automatique** : Pour améliorer les performances au fil du temps
 - **Analyse des sentiments** : Pour détecter l'état émotionnel de l'utilisateur
 
 ### Applications pratiques
@@ -50,7 +50,7 @@ Les chatbots sont désormais omniprésents dans de nombreux domaines :
 - **Santé** : Triage initial, suivi de symptômes, rappels de médicaments
 - **Finance** : Vérification de solde, transferts d'argent, alertes de transactions
 - **E-commerce** : Recommandations de produits, assistance à l'achat
-- **Éducation** : Tutorat personnalisé, réponses aux questions des étudiants
+- **Éducation** : [Tutorat](https://fr.wikipedia.org/wiki/Tutorat) personnalisé, réponses aux questions des étudiants
 
 ### Défis et considérations
 
@@ -58,7 +58,7 @@ Malgré leurs avancées, les agents conversationnels font face à plusieurs déf
 - Compréhension limitée des nuances linguistiques et culturelles
 - Difficultés à maintenir une conversation cohérente sur plusieurs tours
 - Questions de confidentialité et de sécurité des données
-- Risque de perpétuer des biais présents dans les données d'entraînement
+- [Risque](https://fr.wikipedia.org/wiki/Risque) de perpétuer des biais présents dans les données d'entraînement
 - Acceptation par les utilisateurs et gestion des attentes
 
 L'avenir des agents conversationnels tend vers des systèmes multimodaux capables d'intégrer texte, voix, images et contexte situationnel pour des interactions toujours plus naturelles et utiles.

@@ -27,7 +27,7 @@ La traduction automatique neuronale (NMT - Neural Machine Translation) est une a
 - Traite les phrases comme des unités complètes plutôt que comme des segments isolés, améliorant ainsi la cohérence
 - Nécessite d'importantes quantités de données parallèles (corpus bilingues) pour l'entraînement
 - A considérablement amélioré la qualité des traductions automatiques depuis son introduction en 2014-2016
-- Forme la base des systèmes de traduction modernes comme Google Translate, DeepL et Microsoft Translator
+- Forme la base des systèmes de traduction modernes comme [Google](https://fr.wikipedia.org/wiki/Google) Translate, [DeepL](https://fr.wikipedia.org/wiki/DeepL) et Microsoft Translator
 
 ## Détails
 
@@ -35,7 +35,7 @@ La traduction automatique neuronale repose sur des architectures de réseaux de 
 
 Une innovation cruciale a été l'introduction du mécanisme d'attention, qui permet au modèle de se concentrer sur différentes parties de la phrase source lors de la génération de chaque mot de la traduction. Ce mécanisme a considérablement amélioré la qualité des traductions, en particulier pour les phrases longues.
 
-Plus récemment, les architectures basées sur les Transformers ont supplanté les RNN dans les systèmes NMT. Introduits par Google en 2017, les Transformers utilisent uniquement des mécanismes d'attention (sans récurrence) et permettent un traitement parallèle plus efficace, réduisant ainsi les temps d'entraînement tout en améliorant les performances.
+Plus récemment, les architectures basées sur les [Transformers](https://fr.wikipedia.org/wiki/Transformers) ont supplanté les RNN dans les systèmes NMT. Introduits par [Google](https://fr.wikipedia.org/wiki/Google) en 2017, les [Transformers](https://fr.wikipedia.org/wiki/Transformers) utilisent uniquement des mécanismes d'attention (sans récurrence) et permettent un traitement parallèle plus efficace, réduisant ainsi les temps d'entraînement tout en améliorant les performances.
 
 Les systèmes NMT présentent plusieurs avantages par rapport aux approches statistiques traditionnelles :
 - Meilleure gestion des dépendances à longue distance dans les phrases
@@ -47,7 +47,7 @@ Cependant, ils comportent aussi certaines limitations :
 - Forte dépendance à la qualité et à la quantité des données d'entraînement
 - Tendance à produire des traductions "créatives" qui peuvent s'écarter du texte source
 - Difficulté à traduire des termes rares ou très spécialisés
-- Consommation importante de ressources computationnelles
+- [Consommation](https://fr.wikipedia.org/wiki/Consommation) importante de ressources computationnelles
 
 Les avancées récentes incluent les modèles multilingues capables de traduire entre plusieurs paires de langues simultanément, les systèmes de traduction sans parallèle (unsupervised NMT) qui peuvent apprendre à traduire sans corpus parallèles, et l'intégration de connaissances terminologiques pour améliorer la traduction de domaines spécialisés.
 

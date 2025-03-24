@@ -24,7 +24,7 @@ subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
 ##Généralité
 
-Les techniques bio-inspirées en Intelligence Artificielle (IA) sont des approches qui s'inspirent des systèmes biologiques, des comportements naturels et des processus évolutifs pour résoudre des problèmes complexes. Ces méthodes imitent les principes observés dans la nature pour créer des algorithmes et des systèmes d'IA plus efficaces, adaptatifs et robustes. Elles représentent un pont entre les sciences naturelles et l'informatique, exploitant des millions d'années d'optimisation évolutive pour développer des solutions innovantes.
+Les techniques bio-inspirées en [Intelligence Artificielle](https://fr.wikipedia.org/wiki/Intelligence_Artificielle) (IA) sont des approches qui s'inspirent des systèmes biologiques, des comportements naturels et des processus évolutifs pour résoudre des problèmes complexes. Ces méthodes imitent les principes observés dans la nature pour créer des algorithmes et des systèmes d'IA plus efficaces, adaptatifs et robustes. Elles représentent un pont entre les sciences naturelles et l'informatique, exploitant des millions d'années d'optimisation évolutive pour développer des solutions innovantes.
 
 ## Points clés
 
@@ -47,7 +47,7 @@ Inspirés par la structure et le fonctionnement des neurones biologiques, ces r�
 
 Applications : reconnaissance d'images, traitement du langage naturel, prévision de séries temporelles, et systèmes de recommandation.
 
-### Intelligence en essaim
+### [Intelligence](https://fr.wikipedia.org/wiki/Intelligence) en essaim
 
 Ces techniques s'inspirent du comportement collectif d'organismes sociaux comme les colonies de fourmis, les essaims d'abeilles ou les bancs de poissons. Elles reposent sur des agents simples qui interagissent localement et suivent des règles élémentaires, produisant une intelligence collective émergente sans contrôle centralisé.
 
@@ -56,7 +56,7 @@ Exemples notables :
 - L'optimisation par essaims particulaires (PSO) simule le mouvement coordonné des oiseaux en vol
 - L'algorithme des abeilles artificielles (ABC) modélise la recherche de nourriture des abeilles
 
-### Systèmes immunitaires artificiels
+### [Systèmes immunitaires artificiels](https://fr.wikipedia.org/wiki/Systèmes_immunitaires_artificiels)
 
 Ces systèmes s'inspirent des mécanismes de défense du système immunitaire biologique, notamment sa capacité à distinguer les cellules du soi et du non-soi, et à s'adapter aux nouvelles menaces. Ils sont particulièrement efficaces pour la détection d'anomalies et la classification.
 

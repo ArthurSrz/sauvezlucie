@@ -45,7 +45,7 @@ Pour atténuer les biais, plusieurs approches sont possibles :
 1. Amélioration des données : diversification des jeux de données, rééquilibrage des classes sous-représentées
 2. Techniques algorithmiques : contraintes d'équité pendant l'entraînement, post-traitement des résultats
 3. Transparence et explicabilité : documentation des choix de conception et des limites des systèmes
-4. Évaluation continue : tests réguliers pour détecter l'émergence de nouveaux biais
+4. [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) continue : tests réguliers pour détecter l'émergence de nouveaux biais
 
 ## Implications pratiques
 

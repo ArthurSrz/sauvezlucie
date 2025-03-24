@@ -47,7 +47,7 @@ Un algorithme de classification est une technique d'apprentissage automatique qu
    - **k-plus proches voisins (k-NN)** : Classifie en fonction des classes des k exemples les plus similaires
 
 5. **Réseaux de neurones**
-   - **Perceptron multicouche** : Réseau de neurones artificiels capable d'apprendre des frontières de décision non linéaires
+   - **[Perceptron](https://fr.wikipedia.org/wiki/Perceptron) multicouche** : Réseau de neurones artificiels capable d'apprendre des frontières de décision non linéaires
    - **Réseaux convolutifs (CNN)** : Spécialisés dans le traitement d'images et de données structurées en grille
 
 ### Processus de classification
@@ -62,9 +62,9 @@ Le processus typique d'application d'un algorithme de classification comprend :
 
 ### Défis et considérations
 
-- **Surapprentissage** : Lorsque le modèle apprend "par cœur" les données d'entraînement au détriment de la généralisation
+- **[Surapprentissage](https://fr.wikipedia.org/wiki/Surapprentissage)** : Lorsque le modèle apprend "par cœur" les données d'entraînement au détriment de la généralisation
 - **Sous-apprentissage** : Quand le modèle est trop simple pour capturer la complexité des données
-- **Déséquilibre des classes** : Problèmes où certaines classes sont beaucoup plus fréquentes que d'autres
+- **Déséquilibre des classes** : [Problèmes](https://fr.wikipedia.org/wiki/Problèmes) où certaines classes sont beaucoup plus fréquentes que d'autres
 - **Dimensionnalité** : Difficultés liées au grand nombre de caractéristiques (malédiction de la dimensionnalité)
 - **Interprétabilité** : Certains algorithmes (comme les arbres de décision) sont plus facilement interprétables que d'autres (comme les réseaux de neurones)
 

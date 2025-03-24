@@ -47,4 +47,4 @@ Les SMA trouvent des applications dans de nombreux domaines :
 
 ## Défis actuels
 
-Les SMA font face à plusieurs défis, notamment la coordination efficace entre agents, la gestion des conflits, l'apprentissage collectif, et les questions éthiques liées à l'autonomie des agents. La recherche actuelle s'intéresse particulièrement à l'intégration de l'apprentissage par renforcement multi-agents et à la conception de systèmes capables d'adaptation et d'auto-organisation face à des environnements dynamiques et incertains.
+Les SMA font face à plusieurs défis, notamment la coordination efficace entre agents, la gestion des conflits, l'apprentissage collectif, et les questions éthiques liées à l'autonomie des agents. La recherche actuelle s'intéresse particulièrement à l'intégration de l'apprentissage par renforcement multi-agents et à la conception de systèmes capables d'adaptation et d'[auto-organisation](https://fr.wikipedia.org/wiki/auto-organisation) face à des environnements dynamiques et incertains.

@@ -46,7 +46,7 @@ Cependant, ReLU souffre du "problème des neurones morts" : lorsqu'un neurone pr
 
 **Scaled Exponential Linear Unit (SELU)** : Une version d'ELU avec des paramètres spécifiques qui garantissent l'auto-normalisation des activations, réduisant le besoin de techniques comme la normalisation par lots.
 
-**Swish** : Proposée par Google, définie par f(x) = x·sigmoid(βx), où β est un paramètre. Cette fonction a montré des performances supérieures dans certains réseaux profonds.
+**Swish** : Proposée par [Google](https://fr.wikipedia.org/wiki/Google), définie par f(x) = x·sigmoid(βx), où β est un paramètre. Cette fonction a montré des performances supérieures dans certains réseaux profonds.
 
 ### Choix de la fonction d'activation
 

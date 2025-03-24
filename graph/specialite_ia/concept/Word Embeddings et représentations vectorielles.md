@@ -32,7 +32,7 @@ Les word embeddings (ou plongements lexicaux) sont des représentations vectorie
 
 Les word embeddings sont générés par des algorithmes qui analysent de vastes corpus de textes pour apprendre les associations entre les mots basées sur leurs contextes d'apparition. Le principe fondamental est que "des mots qui apparaissent dans des contextes similaires tendent à avoir des significations similaires" (hypothèse distributionnelle).
 
-Word2Vec, développé par Mikolov et al. chez Google en 2013, a popularisé deux architectures principales:
+Word2Vec, développé par Mikolov et al. chez [Google](https://fr.wikipedia.org/wiki/Google) en 2013, a popularisé deux architectures principales:
 - CBOW (Continuous Bag of Words): prédit un mot à partir de son contexte
 - Skip-gram: prédit le contexte à partir d'un mot donné
 

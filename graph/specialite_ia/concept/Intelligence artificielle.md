@@ -36,4 +36,4 @@ Souvent classée dans le domaine des mathématiques et des sciences cognitives, 
 
 Les applications de l'IA comprennent notamment les moteurs de recherche, les systèmes de recommandation, l'aide au diagnostic médical, la compréhension du langage naturel, les voitures autonomes, les chatbots, les outils de génération d'images, les outils de prise de décision automatisée, les programmes compétitifs dans des jeux de stratégie et certains personnages non-joueurs de jeu vidéo.
 
-Depuis l'apparition du concept, les finalités, les enjeux et le développement de l'IA suscitent de nombreuses interprétations, fantasmes ou inquiétudes, que l'on retrouve dans les récits ou films de science-fiction, dans les essais philosophiques ainsi que parmi des économistes.
+Depuis l'apparition du concept, les finalités, les enjeux et le développement de l'IA suscitent de nombreuses interprétations, fantasmes ou inquiétudes, que l'on retrouve dans les récits ou films de [science-fiction](https://fr.wikipedia.org/wiki/science-fiction), dans les essais philosophiques ainsi que parmi des économistes.

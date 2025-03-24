@@ -17,7 +17,7 @@ isPartOf: '[[Arbre de décision]]'
 ---
 ## Généralité
 
-L'algorithme C4.5 est une extension de l'algorithme ID3, développé par Ross Quinlan en 1993 pour générer des arbres de décision. Il s'agit d'un algorithme d'apprentissage supervisé largement utilisé dans le domaine du data mining et de l'intelligence artificielle. C4.5 construit des arbres de décision à partir d'un ensemble de données d'entraînement en utilisant le concept d'entropie de l'information. Contrairement à son prédécesseur, C4.5 peut traiter des attributs continus et discrets, gérer les données manquantes et effectuer un élagage pour réduire les erreurs de classification.
+L'[algorithme C4.5](https://fr.wikipedia.org/wiki/algorithme_C4.5) est une extension de l'algorithme ID3, développé par [Ross Quinlan](https://fr.wikipedia.org/wiki/Ross_Quinlan) en 1993 pour générer des arbres de décision. Il s'agit d'un algorithme d'apprentissage supervisé largement utilisé dans le domaine du data mining et de l'intelligence artificielle. C4.5 construit des arbres de décision à partir d'un ensemble de données d'entraînement en utilisant le concept d'entropie de l'information. Contrairement à son prédécesseur, C4.5 peut traiter des attributs continus et discrets, gérer les données manquantes et effectuer un élagage pour réduire les erreurs de classification.
 
 ## Points clés
 
@@ -30,7 +30,7 @@ L'algorithme C4.5 est une extension de l'algorithme ID3, développé par Ross Qu
 
 ### Fonctionnement de base
 
-L'algorithme C4.5 construit un arbre de décision en divisant récursivement l'ensemble de données en sous-ensembles plus petits. À chaque nœud, il choisit l'attribut qui offre le meilleur ratio de gain d'information pour effectuer la division. Le processus se poursuit jusqu'à ce que tous les exemples d'un sous-ensemble appartiennent à la même classe ou qu'aucune autre division ne soit possible.
+L'[algorithme C4.5](https://fr.wikipedia.org/wiki/algorithme_C4.5) construit un arbre de décision en divisant récursivement l'ensemble de données en sous-ensembles plus petits. À chaque nœud, il choisit l'attribut qui offre le meilleur ratio de gain d'information pour effectuer la division. Le processus se poursuit jusqu'à ce que tous les exemples d'un sous-ensemble appartiennent à la même classe ou qu'aucune autre division ne soit possible.
 
 ### Améliorations par rapport à ID3
 
@@ -40,7 +40,7 @@ L'algorithme C4.5 construit un arbre de décision en divisant récursivement l'e
 
 3. **Utilisation du ratio de gain** : Pour éviter le biais vers les attributs ayant de nombreuses valeurs, C4.5 normalise le gain d'information par l'entropie de l'attribut lui-même.
 
-4. **Élagage de l'arbre** : C4.5 implémente une technique d'élagage pessimiste qui supprime les branches peu fiables après la construction de l'arbre, réduisant ainsi le surapprentissage.
+4. **[Élagage](https://fr.wikipedia.org/wiki/Élagage) de l'arbre** : C4.5 implémente une technique d'élagage pessimiste qui supprime les branches peu fiables après la construction de l'arbre, réduisant ainsi le surapprentissage.
 
 ### Formule du ratio de gain
 
@@ -59,4 +59,4 @@ Malgré ses améliorations, C4.5 présente certaines limitations :
 
 ### Évolution
 
-L'algorithme C4.5 a été suivi par C5.0 (ou See5), une version commerciale qui offre des améliorations en termes de vitesse, d'utilisation de la mémoire et d'efficacité. C5.0 introduit également le concept de "boosting" pour améliorer la précision de la classification.
+L'[algorithme C4.5](https://fr.wikipedia.org/wiki/algorithme_C4.5) a été suivi par C5.0 (ou See5), une version commerciale qui offre des améliorations en termes de vitesse, d'utilisation de la mémoire et d'efficacité. C5.0 introduit également le concept de "boosting" pour améliorer la précision de la classification.

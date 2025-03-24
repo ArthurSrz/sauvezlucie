@@ -37,7 +37,7 @@ Gini = 1 - Σ(pi²)
 ```
 où pi est la proportion d'éléments appartenant à la classe i.
 
-Cette mesure atteint son minimum (0) lorsque tous les éléments appartiennent à une seule classe (pureté parfaite) et son maximum lorsque les éléments sont uniformément répartis entre toutes les classes. L'impureté de Gini est privilégiée dans l'algorithme CART (Classification and Regression Trees) et est généralement plus rapide à calculer que l'entropie.
+Cette mesure atteint son minimum (0) lorsque tous les éléments appartiennent à une seule classe (pureté parfaite) et son maximum lorsque les éléments sont uniformément répartis entre toutes les classes. L'impureté de Gini est privilégiée dans l'algorithme CART ([Classification and Regression Trees](https://fr.wikipedia.org/wiki/Classification_and_Regression_Trees)) et est généralement plus rapide à calculer que l'entropie.
 
 ### Entropie
 
@@ -58,7 +58,7 @@ où max(pi) est la proportion de la classe majoritaire.
 
 Cette mesure est la plus intuitive mais aussi la moins sensible aux changements de distribution des probabilités, ce qui la rend moins efficace pour la construction d'arbres de décision.
 
-## Comparaison et choix
+## [Comparaison](https://fr.wikipedia.org/wiki/Comparaison) et choix
 
 En pratique, l'impureté de Gini et l'entropie donnent souvent des résultats similaires, bien que l'entropie puisse être légèrement plus coûteuse en calcul. L'erreur de classification est rarement utilisée comme critère de division car elle ne pénalise pas suffisamment les nœuds impurs lors de la construction de l'arbre.
 

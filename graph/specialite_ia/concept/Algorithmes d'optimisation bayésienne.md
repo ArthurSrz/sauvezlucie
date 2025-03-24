@@ -66,6 +66,6 @@ Les fonctions d'acquisition déterminent le compromis entre exploration et explo
 - **Multi-objective Bayesian Optimization**: Pour optimiser plusieurs objectifs contradictoires simultanément
 - **Batch Bayesian Optimization**: Pour proposer plusieurs points d'évaluation en parallèle
 - **High-dimensional Bayesian Optimization**: Techniques spécifiques pour traiter les espaces de grande dimension
-- **Constrained Bayesian Optimization**: Pour gérer les contraintes dans l'espace de recherche
+- **[Constrained Bayesian Optimization](https://fr.wikipedia.org/wiki/Constrained_Bayesian_Optimization)**: Pour gérer les contraintes dans l'espace de recherche
 
 L'optimisation bayésienne continue d'être un domaine de recherche actif, avec des développements constants pour améliorer son efficacité et son applicabilité à des problèmes plus complexes.

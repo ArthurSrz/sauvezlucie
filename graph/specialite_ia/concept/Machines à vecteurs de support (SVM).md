@@ -18,7 +18,7 @@ hasPart: '[[Apprentissage profond (Deep Learning)]]'
 ---
 ##Généralité
 
-Les Machines à Vecteurs de Support (SVM) constituent une famille d'algorithmes d'apprentissage supervisé particulièrement efficaces pour la classification et la régression. Développées initialement par Vladimir Vapnik dans les années 1990, les SVM cherchent à trouver l'hyperplan optimal qui sépare les données en différentes classes tout en maximisant la marge entre ces classes. Cette approche leur confère une excellente capacité de généralisation, même avec des ensembles de données relativement petits.
+Les Machines à Vecteurs de Support (SVM) constituent une famille d'algorithmes d'apprentissage supervisé particulièrement efficaces pour la classification et la régression. Développées initialement par [Vladimir Vapnik](https://fr.wikipedia.org/wiki/Vladimir_Vapnik) dans les années 1990, les SVM cherchent à trouver l'hyperplan optimal qui sépare les données en différentes classes tout en maximisant la marge entre ces classes. Cette approche leur confère une excellente capacité de généralisation, même avec des ensembles de données relativement petits.
 
 ## Points clés
 
@@ -58,7 +58,7 @@ Les performances des SVM dépendent de plusieurs paramètres clés:
 Les SVM excellent dans de nombreux domaines:
 - Reconnaissance d'images et classification de textes
 - Détection de fraudes et d'anomalies
-- Bio-informatique (classification de protéines, prédiction de structure)
+- [Bio-informatique](https://fr.wikipedia.org/wiki/Bio-informatique) (classification de protéines, prédiction de structure)
 - Analyse de sentiments et traitement du langage naturel
 
 ### Avantages et limites

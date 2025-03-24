@@ -27,7 +27,7 @@ Le choix de la fonction de minimisation détermine la stratégie d'optimisation 
 
 ## Points clés
 
-- Combine une fonction de coût (ou de perte) qui quantifie l'erreur et un algorithme d'optimisation
+- [Combine](https://fr.wikipedia.org/wiki/Combine) une fonction de coût (ou de perte) qui quantifie l'erreur et un algorithme d'optimisation
 - Doit être différentiable pour permettre l'application des méthodes de gradient
 - Influence directement la vitesse de convergence et la qualité de l'apprentissage
 - Peut inclure des termes de régularisation pour éviter le surapprentissage
@@ -43,7 +43,7 @@ La fonction de coût quantifie l'écart entre les prédictions du modèle et les
 **Pour les problèmes de régression:**
 - **Erreur quadratique (MSE)**: Pénalise fortement les grandes erreurs
 - **Erreur absolue (MAE)**: Plus robuste aux valeurs aberrantes
-- **Erreur de Huber**: Combine MSE et MAE, offrant un compromis entre les deux
+- **Erreur de Huber**: [Combine](https://fr.wikipedia.org/wiki/Combine) MSE et MAE, offrant un compromis entre les deux
 - **Erreur logarithmique (MSLE)**: Adaptée aux cibles avec une distribution exponentielle
 
 **Pour les problèmes de classification:**
@@ -65,11 +65,11 @@ Ces algorithmes déterminent comment ajuster les paramètres du modèle pour min
    - **Momentum**: Accélère la convergence en gardant une "mémoire" des gradients précédents
    - **AdaGrad**: Adapte le taux d'apprentissage pour chaque paramètre selon sa fréquence d'actualisation
    - **RMSprop**: Améliore AdaGrad en utilisant une moyenne mobile des gradients carrés
-   - **Adam**: Combine les avantages du momentum et de l'adaptation du taux d'apprentissage
+   - **[Adam](https://fr.wikipedia.org/wiki/Adam)**: [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages du momentum et de l'adaptation du taux d'apprentissage
    - **FTRL**: Particulièrement efficace pour les modèles sparses
 
 3. **Méthodes de second ordre**:
-   - Méthode de Newton
+   - [Méthode de Newton](https://fr.wikipedia.org/wiki/Méthode_de_Newton)
    - BFGS et L-BFGS (approximations de la matrice hessienne)
    - Ces méthodes sont généralement plus coûteuses mais peuvent converger plus rapidement
 
@@ -80,6 +80,6 @@ Pour contrôler la complexité du modèle et éviter le surapprentissage, des te
 - **Régularisation L1 (Lasso)**: Encourage la sparsité (paramètres nuls)
 - **Régularisation L2 (Ridge)**: Pénalise les valeurs élevées des paramètres
 - **ElasticNet**: Combinaison de L1 et L2
-- **Dropout**: Technique spécifique aux réseaux neuronaux, désactivant aléatoirement certains neurones pendant l'entraînement
+- **Dropout**: [Technique](https://fr.wikipedia.org/wiki/Technique) spécifique aux réseaux neuronaux, désactivant aléatoirement certains neurones pendant l'entraînement
 
 Le choix optimal dépend de la nature du problème, de l'architecture du modèle, et des caractéristiques des données. Il est fréquent d'expérimenter avec différentes combinaisons pour identifier celle qui offre les meilleures performances.

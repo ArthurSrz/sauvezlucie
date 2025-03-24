@@ -59,7 +59,7 @@ Un défi majeur des modèles N-gram est le problème de rareté des données (da
 ### Limites et évolutions
 
 Bien que les N-grams aient été largement supplantés par les modèles neuronaux pour de nombreuses tâches avancées de NLP, ils présentent plusieurs avantages:
-- Simplicité conceptuelle et computationnelle
+- [Simplicité](https://fr.wikipedia.org/wiki/Simplicité) conceptuelle et computationnelle
 - Interprétabilité des résultats
 - Efficacité pour certaines applications spécifiques
 

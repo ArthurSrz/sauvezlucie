@@ -24,7 +24,7 @@ L'apprentissage par renforcement (RL - Reinforcement Learning) est un paradigme 
 - L'agent interagit avec l'environnement à travers un cycle d'actions, observations et récompenses
 - L'objectif est de trouver une politique optimale qui maximise les récompenses cumulées
 - Le compromis exploration-exploitation est fondamental dans l'apprentissage par renforcement
-- Les algorithmes majeurs incluent Q-learning, SARSA, et les méthodes de politique par gradient
+- Les algorithmes majeurs incluent [Q-learning](https://fr.wikipedia.org/wiki/Q-learning), SARSA, et les méthodes de politique par gradient
 - Les applications couvrent la robotique, les jeux, la finance, et les systèmes de recommandation
 
 ## Détails
@@ -34,7 +34,7 @@ L'apprentissage par renforcement (RL - Reinforcement Learning) est un paradigme 
 L'apprentissage par renforcement repose sur plusieurs composants essentiels:
 - **Agent**: l'entité qui prend des décisions et agit
 - **Environnement**: le monde avec lequel l'agent interagit
-- **État (S)**: représentation de la situation actuelle
+- **[État](https://fr.wikipedia.org/wiki/État) (S)**: représentation de la situation actuelle
 - **Action (A)**: choix possibles que l'agent peut faire
 - **Récompense (R)**: signal numérique que l'agent reçoit après chaque action
 - **Politique (π)**: stratégie que l'agent utilise pour déterminer ses actions
@@ -51,23 +51,23 @@ Le cadre mathématique standard pour formuler les problèmes d'apprentissage par
 ### Algorithmes principaux
 
 1. **Méthodes basées sur la valeur**:
-   - **Q-learning**: algorithme hors politique qui apprend la fonction de valeur action-état optimale
+   - **[Q-learning](https://fr.wikipedia.org/wiki/Q-learning)**: algorithme hors politique qui apprend la fonction de valeur action-état optimale
    - **SARSA**: algorithme sur politique qui apprend en suivant la politique actuelle
 
 2. **Méthodes basées sur la politique**:
    - **Méthodes de politique par gradient**: optimisent directement la politique sans estimer de fonction de valeur
    - **Actor-Critic**: combinent l'apprentissage de la fonction de valeur et l'optimisation directe de la politique
 
-3. **Apprentissage par renforcement profond**:
-   - **DQN (Deep Q-Network)**: combine Q-learning avec des réseaux de neurones profonds
-   - **PPO (Proximal Policy Optimization)**: méthode robuste pour l'optimisation de politique
+3. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par renforcement profond**:
+   - **DQN (Deep Q-Network)**: combine [Q-learning](https://fr.wikipedia.org/wiki/Q-learning) avec des réseaux de neurones profonds
+   - **PPO ([Proximal Policy Optimization](https://fr.wikipedia.org/wiki/Proximal_Policy_Optimization))**: méthode robuste pour l'optimisation de politique
    - **A3C (Asynchronous Advantage Actor-Critic)**: utilise plusieurs agents parallèles pour stabiliser l'apprentissage
 
 ### Défis et considérations
 
 - **Dilemme exploration-exploitation**: équilibrer la découverte de nouvelles stratégies (exploration) et l'utilisation des connaissances acquises (exploitation)
-- **Crédit assignment problem**: déterminer quelles actions passées sont responsables des récompenses actuelles
+- **[Crédit](https://fr.wikipedia.org/wiki/Crédit) assignment problem**: déterminer quelles actions passées sont responsables des récompenses actuelles
 - **Stabilité de l'apprentissage**: les algorithmes de RL peuvent être instables, particulièrement avec des réseaux neuronaux profonds
 - **Efficacité des échantillons**: l'apprentissage par renforcement nécessite souvent de nombreuses interactions avec l'environnement
 
-L'apprentissage par renforcement continue d'évoluer rapidement, avec des avancées significatives comme AlphaGo de DeepMind qui a battu les champions mondiaux de Go, démontrant la puissance de cette approche pour résoudre des problèmes complexes de prise de décision.
+L'apprentissage par renforcement continue d'évoluer rapidement, avec des avancées significatives comme [AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo) de DeepMind qui a battu les champions mondiaux de Go, démontrant la puissance de cette approche pour résoudre des problèmes complexes de prise de décision.

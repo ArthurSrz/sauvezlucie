@@ -21,7 +21,7 @@ Les auto-encodeurs adversariaux (AAE - Adversarial Autoencoders) sont une archit
 
 ## Points clés
 
-- Les AAE combinent un auto-encodeur traditionnel avec un mécanisme adversarial inspiré des GANs
+- Les AAE combinent un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) traditionnel avec un mécanisme adversarial inspiré des GANs
 - Ils permettent de contraindre l'espace latent à suivre une distribution spécifique (souvent gaussienne)
 - Contrairement aux auto-encodeurs variationnels (VAE), les AAE utilisent un discriminateur pour imposer la distribution latente
 - Ils sont particulièrement efficaces pour la génération de données et l'apprentissage de représentations disentangled
@@ -39,9 +39,9 @@ Cette approche présente plusieurs avantages par rapport aux auto-encodeurs vari
 
 Les applications des auto-encodeurs adversariaux sont nombreuses :
 - Génération d'images réalistes
-- Apprentissage de représentations disentangled (où différentes dimensions de l'espace latent capturent des facteurs de variation indépendants)
+- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) de représentations disentangled (où différentes dimensions de l'espace latent capturent des facteurs de variation indépendants)
 - Clustering non supervisé
-- Apprentissage semi-supervisé
+- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) semi-supervisé
 - Traduction entre domaines (style transfer)
 - Imputation de données manquantes
 

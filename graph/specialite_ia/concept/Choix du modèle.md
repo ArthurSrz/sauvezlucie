@@ -45,18 +45,18 @@ La première étape consiste à identifier la nature précise de la tâche:
 ### Évaluation des caractéristiques des données
 
 Le choix du modèle dépend fortement des propriétés des données:
-- **Volume**: certains modèles (deep learning) nécessitent de grandes quantités de données
+- **[Volume](https://fr.wikipedia.org/wiki/Volume)**: certains modèles (deep learning) nécessitent de grandes quantités de données
 - **Dimensionnalité**: nombre de features et risque de sur-apprentissage
 - **Structure**: données tabulaires, séquentielles, spatiales, textuelles, etc.
 - **Distribution**: équilibre des classes, présence de bruit, outliers
-- **Relations**: linéarité/non-linéarité des relations entre variables
+- **Relations**: linéarité/[non-linéarité](https://fr.wikipedia.org/wiki/non-linéarité) des relations entre variables
 
 ### Sélection de l'architecture
 
 Plusieurs familles de modèles peuvent être considérées:
 
 1. **Modèles classiques de machine learning**:
-   - Régression linéaire/logistique pour relations simples
+   - [Régression linéaire](https://fr.wikipedia.org/wiki/Régression_linéaire)/logistique pour relations simples
    - Arbres de décision et forêts aléatoires pour la robustesse et l'interprétabilité
    - SVM pour les problèmes à marge claire et dimension modérée
    - k-NN pour les approches basées sur la similarité
@@ -65,7 +65,7 @@ Plusieurs familles de modèles peuvent être considérées:
    - Réseaux feed-forward pour les données tabulaires
    - CNN pour les données spatialement structurées (images)
    - RNN, LSTM, GRU pour les séquences temporelles
-   - Transformers pour le traitement du langage et les séquences complexes
+   - [Transformers](https://fr.wikipedia.org/wiki/Transformers) pour le traitement du langage et les séquences complexes
    - VAE ou GAN pour la génération de données
 
 ### Considérations pratiques

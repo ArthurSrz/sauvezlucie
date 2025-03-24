@@ -40,19 +40,19 @@ Le déploiement d'un modèle d'IA est le processus qui consiste à rendre un mod
    - **Cloud** : AWS SageMaker, Google AI Platform, Azure ML
    - **Sur site** : Serveurs dédiés avec TensorFlow Serving, ONNX Runtime
    - **Edge computing** : TensorFlow Lite, ONNX Runtime Edge, CoreML
-   - **Conteneurisation** : Docker, Kubernetes pour l'orchestration
+   - **Conteneurisation** : Docker, [Kubernetes](https://fr.wikipedia.org/wiki/Kubernetes) pour l'orchestration
 
 3. **Patterns d'architecture**
    - Déploiement en tant qu'API REST
    - Intégration dans des applications existantes
-   - Microservices spécialisés
+   - [Microservices](https://fr.wikipedia.org/wiki/Microservices) spécialisés
    - Traitement par lots (batch) vs temps réel (streaming)
 
 ### Considérations techniques
 
 - **Scalabilité** : Capacité à gérer des volumes variables de requêtes
 - **Latence** : Temps de réponse acceptable pour les cas d'usage
-- **Disponibilité** : SLA (Service Level Agreement) et tolérance aux pannes
+- **[Disponibilité](https://fr.wikipedia.org/wiki/Disponibilité)** : SLA (Service Level Agreement) et tolérance aux pannes
 - **Coûts** : Optimisation des ressources de calcul et de stockage
 
 ### MLOps (DevOps pour le ML)
@@ -62,20 +62,20 @@ Le MLOps est une pratique qui combine les principes DevOps avec le cycle de vie 
 - Intégration et déploiement continus (CI/CD)
 - Versionnement des modèles et des données
 - Automatisation des tests et validations
-- Reproductibilité des résultats
+- [Reproductibilité](https://fr.wikipedia.org/wiki/Reproductibilité) des résultats
 
-### Surveillance et maintenance
+### [Surveillance](https://fr.wikipedia.org/wiki/Surveillance) et maintenance
 
 - **Monitoring de performance** : Précision, dérive des données (data drift)
 - **Monitoring technique** : Utilisation des ressources, temps de réponse
 - **Feedback loop** : Collecte de données pour réentraînement
-- **Stratégies de mise à jour** : Canary releases, blue-green deployment
+- **[Stratégies](https://fr.wikipedia.org/wiki/Stratégies) de mise à jour** : Canary releases, blue-green deployment
 
 ### Défis et bonnes pratiques
 
-- **Sécurité** : Protection contre les attaques adversariales, chiffrement des données
+- **[Sécurité](https://fr.wikipedia.org/wiki/Sécurité)** : Protection contre les attaques adversariales, chiffrement des données
 - **Explicabilité** : Mécanismes pour comprendre les décisions du modèle
-- **Conformité** : RGPD, CCPA et autres réglementations sectorielles
-- **Éthique** : Biais, équité et transparence
+- **[Conformité](https://fr.wikipedia.org/wiki/Conformité)** : RGPD, CCPA et autres réglementations sectorielles
+- **[Éthique](https://fr.wikipedia.org/wiki/Éthique)** : Biais, équité et transparence
 
 Le déploiement réussi d'un modèle d'IA nécessite une collaboration étroite entre data scientists, ingénieurs ML, DevOps et parties prenantes métier. C'est un processus itératif qui évolue avec les besoins de l'organisation et les avancées technologiques.

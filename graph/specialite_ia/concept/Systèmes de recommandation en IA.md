@@ -25,7 +25,7 @@ seeAlso: '[[Systèmes de recommandation personnalisée]]'
 ---
 ## Généralité
 
-Les systèmes de recommandation sont des applications d'intelligence artificielle qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences, comportements passés ou similitudes avec d'autres utilisateurs. Ces systèmes constituent aujourd'hui un élément fondamental des plateformes numériques comme Netflix, Amazon, Spotify ou YouTube, où ils personnalisent l'expérience utilisateur et optimisent l'engagement tout en facilitant la découverte de nouveaux contenus.
+Les systèmes de recommandation sont des applications d'intelligence artificielle qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences, comportements passés ou similitudes avec d'autres utilisateurs. Ces systèmes constituent aujourd'hui un élément fondamental des plateformes numériques comme Netflix, [Amazon](https://fr.wikipedia.org/wiki/Amazon), [Spotify](https://fr.wikipedia.org/wiki/Spotify) ou YouTube, où ils personnalisent l'expérience utilisateur et optimisent l'engagement tout en facilitant la découverte de nouveaux contenus.
 
 ## Points clés
 

@@ -45,7 +45,7 @@ L'apprentissage profond englobe plusieurs architectures spécialisées pour diff
 
 3. **Réseaux antagonistes génératifs (GAN)** : Composés de deux réseaux en compétition - un générateur et un discriminateur - permettant de créer des données synthétiques réalistes.
 
-4. **Transformers** : Architecture basée sur le mécanisme d'attention, révolutionnant le traitement du langage naturel avec des modèles comme BERT, GPT et T5.
+4. **[Transformers](https://fr.wikipedia.org/wiki/Transformers)** : Architecture basée sur le mécanisme d'attention, révolutionnant le traitement du langage naturel avec des modèles comme BERT, GPT et T5.
 
 5. **Autoencodeurs** : Utilisés pour l'apprentissage non supervisé, la réduction de dimensionnalité et la détection d'anomalies.
 
@@ -57,13 +57,13 @@ L'apprentissage profond a transformé de nombreux domaines :
 - **Traitement du langage naturel** : Traduction automatique, génération de texte, analyse de sentiment
 - **Reconnaissance vocale** : Assistants virtuels, transcription automatique
 - **Médecine** : Diagnostic médical, analyse d'images médicales, découverte de médicaments
-- **Finance** : Détection de fraude, trading algorithmique, évaluation des risques
+- **[Finance](https://fr.wikipedia.org/wiki/Finance)** : Détection de fraude, trading algorithmique, évaluation des risques
 
 ### Défis et limitations
 
 Malgré ses succès, l'apprentissage profond présente plusieurs défis :
 
-- **Besoin de grandes quantités de données** : Les modèles performants nécessitent généralement d'énormes ensembles de données étiquetées
+- **[Besoin](https://fr.wikipedia.org/wiki/Besoin) de grandes quantités de données** : Les modèles performants nécessitent généralement d'énormes ensembles de données étiquetées
 - **Coût computationnel élevé** : L'entraînement de modèles profonds requiert des ressources informatiques considérables
 - **Interprétabilité limitée** : Les modèles fonctionnent souvent comme des "boîtes noires", rendant difficile la compréhension de leurs décisions
 - **Biais et équité** : Les modèles peuvent perpétuer ou amplifier les biais présents dans les données d'entraînement

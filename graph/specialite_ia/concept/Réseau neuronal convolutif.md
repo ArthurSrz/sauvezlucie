@@ -34,13 +34,13 @@ Un réseau neuronal convolutif (CNN ou ConvNet) est un type spécialisé de rés
 
 L'architecture d'un CNN se compose généralement de plusieurs types de couches:
 
-1. **Couches de convolution**: Ces couches appliquent des filtres (ou noyaux) aux données d'entrée pour produire des cartes de caractéristiques. Chaque filtre détecte un motif spécifique (comme des bords, des textures ou des formes) à différentes positions de l'entrée. Le partage des poids dans ces filtres permet de réduire considérablement le nombre de paramètres.
+1. **[Couches](https://fr.wikipedia.org/wiki/Couches) de convolution**: Ces couches appliquent des filtres (ou noyaux) aux données d'entrée pour produire des cartes de caractéristiques. Chaque filtre détecte un motif spécifique (comme des bords, des textures ou des formes) à différentes positions de l'entrée. Le partage des poids dans ces filtres permet de réduire considérablement le nombre de paramètres.
 
-2. **Fonction d'activation**: Généralement ReLU (Rectified Linear Unit), qui introduit une non-linéarité dans le réseau en remplaçant toutes les valeurs négatives par zéro.
+2. **Fonction d'activation**: Généralement ReLU (Rectified Linear Unit), qui introduit une [non-linéarité](https://fr.wikipedia.org/wiki/non-linéarité) dans le réseau en remplaçant toutes les valeurs négatives par zéro.
 
-3. **Couches de pooling**: Ces couches réduisent la dimension spatiale des cartes de caractéristiques, diminuant ainsi la quantité de paramètres et de calculs dans le réseau. Le max-pooling, qui conserve la valeur maximale dans une fenêtre, est couramment utilisé.
+3. **[Couches](https://fr.wikipedia.org/wiki/Couches) de pooling**: Ces couches réduisent la dimension spatiale des cartes de caractéristiques, diminuant ainsi la quantité de paramètres et de calculs dans le réseau. Le max-pooling, qui conserve la valeur maximale dans une fenêtre, est couramment utilisé.
 
-4. **Couches entièrement connectées**: Situées généralement à la fin du réseau, elles utilisent les caractéristiques extraites pour effectuer la classification finale.
+4. **[Couches](https://fr.wikipedia.org/wiki/Couches) entièrement connectées**: Situées généralement à la fin du réseau, elles utilisent les caractéristiques extraites pour effectuer la classification finale.
 
 ### Avantages des CNN
 
@@ -52,17 +52,17 @@ L'architecture d'un CNN se compose généralement de plusieurs types de couches:
 
 Les CNN ont révolutionné de nombreux domaines:
 
-- **Classification d'images**: Identification du contenu principal d'une image (ex: ImageNet)
+- **[Classification](https://fr.wikipedia.org/wiki/Classification) d'images**: Identification du contenu principal d'une image (ex: [ImageNet](https://fr.wikipedia.org/wiki/ImageNet))
 - **Détection d'objets**: Localisation et identification de multiples objets dans une image (ex: YOLO, SSD, Faster R-CNN)
 - **Segmentation sémantique**: Attribution d'une classe à chaque pixel d'une image
 - **Reconnaissance faciale**: Identification de visages et d'expressions
 - **Analyse médicale**: Détection d'anomalies dans des images médicales (radiographies, IRM)
 
-### Architectures célèbres
+### [Architectures](https://fr.wikipedia.org/wiki/Architectures) célèbres
 
 Plusieurs architectures CNN ont marqué l'évolution de ce domaine:
 - **LeNet-5** (1998): Pionnier des CNN modernes
-- **AlexNet** (2012): Premier CNN profond à remporter la compétition ImageNet
+- **AlexNet** (2012): Premier CNN profond à remporter la compétition [ImageNet](https://fr.wikipedia.org/wiki/ImageNet)
 - **VGG** (2014): Architecture simple mais profonde
 - **GoogLeNet/Inception** (2014): Introduction des modules Inception
 - **ResNet** (2015): Introduction des connexions résiduelles permettant l'entraînement de réseaux très profonds

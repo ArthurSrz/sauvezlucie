@@ -23,7 +23,7 @@ seeAlso:
 ---
 ## Généralité
 
-Un auto-encodeur est un type de réseau de neurones artificiels utilisé pour l'apprentissage non supervisé de représentations de données efficaces. Sa structure particulière lui permet d'apprendre à compresser puis à reconstruire ses données d'entrée avec une perte minimale d'information. L'objectif principal n'est pas la reconstruction elle-même, mais plutôt l'apprentissage d'une représentation utile (encodage) des données d'entrée, généralement dans un espace de dimension réduite.
+Un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) est un type de réseau de neurones artificiels utilisé pour l'apprentissage non supervisé de représentations de données efficaces. Sa structure particulière lui permet d'apprendre à compresser puis à reconstruire ses données d'entrée avec une perte minimale d'information. L'objectif principal n'est pas la reconstruction elle-même, mais plutôt l'apprentissage d'une représentation utile (encodage) des données d'entrée, généralement dans un espace de dimension réduite.
 
 ## Points clés
 
@@ -58,7 +58,7 @@ Les auto-encodeurs trouvent des applications dans de nombreux domaines :
 
 - **Réduction de dimensionnalité** : Alternative non-linéaire à des méthodes comme l'ACP.
 - **Détection d'anomalies** : Les données anormales produisent généralement une erreur de reconstruction plus élevée.
-- **Débruitage et restauration d'images** : Particulièrement avec les auto-encodeurs débruitants.
+- **[Débruitage](https://fr.wikipedia.org/wiki/Débruitage) et restauration d'images** : Particulièrement avec les auto-encodeurs débruitants.
 - **Compression de données** : Bien que rarement utilisés en production pour cette tâche.
 - **Pré-entraînement de réseaux profonds** : Historiquement utilisés pour initialiser les poids des réseaux profonds.
 - **Génération de données** : Particulièrement avec les VAE qui peuvent générer de nouvelles instances similaires aux données d'entraînement.

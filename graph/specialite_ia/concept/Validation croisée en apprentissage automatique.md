@@ -32,18 +32,18 @@ La validation croisée est une technique statistique fondamentale en apprentissa
 
 ### Principales méthodes de validation croisée
 
-**Validation croisée k-fold** : L'ensemble de données est divisé en k sous-ensembles (ou "plis") de taille approximativement égale. Le modèle est entraîné k fois, chaque fois en utilisant k-1 plis pour l'entraînement et le pli restant pour la validation. La performance finale est la moyenne des performances sur chaque itération. Typiquement, k=5 ou k=10 est utilisé en pratique.
+**[Validation](https://fr.wikipedia.org/wiki/Validation) croisée k-fold** : L'ensemble de données est divisé en k sous-ensembles (ou "plis") de taille approximativement égale. Le modèle est entraîné k fois, chaque fois en utilisant k-1 plis pour l'entraînement et le pli restant pour la validation. La performance finale est la moyenne des performances sur chaque itération. Typiquement, k=5 ou k=10 est utilisé en pratique.
 
-**Validation croisée leave-one-out (LOOCV)** : C'est un cas particulier de la validation k-fold où k est égal au nombre total d'observations. À chaque itération, une seule observation est utilisée pour la validation et toutes les autres pour l'entraînement. Cette méthode est computationnellement coûteuse mais utile pour les petits ensembles de données.
+**[Validation](https://fr.wikipedia.org/wiki/Validation) croisée leave-one-out (LOOCV)** : C'est un cas particulier de la validation k-fold où k est égal au nombre total d'observations. À chaque itération, une seule observation est utilisée pour la validation et toutes les autres pour l'entraînement. Cette méthode est computationnellement coûteuse mais utile pour les petits ensembles de données.
 
-**Validation croisée stratifiée** : Variante de la k-fold qui préserve la proportion des classes dans chaque pli, particulièrement importante pour les problèmes de classification avec des classes déséquilibrées.
+**[Validation](https://fr.wikipedia.org/wiki/Validation) croisée stratifiée** : Variante de la k-fold qui préserve la proportion des classes dans chaque pli, particulièrement importante pour les problèmes de classification avec des classes déséquilibrées.
 
 ### Avantages et limitations
 
 **Avantages** :
 - Utilisation efficace des données disponibles, particulièrement utile pour les petits jeux de données
 - Estimation plus fiable de la performance du modèle sur des données non vues
-- Réduction de la variance dans l'estimation des performances
+- [Réduction de la variance](https://fr.wikipedia.org/wiki/Réduction_de_la_variance) dans l'estimation des performances
 
 **Limitations** :
 - Coût computationnel élevé, surtout pour les grands ensembles de données ou les modèles complexes
@@ -59,4 +59,4 @@ La validation croisée est largement utilisée pour :
 
 ### Implémentation
 
-Dans la plupart des bibliothèques d'apprentissage automatique comme scikit-learn, la validation croisée est facilement implémentable avec des fonctions dédiées. Par exemple, `KFold`, `StratifiedKFold`, et `LeaveOneOut` sont des classes disponibles pour configurer différentes stratégies de validation croisée, tandis que `cross_val_score` permet d'obtenir directement les scores de performance.
+Dans la plupart des bibliothèques d'apprentissage automatique comme [scikit-learn](https://fr.wikipedia.org/wiki/scikit-learn), la validation croisée est facilement implémentable avec des fonctions dédiées. Par exemple, `KFold`, `StratifiedKFold`, et `LeaveOneOut` sont des classes disponibles pour configurer différentes stratégies de validation croisée, tandis que `cross_val_score` permet d'obtenir directement les scores de performance.

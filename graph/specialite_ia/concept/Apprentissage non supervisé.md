@@ -73,7 +73,7 @@ L'apprentissage non supervisé est utilisé dans de nombreux domaines:
 
 **Limites**:
 - Résultats souvent plus difficiles à interpréter qu'en apprentissage supervisé
-- Évaluation de la qualité des modèles plus complexe sans données de référence
+- [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) de la qualité des modèles plus complexe sans données de référence
 - Peut nécessiter une expertise humaine pour valider la pertinence des patterns découverts
 
 L'apprentissage non supervisé continue d'évoluer avec l'émergence de nouvelles techniques comme l'apprentissage par renforcement sans modèle et les modèles génératifs avancés, élargissant encore son champ d'application.

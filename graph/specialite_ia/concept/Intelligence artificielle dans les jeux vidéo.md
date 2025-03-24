@@ -30,7 +30,7 @@ L'intelligence artificielle (IA) dans les jeux vidéo désigne l'ensemble des te
 
 ### Évolution historique
 
-Les premières IA de jeux vidéo étaient extrêmement simples, comme les fantômes de Pac-Man (1980) qui suivaient des schémas de déplacement prédéfinis. Dans les années 1990, des jeux comme Doom ont introduit des ennemis capables de poursuivre le joueur et d'éviter les obstacles. Les années 2000 ont vu l'émergence d'IA plus sophistiquées avec des jeux comme F.E.A.R. (2005) qui utilisait des systèmes de planification dynamique pour créer des comportements tactiques complexes.
+Les premières IA de jeux vidéo étaient extrêmement simples, comme les fantômes de [Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man) (1980) qui suivaient des schémas de déplacement prédéfinis. Dans les années 1990, des jeux comme Doom ont introduit des ennemis capables de poursuivre le joueur et d'éviter les obstacles. Les années 2000 ont vu l'émergence d'IA plus sophistiquées avec des jeux comme F.E.A.R. (2005) qui utilisait des systèmes de planification dynamique pour créer des comportements tactiques complexes.
 
 ### Techniques principales
 

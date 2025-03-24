@@ -46,11 +46,11 @@ Les fonctions de perte (loss functions) sont des composants essentiels en appren
 
 2. **Erreur absolue moyenne (Mean Absolute Error, MAE)** : Calcule la moyenne des valeurs absolues des erreurs, plus robuste aux valeurs aberrantes que la MSE.
 
-3. **Huber Loss** : Combine les avantages de MSE et MAE, se comportant comme MSE pour les petites erreurs et comme MAE pour les grandes erreurs.
+3. **Huber Loss** : [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages de MSE et MAE, se comportant comme MSE pour les petites erreurs et comme MAE pour les grandes erreurs.
 
 ### Fonctions de perte spécialisées
 
-1. **Kullback-Leibler Divergence** : Mesure la différence entre deux distributions de probabilité, souvent utilisée dans les autoencodeurs variationnels.
+1. **[Kullback-Leibler Divergence](https://fr.wikipedia.org/wiki/Kullback-Leibler_Divergence)** : Mesure la différence entre deux distributions de probabilité, souvent utilisée dans les autoencodeurs variationnels.
 
 2. **Dice Loss** : Particulièrement adaptée à la segmentation d'image, optimisant directement le coefficient de Dice.
 
@@ -60,4 +60,4 @@ Les fonctions de perte (loss functions) sont des composants essentiels en appren
 
 Le choix de la fonction de perte doit tenir compte de plusieurs facteurs, notamment la distribution des données, la présence de valeurs aberrantes, et la sensibilité aux erreurs de différentes magnitudes. Dans certains cas, des fonctions de perte personnalisées peuvent être développées pour répondre à des besoins spécifiques.
 
-La combinaison de plusieurs fonctions de perte est également courante dans les architectures complexes comme les GAN (Generative Adversarial Networks) ou les modèles multi-tâches, où différents composants du modèle peuvent être optimisés selon des critères distincts.
+La combinaison de plusieurs fonctions de perte est également courante dans les architectures complexes comme les GAN ([Generative Adversarial Networks](https://fr.wikipedia.org/wiki/Generative_Adversarial_Networks)) ou les modèles multi-tâches, où différents composants du modèle peuvent être optimisés selon des critères distincts.

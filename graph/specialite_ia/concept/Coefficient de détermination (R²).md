@@ -65,7 +65,7 @@ Le R² présente plusieurs limitations importantes :
 
 5. **Données non linéaires** : Le R² peut sous-estimer la qualité d'ajustement pour des relations non linéaires.
 
-### Alternatives et compléments
+### [Alternatives](https://fr.wikipedia.org/wiki/Alternatives) et compléments
 
 Pour une évaluation plus complète d'un modèle, le R² devrait être utilisé conjointement avec d'autres métriques :
 - RMSE (Root Mean Square Error)

@@ -39,7 +39,7 @@ L'entraînement d'un modèle d'intelligence artificielle est le processus par le
 
 L'entraînement d'un modèle d'IA peut se faire selon plusieurs paradigmes :
 
-- **Apprentissage supervisé** : Le modèle apprend à partir d'exemples étiquetés (entrées associées à leurs sorties attendues)
+- **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) supervisé** : Le modèle apprend à partir d'exemples étiquetés (entrées associées à leurs sorties attendues)
 - **Apprentissage non supervisé** : Le modèle découvre des structures dans les données sans étiquettes
 - **Apprentissage par renforcement** : Le modèle apprend par essais et erreurs en interagissant avec un environnement
 - **Apprentissage semi-supervisé** : Combinaison de données étiquetées et non étiquetées
@@ -47,16 +47,16 @@ L'entraînement d'un modèle d'IA peut se faire selon plusieurs paradigmes :
 ### Étapes du processus d'entraînement
 
 1. **Préparation des données** : Collecte, nettoyage, normalisation et division des données en ensembles d'entraînement, de validation et de test
-2. **Définition de l'architecture** : Choix du type de modèle et de sa structure interne
+2. **[Définition](https://fr.wikipedia.org/wiki/Définition) de l'architecture** : Choix du type de modèle et de sa structure interne
 3. **Configuration des hyperparamètres** : Réglage des paramètres qui contrôlent le processus d'apprentissage (taux d'apprentissage, taille des lots, etc.)
 4. **Entraînement itératif** : Exposition répétée du modèle aux données d'entraînement avec ajustement des poids selon une fonction de perte
-5. **Validation** : Évaluation périodique sur des données non vues pour éviter le surapprentissage
-6. **Test final** : Évaluation des performances sur un ensemble de test indépendant
+5. **[Validation](https://fr.wikipedia.org/wiki/Validation)** : [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) périodique sur des données non vues pour éviter le surapprentissage
+6. **Test final** : [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) des performances sur un ensemble de test indépendant
 7. **Ajustements et réentraînement** : Modifications itératives pour améliorer les performances
 
 ### Défis courants
 
-- **Surapprentissage (overfitting)** : Le modèle mémorise les données d'entraînement au lieu de généraliser, performant bien sur les données d'entraînement mais mal sur de nouvelles données
+- **[Surapprentissage](https://fr.wikipedia.org/wiki/Surapprentissage) (overfitting)** : Le modèle mémorise les données d'entraînement au lieu de généraliser, performant bien sur les données d'entraînement mais mal sur de nouvelles données
 - **Sous-apprentissage (underfitting)** : Le modèle est trop simple pour capturer la complexité des données
 - **Déséquilibre des classes** : Certaines classes sont sous-représentées dans les données d'entraînement
 - **Données bruitées ou incomplètes** : Affectent la qualité de l'apprentissage
@@ -68,6 +68,6 @@ L'entraînement d'un modèle d'IA peut se faire selon plusieurs paradigmes :
 - **Augmentation de données** : Création artificielle de nouvelles données d'entraînement par transformation des données existantes
 - **Transfert d'apprentissage** : Utilisation d'un modèle pré-entraîné comme point de départ
 - **Apprentissage par curriculum** : Présentation des exemples dans un ordre de difficulté croissante
-- **Validation croisée** : Division des données en plusieurs sous-ensembles pour une évaluation plus robuste
+- **[Validation](https://fr.wikipedia.org/wiki/Validation) croisée** : Division des données en plusieurs sous-ensembles pour une évaluation plus robuste
 
 L'entraînement d'un modèle d'IA est un processus itératif qui nécessite une compréhension approfondie des données, des algorithmes et des techniques d'optimisation. Le succès dépend souvent de l'expérimentation méthodique et de l'ajustement continu basé sur les résultats observés.

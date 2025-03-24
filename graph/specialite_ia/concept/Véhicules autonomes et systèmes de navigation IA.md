@@ -31,11 +31,11 @@ Les véhicules autonomes représentent une révolution technologique combinant r
 
 ## Détails
 
-Les véhicules autonomes intègrent plusieurs couches technologiques qui fonctionnent en synergie. La perception de l'environnement repose sur des capteurs multiples : le LiDAR (Light Detection and Ranging) crée une carte 3D précise de l'environnement, les radars détectent les objets et leur vitesse même dans des conditions difficiles, les caméras identifient les panneaux et marquages routiers, tandis que le GPS et les systèmes de navigation par satellite fournissent le positionnement global.
+Les véhicules autonomes intègrent plusieurs couches technologiques qui fonctionnent en synergie. La perception de l'environnement repose sur des capteurs multiples : le LiDAR ([Light Detection and Ranging](https://fr.wikipedia.org/wiki/Light_Detection_and_Ranging)) crée une carte 3D précise de l'environnement, les radars détectent les objets et leur vitesse même dans des conditions difficiles, les caméras identifient les panneaux et marquages routiers, tandis que le GPS et les systèmes de navigation par satellite fournissent le positionnement global.
 
 L'intelligence artificielle, particulièrement les réseaux neuronaux profonds, constitue le cerveau du système. Ces algorithmes traitent les données brutes des capteurs pour reconnaître les objets (véhicules, piétons, obstacles), prédire leurs mouvements et planifier des trajectoires sécuritaires. Les systèmes les plus avancés utilisent l'apprentissage par renforcement pour améliorer continuellement leurs performances face à des situations nouvelles.
 
-La Society of Automotive Engineers (SAE) a défini six niveaux d'autonomie :
+[La Society of Automotive Engineers](https://fr.wikipedia.org/wiki/La_Society_of_Automotive_Engineers) (SAE) a défini six niveaux d'autonomie :
 - Niveau 0 : Aucune automatisation
 - Niveau 1 : Assistance au conducteur (régulateur de vitesse adaptatif)
 - Niveau 2 : Automatisation partielle (assistance au maintien de voie et à la vitesse)

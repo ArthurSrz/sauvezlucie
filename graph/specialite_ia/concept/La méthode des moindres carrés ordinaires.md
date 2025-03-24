@@ -15,7 +15,7 @@ differentFrom: '[[Métriques robustes aux valeurs aberrantes]]'
 ---
 ##Généralité
 
-La méthode des moindres carrés ordinaires (MCO) est une technique statistique fondamentale utilisée en régression linéaire pour estimer les paramètres d'un modèle en minimisant la somme des carrés des écarts entre les valeurs observées et les valeurs prédites par le modèle. Cette approche, développée indépendamment par Carl Friedrich Gauss et Adrien-Marie Legendre au début du 19ème siècle, constitue la pierre angulaire de nombreuses analyses statistiques et économétriques modernes.
+La méthode des moindres carrés ordinaires (MCO) est une technique statistique fondamentale utilisée en régression linéaire pour estimer les paramètres d'un modèle en minimisant la somme des carrés des écarts entre les valeurs observées et les valeurs prédites par le modèle. Cette approche, développée indépendamment par [Carl Friedrich Gauss](https://fr.wikipedia.org/wiki/Carl_Friedrich_Gauss) et [Adrien-Marie Legendre](https://fr.wikipedia.org/wiki/Adrien-Marie_Legendre) au début du 19ème siècle, constitue la pierre angulaire de nombreuses analyses statistiques et économétriques modernes.
 
 ## Points clés
 
@@ -38,11 +38,11 @@ $$\hat{\beta}_1 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1
 
 $$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$$
 
-### Hypothèses de Gauss-Markov
+### [Hypothèses de Gauss-Markov](https://fr.wikipedia.org/wiki/Hypothèses_de_Gauss-Markov)
 
 Pour que les estimateurs MCO soient BLUE (meilleurs estimateurs linéaires sans biais), plusieurs hypothèses doivent être satisfaites:
 
-1. **Linéarité**: La relation entre variables est linéaire dans les paramètres
+1. **[Linéarité](https://fr.wikipedia.org/wiki/Linéarité)**: La relation entre variables est linéaire dans les paramètres
 2. **Exogénéité**: L'espérance conditionnelle des erreurs est nulle
 3. **Homoscédasticité**: La variance des erreurs est constante
 4. **Non-autocorrélation**: Les erreurs sont indépendantes entre observations
@@ -62,9 +62,9 @@ Cependant, la méthode présente certaines limites:
 ### Applications pratiques
 
 La méthode MCO est largement utilisée dans divers domaines:
-- Économétrie pour l'estimation de modèles économiques
-- Sciences sociales pour l'analyse de données d'enquêtes
+- [Économétrie](https://fr.wikipedia.org/wiki/Économétrie) pour l'estimation de modèles économiques
+- [Sciences sociales](https://fr.wikipedia.org/wiki/Sciences_sociales) pour l'analyse de données d'enquêtes
 - Sciences naturelles pour modéliser des relations entre variables
-- Finance pour l'analyse de séries temporelles et la prévision
+- [Finance](https://fr.wikipedia.org/wiki/Finance) pour l'analyse de séries temporelles et la prévision
 
-Des logiciels comme R, Python (avec statsmodels ou scikit-learn), STATA ou SAS offrent des implémentations robustes de cette méthode, facilitant son application à des ensembles de données complexes.
+Des logiciels comme R, Python (avec statsmodels ou [scikit-learn](https://fr.wikipedia.org/wiki/scikit-learn)), STATA ou SAS offrent des implémentations robustes de cette méthode, facilitant son application à des ensembles de données complexes.

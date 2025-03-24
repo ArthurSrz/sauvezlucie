@@ -45,7 +45,7 @@ Les méthodes d'ensemble en machine learning sont des techniques qui combinent p
    - Exemples : AdaBoost, Gradient Boosting, XGBoost, LightGBM, CatBoost
 
 3. **Stacking (Stacked Generalization)**
-   - Combine les prédictions de plusieurs modèles hétérogènes à l'aide d'un méta-modèle
+   - [Combine](https://fr.wikipedia.org/wiki/Combine) les prédictions de plusieurs modèles hétérogènes à l'aide d'un méta-modèle
    - Utilise les prédictions des modèles de base comme entrées pour le méta-modèle
    - Permet d'exploiter les forces de différents types d'algorithmes
    - Souvent utilisé dans les solutions gagnantes des compétitions de machine learning
@@ -61,7 +61,7 @@ Les méthodes d'ensemble en machine learning sont des techniques qui combinent p
 
 - Complexité computationnelle accrue (temps d'entraînement et de prédiction plus longs)
 - Interprétabilité réduite par rapport aux modèles simples
-- Nécessité de plus de ressources mémoire
+- [Nécessité](https://fr.wikipedia.org/wiki/Nécessité) de plus de ressources mémoire
 - Risque de surapprentissage si les hyperparamètres ne sont pas correctement ajustés
 
 ### Applications

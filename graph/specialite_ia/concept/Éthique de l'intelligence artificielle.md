@@ -36,7 +36,7 @@ La responsabilité implique de déterminer qui est imputable lorsqu'un système 
 
 Le respect de l'autonomie humaine signifie que les systèmes d'IA devraient augmenter les capacités humaines plutôt que de les remplacer ou de les diminuer. Cela inclut des questions sur le degré d'autonomie à accorder aux systèmes d'IA et les domaines où la prise de décision humaine devrait rester primordiale.
 
-Les approches pour aborder ces questions éthiques sont diverses. Certaines organisations développent des cadres éthiques et des lignes directrices, comme les Principes d'IA de l'OCDE ou les recommandations de l'UNESCO sur l'éthique de l'IA. D'autres préconisent des réglementations gouvernementales, comme le Règlement sur l'IA de l'Union européenne. Des méthodes techniques comme l'IA explicable (XAI) et l'équité algorithmique sont également développées pour résoudre certains problèmes éthiques à la source.
+Les approches pour aborder ces questions éthiques sont diverses. Certaines organisations développent des cadres éthiques et des lignes directrices, comme les Principes d'IA de l'OCDE ou les recommandations de l'UNESCO sur l'éthique de l'IA. D'autres préconisent des réglementations gouvernementales, comme le Règlement sur l'IA de l'[Union européenne](https://fr.wikipedia.org/wiki/Union_européenne). Des méthodes techniques comme l'IA explicable (XAI) et l'équité algorithmique sont également développées pour résoudre certains problèmes éthiques à la source.
 
 ## Applications pratiques
 

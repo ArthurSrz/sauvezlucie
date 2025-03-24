@@ -68,7 +68,7 @@ Le processus s'arrête lorsque certaines conditions sont remplies, comme l'attei
 ### Techniques d'amélioration
 
 Pour surmonter certaines limitations, plusieurs techniques ont été développées :
-- **Élagage (pruning)** : Réduction de la complexité de l'arbre pour éviter le surapprentissage
+- **[Élagage](https://fr.wikipedia.org/wiki/Élagage) (pruning)** : Réduction de la complexité de l'arbre pour éviter le surapprentissage
 - **Ensembles d'arbres** : Combinaison de multiples arbres pour améliorer la robustesse et la précision
   - Random Forest : Utilise le bagging et la sélection aléatoire d'attributs
   - Gradient Boosting : Construction séquentielle d'arbres pour corriger les erreurs des précédents
@@ -76,8 +76,8 @@ Pour surmonter certaines limitations, plusieurs techniques ont été développé
 ### Applications pratiques
 
 Les arbres de décision sont largement utilisés dans divers domaines :
-- Finance : évaluation des risques de crédit
-- Médecine : aide au diagnostic
+- [Finance](https://fr.wikipedia.org/wiki/Finance) : évaluation des risques de crédit
+- [Médecine](https://fr.wikipedia.org/wiki/Médecine) : aide au diagnostic
 - Marketing : segmentation de clientèle
 - Systèmes de recommandation
 - Analyse de fiabilité et maintenance prédictive

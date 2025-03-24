@@ -31,14 +31,14 @@ La réduction de dimensionnalité est une technique fondamentale en machine lear
 
 Dans les espaces à haute dimension, les données deviennent éparses, ce qui complique l'identification de patterns significatifs. Ce phénomène, connu sous le nom de "malédiction de la dimensionnalité", entraîne plusieurs problèmes:
 - Augmentation exponentielle du volume de l'espace avec chaque dimension ajoutée
-- Besoin d'un nombre exponentiellement plus grand d'échantillons pour maintenir la densité des données
-- Risque accru de surapprentissage des modèles
+- [Besoin](https://fr.wikipedia.org/wiki/Besoin) d'un nombre exponentiellement plus grand d'échantillons pour maintenir la densité des données
+- [Risque](https://fr.wikipedia.org/wiki/Risque) accru de surapprentissage des modèles
 
 ### Méthodes linéaires
 
 **Analyse en Composantes Principales (PCA)**: Technique la plus répandue qui projette les données sur des axes orthogonaux maximisant la variance. Elle identifie les directions (composantes principales) qui capturent le maximum d'information.
 
-**Analyse Discriminante Linéaire (LDA)**: Contrairement à la PCA qui est non supervisée, la LDA est supervisée et cherche les axes qui maximisent la séparation entre les classes.
+**[Analyse Discriminante](https://fr.wikipedia.org/wiki/Analyse_Discriminante) Linéaire (LDA)**: Contrairement à la PCA qui est non supervisée, la LDA est supervisée et cherche les axes qui maximisent la séparation entre les classes.
 
 **Random Projection**: Méthode basée sur le lemme de Johnson-Lindenstrauss qui projette les données sur un sous-espace aléatoire tout en préservant approximativement les distances entre les points.
 
@@ -55,7 +55,7 @@ Dans les espaces à haute dimension, les données deviennent éparses, ce qui co
 ### Considérations pratiques
 
 Le choix de la méthode dépend de plusieurs facteurs:
-- La linéarité ou non-linéarité présumée des données
+- La linéarité ou [non-linéarité](https://fr.wikipedia.org/wiki/non-linéarité) présumée des données
 - L'importance relative de la préservation des structures locales vs. globales
 - Le besoin d'interprétabilité des dimensions réduites
 - Les contraintes de temps de calcul et de mémoire

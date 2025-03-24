@@ -20,7 +20,7 @@ subClassOf:
 ---
 ## Généralité
 
-Les Réseaux Antagonistes Génératifs (GANs, Generative Adversarial Networks) sont une architecture d'apprentissage automatique introduite par Ian Goodfellow et ses collègues en 2014. Ce cadre innovant met en compétition deux réseaux de neurones : un générateur qui crée des données synthétiques et un discriminateur qui tente de distinguer les données réelles des données générées. Cette approche antagoniste permet de produire des données artificielles d'une qualité remarquable, capables de capturer la distribution des données réelles.
+Les Réseaux Antagonistes Génératifs (GANs, [Generative Adversarial Networks](https://fr.wikipedia.org/wiki/Generative_Adversarial_Networks)) sont une architecture d'apprentissage automatique introduite par [Ian Goodfellow](https://fr.wikipedia.org/wiki/Ian_Goodfellow) et ses collègues en 2014. Ce cadre innovant met en compétition deux réseaux de neurones : un générateur qui crée des données synthétiques et un discriminateur qui tente de distinguer les données réelles des données générées. Cette approche antagoniste permet de produire des données artificielles d'une qualité remarquable, capables de capturer la distribution des données réelles.
 
 ## Points clés
 
@@ -38,7 +38,7 @@ Mathématiquement, les GANs optimisent une fonction minimax où le discriminateu
 Les applications des GANs sont vastes et en constante expansion :
 - Génération d'images photoréalistes
 - Conversion d'images (style transfer, image-to-image translation)
-- Super-résolution d'images
+- [Super-résolution](https://fr.wikipedia.org/wiki/Super-résolution) d'images
 - Complétion d'images (inpainting)
 - Synthèse de visages et manipulation faciale
 - Génération de texte et de musique

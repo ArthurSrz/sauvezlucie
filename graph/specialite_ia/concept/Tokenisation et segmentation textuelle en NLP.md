@@ -44,8 +44,8 @@ La tokenisation et la segmentation textuelle sont des processus fondamentaux en 
 ### Défis de la tokenisation
 
 - **Ambiguïtés linguistiques** : Par exemple, "l'homme" peut être tokenisé comme ["l'", "homme"] ou ["l", "'", "homme"]
-- **Ponctuation** : Décider si la ponctuation constitue des tokens séparés ou s'attache aux mots
-- **Entités nommées** : Reconnaître que "New York" devrait être considéré comme une seule entité
+- **[Ponctuation](https://fr.wikipedia.org/wiki/Ponctuation)** : Décider si la ponctuation constitue des tokens séparés ou s'attache aux mots
+- **Entités nommées** : Reconnaître que "[New York](https://fr.wikipedia.org/wiki/New_York)" devrait être considéré comme une seule entité
 - **Langues sans séparateurs** : Le chinois, le japonais ou le thaï n'utilisent pas d'espaces entre les mots
 
 ### Segmentation en phrases

@@ -19,7 +19,7 @@ relatedTo: '[[Word Embeddings et représentations vectorielles]]'
 ---
 ## Généralité
 
-TF-IDF (Term Frequency-Inverse Document Frequency) est une méthode statistique de pondération utilisée en recherche d'information et en fouille de textes pour évaluer l'importance d'un terme dans un document par rapport à une collection de documents. Cette technique combine deux mesures : la fréquence d'un terme dans un document (TF) et l'inverse de la fréquence de ce terme dans l'ensemble des documents (IDF). TF-IDF permet de mettre en évidence les termes qui sont caractéristiques d'un document tout en minimisant l'importance des termes communs à tous les documents.
+[TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF) ([Term Frequency-Inverse Document Frequency](https://fr.wikipedia.org/wiki/Term_Frequency-Inverse_Document_Frequency)) est une méthode statistique de pondération utilisée en recherche d'information et en fouille de textes pour évaluer l'importance d'un terme dans un document par rapport à une collection de documents. Cette technique combine deux mesures : la fréquence d'un terme dans un document (TF) et l'inverse de la fréquence de ce terme dans l'ensemble des documents (IDF). TF-IDF permet de mettre en évidence les termes qui sont caractéristiques d'un document tout en minimisant l'importance des termes communs à tous les documents.
 
 ## Points clés
 
@@ -38,7 +38,7 @@ La formule TF-IDF se décompose en deux parties principales :
    - TF normalisée : fréquence divisée par le nombre total de termes
    - TF logarithmique : 1 + log(fréquence) pour atténuer l'impact des termes très fréquents
 
-2. **Inverse Document Frequency (IDF)** : Mesure la rareté d'un terme dans l'ensemble du corpus :
+2. **[Inverse Document Frequency](https://fr.wikipedia.org/wiki/Inverse_Document_Frequency) (IDF)** : Mesure la rareté d'un terme dans l'ensemble du corpus :
    - IDF = log(N/df) où N est le nombre total de documents et df le nombre de documents contenant le terme
    - Plus un terme est rare dans le corpus, plus sa valeur IDF est élevée
 

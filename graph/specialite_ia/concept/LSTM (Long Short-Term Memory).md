@@ -51,6 +51,6 @@ Mathématiquement, les opérations d'une cellule LSTM peuvent être représenté
 3. Candidats à l'état de cellule: C̃t = tanh(WC·[ht-1, xt] + bC)
 4. Mise à jour de l'état de cellule: Ct = ft * Ct-1 + it * C̃t
 5. Porte de sortie: ot = σ(Wo·[ht-1, xt] + bo)
-6. État caché: ht = ot * tanh(Ct)
+6. [État](https://fr.wikipedia.org/wiki/État) caché: ht = ot * tanh(Ct)
 
 Les LSTM ont inspiré de nombreuses variantes, dont les GRU (Gated Recurrent Units) qui simplifient l'architecture tout en conservant des performances similaires. Malgré l'émergence des modèles Transformer, les LSTM restent pertinents pour de nombreuses applications de traitement de séquences, particulièrement lorsque les ressources computationnelles sont limitées.

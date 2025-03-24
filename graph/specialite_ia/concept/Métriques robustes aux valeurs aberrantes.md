@@ -31,7 +31,7 @@ Les métriques robustes aux valeurs aberrantes sont des mesures statistiques con
 
 ## Détails
 
-### Mesures de tendance centrale robustes
+### [Mesures](https://fr.wikipedia.org/wiki/Mesures) de tendance centrale robustes
 
 La médiane est la métrique robuste la plus connue pour estimer la tendance centrale. Contrairement à la moyenne arithmétique, la médiane n'est pas affectée par l'amplitude des valeurs extrêmes, mais uniquement par leur nombre. Son point de rupture est de 50%, ce qui signifie qu'elle reste fiable même si près de la moitié des données sont aberrantes.
 
@@ -40,7 +40,7 @@ D'autres estimateurs robustes de tendance centrale incluent :
 - La moyenne winsorisée : remplace les valeurs extrêmes par les valeurs les plus proches non considérées comme aberrantes
 - Les M-estimateurs : généralisent la notion de maximum de vraisemblance avec des fonctions de perte moins sensibles aux valeurs extrêmes
 
-### Mesures de dispersion robustes
+### [Mesures](https://fr.wikipedia.org/wiki/Mesures) de dispersion robustes
 
 L'écart absolu médian (MAD) est l'équivalent robuste de l'écart-type. Il est défini comme la médiane des écarts absolus par rapport à la médiane des données. D'autres mesures robustes de dispersion incluent :
 - L'écart interquartile (IQR) : différence entre le 3ème et le 1er quartile

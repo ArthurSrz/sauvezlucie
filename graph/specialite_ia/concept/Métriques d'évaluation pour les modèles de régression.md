@@ -32,7 +32,7 @@ Les métriques d'évaluation pour les modèles de régression sont des indicateu
 
 ### Métriques d'erreur courantes
 
-1. **Erreur Quadratique Moyenne (MSE - Mean Squared Error)**
+1. **Erreur Quadratique [Moyenne](https://fr.wikipedia.org/wiki/Moyenne) (MSE - Mean Squared Error)**
    - Calcule la moyenne des carrés des différences entre les valeurs prédites et réelles
    - Formule: MSE = (1/n) Σ(y_i - ŷ_i)²
    - Avantages: Pénalise fortement les grandes erreurs, mathématiquement pratique pour l'optimisation
@@ -57,10 +57,10 @@ Les métriques d'évaluation pour les modèles de régression sont des indicateu
 
 ### Métriques de performance relative
 
-1. **Coefficient de détermination (R²)**
+1. **[Coefficient](https://fr.wikipedia.org/wiki/Coefficient) de détermination (R²)**
    - Mesure la proportion de variance expliquée par le modèle
    - Formule: R² = 1 - (Σ(y_i - ŷ_i)² / Σ(y_i - ȳ)²)
-   - Varie généralement entre 0 et 1 (1 étant parfait)
+   - [Varie](https://fr.wikipedia.org/wiki/Varie) généralement entre 0 et 1 (1 étant parfait)
    - Peut être négatif si le modèle est pire que la prédiction par la moyenne
    - Avantages: Sans unité, facilement interprétable
    - Inconvénients: Peut augmenter artificiellement avec l'ajout de variables

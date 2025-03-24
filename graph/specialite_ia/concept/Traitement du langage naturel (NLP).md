@@ -23,7 +23,7 @@ hasPart:
 - '[[Tokenisation et segmentation textuelle en NLP]]'
 seeAlso: '[[Traduction automatique neuronale]]'
 ---
-## Généralité
+##Généralité
 
 Le Traitement du Langage Naturel (NLP) est un domaine de l'intelligence artificielle qui se concentre sur l'interaction entre les ordinateurs et le langage humain. Il vise à permettre aux machines de comprendre, interpréter et générer du langage humain de manière significative. Le NLP combine des éléments de linguistique computationnelle, d'apprentissage automatique et d'intelligence artificielle pour traiter et analyser de grandes quantités de données textuelles.
 
@@ -49,8 +49,8 @@ Le NLP repose sur plusieurs niveaux d'analyse linguistique :
 1. **Prétraitement du texte** : tokenisation, suppression des mots vides, lemmatisation et stemming pour normaliser le texte.
 
 2. **Représentation vectorielle** : transformation du texte en vecteurs numériques via des techniques comme :
-   - Sac de mots (Bag of Words)
-   - TF-IDF (Term Frequency-Inverse Document Frequency)
+   - [Sac de mots](https://fr.wikipedia.org/wiki/Sac_de_mots) (Bag of Words)
+   - [TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF) ([Term Frequency-Inverse Document Frequency](https://fr.wikipedia.org/wiki/Term_Frequency-Inverse_Document_Frequency))
    - Word embeddings (Word2Vec, GloVe)
    - Embeddings contextuels (BERT, ELMo)
 
@@ -58,14 +58,14 @@ Le NLP repose sur plusieurs niveaux d'analyse linguistique :
    - Modèles statistiques traditionnels
    - Réseaux de neurones récurrents (RNN, LSTM, GRU)
    - Réseaux de neurones à convolution (CNN)
-   - Architectures basées sur l'attention (Transformers)
+   - [Architectures](https://fr.wikipedia.org/wiki/Architectures) basées sur l'attention ([Transformers](https://fr.wikipedia.org/wiki/Transformers))
 
 ### Applications majeures
 
-- **Traduction automatique** : Google Translate, DeepL
-- **Chatbots et assistants virtuels** : Siri, Alexa, Google Assistant
+- **Traduction automatique** : [Google](https://fr.wikipedia.org/wiki/Google) Translate, DeepL
+- **Chatbots et assistants virtuels** : Siri, Alexa, [Google](https://fr.wikipedia.org/wiki/Google) Assistant
 - **Analyse de sentiment** : surveillance des médias sociaux, analyse d'opinions
-- **Résumé automatique** : génération de résumés de textes longs
+- **[Résumé](https://fr.wikipedia.org/wiki/Résumé) automatique** : génération de résumés de textes longs
 - **Extraction d'information** : identification d'entités et de relations
 - **Systèmes de questions-réponses** : recherche d'informations précises
 - **Génération de texte** : création de contenu, complétion de texte
@@ -73,7 +73,7 @@ Le NLP repose sur plusieurs niveaux d'analyse linguistique :
 ### Défis actuels
 
 Le NLP continue de faire face à plusieurs défis importants :
-- Compréhension des subtilités linguistiques et du contexte
+- [Compréhension](https://fr.wikipedia.org/wiki/Compréhension) des subtilités linguistiques et du contexte
 - Traitement des langues à faibles ressources
 - Biais dans les données d'entraînement et les modèles
 - Interprétabilité et explicabilité des modèles complexes
