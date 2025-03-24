@@ -12,7 +12,6 @@ tags:
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
 ---
-
 ## Généralité
 
 La régression linéaire est un modèle statistique qui établit une relation linéaire entre une variable expliquée et une ou plusieurs variables explicatives. C'est l'un des outils fondamentaux de l'analyse statistique, utilisé tant pour la prédiction que pour l'explication de phénomènes.

@@ -15,7 +15,6 @@ date_modification: '2025-03-20'
 isPartOf: '[[Traitement du langage naturel (NLP)]]'
 uses: '[[Word Embeddings et représentations vectorielles]]'
 ---
-
 ## Généralité
 
 La similarité sémantique est un concept fondamental dans le traitement du langage naturel (NLP) qui mesure le degré de ressemblance entre des mots, des phrases ou des documents en fonction de leur sens plutôt que de leur forme. Contrairement aux méthodes basées sur la similarité lexicale qui comparent uniquement les caractères ou les mots, la similarité sémantique tente de capturer les relations conceptuelles et contextuelles entre les textes, même lorsqu'ils utilisent des termes différents pour exprimer des idées similaires.

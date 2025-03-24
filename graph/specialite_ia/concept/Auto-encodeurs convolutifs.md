@@ -12,11 +12,8 @@ tags:
 - compression
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Les auto-encodeurs]]'
+subClassOf: '[[Les auto-encodeurs]]'
 ---
-
 ## Généralité
 
 Les auto-encodeurs convolutifs (CAE - Convolutional Autoencoders) sont une variante des auto-encodeurs traditionnels spécifiquement conçus pour traiter des données structurées en grille comme les images. Ils combinent les principes des réseaux de neurones convolutifs (CNN) avec l'architecture des auto-encodeurs pour apprendre des représentations compactes et significatives des données visuelles. Contrairement aux auto-encodeurs classiques qui utilisent des couches entièrement connectées, les auto-encodeurs convolutifs exploitent des opérations de convolution et de pooling pour capturer efficacement les caractéristiques spatiales des images.

@@ -12,11 +12,8 @@ tags:
 - ensemble learning
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-
-- type: rdfs:subClassOf
-  target: '[[Arbre de décision]]'
+subClassOf: '[[Arbre de décision]]'
 ---
-
 ##Généralité
 
 Une forêt d'arbres décisionnels (Random Forest) est un algorithme d'apprentissage automatique qui combine plusieurs arbres de décision pour produire une prédiction plus précise et robuste. Cette méthode d'ensemble réduit le risque de surapprentissage tout en maintenant une haute précision, ce qui en fait l'un des algorithmes les plus utilisés en intelligence artificielle pour les tâches de classification et de régression.

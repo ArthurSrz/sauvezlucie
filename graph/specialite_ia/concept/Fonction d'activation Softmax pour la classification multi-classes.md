@@ -14,11 +14,8 @@ tags:
 - distribution de probabilités
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-
-- type: rdfs:subClassOf
-  target: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
+subClassOf: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
 ---
-
 ## Généralité
 
 La fonction d'activation Softmax est une généralisation de la fonction logistique pour les problèmes de classification multi-classes. Elle transforme un vecteur de valeurs réelles en une distribution de probabilités sur plusieurs classes, où la somme des probabilités est égale à 1. Softmax est particulièrement utilisée dans la couche de sortie des réseaux de neurones pour les tâches de classification où chaque entrée doit être classée dans une seule catégorie parmi plusieurs options possibles.

@@ -9,10 +9,9 @@ tags:
 - analyse de données
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 precedes: '[[Choix du modèle]]'
 ---
-
 ## Généralité
 
 La préparation des données est l'étape fondamentale dans le développement d'un système d'intelligence artificielle, consistant à transformer des données brutes en un format adapté à l'analyse et à l'apprentissage automatique.

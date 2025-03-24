@@ -13,13 +13,13 @@ tags:
 - clustering
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-owl:differentFrom: '[[Apprentissage supervisé]]'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[K-means et algorithmes de clustering]]'
+differentFrom: '[[Apprentissage supervisé]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+seeAlso:
+- '[[K-means et algorithmes de clustering]]'
+- '[[Réseaux antagonistes génératifs (GANs)]]'
 hasPart: '[[Les auto-encodeurs]]'
-rdfs:seeAlso: '[[Réseaux antagonistes génératifs (GANs)]]'
 ---
-
 ##Généralité
 
 L'apprentissage non supervisé est une branche de l'intelligence artificielle où les algorithmes apprennent à partir de données non étiquetées, sans supervision humaine. Contrairement à l'apprentissage supervisé, aucune réponse correcte n'est fournie au système, qui doit découvrir par lui-même la structure sous-jacente des données. Cette approche est particulièrement utile lorsque les données étiquetées sont rares ou coûteuses à obtenir, et permet de découvrir des modèles ou des relations que les humains n'auraient pas nécessairement identifiés.

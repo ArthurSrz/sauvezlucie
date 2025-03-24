@@ -13,12 +13,12 @@ tags:
 - investigation
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-hasPart: '[[Recuit simulé]]'
-rdfs:seeAlso: '[[Algorithmes de recherche heuristique en IA]]'
-hasPart: '[[Algorithme A* et ses variantes]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+hasPart:
+- '[[Recuit simulé]]'
+- '[[Algorithme A* et ses variantes]]'
+seeAlso: '[[Algorithmes de recherche heuristique en IA]]'
 ---
-
 ## Généralité
 
 Les approches exploratoires et de recherche d'espace en intelligence artificielle regroupent des algorithmes conçus pour naviguer efficacement dans de vastes espaces de solutions afin de trouver des réponses optimales ou satisfaisantes à des problèmes complexes.

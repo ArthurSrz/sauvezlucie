@@ -14,9 +14,8 @@ tags:
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
 uses: '[[Modèles de langage génératifs pré-entraînés]]'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Le traitement automatique des données multimodales désigne l'ensemble des techniques et méthodes permettant d'analyser, d'interpréter et de fusionner des informations provenant de différentes modalités ou sources de données hétérogènes. Ces modalités peuvent inclure le texte, l'image, la vidéo, l'audio, les signaux physiologiques, ou toute autre forme de données. L'objectif principal est de créer des systèmes capables de comprendre et d'exploiter simultanément plusieurs types de données pour obtenir une représentation plus riche et plus complète de l'information.

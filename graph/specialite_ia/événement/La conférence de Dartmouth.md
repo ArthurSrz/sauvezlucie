@@ -12,11 +12,8 @@ tags:
 - Sciences
 date_creation: '2025-03-13'
 date_modification: '2025-03-13'
-
-- type: isPartOf
-  target: '[[Histoire de l''intelligence artificielle]]'
+isPartOf: '[[Histoire de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 La conférence de Dartmouth est un événement historique majeur dans le domaine de l'intelligence artificielle qui s'est tenu durant l'été 1956 au Dartmouth College à Hanover, New Hampshire. Officiellement intitulée "Dartmouth Summer Research Project on Artificial Intelligence", cette conférence de huit semaines est largement considérée comme l'événement fondateur de l'intelligence artificielle en tant que discipline académique distincte. C'est lors de cette conférence que le terme "intelligence artificielle" a été officiellement adopté.

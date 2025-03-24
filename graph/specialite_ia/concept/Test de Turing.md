@@ -16,7 +16,6 @@ createdBy: '[[Alan Turing]]'
 relatedTo: '[[Intelligence artificielle]]'
 isPartOf: '[[La philosophie de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Le test de Turing est une méthode d'évaluation proposée par le mathématicien et informaticien britannique Alan Turing en 1950 pour déterminer si une machine peut démontrer un comportement intelligent équivalent à celui d'un être humain. Dans son article "Computing Machinery and Intelligence", Turing propose ce test comme une façon de répondre à la question "Les machines peuvent-elles penser?", en remplaçant cette question philosophique par un test empirique plus concret.

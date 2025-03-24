@@ -13,11 +13,11 @@ tags:
 - Kennedy et Eberhart
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Techniques bio-inspirées en IA]]'
-rdfs:subClassOf: '[[Algorithmes de recherche heuristique en IA]]'
+subClassOf:
+- '[[Techniques bio-inspirées en IA]]'
+- '[[Algorithmes de recherche heuristique en IA]]'
 isPartOf: '[[Entraînement d''un modèle d''IA]]'
 ---
-
 ## Généralité
 
 La Recherche par Essaim de Particules (Particle Swarm Optimization ou PSO) est une technique d'optimisation métaheuristique inspirée par le comportement social des oiseaux en vol ou des bancs de poissons. Développée en 1995 par Kennedy et Eberhart, cette méthode simule l'intelligence collective d'un groupe d'agents simples (particules) qui se déplacent dans un espace de recherche multidimensionnel pour trouver une solution optimale à un problème d'optimisation.

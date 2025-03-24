@@ -17,7 +17,6 @@ date_modification: '2025-03-21'
 isPartOf: '[[Apprentissage supervisé]]'
 uses: '[[Entraînement d''un modèle d''IA]]'
 ---
-
 ## Généralité
 
 La courbe ROC (Receiver Operating Characteristic) est un outil graphique d'évaluation et de visualisation des performances d'un modèle de classification binaire. Elle représente la relation entre le taux de vrais positifs (sensibilité) et le taux de faux positifs (1-spécificité) pour différents seuils de décision. Développée initialement pendant la Seconde Guerre mondiale pour l'analyse des signaux radar, la courbe ROC est aujourd'hui largement utilisée en apprentissage automatique, en médecine diagnostique et dans de nombreux domaines nécessitant l'évaluation de classifieurs.

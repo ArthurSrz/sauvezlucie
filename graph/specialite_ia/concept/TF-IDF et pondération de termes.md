@@ -13,11 +13,10 @@ tags:
 - indexation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:seeAlso: '[[Algorithme BM25 pour la recherche d''information]]'
+seeAlso: '[[Algorithme BM25 pour la recherche d''information]]'
 isPartOf: '[[Traitement du langage naturel (NLP)]]'
 relatedTo: '[[Word Embeddings et représentations vectorielles]]'
 ---
-
 ## Généralité
 
 TF-IDF (Term Frequency-Inverse Document Frequency) est une méthode statistique de pondération utilisée en recherche d'information et en fouille de textes pour évaluer l'importance d'un terme dans un document par rapport à une collection de documents. Cette technique combine deux mesures : la fréquence d'un terme dans un document (TF) et l'inverse de la fréquence de ce terme dans l'ensemble des documents (IDF). TF-IDF permet de mettre en évidence les termes qui sont caractéristiques d'un document tout en minimisant l'importance des termes communs à tous les documents.

@@ -18,7 +18,6 @@ uses: '[[Apprentissage profond (Deep Learning)]]'
 relatedTo: '[[Éthique de l''intelligence artificielle]]'
 isPartOf: '[[Les applications de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Les véhicules autonomes représentent une révolution technologique combinant robotique, intelligence artificielle et systèmes de navigation avancés pour permettre à un véhicule de se déplacer sans intervention humaine. Ces systèmes utilisent une combinaison de capteurs, d'algorithmes et de puissance de calcul pour interpréter leur environnement et prendre des décisions de conduite en temps réel, transformant fondamentalement notre conception du transport.

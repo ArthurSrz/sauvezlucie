@@ -14,10 +14,10 @@ tags:
 - algorithmes
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Apprentissage profond (Deep Learning)]]'
-rdfs:subClassOf: '[[Apprentissage non supervisé]]'
+subClassOf:
+- '[[Apprentissage profond (Deep Learning)]]'
+- '[[Apprentissage non supervisé]]'
 ---
-
 ## Généralité
 
 Les Réseaux Antagonistes Génératifs (GANs, Generative Adversarial Networks) sont une architecture d'apprentissage automatique introduite par Ian Goodfellow et ses collègues en 2014. Ce cadre innovant met en compétition deux réseaux de neurones : un générateur qui crée des données synthétiques et un discriminateur qui tente de distinguer les données réelles des données générées. Cette approche antagoniste permet de produire des données artificielles d'une qualité remarquable, capables de capturer la distribution des données réelles.

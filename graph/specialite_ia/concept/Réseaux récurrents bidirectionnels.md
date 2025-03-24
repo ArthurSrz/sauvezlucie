@@ -13,13 +13,14 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-rdfs:subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
-relatedTo: '[[LSTM (Long Short-Term Memory)]]'
-relatedTo: '[[GRU (Gated Recurrent Units)]]'
-hasPart: '[[LSTM (Long Short-Term Memory)]]'
-hasPart: '[[GRU (Gated Recurrent Units)]]'
+subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
+relatedTo:
+- '[[LSTM (Long Short-Term Memory)]]'
+- '[[GRU (Gated Recurrent Units)]]'
+hasPart:
+- '[[LSTM (Long Short-Term Memory)]]'
+- '[[GRU (Gated Recurrent Units)]]'
 ---
-
 ## Généralité
 
 Les réseaux récurrents bidirectionnels (Bidirectional Recurrent Neural Networks ou BiRNN) sont une extension des réseaux de neurones récurrents (RNN) traditionnels qui permettent de traiter les séquences de données dans les deux directions : de gauche à droite et de droite à gauche. Cette architecture permet au modèle de capturer des informations contextuelles complètes en tenant compte à la fois du passé et du futur pour chaque élément d'une séquence, ce qui est particulièrement utile pour des tâches comme la reconnaissance de la parole, la traduction automatique ou l'analyse de texte.

@@ -10,11 +10,8 @@ tags:
 - simulation
 date_creation: '2025-03-16'
 date_modification: '2025-03-16'
-
-- type: isPartOf
-  target: '[[Approches exploratoires et de recherche d''espace]]'
+isPartOf: '[[Approches exploratoires et de recherche d''espace]]'
 ---
-
 ##Généralité
 
 Le recuit simulé est une méthode d'optimisation stochastique inspirée du processus métallurgique de recuit, où un métal est chauffé puis refroidi lentement pour réduire ses défauts. En informatique, cette technique permet de résoudre des problèmes d'optimisation combinatoire complexes en évitant les minimums locaux. Contrairement aux méthodes de descente de gradient classiques, le recuit simulé accepte occasionnellement des solutions qui dégradent temporairement la fonction objectif, ce qui lui permet d'explorer plus largement l'espace des solutions.

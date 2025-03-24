@@ -12,18 +12,20 @@ tags:
 - mémoire artificielle
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-rdfs:seeAlso: '[[LSTM (Long Short-Term Memory)]]'
-rdfs:seeAlso: '[[GRU (Gated Recurrent Units)]]'
-rdfs:seeAlso: '[[Réseaux récurrents bidirectionnels]]'
-hasPart: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
+seeAlso:
+- '[[LSTM (Long Short-Term Memory)]]'
+- '[[GRU (Gated Recurrent Units)]]'
+- '[[Réseaux récurrents bidirectionnels]]'
+hasPart:
+- '[[Problème du gradient évanescent dans les réseaux récurrents]]'
+- '[[LSTM (Long Short-Term Memory)]]'
+- '[[GRU (Gated Recurrent Units)]]'
 isPartOf: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
-hasPart: '[[LSTM (Long Short-Term Memory)]]'
-hasPart: '[[GRU (Gated Recurrent Units)]]'
 relatedTo: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
-rdfs:subClassOf: '[[Apprentissage profond (Deep Learning)]]'
-rdfs:subClassOf: '[[Réseaux neuronaux en IA]]'
+subClassOf:
+- '[[Apprentissage profond (Deep Learning)]]'
+- '[[Réseaux neuronaux en IA]]'
 ---
-
 ## Généralité
 
 Les Réseaux de Neurones Récurrents (RNN) sont une classe de réseaux de neurones artificiels spécialement conçus pour traiter des données séquentielles. Contrairement aux réseaux de neurones traditionnels qui traitent les entrées de manière indépendante, les RNN possèdent une "mémoire" qui leur permet de prendre en compte les informations précédemment traitées. Cette caractéristique les rend particulièrement adaptés pour l'analyse de séries temporelles, le traitement du langage naturel, la reconnaissance vocale et d'autres tâches où le contexte temporel est important.

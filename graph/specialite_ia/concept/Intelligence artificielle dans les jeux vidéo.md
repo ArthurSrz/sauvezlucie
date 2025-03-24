@@ -13,11 +13,8 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-
-- type: rdfs:subClassOf
-  target: '[[Les applications de l''intelligence artificielle]]'
+subClassOf: '[[Les applications de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 L'intelligence artificielle (IA) dans les jeux vidéo désigne l'ensemble des techniques et algorithmes utilisés pour créer des comportements autonomes et adaptatifs des personnages non-joueurs (PNJ) et des systèmes de jeu. Contrairement à l'IA générale qui vise à reproduire l'intelligence humaine dans sa globalité, l'IA des jeux vidéo est conçue spécifiquement pour simuler des comportements crédibles, proposer des défis adaptés et enrichir l'expérience ludique des joueurs.

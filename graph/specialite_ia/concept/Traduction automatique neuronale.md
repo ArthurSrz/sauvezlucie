@@ -13,11 +13,10 @@ tags:
 - apprentissage profond
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Traitement du langage naturel (NLP)]]'
+subClassOf: '[[Traitement du langage naturel (NLP)]]'
 uses: '[[Apprentissage profond (Deep Learning)]]'
 isPartOf: '[[Transformers et attention en NLP]]'
 ---
-
 ## Généralité
 
 La traduction automatique neuronale (NMT - Neural Machine Translation) est une approche de traduction automatique qui utilise des réseaux de neurones artificiels pour prédire la probabilité d'une séquence de mots. Contrairement aux systèmes de traduction statistique traditionnels, les systèmes NMT apprennent à traduire des textes entiers en une seule fois, en tenant compte du contexte complet, ce qui permet d'obtenir des traductions plus fluides et naturelles. Cette technologie représente une avancée majeure dans le domaine du traitement automatique des langues naturelles.

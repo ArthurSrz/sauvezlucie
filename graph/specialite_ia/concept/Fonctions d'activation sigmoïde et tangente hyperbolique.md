@@ -15,7 +15,6 @@ date_modification: '2025-03-21'
 relatedTo: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
 isPartOf: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
 ---
-
 ## Généralité
 
 Les fonctions d'activation sigmoïde et tangente hyperbolique (tanh) sont des fonctions non linéaires essentielles dans les réseaux de neurones artificiels. Elles transforment la somme pondérée des entrées d'un neurone en une sortie bornée, permettant au réseau d'apprendre des relations complexes et non linéaires entre les variables. Ces fonctions ont joué un rôle historique majeur dans le développement des réseaux de neurones avant l'avènement des fonctions d'activation plus modernes comme ReLU.

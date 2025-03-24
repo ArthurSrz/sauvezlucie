@@ -13,11 +13,8 @@ tags:
 - débruitage
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Les auto-encodeurs]]'
+subClassOf: '[[Les auto-encodeurs]]'
 ---
-
 ## Généralité
 
 Les auto-encodeurs pour la réduction de bruit (Denoising Autoencoders ou DAE) sont une variante spécialisée des auto-encodeurs, conçus spécifiquement pour éliminer le bruit des données d'entrée. Contrairement aux auto-encodeurs classiques qui apprennent simplement à reproduire leurs entrées, les DAE sont entraînés à reconstruire des versions propres de données corrompues par du bruit, ce qui les rend particulièrement utiles pour le prétraitement des données, la restauration d'images et l'extraction de caractéristiques robustes.

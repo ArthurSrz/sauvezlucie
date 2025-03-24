@@ -13,11 +13,10 @@ tags:
 - apprentissage automatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Validation croisée en apprentissage automatique]]'
+subClassOf: '[[Validation croisée en apprentissage automatique]]'
 relatedTo: '[[Optimisation bayésienne pour l''hyperparamétrage]]'
 isPartOf: '[[Métriques robustes aux valeurs aberrantes]]'
 ---
-
 ## Généralité
 
 La validation croisée et l'évaluation de modèles sont des techniques essentielles en apprentissage automatique permettant d'estimer la performance d'un modèle sur des données non vues et de détecter les problèmes de sur-apprentissage ou sous-apprentissage. Ces méthodes consistent à diviser les données disponibles en sous-ensembles pour entraîner et tester le modèle de manière rigoureuse, garantissant ainsi une évaluation plus fiable de sa capacité de généralisation.

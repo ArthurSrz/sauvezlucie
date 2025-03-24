@@ -11,11 +11,10 @@ tags:
 - choix
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 follows: '[[Préparation des données]]'
 precedes: '[[Choix de la fonction de minimisation]]'
 ---
-
 # Choix du modèle
 
 ## Généralité

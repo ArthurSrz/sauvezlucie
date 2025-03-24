@@ -14,12 +14,11 @@ tags:
 - optimisation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 follows: '[[Choix du modèle]]'
 precedes: '[[Choix de la mesure d''erreur]]'
 isPartOf: '[[Algorithmes d''optimisation bayésienne]]'
 ---
-
 # Choix de la fonction de minimisation
 
 ## Généralité

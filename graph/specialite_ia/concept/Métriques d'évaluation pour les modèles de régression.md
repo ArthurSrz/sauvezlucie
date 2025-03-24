@@ -13,11 +13,10 @@ tags:
 - analyse quantitative
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Choix de la mesure d''erreur]]'
+subClassOf: '[[Choix de la mesure d''erreur]]'
 relatedTo: '[[La régression linéaire]]'
 hasPart: '[[Coefficient de détermination (R²)]]'
 ---
-
 ## Généralité
 
 Les métriques d'évaluation pour les modèles de régression sont des indicateurs quantitatifs qui permettent de mesurer la performance d'un modèle prédictif sur des données numériques continues. Contrairement aux modèles de classification qui prédisent des catégories, les modèles de régression prédisent des valeurs numériques, ce qui nécessite des métriques spécifiques pour évaluer leur précision et leur fiabilité. Ces métriques sont essentielles pour comparer différents modèles, ajuster les hyperparamètres et déterminer si un modèle est suffisamment performant pour être déployé en production.

@@ -13,13 +13,14 @@ tags:
 - Cho et al.
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-isPartOf: '[[Réseaux de neurones récurrents (RNN)]]'
-isPartOf: '[[Réseaux récurrents bidirectionnels]]'
-relatedTo: '[[LSTM (Long Short-Term Memory)]]'
-rdfs:subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
-relatedTo: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
+isPartOf:
+- '[[Réseaux de neurones récurrents (RNN)]]'
+- '[[Réseaux récurrents bidirectionnels]]'
+relatedTo:
+- '[[LSTM (Long Short-Term Memory)]]'
+- '[[Problème du gradient évanescent dans les réseaux récurrents]]'
+subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
 ---
-
 ## Généralité
 
 Les GRU (Gated Recurrent Units) sont un type de réseau de neurones récurrents (RNN) introduit par Cho et al. en 2014 comme une alternative simplifiée aux LSTM (Long Short-Term Memory). Les GRU sont conçus pour résoudre le problème de disparition du gradient dans les RNN traditionnels tout en maintenant une architecture plus légère que les LSTM. Cette architecture permet aux GRU de modéliser efficacement des dépendances temporelles à long terme dans des séquences de données, ce qui les rend particulièrement utiles pour le traitement du langage naturel, la reconnaissance vocale et d'autres tâches impliquant des données séquentielles.

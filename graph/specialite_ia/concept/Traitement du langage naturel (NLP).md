@@ -9,20 +9,20 @@ tags:
 - Technologies du langage
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-hasPart: '[[Transformers et attention en NLP]]'
-hasPart: '[[Similarité sémantique dans le traitement du langage naturel]]'
-hasPart: '[[Word Embeddings et représentations vectorielles]]'
-hasPart: '[[Reconnaissance d''entités nommées (NER)]]'
-hasPart: '[[Modèles de langage génératifs pré-entraînés]]'
-hasPart: '[[Modèles N-gram en traitement du langage naturel]]'
-hasPart: '[[TF-IDF et pondération de termes]]'
-hasPart: '[[Distance d''édition et algorithme de Wagner-Fischer]]'
-hasPart: '[[Analyse de sentiments et opinion mining en NLP]]'
-hasPart: '[[Tokenisation et segmentation textuelle en NLP]]'
-rdfs:seeAlso: '[[Traduction automatique neuronale]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+hasPart:
+- '[[Transformers et attention en NLP]]'
+- '[[Similarité sémantique dans le traitement du langage naturel]]'
+- '[[Word Embeddings et représentations vectorielles]]'
+- '[[Reconnaissance d''entités nommées (NER)]]'
+- '[[Modèles de langage génératifs pré-entraînés]]'
+- '[[Modèles N-gram en traitement du langage naturel]]'
+- '[[TF-IDF et pondération de termes]]'
+- '[[Distance d''édition et algorithme de Wagner-Fischer]]'
+- '[[Analyse de sentiments et opinion mining en NLP]]'
+- '[[Tokenisation et segmentation textuelle en NLP]]'
+seeAlso: '[[Traduction automatique neuronale]]'
 ---
-
 ##Généralité
 
 Le Traitement du Langage Naturel (NLP) est un domaine de l'intelligence artificielle qui se concentre sur l'interaction entre les ordinateurs et le langage humain. Il vise à permettre aux machines de comprendre, interpréter et générer du langage humain de manière significative. Le NLP combine des éléments de linguistique computationnelle, d'apprentissage automatique et d'intelligence artificielle pour traiter et analyser de grandes quantités de données textuelles.

@@ -14,11 +14,8 @@ tags:
 - Recherche IA
 date_creation: '2025-03-13'
 date_modification: '2025-03-13'
-
-- type: isPartOf
-  target: '[[Google]]'
+isPartOf: '[[Google]]'
 ---
-
 # Google DeepMind
 
 ##Généralité

@@ -13,11 +13,8 @@ tags:
 - prise de décision
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: relatedTo
-  target: '[[Éthique de l''intelligence artificielle]]'
+relatedTo: '[[Éthique de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 L'explicabilité et l'interprétabilité des modèles d'IA concernent la capacité à comprendre et à expliquer comment un système d'intelligence artificielle prend ses décisions. Ces concepts sont devenus cruciaux à mesure que les modèles d'IA sont déployés dans des domaines sensibles comme la santé, la finance ou la justice. Alors que l'interprétabilité se réfère à la compréhension du mécanisme interne du modèle, l'explicabilité concerne la capacité à présenter les raisons d'une décision de manière compréhensible pour les humains.

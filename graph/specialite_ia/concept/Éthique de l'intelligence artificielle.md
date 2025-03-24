@@ -13,10 +13,10 @@ tags:
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
 isPartOf: '[[Les enjeux de l''intelligence artificielle]]'
-hasPart: '[[Biais et équité dans les systèmes d''IA]]'
-hasPart: '[[Explicabilité et interprétabilité des modèles d''IA]]'
+hasPart:
+- '[[Biais et équité dans les systèmes d''IA]]'
+- '[[Explicabilité et interprétabilité des modèles d''IA]]'
 ---
-
 ## Généralité
 
 L'éthique de l'intelligence artificielle est un domaine interdisciplinaire qui examine les implications morales, sociales et juridiques du développement et de l'utilisation des systèmes d'IA. Elle vise à établir des principes directeurs pour garantir que les technologies d'IA soient conçues, déployées et utilisées de manière responsable, équitable et bénéfique pour l'humanité, tout en minimisant les risques et les préjudices potentiels.

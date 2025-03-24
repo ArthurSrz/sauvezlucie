@@ -11,12 +11,12 @@ tags:
 - futur
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Intelligence artificielle]]'
-rdfs:seeAlso: '[[Intelligence artificielle générale]]'
-hasPart: '[[Éthique de l''intelligence artificielle]]'
-hasPart: '[[Biais et équité dans les systèmes d''IA]]'
+subClassOf: '[[Intelligence artificielle]]'
+seeAlso: '[[Intelligence artificielle générale]]'
+hasPart:
+- '[[Éthique de l''intelligence artificielle]]'
+- '[[Biais et équité dans les systèmes d''IA]]'
 ---
-
 # Les enjeux de l'intelligence artificielle
 
 ## Généralité

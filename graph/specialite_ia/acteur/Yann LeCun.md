@@ -17,9 +17,8 @@ affiliatedWith: '[[Meta]]'
 inventedBy: '[[Réseau neuronal convolutif]]'
 isPartOf: '[[Histoire de l''intelligence artificielle]]'
 relatedTo: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
+  l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Yann LeCun est un informaticien français, né le 8 juillet 1960 à Soisy-sous-Montmorency. Il est considéré comme l'un des pionniers et leaders mondiaux dans le domaine de l'intelligence artificielle, particulièrement en apprentissage profond (deep learning) et en réseaux de neurones convolutifs. Actuellement, il occupe le poste de Chief AI Scientist chez Meta (anciennement Facebook) et est professeur à l'Université de New York. En 2018, il a reçu le prix Turing, considéré comme le "Nobel de l'informatique", conjointement avec Geoffrey Hinton et Yoshua Bengio, formant ce que l'on appelle souvent les "parrains du deep learning".

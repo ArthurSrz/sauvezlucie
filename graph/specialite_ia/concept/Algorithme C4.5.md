@@ -15,7 +15,6 @@ date_modification: '2025-03-22'
 follows: '[[Algorithme ID3]]'
 isPartOf: '[[Arbre de décision]]'
 ---
-
 ## Généralité
 
 L'algorithme C4.5 est une extension de l'algorithme ID3, développé par Ross Quinlan en 1993 pour générer des arbres de décision. Il s'agit d'un algorithme d'apprentissage supervisé largement utilisé dans le domaine du data mining et de l'intelligence artificielle. C4.5 construit des arbres de décision à partir d'un ensemble de données d'entraînement en utilisant le concept d'entropie de l'information. Contrairement à son prédécesseur, C4.5 peut traiter des attributs continus et discrets, gérer les données manquantes et effectuer un élagage pour réduire les erreurs de classification.

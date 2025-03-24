@@ -14,11 +14,8 @@ tags:
 - algorithmes
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-
-- type: isPartOf
-  target: '[[Arbre de décision]]'
+isPartOf: '[[Arbre de décision]]'
 ---
-
 ## Généralité
 
 Les mesures d'impureté sont des métriques fondamentales utilisées dans les algorithmes d'apprentissage automatique, particulièrement dans les arbres de décision, pour évaluer la qualité des divisions des données. Les trois mesures les plus courantes sont l'impureté de Gini, l'entropie et l'erreur de classification. Ces métriques quantifient l'homogénéité des échantillons au sein des nœuds d'un arbre de décision et guident le processus de construction de l'arbre en identifiant les divisions optimales.

@@ -11,10 +11,10 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:seeAlso: '[[La régression logistique]]'
-rdfs:seeAlso: '[[Machines à vecteurs de support (SVM)]]'
+seeAlso:
+- '[[La régression logistique]]'
+- '[[Machines à vecteurs de support (SVM)]]'
 ---
-
 ##Généralité
 
 Un algorithme de classification est une technique d'apprentissage automatique qui permet d'assigner des données à des catégories prédéfinies. Ces algorithmes analysent les caractéristiques des données d'entrée et prédisent leur appartenance à une classe particulière. Ils constituent un élément fondamental du machine learning supervisé, où le modèle apprend à partir d'exemples étiquetés pour ensuite généraliser à de nouvelles données non étiquetées.

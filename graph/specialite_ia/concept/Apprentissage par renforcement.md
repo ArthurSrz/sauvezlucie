@@ -12,11 +12,8 @@ tags:
 - informatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-
-- type: rdfs:subClassOf
-  target: '[[Techniques de l''intelligence artificielle]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 L'apprentissage par renforcement (RL - Reinforcement Learning) est un paradigme d'apprentissage automatique où un agent apprend à prendre des décisions en interagissant avec un environnement. Contrairement à l'apprentissage supervisé, l'agent n'a pas accès à des exemples étiquetés, mais reçoit des récompenses ou des pénalités en fonction des actions qu'il entreprend. L'objectif de l'agent est de maximiser la somme des récompenses cumulées au fil du temps en développant une stratégie optimale (politique).

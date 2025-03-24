@@ -15,7 +15,6 @@ date_modification: '2025-03-13'
 contributedTo: '[[Techniques de l''intelligence artificielle]]'
 participatedIn: '[[Histoire de l''intelligence artificielle]]'
 ---
-
 # Warren McCulloch
 
 ##Généralité

@@ -9,21 +9,21 @@ tags:
 - technologies
 - apprentissage automatique
 - concepts IA
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Intelligence artificielle]]'
-rdfs:seeAlso: '[[Traitement du langage naturel (NLP)]]'
-rdfs:seeAlso: '[[Systèmes Experts]]'
-rdfs:seeAlso: '[[Apprentissage supervisé]]'
-rdfs:seeAlso: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
-rdfs:seeAlso: '[[Approches exploratoires et de recherche d''espace]]'
-rdfs:seeAlso: '[[Apprentissage non supervisé]]'
-rdfs:seeAlso: '[[Apprentissage par renforcement:]]'
-rdfs:seeAlso: '[[Apprentissage profond (Deep Learning)]]'
-rdfs:seeAlso: '[[Apprentissage automatique (Machine Learning)]]'
-rdfs:seeAlso: '[[Traitement automatique des données multimodales]]'
+date_creation: '2025-03-24'
+date_modification: '2025-03-24'
+subClassOf: '[[Intelligence artificielle]]'
+seeAlso:
+- '[[Traitement du langage naturel (NLP)]]'
+- '[[Systèmes Experts]]'
+- '[[Apprentissage supervisé]]'
+- '[[Apprentissage non supervisé]]'
+- '[[Apprentissage par renforcement:]]'
+- '[[Apprentissage profond (Deep Learning)]]'
+- '[[Apprentissage automatique (Machine Learning)]]'
+- '[[Traitement automatique des données multimodales]]'
+- '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+- '[[Approches exploratoires et de recherche d''espace]]'
 ---
-
 # Techniques de l'intelligence artificielle
 
 ## Généralité

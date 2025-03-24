@@ -12,11 +12,11 @@ tags:
 - méthodologie
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
-isPartOf: '[[Entraînement d''un modèle d''IA]]'
-rdfs:seeAlso: '[[Validation croisée et évaluation de modèles]]'
+isPartOf:
+- '[[Apprentissage automatique (Machine Learning)]]'
+- '[[Entraînement d''un modèle d''IA]]'
+seeAlso: '[[Validation croisée et évaluation de modèles]]'
 ---
-
 ## Généralité
 
 La validation croisée est une technique statistique fondamentale en apprentissage automatique permettant d'évaluer la capacité de généralisation d'un modèle. Elle consiste à diviser l'ensemble des données disponibles en plusieurs sous-ensembles (ou plis) afin d'entraîner et de tester le modèle sur différentes combinaisons de ces sous-ensembles. Cette méthode permet d'obtenir une estimation plus fiable des performances du modèle sur des données non vues pendant l'entraînement, réduisant ainsi les risques de surapprentissage.

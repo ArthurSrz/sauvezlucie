@@ -13,14 +13,14 @@ tags:
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
 follows: '[[Choix de la fonction de minimisation]]'
-rdfs:subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 precedes: '[[Entraînement d''un modèle d''IA]]'
-rdfs:seeAlso: '[[Métriques d''évaluation pour les modèles de régression]]'
-rdfs:seeAlso: '[[Métriques robustes aux valeurs aberrantes]]'
+seeAlso:
+- '[[Métriques d''évaluation pour les modèles de régression]]'
+- '[[Métriques robustes aux valeurs aberrantes]]'
+- '[[Compromis biais-variance dans la sélection de métriques]]'
 hasPart: '[[Critères d''erreur pour séries temporelles]]'
-rdfs:seeAlso: '[[Compromis biais-variance dans la sélection de métriques]]'
 ---
-
 ## Généralité
 
 Le choix de la mesure d'erreur détermine comment évaluer et quantifier les performances d'un modèle d'intelligence artificielle, en définissant mathématiquement l'écart entre les prédictions et les valeurs réelles.

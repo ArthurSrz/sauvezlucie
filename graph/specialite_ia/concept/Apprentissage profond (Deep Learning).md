@@ -11,16 +11,17 @@ tags:
 - concepts fondamentaux
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-hasPart: '[[Le perceptron multicouche]]'
-hasPart: '[[L''algorithme du gradient]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+hasPart:
+- '[[Le perceptron multicouche]]'
+- '[[L''algorithme du gradient]]'
+- '[[Transformers et attention en NLP]]'
+- '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
 isPartOf: '[[Machines à vecteurs de support (SVM)]]'
-hasPart: '[[Transformers et attention en NLP]]'
-rdfs:seeAlso: '[[Réseaux de neurones récurrents (RNN)]]'
-rdfs:seeAlso: '[[Réseaux antagonistes génératifs (GANs)]]'
-hasPart: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
+seeAlso:
+- '[[Réseaux de neurones récurrents (RNN)]]'
+- '[[Réseaux antagonistes génératifs (GANs)]]'
 ---
-
 ##Généralité
 
 L'apprentissage profond (Deep Learning) est une branche de l'intelligence artificielle basée sur des réseaux de neurones artificiels comportant plusieurs couches (d'où le terme "profond"). Cette approche permet aux systèmes informatiques d'apprendre et de s'améliorer à partir de l'expérience sans être explicitement programmés pour chaque tâche. Le Deep Learning imite la façon dont le cerveau humain traite les données et crée des modèles pour l'interprétation et la prise de décision.

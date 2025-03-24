@@ -17,7 +17,6 @@ date_modification: '2025-03-20'
 isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
 relatedTo: '[[Arbre de décision]]'
 ---
-
 ## Généralité
 
 Les méthodes d'ensemble en machine learning sont des techniques qui combinent plusieurs modèles d'apprentissage individuels pour produire un modèle prédictif plus performant que chacun des modèles pris séparément. Ces approches reposent sur le principe que la diversité des modèles permet de réduire les erreurs individuelles et d'améliorer la robustesse globale du système prédictif. Les méthodes d'ensemble sont largement utilisées dans les compétitions de science des données et les applications industrielles en raison de leur capacité à améliorer significativement les performances prédictives.

@@ -11,11 +11,8 @@ tags:
 - systèmes d'aide à la décision
 date_creation: '2025-03-15'
 date_modification: '2025-03-15'
-
-- type: rdfs:subClassOf
-  target: '[[Techniques de l''intelligence artificielle]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Un système expert est un programme informatique conçu pour simuler la capacité de raisonnement et les connaissances d'un expert humain dans un domaine spécifique. Développés dans les années 1970 comme une branche de l'intelligence artificielle, ces systèmes utilisent des règles prédéfinies, des heuristiques et des méthodes d'inférence pour résoudre des problèmes complexes qui nécessiteraient normalement l'expertise humaine. Contrairement aux programmes informatiques conventionnels, les systèmes experts peuvent expliquer leur raisonnement et traiter des informations incertaines ou incomplètes.

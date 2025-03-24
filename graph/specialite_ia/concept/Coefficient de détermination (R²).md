@@ -12,11 +12,11 @@ tags:
 - prédiction
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-relatedTo: '[[La régression linéaire multiple]]'
+relatedTo:
+- '[[La régression linéaire multiple]]'
+- '[[La régression linéaire]]'
 isPartOf: '[[Métriques d''évaluation pour les modèles de régression]]'
-relatedTo: '[[La régression linéaire]]'
 ---
-
 ##Généralité
 
 Le coefficient de détermination, communément noté R², est une mesure statistique qui indique la proportion de la variance d'une variable dépendante qui est prévisible à partir des variables indépendantes dans un modèle de régression. Sa valeur est comprise entre 0 et 1, où 0 indique que le modèle n'explique aucune variabilité des données, et 1 indique que le modèle explique parfaitement toute la variabilité des données.

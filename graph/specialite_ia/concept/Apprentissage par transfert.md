@@ -15,7 +15,6 @@ date_modification: '2025-03-18'
 relatedTo: '[[Apprentissage profond (Deep Learning)]]'
 isPartOf: '[[Entraînement d''un modèle d''IA]]'
 ---
-
 ## Généralité
 
 L'apprentissage par transfert (transfer learning) est une technique d'apprentissage automatique où un modèle développé pour une tâche est réutilisé comme point de départ pour un modèle sur une seconde tâche. Cette approche permet de capitaliser sur les connaissances acquises lors de la résolution d'un problème pour en résoudre un autre similaire, réduisant ainsi le besoin en données d'entraînement et en temps de calcul pour la nouvelle tâche.

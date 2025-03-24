@@ -12,15 +12,15 @@ tags:
 - planification
 date_creation: '2025-03-15'
 date_modification: '2025-03-15'
-rdfs:seeAlso: '[[Choix de la fonction de minimisation]]'
-rdfs:seeAlso: '[[Choix du modèle]]'
-rdfs:seeAlso: '[[Préparation des données]]'
-rdfs:seeAlso: '[[Choix de la mesure d''erreur]]'
-rdfs:seeAlso: '[[Entraînement d''un modèle d''IA]]'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Déploiement d''un modèle d''IA]]'
+seeAlso:
+- '[[Choix de la fonction de minimisation]]'
+- '[[Choix du modèle]]'
+- '[[Préparation des données]]'
+- '[[Choix de la mesure d''erreur]]'
+- '[[Entraînement d''un modèle d''IA]]'
+- '[[Déploiement d''un modèle d''IA]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 # Les étapes clés pour concevoir un système d'Intelligence Artificielle
 
 ## Généralité

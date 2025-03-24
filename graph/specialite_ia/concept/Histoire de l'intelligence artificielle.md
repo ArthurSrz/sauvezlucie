@@ -9,13 +9,13 @@ tags:
 - informatique
 - évolution technologique
 - sciences
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
-rdfs:subClassOf: '[[Intelligence artificielle]]'
-hasPart: '[[La conférence de Dartmouth]]'
-hasPart: '[[Yann LeCun]]'
+date_creation: '2025-03-24'
+date_modification: '2025-03-24'
+subClassOf: '[[Intelligence artificielle]]'
+hasPart:
+- '[[La conférence de Dartmouth]]'
+- '[[Yann LeCun]]'
 ---
-
 # Histoire de l'intelligence artificielle
 
 ## Généralité

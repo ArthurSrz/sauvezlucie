@@ -15,7 +15,6 @@ date_modification: '2025-03-20'
 isPartOf: '[[Choix de la mesure d''erreur]]'
 relatedTo: '[[Métriques d''évaluation pour les modèles de régression]]'
 ---
-
 ## Généralité
 
 Les critères d'erreur pour séries temporelles sont des métriques quantitatives utilisées pour évaluer la précision des modèles de prévision. Ces critères permettent de mesurer l'écart entre les valeurs prédites par un modèle et les valeurs réellement observées dans une série temporelle. Ils constituent un élément fondamental dans le processus de sélection, de validation et d'optimisation des modèles prédictifs.

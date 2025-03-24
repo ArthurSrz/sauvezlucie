@@ -11,17 +11,17 @@ tags:
 - algorithmes
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-hasPart: '[[L''algorithme du gradient]]'
-hasPart: '[[Arbre de décision]]'
-hasPart: '[[Réseaux bayésiens]]'
-hasPart: '[[Réduction de dimensionnalité en machine learning]]'
-hasPart: '[[Validation croisée en apprentissage automatique]]'
-hasPart: '[[Systèmes de recommandation en IA]]'
-rdfs:seeAlso: '[[Apprentissage par renforcement:]]'
-hasPart: '[[Méthodes d''ensemble en machine learning]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+hasPart:
+- '[[L''algorithme du gradient]]'
+- '[[Arbre de décision]]'
+- '[[Réseaux bayésiens]]'
+- '[[Réduction de dimensionnalité en machine learning]]'
+- '[[Validation croisée en apprentissage automatique]]'
+- '[[Systèmes de recommandation en IA]]'
+- '[[Méthodes d''ensemble en machine learning]]'
+seeAlso: '[[Apprentissage par renforcement:]]'
 ---
-
 ##Généralité
 
 L'apprentissage automatique (Machine Learning) est une branche de l'intelligence artificielle qui permet aux systèmes informatiques d'apprendre et de s'améliorer à partir de l'expérience sans être explicitement programmés. Il s'agit de développer des algorithmes capables d'identifier des modèles dans les données, d'en tirer des enseignements et de faire des prédictions ou des décisions basées sur ces apprentissages.

@@ -14,11 +14,11 @@ tags:
 - informatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Algorithmes de recherche heuristique en IA]]'
-rdfs:subClassOf: '[[Algorithmes de recherche heuristique en IA]]'
-isPartOf: '[[Approches exploratoires et de recherche d''espace]]'
+isPartOf:
+- '[[Algorithmes de recherche heuristique en IA]]'
+- '[[Approches exploratoires et de recherche d''espace]]'
+subClassOf: '[[Algorithmes de recherche heuristique en IA]]'
 ---
-
 ## Généralité
 
 L'algorithme A* (prononcé "A étoile") est un algorithme de recherche de chemin qui combine les avantages de l'algorithme de Dijkstra et des algorithmes de recherche heuristique. Développé en 1968 par Peter Hart, Nils Nilsson et Bertram Raphael, A* est largement utilisé dans les domaines de l'intelligence artificielle, de la robotique et des jeux vidéo pour trouver le chemin optimal entre deux points dans un graphe. Sa popularité vient de son efficacité et de sa complétude, garantissant de trouver le chemin le plus court lorsqu'une heuristique admissible est utilisée.

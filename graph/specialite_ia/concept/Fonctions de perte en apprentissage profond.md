@@ -15,9 +15,8 @@ tags:
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
 relatedTo: '[[Apprentissage profond (Deep Learning)]]'
-rdfs:subClassOf: '[[Choix de la mesure d''erreur]]'
+subClassOf: '[[Choix de la mesure d''erreur]]'
 ---
-
 ## Généralité
 
 Les fonctions de perte (loss functions) sont des composants essentiels en apprentissage profond qui quantifient l'écart entre les prédictions d'un modèle et les valeurs réelles attendues. Elles définissent l'objectif que l'algorithme d'optimisation cherche à minimiser pendant l'entraînement. Le choix de la fonction de perte est crucial car il influence directement la convergence du modèle, sa capacité de généralisation et ses performances globales.

@@ -14,11 +14,8 @@ tags:
 - compression
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Les auto-encodeurs]]'
+subClassOf: '[[Les auto-encodeurs]]'
 ---
-
 ## Généralité
 
 Les Auto-encodeurs Variationnels (VAE) sont des modèles génératifs probabilistes qui étendent le concept d'auto-encodeurs traditionnels en introduisant une composante stochastique. Proposés par Kingma et Welling en 2013, les VAE apprennent à encoder des données dans un espace latent probabiliste et à les reconstruire à partir de cet espace, permettant ainsi la génération de nouvelles données similaires à celles de l'ensemble d'apprentissage. Contrairement aux auto-encodeurs classiques, les VAE ne se contentent pas de compresser l'information, mais modélisent une distribution de probabilité sur l'espace latent.

@@ -17,7 +17,6 @@ isPartOf: '[[Réseaux de neurones récurrents (RNN)]]'
 solvedBy: '[[LSTM (Long Short-Term Memory)]]'
 hasPart: '[[Réseaux de neurones récurrents (RNN)]]'
 ---
-
 ## Généralité
 
 Le problème du gradient évanescent est un obstacle majeur dans l'entraînement des réseaux de neurones récurrents (RNN). Ce phénomène se produit lorsque les gradients calculés lors de la rétropropagation du temps (BPTT) deviennent exponentiellement petits à mesure qu'ils sont propagés en arrière à travers les couches temporelles. En conséquence, les poids des connexions éloignées dans le temps ne sont pratiquement pas mis à jour, ce qui empêche le réseau d'apprendre les dépendances à long terme dans les séquences de données.

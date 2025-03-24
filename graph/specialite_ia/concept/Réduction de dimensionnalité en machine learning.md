@@ -14,7 +14,6 @@ tags:
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
 ---
-
 ## Généralité
 
 La réduction de dimensionnalité est une technique fondamentale en machine learning qui consiste à transformer des données de haute dimension en une représentation de dimension inférieure tout en préservant au maximum les informations pertinentes. Cette approche permet de surmonter les défis liés à la "malédiction de la dimensionnalité", d'améliorer les performances des algorithmes d'apprentissage et de faciliter la visualisation des données complexes.

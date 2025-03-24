@@ -14,11 +14,8 @@ tags:
 - innovation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Les acteurs de l''intelligence artificielle]]'
+isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 L'Allen Institute for AI (AI2) est un institut de recherche à but non lucratif fondé en 2014 par Paul Allen, co-fondateur de Microsoft. Basé à Seattle, Washington, AI2 se consacre à la recherche fondamentale en intelligence artificielle avec pour mission de contribuer au bien commun et de faire progresser la science. L'institut vise à développer une IA capable de raisonner, d'apprendre et de lire pour comprendre le monde, tout en abordant des défis scientifiques et sociétaux complexes.

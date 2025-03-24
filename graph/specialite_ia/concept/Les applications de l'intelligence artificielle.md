@@ -10,14 +10,15 @@ tags:
 - informatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Intelligence artificielle]]'
-hasPart: '[[Véhicules autonomes et systèmes de navigation IA]]'
-rdfs:seeAlso: '[[Intelligence artificielle dans les jeux vidéo]]'
-hasPart: '[[Diagnostic médical assisté par IA]]'
-rdfs:seeAlso: '[[Agents conversationnels et chatbots]]'
-hasPart: '[[Systèmes multi-agents en intelligence artificielle]]'
+subClassOf: '[[Intelligence artificielle]]'
+hasPart:
+- '[[Véhicules autonomes et systèmes de navigation IA]]'
+- '[[Diagnostic médical assisté par IA]]'
+- '[[Systèmes multi-agents en intelligence artificielle]]'
+seeAlso:
+- '[[Intelligence artificielle dans les jeux vidéo]]'
+- '[[Agents conversationnels et chatbots]]'
 ---
-
 ##Généralité
 
 L'intelligence artificielle (IA) désigne la capacité des machines à simuler l'intelligence humaine, notamment l'apprentissage, le raisonnement et l'auto-correction. Ses applications se sont multipliées dans pratiquement tous les secteurs d'activité, transformant profondément notre société, notre économie et notre quotidien. De la santé aux transports, en passant par l'éducation et le divertissement, l'IA révolutionne les processus, améliore l'efficacité et crée de nouvelles possibilités auparavant inimaginables.

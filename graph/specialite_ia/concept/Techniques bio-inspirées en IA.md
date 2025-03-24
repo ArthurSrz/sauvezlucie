@@ -16,12 +16,12 @@ tags:
 - biomimétisme
 date_creation: '2025-03-20'
 date_modification: '2025-03-22'
-rdfs:seeAlso: '[[Algorithmes génétiques en IA]]'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Recherche par essaim de particules (PSO)]]'
-rdfs:seeAlso: '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
+seeAlso:
+- '[[Algorithmes génétiques en IA]]'
+- '[[Recherche par essaim de particules (PSO)]]'
+- '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Les techniques bio-inspirées en Intelligence Artificielle (IA) sont des approches qui s'inspirent des systèmes biologiques, des comportements naturels et des processus évolutifs pour résoudre des problèmes complexes. Ces méthodes imitent les principes observés dans la nature pour créer des algorithmes et des systèmes d'IA plus efficaces, adaptatifs et robustes. Elles représentent un pont entre les sciences naturelles et l'informatique, exploitant des millions d'années d'optimisation évolutive pour développer des solutions innovantes.

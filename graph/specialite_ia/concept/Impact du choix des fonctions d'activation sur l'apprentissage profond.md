@@ -12,13 +12,14 @@ tags:
 - IA
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-hasPart: '[[Fonction d''activation ReLU et ses variantes]]'
-hasPart: '[[Fonctions d''activation sigmoïde et tangente hyperbolique]]'
-rdfs:seeAlso: '[[Fonction d''activation Softmax pour la classification multi-classes]]'
-rdfs:seeAlso: '[[Fonctions d''activation Swish et Mish en deep learning]]'
+hasPart:
+- '[[Fonction d''activation ReLU et ses variantes]]'
+- '[[Fonctions d''activation sigmoïde et tangente hyperbolique]]'
+seeAlso:
+- '[[Fonction d''activation Softmax pour la classification multi-classes]]'
+- '[[Fonctions d''activation Swish et Mish en deep learning]]'
 isPartOf: '[[Apprentissage profond (Deep Learning)]]'
 ---
-
 ## Généralité
 
 Les fonctions d'activation sont des composants essentiels des réseaux de neurones qui introduisent des non-linéarités dans le modèle, permettant ainsi d'apprendre des relations complexes dans les données. Le choix de ces fonctions a un impact significatif sur la capacité d'apprentissage, la vitesse de convergence et les performances globales des modèles d'apprentissage profond.

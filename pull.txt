@@ -1,0 +1,22 @@
+# Ajout de la spécialité Intelligence Artificielle
+
+## Description
+Cette pull request ajoute une nouvelle spécialité dédiée à l'Intelligence Artificielle (IA) dans le graphe de connaissances de Lucie. La structure est organisée de manière à présenter les concepts, acteurs, organisations et événements clés du domaine de l'IA.
+
+## Contenu ajouté
+- **121 fichiers markdown** organisés en catégories distinctes :
+  - **Concepts** (109 fichiers) : Couvrant tous les aspects fondamentaux de l'IA, des algorithmes d'apprentissage automatique aux techniques de traitement du langage naturel
+  - **Acteurs** (3 fichiers) : Figures importantes ayant contribué au développement de l'IA
+  - **Organisations** (9 fichiers) : Institutions et entreprises majeures dans le domaine
+  - **Événements** (1 fichier) : Moments clés de l'histoire de l'IA
+
+## Améliorations techniques
+- Format YAML optimisé pour Obsidian, avec une structure simplifiée pour les relations
+- Conservation des relations sémantiques entre les différents éléments du graphe pour permettre une navigation intuitive
+- Respect du format RDFS pour les relations sémantiques
+
+## Impact
+Cette spécialité enrichit considérablement la base de connaissances de Lucie en y intégrant un domaine scientifique et technologique majeur. Les utilisateurs pourront explorer les concepts fondamentaux de l'IA et comprendre leurs interconnexions.
+
+## Note personnelle
+Ce travail constitue une base solide de concepts liés à l'intelligence artificielle, qui pourra être enrichie ultérieurement. La gestion d'un graphe de connaissances avec Obsidian s'est révélée complexe, particulièrement pour la gestion des relations. J'ai développé une solution personnelle pour rendre le format compatible avec Obsidian, que je prévois de publier prochainement sur GitHub.

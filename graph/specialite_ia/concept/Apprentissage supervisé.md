@@ -12,15 +12,15 @@ tags:
 - modèles prédictifs
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-owl:differentFrom: '[[Apprentissage non supervisé]]'
-hasPart: '[[La régression linéaire]]'
-hasPart: '[[Arbre de décision]]'
-hasPart: '[[La régression logistique]]'
-hasPart: '[[Machines à vecteurs de support (SVM)]]'
-hasPart: '[[Courbe ROC]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+differentFrom: '[[Apprentissage non supervisé]]'
+hasPart:
+- '[[La régression linéaire]]'
+- '[[Arbre de décision]]'
+- '[[La régression logistique]]'
+- '[[Machines à vecteurs de support (SVM)]]'
+- '[[Courbe ROC]]'
 ---
-
 ##Généralité
 
 L'apprentissage supervisé est une branche fondamentale du machine learning où un algorithme apprend à partir d'un ensemble de données étiquetées. Dans ce paradigme, le modèle est entraîné sur des exemples où les entrées sont associées à leurs sorties correctes (étiquettes), permettant ainsi au système d'apprendre à prédire les sorties pour de nouvelles entrées non vues. C'est comme apprendre avec un professeur qui fournit les bonnes réponses pendant la phase d'apprentissage.

@@ -14,11 +14,8 @@ tags:
 - classification
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-
-- type: isPartOf
-  target: '[[Arbre de décision]]'
+isPartOf: '[[Arbre de décision]]'
 ---
-
 ## Généralité
 
 CHAID (CHi-squared Automatic Interaction Detector) est une technique d'analyse prédictive et de segmentation qui appartient à la famille des arbres de décision. Développée par Gordon V. Kass en 1980, cette méthode permet d'identifier les relations entre variables catégorielles et de créer des segments homogènes en fonction de la variable cible. CHAID utilise le test du chi-carré (χ²) comme critère statistique pour déterminer les meilleures divisions dans l'arbre, ce qui le rend particulièrement adapté aux variables qualitatives.

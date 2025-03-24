@@ -12,10 +12,10 @@ tags:
 - métaheuristiques
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Algorithmes génétiques en IA]]'
-rdfs:subClassOf: '[[Techniques bio-inspirées en IA]]'
+subClassOf:
+- '[[Algorithmes génétiques en IA]]'
+- '[[Techniques bio-inspirées en IA]]'
 ---
-
 ## Généralité
 
 Les algorithmes génétiques (AG) appliqués à l'optimisation combinatoire constituent une approche bio-inspirée pour résoudre des problèmes complexes où l'espace de recherche est discret et généralement très vaste. Basés sur les principes de l'évolution naturelle, ces algorithmes manipulent des populations de solutions candidates qui évoluent progressivement vers des solutions optimales ou quasi-optimales à travers des mécanismes de sélection, croisement et mutation.

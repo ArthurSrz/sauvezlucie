@@ -12,14 +12,13 @@ tags:
 - apprentissage machine
 - deep learning
 - génération de texte
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
-hasPart: '[[Transformers et attention en NLP]]'
-isPartOf: '[[Traitement du langage naturel (NLP)]]'
-isPartOf: '[[Transformers et attention en NLP]]'
+date_creation: '2025-03-24'
+date_modification: '2025-03-24'
+isPartOf:
+- '[[Transformers et attention en NLP]]'
+- '[[Traitement du langage naturel (NLP)]]'
 uses: '[[Word Embeddings et représentations vectorielles]]'
 ---
-
 ## Généralité
 
 Les modèles de langage génératifs pré-entraînés (ou Pre-trained Generative Language Models en anglais) sont des systèmes d'intelligence artificielle conçus pour comprendre et générer du texte semblable à celui produit par des humains. Ces modèles sont d'abord entraînés sur d'immenses corpus de textes pour apprendre les structures linguistiques, les connaissances générales et les relations sémantiques, avant d'être éventuellement affinés pour des tâches spécifiques. Ils représentent une avancée majeure dans le domaine du traitement automatique du langage naturel (TALN).

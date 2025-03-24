@@ -12,10 +12,9 @@ tags:
 - Recherche
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
+subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
+  l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 OpenAI est une entreprise américaine de recherche en intelligence artificielle fondée en décembre 2015 à San Francisco. Elle se consacre au développement d'une IA sûre et bénéfique pour l'humanité. Initialement créée comme organisation à but non lucratif, OpenAI s'est restructurée en 2019 en adoptant un modèle "à but lucratif plafonné" pour attirer davantage d'investissements tout en maintenant sa mission originelle.

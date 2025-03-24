@@ -11,11 +11,8 @@ tags:
 - décodage
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Les auto-encodeurs]]'
+subClassOf: '[[Les auto-encodeurs]]'
 ---
-
 ## Généralité
 
 Un auto-encodeur contractif (CAE - Contractive Autoencoder) est une variante spécialisée des auto-encodeurs qui ajoute une contrainte de régularisation particulière pendant l'apprentissage. Son objectif principal est de rendre la représentation apprise robuste aux petites variations dans les données d'entrée, ce qui permet d'extraire des caractéristiques plus stables et plus significatives.

@@ -13,10 +13,9 @@ tags:
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
 relatedTo: '[[Apprentissage automatique (Machine Learning)]]'
-rdfs:subClassOf: '[[Techniques bio-inspirées en IA]]'
-rdfs:seeAlso: '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
+subClassOf: '[[Techniques bio-inspirées en IA]]'
+seeAlso: '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
 ---
-
 ## Généralité
 
 Les algorithmes génétiques (AG) sont des méthodes d'optimisation et de recherche inspirées par le processus d'évolution naturelle et la sélection naturelle. Développés initialement par John Holland dans les années 1970, ces algorithmes appartiennent à la famille plus large des algorithmes évolutionnaires en intelligence artificielle. Ils utilisent des mécanismes biologiques comme la sélection, le croisement et la mutation pour faire évoluer une population de solutions candidates vers une solution optimale ou proche de l'optimale pour un problème donné.

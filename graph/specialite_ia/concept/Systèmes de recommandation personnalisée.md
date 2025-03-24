@@ -14,10 +14,9 @@ tags:
 - data science
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Systèmes de recommandation en IA]]'
+subClassOf: '[[Systèmes de recommandation en IA]]'
 relatedTo: '[[Éthique de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Les systèmes de recommandation personnalisée sont des algorithmes et techniques qui analysent les comportements, préférences et historiques des utilisateurs pour leur suggérer des produits, services ou contenus susceptibles de les intéresser. Ces systèmes constituent aujourd'hui un pilier fondamental du commerce électronique, des plateformes de streaming, des réseaux sociaux et de nombreux autres services numériques, permettant de filtrer la surabondance d'informations et d'offrir une expérience sur mesure à chaque utilisateur.

@@ -13,15 +13,16 @@ tags:
 - apprentissage automatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Les applications de l''intelligence artificielle]]'
-uses: '[[Apprentissage profond (Deep Learning)]]'
-uses: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
-isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
+isPartOf:
+- '[[Les applications de l''intelligence artificielle]]'
+- '[[Apprentissage automatique (Machine Learning)]]'
+uses:
+- '[[Apprentissage profond (Deep Learning)]]'
+- '[[Entreprises technologiques et géants du numérique dans le domaine de l''intelligence
+  artificielle]]'
 relatedTo: '[[Éthique de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Systèmes de recommandation personnalisée]]'
+seeAlso: '[[Systèmes de recommandation personnalisée]]'
 ---
-
 ## Généralité
 
 Les systèmes de recommandation sont des applications d'intelligence artificielle qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences, comportements passés ou similitudes avec d'autres utilisateurs. Ces systèmes constituent aujourd'hui un élément fondamental des plateformes numériques comme Netflix, Amazon, Spotify ou YouTube, où ils personnalisent l'expérience utilisateur et optimisent l'engagement tout en facilitant la découverte de nouveaux contenus.

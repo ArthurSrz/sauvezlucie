@@ -13,10 +13,10 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-relatedTo: '[[Les enjeux de l''intelligence artificielle]]'
-relatedTo: '[[La philosophie de l''intelligence artificielle]]'
+relatedTo:
+- '[[Les enjeux de l''intelligence artificielle]]'
+- '[[La philosophie de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 L'Intelligence Artificielle Générale (IAG), également connue sous le nom d'Intelligence Artificielle Forte, désigne un système d'intelligence artificielle hypothétique capable de comprendre, apprendre et appliquer des connaissances dans différents domaines avec la même flexibilité et polyvalence que l'intelligence humaine. Contrairement aux systèmes d'IA actuels qui sont spécialisés dans des tâches spécifiques (IA étroite ou faible), l'IAG pourrait résoudre n'importe quel problème intellectuel qu'un être humain peut résoudre, voire le surpasser.

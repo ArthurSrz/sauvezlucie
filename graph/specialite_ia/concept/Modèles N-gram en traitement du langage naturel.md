@@ -12,11 +12,8 @@ tags:
 - analyse textuelle
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Traitement du langage naturel (NLP)]]'
+isPartOf: '[[Traitement du langage naturel (NLP)]]'
 ---
-
 ## Généralité
 
 Les modèles N-gram sont des techniques probabilistes fondamentales en traitement du langage naturel (NLP) qui permettent de prédire l'occurrence d'un mot en fonction des N-1 mots qui le précèdent. Un N-gram est simplement une séquence contiguë de N éléments (généralement des mots ou des caractères) extraite d'un texte. Ces modèles reposent sur l'hypothèse markovienne selon laquelle la probabilité d'apparition d'un mot dépend uniquement d'un nombre limité de mots précédents, plutôt que de tout le contexte antérieur.

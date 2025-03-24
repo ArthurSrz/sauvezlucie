@@ -14,7 +14,6 @@ tags:
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
 ---
-
 ## Généralité
 
 L'optimisation bayésienne est une approche probabiliste pour trouver les valeurs optimales des hyperparamètres dans les algorithmes d'apprentissage automatique. Contrairement aux méthodes traditionnelles comme la recherche par grille ou aléatoire, l'optimisation bayésienne construit un modèle probabiliste de la fonction objectif (généralement la performance du modèle) et l'utilise pour sélectionner intelligemment les prochains hyperparamètres à évaluer, réduisant ainsi considérablement le temps et les ressources nécessaires pour trouver une configuration optimale.

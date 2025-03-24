@@ -12,11 +12,10 @@ tags:
 - Intelligence artificielle
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:subClassOf: '[[Algorithme de classification]]'
+subClassOf: '[[Algorithme de classification]]'
 isPartOf: '[[Apprentissage supervisé]]'
 hasPart: '[[Apprentissage profond (Deep Learning)]]'
 ---
-
 ##Généralité
 
 Les Machines à Vecteurs de Support (SVM) constituent une famille d'algorithmes d'apprentissage supervisé particulièrement efficaces pour la classification et la régression. Développées initialement par Vladimir Vapnik dans les années 1990, les SVM cherchent à trouver l'hyperplan optimal qui sépare les données en différentes classes tout en maximisant la marge entre ces classes. Cette approche leur confère une excellente capacité de généralisation, même avec des ensembles de données relativement petits.

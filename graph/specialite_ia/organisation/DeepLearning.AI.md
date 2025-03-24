@@ -14,11 +14,8 @@ tags:
 - publications techniques
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Les acteurs de l''intelligence artificielle]]'
+isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 DeepLearning.AI est une organisation éducative fondée par Andrew Ng en 2017, dédiée à la démocratisation de l'intelligence artificielle et du deep learning. L'organisation propose des cours en ligne, des certifications et des ressources pédagogiques pour aider les professionnels et les étudiants à acquérir des compétences pratiques en IA. DeepLearning.AI s'est imposée comme l'une des principales plateformes d'apprentissage dans le domaine de l'intelligence artificielle, avec une approche pédagogique qui combine théorie et applications pratiques.

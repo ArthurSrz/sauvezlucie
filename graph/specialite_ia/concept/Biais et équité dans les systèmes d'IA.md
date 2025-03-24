@@ -13,10 +13,10 @@ tags:
 - éthique numérique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Éthique de l''intelligence artificielle]]'
-isPartOf: '[[Les enjeux de l''intelligence artificielle]]'
+isPartOf:
+- '[[Éthique de l''intelligence artificielle]]'
+- '[[Les enjeux de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Les biais et l'équité dans les systèmes d'IA concernent la manière dont les technologies d'intelligence artificielle peuvent perpétuer ou amplifier des préjugés sociaux existants, créant ainsi des résultats discriminatoires. Ces biais peuvent survenir à différentes étapes du développement d'un système d'IA, depuis la collecte des données jusqu'au déploiement des modèles, affectant l'équité des décisions prises par ces systèmes.

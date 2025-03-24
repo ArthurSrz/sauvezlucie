@@ -14,9 +14,8 @@ date_creation: '2025-03-20'
 date_modification: '2025-03-20'
 uses: '[[Validation croisée en apprentissage automatique]]'
 relatedTo: '[[Fonctions de perte en apprentissage profond]]'
-rdfs:subClassOf: '[[Choix de la mesure d''erreur]]'
+subClassOf: '[[Choix de la mesure d''erreur]]'
 ---
-
 ## Généralité
 
 Le compromis biais-variance dans la sélection de métriques représente un équilibre fondamental en science des données et en apprentissage automatique. Il s'agit de trouver le juste milieu entre des métriques trop simples qui sous-estiment la complexité du problème (biais élevé) et des métriques trop complexes qui s'adaptent excessivement aux données d'entraînement (variance élevée). Ce compromis est crucial pour sélectionner des métriques d'évaluation qui permettront de construire des modèles robustes et généralisables.

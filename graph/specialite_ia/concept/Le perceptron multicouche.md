@@ -10,11 +10,10 @@ tags:
 - modèles computationnels
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:subClassOf: '[[Réseaux neuronaux en IA]]'
+subClassOf: '[[Réseaux neuronaux en IA]]'
 uses: '[[L''algorithme du gradient]]'
 isPartOf: '[[Apprentissage profond (Deep Learning)]]'
 ---
-
 ##Généralité
 
 Le perceptron multicouche (PMC ou MLP pour Multi-Layer Perceptron en anglais) est un type de réseau de neurones artificiels composé de plusieurs couches de neurones interconnectés. Contrairement au perceptron simple qui ne peut résoudre que des problèmes linéairement séparables, le perceptron multicouche peut modéliser des relations complexes et non linéaires entre les entrées et les sorties, ce qui en fait un outil puissant pour l'apprentissage automatique et la reconnaissance de formes.

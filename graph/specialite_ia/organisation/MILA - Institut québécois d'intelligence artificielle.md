@@ -14,11 +14,8 @@ tags:
 - IA
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Les acteurs de l''intelligence artificielle]]'
+isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Le Mila (Institut québécois d'intelligence artificielle) est un institut de recherche en intelligence artificielle fondé en 1993 par le professeur Yoshua Bengio à Montréal, Québec. Initialement créé comme laboratoire à l'Université de Montréal, il s'est transformé en 2017 en une organisation à but non lucratif indépendante, tout en maintenant des liens étroits avec plusieurs universités québécoises. Le Mila est aujourd'hui reconnu comme l'un des centres de recherche en IA les plus importants au monde, spécialisé dans l'apprentissage profond (deep learning) et l'apprentissage automatique (machine learning).

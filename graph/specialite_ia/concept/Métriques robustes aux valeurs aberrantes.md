@@ -13,12 +13,11 @@ tags:
 - robustesse
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-owl:differentFrom: '[[La méthode des moindres carrés ordinaires]]'
+differentFrom: '[[La méthode des moindres carrés ordinaires]]'
 isPartOf: '[[L''algorithme du gradient]]'
-rdfs:subClassOf: '[[Choix de la mesure d''erreur]]'
+subClassOf: '[[Choix de la mesure d''erreur]]'
 hasPart: '[[Validation croisée et évaluation de modèles]]'
 ---
-
 ## Généralité
 
 Les métriques robustes aux valeurs aberrantes sont des mesures statistiques conçues pour maintenir leur fiabilité même en présence de données extrêmes ou atypiques. Contrairement aux métriques classiques comme la moyenne ou l'écart-type, qui peuvent être fortement influencées par des valeurs aberrantes, les métriques robustes offrent une représentation plus fidèle de la tendance centrale et de la dispersion des données dans des contextes réels souvent imparfaits.

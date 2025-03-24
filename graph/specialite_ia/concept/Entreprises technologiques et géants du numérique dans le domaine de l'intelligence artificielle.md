@@ -14,12 +14,12 @@ tags:
 - numérique
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Les acteurs de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Google]]'
-rdfs:seeAlso: '[[Meta]]'
-rdfs:seeAlso: '[[OpenAI]]'
+subClassOf: '[[Les acteurs de l''intelligence artificielle]]'
+seeAlso:
+- '[[Google]]'
+- '[[Meta]]'
+- '[[OpenAI]]'
 ---
-
 # Entreprises technologiques et géants du numérique dans le domaine de l'intelligence artificielle
 
 ## Généralité

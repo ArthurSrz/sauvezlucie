@@ -11,12 +11,12 @@ tags:
 - minimisation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
+isPartOf:
+- '[[Apprentissage automatique (Machine Learning)]]'
+- '[[Algorithmes d''optimisation bayésienne]]'
 depends: '[[Apprentissage automatique (Machine Learning)]]'
-isPartOf: '[[Algorithmes d''optimisation bayésienne]]'
 hasPart: '[[Métriques robustes aux valeurs aberrantes]]'
 ---
-
 ##Généralité
 
 L'algorithme du gradient (ou descente de gradient) est une méthode d'optimisation itérative utilisée pour minimiser une fonction de coût en machine learning et en optimisation mathématique. Il fonctionne en ajustant progressivement les paramètres d'un modèle dans la direction opposée au gradient de la fonction de coût, permettant ainsi de converger vers un minimum local ou global.

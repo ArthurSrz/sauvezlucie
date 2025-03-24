@@ -12,12 +12,12 @@ tags:
 - informatique
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:seeAlso: '[[Recherche par essaim de particules (PSO)]]'
-rdfs:seeAlso: '[[Algorithme A* et ses variantes]]'
+seeAlso:
+- '[[Recherche par essaim de particules (PSO)]]'
+- '[[Algorithme A* et ses variantes]]'
 hasPart: '[[Algorithme A* et ses variantes]]'
-rdfs:subClassOf: '[[Approches exploratoires et de recherche d''espace]]'
+subClassOf: '[[Approches exploratoires et de recherche d''espace]]'
 ---
-
 ## Généralité
 
 Les algorithmes de recherche heuristique sont des techniques fondamentales en intelligence artificielle qui permettent de trouver des solutions à des problèmes complexes en utilisant des connaissances ou des estimations pour guider la recherche. Contrairement aux algorithmes de recherche exhaustive, les méthodes heuristiques utilisent des "raccourcis" intelligents pour réduire l'espace de recherche et trouver des solutions acceptables plus rapidement, même si elles ne garantissent pas toujours l'optimalité.

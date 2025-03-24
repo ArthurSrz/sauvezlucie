@@ -13,15 +13,14 @@ tags:
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
 internal_link: '[[Intelligence artificielle]]'
-rdfs:seeAlso: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
-hasPart: '[[INRIA - Institut national de recherche en sciences et technologies du
-    numérique]]'
-hasPart: '[[Allen Institute for AI (AI2)]]'
-hasPart: '[[MILA - Institut québécois d''intelligence artificielle]]'
-hasPart: '[[DeepLearning.AI]]'
+seeAlso: '[[Entreprises technologiques et géants du numérique dans le domaine de l''intelligence
+  artificielle]]'
+hasPart:
+- '[[INRIA - Institut national de recherche en sciences et technologies du numérique]]'
+- '[[Allen Institute for AI (AI2)]]'
+- '[[MILA - Institut québécois d''intelligence artificielle]]'
+- '[[DeepLearning.AI]]'
 ---
-
 ## Généralité
 
 Les acteurs de l'intelligence artificielle forment un écosystème complexe et dynamique composé d'entreprises technologiques, d'institutions académiques, d'organismes gouvernementaux, de startups innovantes et de communautés open source qui, ensemble, façonnent l'évolution et l'impact de cette technologie.

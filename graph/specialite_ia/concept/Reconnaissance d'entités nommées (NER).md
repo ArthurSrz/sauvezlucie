@@ -15,7 +15,6 @@ date_modification: '2025-03-20'
 isPartOf: '[[Traitement du langage naturel (NLP)]]'
 uses: '[[Transformers et attention en NLP]]'
 ---
-
 ## Généralité
 
 La Reconnaissance d'Entités Nommées (NER) est une sous-tâche du traitement automatique du langage naturel (TALN) qui vise à localiser et classifier des éléments textuels en catégories prédéfinies telles que les noms de personnes, d'organisations, de lieux, d'expressions temporelles, de quantités, de valeurs monétaires, de pourcentages, etc. Cette technologie permet d'extraire des informations structurées à partir de textes non structurés, facilitant ainsi l'analyse et la compréhension automatique du contenu textuel.

@@ -17,7 +17,6 @@ uses: '[[Apprentissage profond (Deep Learning)]]'
 isPartOf: '[[Les applications de l''intelligence artificielle]]'
 relatedTo: '[[Éthique de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Le diagnostic médical assisté par IA désigne l'utilisation de technologies d'intelligence artificielle pour aider les professionnels de santé à identifier, analyser et diagnostiquer des pathologies. Ces systèmes exploitent des algorithmes d'apprentissage automatique, de vision par ordinateur et de traitement du langage naturel pour analyser des données médicales complexes (images, résultats de laboratoire, dossiers médicaux) et proposer des hypothèses diagnostiques ou des recommandations de prise en charge.

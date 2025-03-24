@@ -13,11 +13,11 @@ tags:
 - optimisation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-hasPart: '[[L''algorithme du gradient]]'
-hasPart: '[[Choix de la fonction de minimisation]]'
+hasPart:
+- '[[L''algorithme du gradient]]'
+- '[[Choix de la fonction de minimisation]]'
 relatedTo: '[[Réseaux bayésiens]]'
 ---
-
 ## Généralité
 
 L'optimisation bayésienne est une approche séquentielle d'optimisation globale pour des fonctions coûteuses à évaluer, inconnues ou de type "boîte noire". Contrairement aux méthodes d'optimisation classiques, elle utilise un modèle probabiliste (généralement un processus gaussien) pour modéliser la fonction objectif inconnue et une fonction d'acquisition pour déterminer les points à évaluer ensuite. Cette méthode est particulièrement efficace lorsque les évaluations de la fonction objectif sont coûteuses en temps ou en ressources.

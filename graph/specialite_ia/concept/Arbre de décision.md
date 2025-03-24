@@ -11,15 +11,16 @@ tags:
 - modèle prédictif
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
-rdfs:seeAlso: '[[Forêt d''arbres décisionnels IA]]'
-isPartOf: '[[Apprentissage supervisé]]'
-hasPart: '[[Impureté de Gini, entropie et erreur de classification]]'
-hasPart: '[[Algorithme ID3]]'
-hasPart: '[[Algorithme C4.5]]'
-hasPart: '[[CHAID (CHi-squared Automatic Interaction Detector) ]]'
+isPartOf:
+- '[[Apprentissage automatique (Machine Learning)]]'
+- '[[Apprentissage supervisé]]'
+seeAlso: '[[Forêt d''arbres décisionnels IA]]'
+hasPart:
+- '[[Impureté de Gini, entropie et erreur de classification]]'
+- '[[Algorithme ID3]]'
+- '[[Algorithme C4.5]]'
+- '[[CHAID (CHi-squared Automatic Interaction Detector) ]]'
 ---
-
 ##Généralité
 
 Un arbre de décision est un modèle prédictif utilisé en apprentissage automatique et en statistiques qui représente les décisions et leurs conséquences possibles sous forme d'arbre. Cette structure hiérarchique permet de décomposer un problème complexe en une série de décisions plus simples, facilitant ainsi l'analyse et la prise de décision. Les arbres de décision sont particulièrement appréciés pour leur interprétabilité et leur capacité à modéliser des relations non linéaires entre variables.

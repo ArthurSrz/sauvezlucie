@@ -14,11 +14,8 @@ tags:
 - classification
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Apprentissage non supervisé]]'
+subClassOf: '[[Apprentissage non supervisé]]'
 ---
-
 ## Généralité
 
 Le clustering est une technique d'apprentissage non supervisé qui consiste à regrouper des données similaires en clusters (groupes) sans connaissance préalable des étiquettes. Parmi les nombreux algorithmes de clustering, K-means est l'un des plus populaires et des plus simples à comprendre. Il vise à partitionner n observations en k clusters, où chaque observation appartient au cluster dont la moyenne (centroïde) est la plus proche.

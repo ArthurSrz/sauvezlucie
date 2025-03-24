@@ -17,7 +17,6 @@ isPartOf: '[[Impact du choix des fonctions d''activation sur l''apprentissage pr
 solves: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
 relatedTo: '[[Fonctions d''activation Swish et Mish en deep learning]]'
 ---
-
 ## Généralité
 
 La fonction d'activation ReLU (Rectified Linear Unit) est l'une des fonctions d'activation les plus populaires dans les réseaux de neurones profonds. Introduite pour résoudre le problème de disparition du gradient rencontré avec les fonctions sigmoïde et tangente hyperbolique, ReLU est définie mathématiquement comme f(x) = max(0, x). Elle renvoie simplement la valeur d'entrée si celle-ci est positive, sinon elle renvoie zéro. Sa simplicité computationnelle et son efficacité ont conduit au développement de plusieurs variantes pour surmonter certaines de ses limitations.

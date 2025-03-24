@@ -15,11 +15,11 @@ tags:
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
 isPartOf: '[[Traitement du langage naturel (NLP)]]'
-uses: '[[Transformers et attention en NLP]]'
+uses:
+- '[[Transformers et attention en NLP]]'
+- '[[Modèles de langage génératifs pré-entraînés]]'
 depends: '[[Similarité sémantique dans le traitement du langage naturel]]'
-uses: '[[Modèles de langage génératifs pré-entraînés]]'
 ---
-
 ## Généralité
 
 La tokenisation et la segmentation textuelle sont des processus fondamentaux en traitement du langage naturel (NLP) qui consistent à décomposer un texte en unités plus petites et manipulables. La tokenisation divise le texte en tokens (mots, caractères ou sous-mots), tandis que la segmentation découpe le texte en unités plus larges comme des phrases ou des paragraphes. Ces étapes préliminaires sont essentielles car elles transforment le texte brut en format structuré que les algorithmes de NLP peuvent traiter efficacement.

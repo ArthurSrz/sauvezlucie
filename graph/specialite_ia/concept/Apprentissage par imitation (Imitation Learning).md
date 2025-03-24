@@ -14,11 +14,11 @@ tags:
 - modélisation comportementale
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-relatedTo: '[[Apprentissage par renforcement:]]'
-relatedTo: '[[Réseaux antagonistes génératifs (GANs)]]'
+relatedTo:
+- '[[Apprentissage par renforcement:]]'
+- '[[Réseaux antagonistes génératifs (GANs)]]'
 isPartOf: '[[Entraînement d''un modèle d''IA]]'
 ---
-
 ## Généralité
 
 L'apprentissage par imitation (Imitation Learning) est une approche en intelligence artificielle où un agent apprend à effectuer une tâche en observant et en reproduisant les comportements d'un expert. Contrairement à l'apprentissage par renforcement qui nécessite une fonction de récompense explicite, l'apprentissage par imitation utilise des démonstrations d'experts comme signal de supervision. Cette méthode est particulièrement utile lorsqu'il est difficile de définir une fonction de récompense précise ou lorsque l'exploration de l'environnement est coûteuse ou dangereuse.

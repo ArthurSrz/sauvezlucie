@@ -13,11 +13,8 @@ tags:
 - innovation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Les acteurs de l''intelligence artificielle]]'
+isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 L'INRIA (Institut National de Recherche en Sciences et Technologies du Numérique) est le principal organisme public français de recherche dédié aux sciences du numérique. Créé en 1967, initialement sous le nom d'IRIA (Institut de Recherche en Informatique et en Automatique), il est placé sous la double tutelle du ministère de l'Enseignement supérieur et de la Recherche et du ministère de l'Économie. L'institut mène des recherches fondamentales et appliquées dans les domaines de l'informatique, des mathématiques appliquées, de l'intelligence artificielle et de la robotique.

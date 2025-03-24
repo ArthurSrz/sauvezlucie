@@ -12,10 +12,9 @@ date_creation: '2025-03-18'
 date_modification: '2025-03-18'
 hasPart: '[[Google DeepMind]]'
 haspart: '[[Google Brain]]'
-rdfs:subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
+subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
+  l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Google est une entreprise technologique multinationale américaine fondée en 1998 par Larry Page et Sergey Brin. Initialement conçue comme un moteur de recherche, Google s'est développée pour devenir l'une des plus grandes entreprises technologiques au monde, offrant une multitude de produits et services dans les domaines de la recherche en ligne, du cloud computing, des logiciels, de la publicité en ligne, et du matériel informatique. En 2015, Google est devenue une filiale d'Alphabet Inc., une holding créée pour restructurer l'entreprise.

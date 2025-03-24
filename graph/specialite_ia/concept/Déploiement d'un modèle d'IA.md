@@ -11,11 +11,10 @@ tags:
 - Implémentation
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-rdfs:subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
+subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 follows: '[[Entraînement d''un modèle d''IA]]'
-rdfs:seeAlso: '[[Quantification et compression de modèles]]'
+seeAlso: '[[Quantification et compression de modèles]]'
 ---
-
 ## Généralité
 
 Le déploiement d'un modèle d'IA est le processus qui consiste à rendre un modèle d'intelligence artificielle disponible et opérationnel dans un environnement de production. Cette étape critique transforme un modèle entraîné en un service utilisable qui peut traiter des données en temps réel et fournir des prédictions ou des analyses à des utilisateurs finaux ou d'autres systèmes.

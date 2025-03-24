@@ -12,11 +12,10 @@ tags:
 - conscience artificielle
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-rdfs:subClassOf: '[[Intelligence artificielle]]'
-rdfs:seeAlso: '[[Intelligence artificielle générale]]'
+subClassOf: '[[Intelligence artificielle]]'
+seeAlso: '[[Intelligence artificielle générale]]'
 hasPart: '[[Test de Turing]]'
 ---
-
 # La philosophie de l'intelligence artificielle
 
 ## Généralité

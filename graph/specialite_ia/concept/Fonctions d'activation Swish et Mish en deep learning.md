@@ -14,11 +14,8 @@ tags:
 - apprentissage profond
 date_creation: '2025-03-21'
 date_modification: '2025-03-21'
-
-- type: rdfs:subClassOf
-  target: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
+subClassOf: '[[Impact du choix des fonctions d''activation sur l''apprentissage profond]]'
 ---
-
 ## Généralité
 
 Les fonctions d'activation Swish et Mish sont des fonctions non linéaires relativement récentes qui ont gagné en popularité dans les réseaux de neurones profonds. Introduites respectivement par Google Brain (Swish) en 2017 et par Diganta Misra (Mish) en 2019, ces fonctions représentent une alternative aux activations traditionnelles comme ReLU, en offrant des propriétés mathématiques avantageuses qui améliorent la performance et la convergence des modèles de deep learning.

@@ -10,16 +10,16 @@ tags:
 - mathématiques
 - technologies
 - sciences cognitives
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
-rdfs:seeAlso: '[[Histoire de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Les acteurs de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[La philosophie de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Les enjeux de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Techniques de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Les applications de l''intelligence artificielle]]'
+date_creation: '2025-03-24'
+date_modification: '2025-03-24'
+seeAlso:
+- '[[Histoire de l''intelligence artificielle]]'
+- '[[Les acteurs de l''intelligence artificielle]]'
+- '[[La philosophie de l''intelligence artificielle]]'
+- '[[Les enjeux de l''intelligence artificielle]]'
+- '[[Techniques de l''intelligence artificielle]]'
+- '[[Les applications de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 L'intelligence artificielle regroupe une diversité de méthodes reposant sur des principes et mécanismes variés, visant à reproduire ou simuler des fonctions cognitives humaines.

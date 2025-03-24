@@ -13,7 +13,6 @@ tags:
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
 ---
-
 ## Généralité
 
 Les agents conversationnels et chatbots sont des systèmes informatiques conçus pour interagir avec les humains en langage naturel. Ils simulent une conversation humaine à travers des interfaces textuelles ou vocales. Ces technologies utilisent diverses techniques d'intelligence artificielle, notamment le traitement du langage naturel (NLP), l'apprentissage automatique et la reconnaissance vocale pour comprendre les requêtes des utilisateurs et y répondre de manière appropriée.

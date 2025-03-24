@@ -14,13 +14,14 @@ tags:
 - Machine Learning
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-isPartOf: '[[Traitement du langage naturel (NLP)]]'
-isPartOf: '[[Apprentissage profond (Deep Learning)]]'
-isPartOf: '[[Modèles de langage génératifs pré-entraînés]]'
-hasPart: '[[Modèles de langage génératifs pré-entraînés]]'
-hasPart: '[[Traduction automatique neuronale]]'
+isPartOf:
+- '[[Traitement du langage naturel (NLP)]]'
+- '[[Apprentissage profond (Deep Learning)]]'
+- '[[Modèles de langage génératifs pré-entraînés]]'
+hasPart:
+- '[[Modèles de langage génératifs pré-entraînés]]'
+- '[[Traduction automatique neuronale]]'
 ---
-
 ## Généralité
 
 Les Transformers sont une architecture de réseau neuronal introduite en 2017 par Vaswani et al. dans l'article "Attention is All You Need". Cette architecture a révolutionné le traitement du langage naturel (NLP) en remplaçant les réseaux récurrents (RNN) par un mécanisme d'attention qui permet de traiter les séquences en parallèle plutôt que séquentiellement. Le mécanisme d'attention permet au modèle de se concentrer sur différentes parties d'une séquence d'entrée lors de la génération de chaque élément de sortie, ce qui améliore considérablement les performances sur diverses tâches linguistiques.

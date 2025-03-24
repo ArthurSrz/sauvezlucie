@@ -14,11 +14,8 @@ tags:
 - édition de texte
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Traitement du langage naturel (NLP)]]'
+isPartOf: '[[Traitement du langage naturel (NLP)]]'
 ---
-
 ## Généralité
 
 La distance d'édition, également connue sous le nom de distance de Levenshtein, est une mesure qui quantifie la différence entre deux chaînes de caractères. Elle représente le nombre minimal d'opérations élémentaires (insertion, suppression, substitution) nécessaires pour transformer une chaîne en une autre. L'algorithme de Wagner-Fischer est une méthode de programmation dynamique efficace pour calculer cette distance, développée par Robert A. Wagner et Michael J. Fischer en 1974.

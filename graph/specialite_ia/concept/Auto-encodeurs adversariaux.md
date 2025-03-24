@@ -13,11 +13,8 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: rdfs:subClassOf
-  target: '[[Les auto-encodeurs]]'
+subClassOf: '[[Les auto-encodeurs]]'
 ---
-
 ## Généralité
 
 Les auto-encodeurs adversariaux (AAE - Adversarial Autoencoders) sont une architecture de réseau neuronal qui combine les principes des auto-encodeurs traditionnels avec ceux des réseaux antagonistes génératifs (GAN). Introduits par Makhzani et al. en 2015, ils permettent d'apprendre des représentations latentes structurées tout en imposant une distribution préalable arbitraire sur l'espace latent. Cette approche hybride offre un cadre puissant pour la génération de données, l'apprentissage de représentations et diverses tâches d'apprentissage non supervisé.

@@ -13,7 +13,6 @@ date_modification: '2025-03-13'
 participatedIn: '[[Histoire de l''intelligence artificielle]]'
 contributedTo: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 Alan Mathison Turing (1912-1954) était un mathématicien, informaticien, cryptanalyste et philosophe britannique. Considéré comme le père de l'informatique moderne et de l'intelligence artificielle, ses travaux théoriques et pratiques ont posé les fondements de la science informatique. Son rôle crucial dans le décryptage des codes nazis pendant la Seconde Guerre mondiale a significativement contribué à la victoire des Alliés.
 

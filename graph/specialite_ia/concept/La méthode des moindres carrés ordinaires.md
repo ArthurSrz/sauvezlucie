@@ -11,11 +11,8 @@ tags:
 - estimation
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: owl:differentFrom
-  target: '[[Métriques robustes aux valeurs aberrantes]]'
+differentFrom: '[[Métriques robustes aux valeurs aberrantes]]'
 ---
-
 ##Généralité
 
 La méthode des moindres carrés ordinaires (MCO) est une technique statistique fondamentale utilisée en régression linéaire pour estimer les paramètres d'un modèle en minimisant la somme des carrés des écarts entre les valeurs observées et les valeurs prédites par le modèle. Cette approche, développée indépendamment par Carl Friedrich Gauss et Adrien-Marie Legendre au début du 19ème siècle, constitue la pierre angulaire de nombreuses analyses statistiques et économétriques modernes.

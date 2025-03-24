@@ -14,13 +14,13 @@ tags:
 - intelligence artificielle
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-isPartOf: '[[Réseaux de neurones récurrents (RNN)]]'
-isPartOf: '[[Réseaux récurrents bidirectionnels]]'
-rdfs:subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
+isPartOf:
+- '[[Réseaux de neurones récurrents (RNN)]]'
+- '[[Réseaux récurrents bidirectionnels]]'
+subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
 solves: '[[Problème du gradient évanescent dans les réseaux récurrents]]'
 relatedTo: '[[GRU (Gated Recurrent Units)]]'
 ---
-
 ## Généralité
 
 Les LSTM (Long Short-Term Memory) sont un type spécial de réseaux de neurones récurrents (RNN) conçus pour résoudre le problème de la disparition du gradient dans les RNN traditionnels. Introduits par Hochreiter et Schmidhuber en 1997, les LSTM permettent de capturer efficacement les dépendances à long terme dans les données séquentielles, ce qui les rend particulièrement adaptés pour des tâches comme la reconnaissance vocale, la traduction automatique, la génération de texte et la prédiction de séries temporelles.

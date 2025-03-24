@@ -14,11 +14,8 @@ tags:
 - efficience
 date_creation: '2025-03-22'
 date_modification: '2025-03-22'
-
-- type: rdfs:subClassOf
-  target: '[[Déploiement d''un modèle d''IA]]'
+subClassOf: '[[Déploiement d''un modèle d''IA]]'
 ---
-
 ## Généralité
 
 La quantification et la compression de modèles sont des techniques d'optimisation visant à réduire la taille et les besoins en ressources des modèles d'intelligence artificielle, tout en préservant au maximum leurs performances. Ces approches sont devenues essentielles face à l'augmentation constante de la taille des modèles d'IA, particulièrement pour leur déploiement sur des appareils à ressources limitées ou pour réduire les coûts d'inférence dans les environnements cloud.

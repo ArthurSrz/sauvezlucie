@@ -14,13 +14,13 @@ date_creation: '2025-03-18'
 date_modification: '2025-03-18'
 isPartOf: '[[Apprentissage non supervisé]]'
 uses: '[[Réduction de dimensionnalité en machine learning]]'
-rdfs:seeAlso: '[[Auto-encodeurs convolutifs]]'
-rdfs:seeAlso: '[[Auto-encodeurs pour la réduction de bruit]]'
-rdfs:seeAlso: '[[Auto-encodeurs variationnels (VAE)]]'
-rdfs:seeAlso: '[[Auto-encodeurs adversariaux]]'
-rdfs:seeAlso: '[[Auto-encodeurs contractifs]]'
+seeAlso:
+- '[[Auto-encodeurs convolutifs]]'
+- '[[Auto-encodeurs pour la réduction de bruit]]'
+- '[[Auto-encodeurs variationnels (VAE)]]'
+- '[[Auto-encodeurs adversariaux]]'
+- '[[Auto-encodeurs contractifs]]'
 ---
-
 ## Généralité
 
 Un auto-encodeur est un type de réseau de neurones artificiels utilisé pour l'apprentissage non supervisé de représentations de données efficaces. Sa structure particulière lui permet d'apprendre à compresser puis à reconstruire ses données d'entrée avec une perte minimale d'information. L'objectif principal n'est pas la reconstruction elle-même, mais plutôt l'apprentissage d'une représentation utile (encodage) des données d'entrée, généralement dans un espace de dimension réduite.

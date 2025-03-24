@@ -12,11 +12,11 @@ tags:
 - data science
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-rdfs:subClassOf: '[[Techniques de l''intelligence artificielle]]'
-rdfs:seeAlso: '[[Le perceptron multicouche]]'
-rdfs:seeAlso: '[[Réseaux de neurones récurrents (RNN)]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+seeAlso:
+- '[[Le perceptron multicouche]]'
+- '[[Réseaux de neurones récurrents (RNN)]]'
 ---
-
 ##Généralité
 
 Les réseaux neuronaux sont des modèles informatiques inspirés du fonctionnement du cerveau humain, constituant une technologie fondamentale de l'intelligence artificielle moderne. Ils sont composés de neurones artificiels interconnectés organisés en couches qui traitent l'information de manière distribuée et parallèle. Ces systèmes sont capables d'apprendre à partir de données, de reconnaître des motifs complexes et de réaliser des prédictions sans être explicitement programmés pour chaque tâche spécifique.

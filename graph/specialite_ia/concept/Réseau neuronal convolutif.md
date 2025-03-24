@@ -13,11 +13,10 @@ tags:
 - traitement d'images
 date_creation: '2025-03-19'
 date_modification: '2025-03-19'
-rdfs:subClassOf: '[[Apprentissage automatique (Machine Learning)]]'
+subClassOf: '[[Apprentissage automatique (Machine Learning)]]'
 uses: '[[Auto-encodeurs convolutifs]]'
 relatedTo: '[[Techniques de l''intelligence artificielle]]'
 ---
-
 ##Généralité
 
 Un réseau neuronal convolutif (CNN ou ConvNet) est un type spécialisé de réseau de neurones artificiels conçu principalement pour traiter des données structurées en grille, comme les images. Inspiré par l'organisation du cortex visuel animal, il utilise des opérations mathématiques appelées convolutions pour extraire automatiquement des caractéristiques hiérarchiques à partir des données d'entrée. Les CNN sont devenus la pierre angulaire de nombreuses applications de vision par ordinateur et de traitement d'images.

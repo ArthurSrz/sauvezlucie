@@ -12,11 +12,8 @@ tags:
 - IA distribuée
 date_creation: '2025-03-18'
 date_modification: '2025-03-18'
-
-- type: isPartOf
-  target: '[[Les applications de l''intelligence artificielle]]'
+isPartOf: '[[Les applications de l''intelligence artificielle]]'
 ---
-
 ## Généralité
 
 Un système multi-agents (SMA) est un système composé de plusieurs entités autonomes appelées agents, qui interagissent entre elles et avec leur environnement. Dans le contexte de l'intelligence artificielle, ces agents sont des programmes informatiques dotés de capacités de perception, de raisonnement et d'action. Les SMA constituent une approche distribuée de l'intelligence artificielle, où l'intelligence émerge des interactions entre agents plutôt que d'être centralisée dans une seule entité.

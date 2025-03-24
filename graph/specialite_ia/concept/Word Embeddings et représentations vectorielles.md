@@ -17,7 +17,6 @@ isPartOf: '[[Traitement du langage naturel (NLP)]]'
 uses: '[[Modèles de langage génératifs pré-entraînés]]'
 isDefinedBy: '[[Similarité sémantique dans le traitement du langage naturel]]'
 ---
-
 ## Généralité
 
 Les word embeddings (ou plongements lexicaux) sont des représentations vectorielles de mots dans un espace continu à N dimensions. Contrairement aux représentations one-hot qui traitent les mots comme des entités discrètes et indépendantes, les word embeddings capturent les relations sémantiques et syntaxiques entre les mots en les positionnant dans un espace vectoriel où la proximité reflète la similarité. Ces représentations denses permettent aux algorithmes d'apprentissage automatique de traiter efficacement le langage naturel en transformant les mots en vecteurs numériques manipulables mathématiquement.

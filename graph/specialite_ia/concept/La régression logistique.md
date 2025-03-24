@@ -1,6 +1,6 @@
 ---
 title: La régression logistique
-type: concept
+type: '[[Algorithme de classification]]'
 tags:
 - régression logistique
 - statistiques
@@ -10,10 +10,8 @@ tags:
 - classification
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdf:type: '[[Algorithme de classification]]'
 isPartOf: '[[Apprentissage supervisé]]'
 ---
-
 ##Généralité
 
 La régression logistique est une méthode statistique d'apprentissage supervisé utilisée pour la classification binaire. Contrairement à son nom, il s'agit d'un algorithme de classification et non de régression. Elle modélise la probabilité qu'une observation appartienne à une catégorie particulière en utilisant une fonction logistique (sigmoïde) pour transformer une combinaison linéaire de variables prédictives en une probabilité comprise entre 0 et 1.

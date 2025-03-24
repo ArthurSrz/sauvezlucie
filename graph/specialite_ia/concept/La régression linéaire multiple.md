@@ -11,11 +11,8 @@ tags:
 - variables multiples
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-
-- type: isPartOf
-  target: '[[La régression linéaire]]'
+isPartOf: '[[La régression linéaire]]'
 ---
-
 ##Généralité
 
 La régression linéaire multiple est une extension de la régression linéaire simple qui permet de modéliser la relation entre une variable dépendante (ou variable à expliquer) et plusieurs variables indépendantes (ou variables explicatives). Cette technique statistique est largement utilisée dans divers domaines comme l'économie, la finance, les sciences sociales et l'apprentissage automatique pour prédire des valeurs ou comprendre l'influence de différents facteurs sur un phénomène.

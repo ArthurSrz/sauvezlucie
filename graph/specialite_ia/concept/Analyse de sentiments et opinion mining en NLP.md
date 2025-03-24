@@ -13,11 +13,8 @@ tags:
 - données textuelles
 date_creation: '2025-03-20'
 date_modification: '2025-03-20'
-
-- type: isPartOf
-  target: '[[Traitement du langage naturel (NLP)]]'
+isPartOf: '[[Traitement du langage naturel (NLP)]]'
 ---
-
 ## Généralité
 
 L'analyse de sentiments et l'opinion mining sont des techniques de traitement du langage naturel (NLP) qui visent à identifier, extraire et quantifier les états affectifs et les opinions subjectives exprimées dans un texte. Ces méthodes permettent de déterminer si l'attitude d'un locuteur ou d'un rédacteur envers un sujet particulier est positive, négative ou neutre, ainsi que d'identifier les nuances émotionnelles plus complexes comme la colère, la joie, la tristesse ou la surprise.

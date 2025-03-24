@@ -10,10 +10,9 @@ tags:
 - Facebook
 date_creation: '2025-03-17'
 date_modification: '2025-03-17'
-rdfs:subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
-    l''intelligence artificielle]]'
+subClassOf: '[[Entreprises technologiques et géants du numérique dans le domaine de
+  l''intelligence artificielle]]'
 ---
-
 # Meta
 
 ##Généralité
