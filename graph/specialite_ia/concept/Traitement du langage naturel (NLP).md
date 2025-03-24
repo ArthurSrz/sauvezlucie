@@ -23,7 +23,7 @@ hasPart:
 - '[[Tokenisation et segmentation textuelle en NLP]]'
 seeAlso: '[[Traduction automatique neuronale]]'
 ---
-##Généralité
+## Généralité
 
 Le Traitement du Langage Naturel (NLP) est un domaine de l'intelligence artificielle qui se concentre sur l'interaction entre les ordinateurs et le langage humain. Il vise à permettre aux machines de comprendre, interpréter et générer du langage humain de manière significative. Le NLP combine des éléments de linguistique computationnelle, d'apprentissage automatique et d'intelligence artificielle pour traiter et analyser de grandes quantités de données textuelles.
 
