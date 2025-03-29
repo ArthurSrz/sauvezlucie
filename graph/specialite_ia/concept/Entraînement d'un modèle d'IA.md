@@ -10,8 +10,8 @@ tags:
 - algorithmes
 - machine learning
 - IA
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 precedes: '[[Déploiement d''un modèle d''IA]]'
 follows: '[[Choix de la mesure d''erreur]]'
@@ -21,6 +21,7 @@ hasPart:
 - '[[Apprentissage par imitation (Imitation Learning)]]'
 - '[[Apprentissage par renforcement]]'
 - '[[Recherche par essaim de particules (PSO)]]'
+- '[[Apprentissage par curriculum (Curriculum Learning)]]'
 ---
 ##Généralité
 

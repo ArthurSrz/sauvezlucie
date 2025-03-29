@@ -2,22 +2,23 @@
 title: Approches exploratoires et de recherche d'espace
 type: concept
 tags:
-- exploration
-- recherche d'espace
-- méthodologie
-- concept
-- analyse
-- découverte
-- optimisation
-- stratégie
-- investigation
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
-subClassOf: '[[Techniques de l''intelligence artificielle]]'
+  - exploration
+  - recherche
+  - d'espace
+  - méthodologie
+  - concept
+  - analyse
+  - découverte
+  - optimisation
+  - stratégie
+  - investigation
+date_creation: 2025-03-22
+date_modification: 2025-03-22
+subClassOf: "[[Techniques de l'intelligence artificielle]]"
 hasPart:
-- '[[Recuit simulé]]'
-- '[[Algorithme A* et ses variantes]]'
-seeAlso: '[[Algorithmes de recherche heuristique en IA]]'
+  - "[[Recuit simulé]]"
+  - "[[Algorithme A_ et ses variantes]]"
+seeAlso: "[[Algorithmes de recherche heuristique en IA]]"
 ---
 ## Généralité
 

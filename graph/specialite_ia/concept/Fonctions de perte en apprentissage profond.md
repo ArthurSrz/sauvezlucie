@@ -12,10 +12,11 @@ tags:
 - algorithmes
 - machine learning
 - IA
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 relatedTo: '[[Apprentissage profond (Deep Learning)]]'
 subClassOf: '[[Choix de la mesure d''erreur]]'
+isPartOf: '[[Apprentissage non supervisé par contrastif]]'
 ---
 ## Généralité
 

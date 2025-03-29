@@ -11,8 +11,8 @@ tags:
 - Amazon
 - Spotify
 - apprentissage automatique
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 isPartOf:
 - '[[Les applications de l''intelligence artificielle]]'
 - '[[Apprentissage automatique (Machine Learning)]]'
@@ -21,7 +21,9 @@ uses:
 - '[[Entreprises technologiques et géants du numérique dans le domaine de l''intelligence
   artificielle]]'
 relatedTo: '[[Éthique de l''intelligence artificielle]]'
-seeAlso: '[[Systèmes de recommandation personnalisée]]'
+seeAlso:
+- '[[Systèmes de recommandation personnalisée]]'
+- '[[Systèmes de recommandation et filtrage collaboratif]]'
 ---
 ## Généralité
 

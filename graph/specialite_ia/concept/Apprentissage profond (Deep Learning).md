@@ -9,8 +9,8 @@ tags:
 - machine learning
 - réseaux de neurones
 - concepts fondamentaux
-date_creation: '2025-03-21'
-date_modification: '2025-03-21'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 hasPart:
 - '[[Le perceptron multicouche]]'
@@ -21,6 +21,8 @@ isPartOf: '[[Machines à vecteurs de support (SVM)]]'
 seeAlso:
 - '[[Réseaux de neurones récurrents (RNN)]]'
 - '[[Réseaux antagonistes génératifs (GANs)]]'
+- '[[Transformers et mécanismes d''attention]]'
+- '[[Apprentissage auto-supervisé (Self-supervised Learning)]]'
 ---
 ##Généralité
 

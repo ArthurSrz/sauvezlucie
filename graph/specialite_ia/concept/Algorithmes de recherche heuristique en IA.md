@@ -2,21 +2,25 @@
 title: Algorithmes de recherche heuristique en IA
 type: concept
 tags:
-- intelligence artificielle
-- algorithmes
-- heuristique
-- recherche
-- optimisation
-- IA
-- résolution de problèmes
-- informatique
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+  - intelligence
+  - artificielle
+  - algorithmes
+  - heuristique
+  - recherche
+  - optimisation
+  - IA
+  - résolution
+  - de
+  - problèmes
+  - informatique
+date_creation: 2025-03-28
+date_modification: 2025-03-28
 seeAlso:
-- '[[Recherche par essaim de particules (PSO)]]'
-- '[[Algorithme A* et ses variantes]]'
-hasPart: '[[Algorithme A* et ses variantes]]'
-subClassOf: '[[Approches exploratoires et de recherche d''espace]]'
+  - "[[Recherche par essaim de particules (PSO)]]"
+  - "[[Algorithme A* et ses variantes]]"
+hasPart: "[[Algorithme A_ et ses variantes]]"
+subClassOf: "[[Approches exploratoires et de recherche d'espace]]"
+isPartOf: "[[Exploration vs exploitation dans l'apprentissage par renforcement]]"
 ---
 ## Généralité
 

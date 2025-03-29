@@ -10,12 +10,16 @@ tags:
 - algorithmes
 - informatique
 - data science
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
-subClassOf: '[[Techniques de l''intelligence artificielle]]'
+date_creation: '2025-03-28'
+date_modification: '2025-03-28'
 seeAlso:
 - '[[Le perceptron multicouche]]'
 - '[[Réseaux de neurones récurrents (RNN)]]'
+- '[[Les GNN]]'
+subClassOf: '[[Techniques de l''intelligence artificielle]]'
+createdBy:
+- '[[Walter Pitts]]'
+- '[[Warren McCulloch]]'
 ---
 ##Généralité
 

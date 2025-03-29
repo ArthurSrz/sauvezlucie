@@ -58,7 +58,7 @@ où max(pi) est la proportion de la classe majoritaire.
 
 Cette mesure est la plus intuitive mais aussi la moins sensible aux changements de distribution des probabilités, ce qui la rend moins efficace pour la construction d'arbres de décision.
 
-## [Comparaison](https://fr.wikipedia.org/wiki/Comparaison) et choix
+## Comparaison et choix
 
 En pratique, l'impureté de Gini et l'entropie donnent souvent des résultats similaires, bien que l'entropie puisse être légèrement plus coûteuse en calcul. L'erreur de classification est rarement utilisée comme critère de division car elle ne pénalise pas suffisamment les nœuds impurs lors de la construction de l'arbre.
 

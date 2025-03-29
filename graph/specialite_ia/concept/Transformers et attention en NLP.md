@@ -12,8 +12,8 @@ tags:
 - IA
 - Réseaux de neurones
 - Machine Learning
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 isPartOf:
 - '[[Traitement du langage naturel (NLP)]]'
 - '[[Apprentissage profond (Deep Learning)]]'
@@ -21,6 +21,7 @@ isPartOf:
 hasPart:
 - '[[Modèles de langage génératifs pré-entraînés]]'
 - '[[Traduction automatique neuronale]]'
+sameAs: '[[Transformers et mécanismes d''attention]]'
 ---
 ## Généralité
 

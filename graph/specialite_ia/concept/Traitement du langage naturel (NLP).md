@@ -7,8 +7,8 @@ tags:
 - IA
 - Linguistique computationnelle
 - Technologies du langage
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 hasPart:
 - '[[Transformers et attention en NLP]]'
@@ -21,7 +21,9 @@ hasPart:
 - '[[Distance d''édition et algorithme de Wagner-Fischer]]'
 - '[[Analyse de sentiments et opinion mining en NLP]]'
 - '[[Tokenisation et segmentation textuelle en NLP]]'
-seeAlso: '[[Traduction automatique neuronale]]'
+seeAlso:
+- '[[Traduction automatique neuronale]]'
+- '[[Modèles de langage génératifs pré-entraînés]]'
 ---
 ##Généralité
 

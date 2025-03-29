@@ -2,25 +2,29 @@
 title: Apprentissage automatique (Machine Learning)
 type: concept
 tags:
-- machine learning
-- apprentissage automatique
-- IA
-- intelligence artificielle
-- data science
-- informatique
-- algorithmes
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
-subClassOf: '[[Techniques de l''intelligence artificielle]]'
+  - machine
+  - learning
+  - apprentissage
+  - automatique
+  - IA
+  - intelligence
+  - artificielle
+  - data
+  - science
+  - informatique
+  - algorithmes
+date_creation: 2025-03-20
+date_modification: 2025-03-20
+subClassOf: "[[Techniques de l'intelligence artificielle]]"
 hasPart:
-- '[[L''algorithme du gradient]]'
-- '[[Arbre de décision]]'
-- '[[Réseaux bayésiens]]'
-- '[[Réduction de dimensionnalité en machine learning]]'
-- '[[Validation croisée en apprentissage automatique]]'
-- '[[Systèmes de recommandation en IA]]'
-- '[[Méthodes d''ensemble en machine learning]]'
-seeAlso: '[[Apprentissage par renforcement:]]'
+  - "[[L'algorithme du gradient]]"
+  - "[[Arbre de décision]]"
+  - "[[Réseaux bayésiens]]"
+  - "[[Réduction de dimensionnalité en machine learning]]"
+  - "[[Validation croisée en apprentissage automatique]]"
+  - "[[Systèmes de recommandation en IA]]"
+  - "[[Méthodes d'ensemble en machine learning]]"
+seeAlso: "[[Apprentissage par renforcement_]]"
 ---
 ##Généralité
 

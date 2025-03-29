@@ -9,12 +9,13 @@ tags:
 - informatique
 - évolution technologique
 - sciences
-date_creation: '2025-03-24'
-date_modification: '2025-03-24'
+date_creation: '2025-03-28'
+date_modification: '2025-03-28'
 subClassOf: '[[Intelligence artificielle]]'
 hasPart:
 - '[[La conférence de Dartmouth]]'
 - '[[Yann LeCun]]'
+- '[[Walter Pitts]]'
 ---
 # Histoire de l'intelligence artificielle
 

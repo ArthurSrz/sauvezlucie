@@ -10,9 +10,11 @@ tags:
 - renforcement
 - apprentissage automatique
 - informatique
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
+hasPart: '[[Exploration vs exploitation dans l''apprentissage par renforcement]]'
+seeAlso: '[[Algorithmes de bandit manchot et exploration-exploitation]]'
 ---
 ##Généralité
 

@@ -32,19 +32,19 @@ Les métriques d'évaluation pour les modèles de régression sont des indicateu
 
 ### Métriques d'erreur courantes
 
-1. **Erreur Quadratique [Moyenne](https://fr.wikipedia.org/wiki/Moyenne) (MSE - Mean Squared Error)**
+1. **[Erreur Quadratique Moyenne](https://fr.wikipedia.org/wiki/Erreur_Quadratique_Moyenne) (MSE - Mean Squared Error)**
    - Calcule la moyenne des carrés des différences entre les valeurs prédites et réelles
    - Formule: MSE = (1/n) Σ(y_i - ŷ_i)²
    - Avantages: Pénalise fortement les grandes erreurs, mathématiquement pratique pour l'optimisation
    - Inconvénients: Sensible aux valeurs aberrantes, unité de mesure au carré (moins interprétable)
 
-2. **Racine de l'Erreur Quadratique Moyenne (RMSE - Root Mean Squared Error)**
+2. **Racine de l'[Erreur Quadratique Moyenne](https://fr.wikipedia.org/wiki/Erreur_Quadratique_Moyenne) (RMSE - Root Mean Squared Error)**
    - Racine carrée de la MSE
    - Formule: RMSE = √MSE
    - Avantages: Même unité que la variable cible, plus interprétable que MSE
    - Inconvénients: Reste sensible aux valeurs aberrantes
 
-3. **Erreur Absolue Moyenne (MAE - Mean Absolute Error)**
+3. **Erreur Absolue [Moyenne](https://fr.wikipedia.org/wiki/Moyenne) (MAE - Mean Absolute Error)**
    - Moyenne des valeurs absolues des différences entre prédictions et valeurs réelles
    - Formule: MAE = (1/n) Σ|y_i - ŷ_i|
    - Avantages: Moins sensible aux valeurs aberrantes que MSE/RMSE, interprétable

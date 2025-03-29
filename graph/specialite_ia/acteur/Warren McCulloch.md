@@ -10,10 +10,11 @@ tags:
 - histoire de l'IA
 - Walter Pitts
 - cybernétique
-date_creation: '2025-03-13'
-date_modification: '2025-03-13'
-contributedTo: '[[Techniques de l''intelligence artificielle]]'
-participatedIn: '[[Histoire de l''intelligence artificielle]]'
+date_creation: '2025-03-28'
+date_modification: '2025-03-28'
+affiliatedWith: '[[Walter Pitts]]'
+participatedIn: '[[La conférence de Dartmouth]]'
+isPartOf: '[[Histoire de l''intelligence artificielle]]'
 ---
 # [Warren McCulloch](https://fr.wikipedia.org/wiki/Warren_McCulloch)
 

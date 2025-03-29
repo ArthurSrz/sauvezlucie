@@ -2,22 +2,31 @@
 title: Apprentissage par imitation (Imitation Learning)
 type: concept
 tags:
-- intelligence artificielle
-- apprentissage automatique
-- imitation learning
-- démonstration d'experts
-- supervision
-- apprentissage par renforcement
-- comportement d'agent
-- IA
-- algorithmes d'apprentissage
-- modélisation comportementale
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+  - intelligence
+  - artificielle
+  - apprentissage
+  - automatique
+  - imitation
+  - learning
+  - démonstration
+  - d'experts
+  - supervision
+  - apprentissage
+  - par
+  - renforcement
+  - comportement
+  - d'agent
+  - IA
+  - algorithmes
+  - d'apprentissage
+  - modélisation
+  - comportementale
+date_creation: 2025-03-20
+date_modification: 2025-03-20
 relatedTo:
-- '[[Apprentissage par renforcement:]]'
-- '[[Réseaux antagonistes génératifs (GANs)]]'
-isPartOf: '[[Entraînement d''un modèle d''IA]]'
+  - "[[Réseaux antagonistes génératifs (GANs)]]"
+  - "[[Apprentissage par renforcement_]]"
+isPartOf: "[[Entraînement d'un modèle d'IA]]"
 ---
 ## Généralité
 

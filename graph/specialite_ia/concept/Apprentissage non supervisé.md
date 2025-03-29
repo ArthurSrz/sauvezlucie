@@ -11,13 +11,14 @@ tags:
 - apprentissage non supervisé
 - intelligence artificielle
 - clustering
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 differentFrom: '[[Apprentissage supervisé]]'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 seeAlso:
 - '[[K-means et algorithmes de clustering]]'
 - '[[Réseaux antagonistes génératifs (GANs)]]'
+- '[[Apprentissage continu (Continual Learning)]]'
 hasPart: '[[Les auto-encodeurs]]'
 ---
 ##Généralité

@@ -10,11 +10,12 @@ tags:
 - sélection naturelle
 - algorithmes évolutionnaires
 - recherche
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-29'
+date_modification: '2025-03-29'
 relatedTo: '[[Apprentissage automatique (Machine Learning)]]'
 subClassOf: '[[Techniques bio-inspirées en IA]]'
 seeAlso: '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
+isPartOf: '[[Distillation de connaissances en IA]]'
 ---
 ## Généralité
 
