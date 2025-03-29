@@ -2,27 +2,29 @@
 title: Techniques de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- IA
-- techniques
-- informatique
-- technologies
-- apprentissage automatique
-- concepts IA
-date_creation: '2025-03-24'
-date_modification: '2025-03-24'
-subClassOf: '[[Intelligence artificielle]]'
+  - intelligence
+  - artificielle
+  - IA
+  - techniques
+  - informatique
+  - technologies
+  - apprentissage
+  - automatique
+  - concepts
+  - IA
+date_creation: 2025-03-24
+date_modification: 2025-03-24
+subClassOf: "[[Intelligence artificielle]]"
 seeAlso:
-- '[[Traitement du langage naturel (NLP)]]'
-- '[[Systèmes Experts]]'
-- '[[Apprentissage supervisé]]'
-- '[[Apprentissage non supervisé]]'
-- '[[Apprentissage par renforcement:]]'
-- '[[Apprentissage profond (Deep Learning)]]'
-- '[[Apprentissage automatique (Machine Learning)]]'
-- '[[Traitement automatique des données multimodales]]'
-- '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
-- '[[Approches exploratoires et de recherche d''espace]]'
+  - "[[Traitement du langage naturel (NLP)]]"
+  - "[[Systèmes Experts]]"
+  - "[[Apprentissage supervisé]]"
+  - "[[Apprentissage non supervisé]]"
+  - "[[Apprentissage profond (Deep Learning)]]"
+  - "[[Apprentissage automatique (Machine Learning)]]"
+  - "[[Traitement automatique des données multimodales]]"
+  - "[[Les étapes clés pour concevoir un système d'Intelligence Artificielle]]"
+  - "[[Approches exploratoires et de recherche d'espace]]"
 ---
 # Techniques de l'intelligence artificielle
 
