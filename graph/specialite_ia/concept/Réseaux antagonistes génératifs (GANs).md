@@ -12,43 +12,44 @@ tags:
 - deep learning
 - données synthétiques
 - algorithmes
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 subClassOf:
 - '[[Apprentissage profond (Deep Learning)]]'
 - '[[Apprentissage non supervisé]]'
 ---
 ## Généralité
 
-Les Réseaux Antagonistes Génératifs (GANs, [Generative Adversarial Networks](https://fr.wikipedia.org/wiki/Generative_Adversarial_Networks)) sont une architecture d'apprentissage automatique introduite par [Ian Goodfellow](https://fr.wikipedia.org/wiki/Ian_Goodfellow) et ses collègues en 2014. Ce cadre innovant met en compétition deux réseaux de neurones : un générateur qui crée des données synthétiques et un discriminateur qui tente de distinguer les données réelles des données générées. Cette approche antagoniste permet de produire des données artificielles d'une qualité remarquable, capables de capturer la distribution des données réelles.
+Les [Réseaux Antagonistes Génératifs](https://fr.wikipedia.org/wiki/R%C3%A9seau_antagoniste_g%C3%A9n%C3%A9ratif) (GANs, Generative Adversarial Networks) sont une architecture d'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) introduite par Ian Goodfellow et ses collègues en 2014. Ils mettent en compétition deux réseaux de neurones : un générateur qui crée des données synthétiques et un discriminateur qui tente de distinguer les données réelles des données générées. [Source: Wikipedia "Generative adversarial network"]
 
 ## Points clés
 
-- Les GANs sont composés de deux réseaux en compétition : un générateur qui crée des données et un discriminateur qui les évalue
-- L'entraînement des GANs repose sur un jeu à somme nulle où le générateur s'améliore pour tromper le discriminateur
-- Les GANs excellent dans la génération d'images, de textes, de musique et d'autres types de contenus créatifs
-- Malgré leur puissance, les GANs souffrent de problèmes comme l'instabilité d'entraînement et le mode collapse
+- Composés de deux réseaux en compétition : un générateur (crée des données) et un discriminateur (les évalue)
+- Inspirés de la [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux) et du concept d'[équilibre de Nash](https://fr.wikipedia.org/wiki/%C3%89quilibre_de_Nash)
+- Applications variées : génération d'images réalistes, transfert de style artistique, super-résolution d'images
+- Défis techniques : instabilité d'entraînement et mode collapse (faible diversité des sorties)
+- Variantes architecturales : DCGANs, WGANs, CycleGANs parmi les plus influentes
 
 ## Détails
 
-Le fonctionnement des GANs repose sur une dynamique d'apprentissage unique. Le générateur prend en entrée un vecteur de bruit aléatoire et produit des données synthétiques (par exemple, des images). Le discriminateur, quant à lui, reçoit soit des données réelles, soit des données générées, et doit déterminer leur origine. L'objectif du générateur est de créer des données si convaincantes que le discriminateur ne peut les distinguer des données réelles.
+Le fonctionnement des GANs repose sur une dynamique d'apprentissage unique. Le générateur prend en entrée un vecteur de bruit aléatoire et produit des données synthétiques. Le discriminateur reçoit soit des données réelles, soit des données générées, et doit déterminer leur origine.
 
-Mathématiquement, les GANs optimisent une fonction minimax où le discriminateur maximise sa capacité à identifier correctement les données réelles et générées, tandis que le générateur minimise la capacité du discriminateur à détecter ses créations. Cette compétition pousse les deux réseaux à s'améliorer continuellement.
+Mathématiquement, les GANs optimisent une fonction minimax où :
+- Le discriminateur maximise sa capacité à identifier correctement les données
+- Le générateur minimise la capacité du discriminateur à détecter les fausses données
 
-Les applications des GANs sont vastes et en constante expansion :
-- Génération d'images photoréalistes
-- Conversion d'images (style transfer, image-to-image translation)
-- [Super-résolution](https://fr.wikipedia.org/wiki/Super-résolution) d'images
-- Complétion d'images (inpainting)
-- Synthèse de visages et manipulation faciale
-- Génération de texte et de musique
-- Création de données synthétiques pour l'augmentation de jeux de données
+Les GANs ont trouvé des applications dans de nombreux domaines :
+- Génération d'images (comme les visages synthétiques de This Person Does Not Exist)
+- Transfert de style artistique
+- Super-résolution d'images
+- Découverte de molécules en chimie médicinale (applications encore expérimentales)
 
-Plusieurs variantes de GANs ont été développées pour résoudre des problèmes spécifiques ou améliorer les performances :
-- DCGANs (Deep Convolutional GANs) pour la génération d'images
-- CycleGANs pour la traduction d'images sans paires d'entraînement
-- StyleGANs pour le contrôle précis des attributs générés
-- BigGANs pour la génération d'images à haute résolution
-- StackGANs pour la génération d'images à partir de descriptions textuelles
+L'architecture de base a donné naissance à de nombreuses variantes :
+- DCGANs (Deep Convolutional GANs)
+- WGANs (Wasserstein GANs) 
+- CycleGANs
 
-Malgré leurs succès, les GANs présentent des défis significatifs. L'entraînement est souvent instable, avec des oscillations qui empêchent la convergence. Le mode collapse, où le générateur produit seulement un sous-ensemble limité de la distribution cible, reste un problème persistant. De plus, l'évaluation objective de la qualité des GANs demeure complexe, nécessitant souvent des métriques spécifiques comme l'Inception Score ou le Fréchet Inception Distance.
+Ces variantes apportent des améliorations en termes de stabilité d'entraînement ou de qualité des résultats, bien qu'aucune n'ait complètement résolu tous les défis des GANs originaux.
+
+[Source: Wikipedia "Generative adversarial network#Applications"]
+[Source: Wikipedia "Generative adversarial network#Variations"]

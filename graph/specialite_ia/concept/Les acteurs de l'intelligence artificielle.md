@@ -23,81 +23,23 @@ hasPart:
 ---
 ## Généralité
 
-Les acteurs de l'intelligence artificielle forment un écosystème complexe et dynamique composé d'entreprises technologiques, d'institutions académiques, d'organismes gouvernementaux, de startups innovantes et de communautés open source qui, ensemble, façonnent l'évolution et l'impact de cette technologie.
+Les acteurs de l'intelligence artificielle forment un [écosystème](https://fr.wikipedia.org/wiki/Écosystème_(économie)) complexe et dynamique composé d'entreprises technologiques, d'institutions académiques, d'organismes gouvernementaux, de startups innovantes et de communautés open source qui, ensemble, façonnent l'évolution et l'impact de cette technologie. Cet écosystème s'est particulièrement développé depuis les années 2010 avec l'avènement du [deep learning](https://fr.wikipedia.org/wiki/Apprentissage_profond).
 
 ## Points clés
 
-- Écosystème diversifié incluant entreprises, universités, institutions publiques et communautés collaboratives
-- [Concentration significative des ressources et des talents](https://fr.wikipedia.org/wiki/Concentration_significative_des_ressources_et_des_talents) au sein de quelques grands acteurs technologiques
-- Rôle essentiel de la recherche académique dans les avancées fondamentales
-- [Importance croissante des politiques publiques](https://fr.wikipedia.org/wiki/Importance_croissante_des_politiques_publiques) et de la gouvernance internationale
+- Écosystème diversifié incluant entreprises ([Google](https://fr.wikipedia.org/wiki/Google)/[DeepMind](https://fr.wikipedia.org/wiki/DeepMind), [Microsoft](https://fr.wikipedia.org/wiki/Microsoft)/[OpenAI](https://fr.wikipedia.org/wiki/OpenAI), [Meta](https://fr.wikipedia.org/wiki/Meta_(entreprise))), universités ([MIT](https://fr.wikipedia.org/wiki/Massachusetts_Institute_of_Technology), [Stanford](https://fr.wikipedia.org/wiki/Université_Stanford)), institutions publiques ([DARPA](https://fr.wikipedia.org/wiki/DARPA), [CNRS](https://fr.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique)) et communautés open source ([Hugging Face](https://fr.wikipedia.org/wiki/Hugging_Face), [TensorFlow](https://fr.wikipedia.org/wiki/TensorFlow))
+- Concentration significative des ressources et des talents au sein de quelques grands acteurs technologiques (les "Big Tech")
+- Rôle essentiel de la recherche académique dans les avancées fondamentales, avec des contributions historiques comme les réseaux de neurones convolutifs ([Yann LeCun](https://fr.wikipedia.org/wiki/Yann_LeCun)) ou l'attention transformatrice
+- Importance croissante des politiques publiques et de la gouvernance internationale, matérialisée par des initiatives comme le [Règlement européen sur l'IA](https://fr.wikipedia.org/wiki/Réglementation_de_l'intelligence_artificielle_en_Europe) ou les principes de l'[OCDE](https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques)
 
 ## Détails
 
-Les acteurs de l'intelligence artificielle se répartissent en plusieurs catégories qui, ensemble, façonnent l'évolution et l'impact de cette technologie :
+Les entreprises technologiques et géants du numérique disposent de ressources considérables et exercent une influence majeure sur le développement de l'IA. Parmi les grandes entreprises américaines, on trouve [Google](https://fr.wikipedia.org/wiki/Google) (avec DeepMind acquis en 2014 et Google Brain fondé en 2011), [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) (Microsoft Research créé en 1991, partenariat avec OpenAI depuis 2019), [Meta](https://fr.wikipedia.org/wiki/Meta_Platforms) (FAIR - Facebook AI Research lancé en 2013), ainsi qu'Amazon (services AWS AI), Apple (intégration d'IA dans ses produits) et IBM (Watson depuis 2011). Les géants chinois comme Baidu (PaddlePaddle), [Alibaba](https://fr.wikipedia.org/wiki/Alibaba_Group) (DAMO Academy), Tencent (AI Lab) et ByteDance (IA pour recommandation de contenu) jouent également un rôle important. Parmi les entreprises spécialisées, citons [NVIDIA](https://fr.wikipedia.org/wiki/Nvidia) (leader des GPU pour le deep learning), OpenAI (fondé en 2015, connu pour GPT et DALL·E) et Anthropic (IA générative avec Claude).
 
-### [Entreprises technologiques](https://fr.wikipedia.org/wiki/Entreprises_technologiques) et géants du numérique
+Le paysage des startups en IA est particulièrement dynamique avec des acteurs comme Cohere (fondée en 2019), Inflection AI (créée en 2021) et Adept (IA pour automatisation des tâches) dans la recherche avancée, ainsi que des solutions sectorielles comme PathAI (diagnostic médical), Upstart (prêts bancaires) et C3.ai (IA industrielle).
 
-Ces organisations disposent de ressources considérables et exercent une influence majeure sur le développement de l'IA:
+Le monde académique reste le berceau de nombreuses avancées, avec des universités de pointe comme [Stanford](https://fr.wikipedia.org/wiki/Université_Stanford) (Andrew Ng et Fei-Fei Li), MIT (CSAIL fondé en 2003), UC Berkeley (BAIR lab) et Carnegie Mellon (robotique). Des instituts de recherche dédiés comme MILA (fondé par Yoshua Bengio), Max Planck Institute (Allemagne) et Vector Institute (Toronto) contribuent activement au développement du domaine.
 
-- **Grandes entreprises américaines**: [Google](https://fr.wikipedia.org/wiki/Google) (DeepMind, [Google](https://fr.wikipedia.org/wiki/Google) Brain), [Microsoft](https://fr.wikipedia.org/wiki/Microsoft) ([Microsoft Research](https://fr.wikipedia.org/wiki/Microsoft_Research)), Meta (FAIR), [Amazon](https://fr.wikipedia.org/wiki/Amazon), Apple, IBM
-- **Géants chinois**: [Baidu](https://fr.wikipedia.org/wiki/Baidu), Alibaba, Tencent, ByteDance
-- **Entreprises spécialisées**: [NVIDIA](https://fr.wikipedia.org/wiki/NVIDIA) (matériel et infrastructure), OpenAI, Anthropic (IA générative)
-- **Intégrateurs technologiques**: [Accenture](https://fr.wikipedia.org/wiki/Accenture), [Deloitte](https://fr.wikipedia.org/wiki/Deloitte), [Capgemini](https://fr.wikipedia.org/wiki/Capgemini)
+Les États jouent un rôle croissant à travers le financement de la recherche avec des organismes comme [DARPA](https://fr.wikipedia.org/wiki/DARPA) (initiative AI Next), NSF (National AI Research Institutes) et Horizon Europe, ainsi qu'à travers la régulation avec la Commission européenne (AI Act), FTC (surveillance des biais algorithmiques) et NIST (AI Risk Management Framework).
 
-Ces acteurs investissent massivement en R&D, acquièrent des startups prometteuses, et développent des plateformes et services d'IA qui façonnent les standards du marché. Leur double rôle de chercheurs fondamentaux et de producteurs d'applications commerciales leur confère une position stratégique unique.
-
-### Startups et PME innovantes
-
-Le paysage des startups en IA est particulièrement dynamique et diversifié:
-
-- **Startups de recherche avancée**: Cohere, [Inflection AI](https://fr.wikipedia.org/wiki/Inflection_AI), Adept, développant des modèles fondamentaux
-- **Solutions sectorielles**: entreprises spécialisées dans l'IA pour la santé, la finance, l'industrie, etc.
-- **Outils et infrastructure**: fournisseurs de plateformes MLOps, de solutions d'annotation, d'infrastructure spécialisée
-- **Applications grand public**: interfaces conversationnelles, assistants personnels, outils créatifs
-
-Ces acteurs se distinguent par leur agilité, leur spécialisation et leur capacité à explorer des niches innovantes, malgré des ressources plus limitées que les géants technologiques.
-
-### Instituts de recherche et universités
-
-Le monde académique reste le berceau de nombreuses avancées fondamentales:
-
-- **Universités de pointe**: Stanford, MIT, UC Berkeley, Carnegie Mellon aux États-Unis; [Oxford](https://fr.wikipedia.org/wiki/Oxford), [Cambridge](https://fr.wikipedia.org/wiki/Cambridge), ETH Zurich en [Europe](https://fr.wikipedia.org/wiki/Europe); Tsinghua, [Université de Tokyo](https://fr.wikipedia.org/wiki/Université_de_Tokyo) en Asie
-- **Instituts de recherche dédiés**: MILA ([Canada](https://fr.wikipedia.org/wiki/Canada)), Max Planck Institute ([Allemagne](https://fr.wikipedia.org/wiki/Allemagne)), IDSIA ([Suisse](https://fr.wikipedia.org/wiki/Suisse)), Vector Institute
-- **Laboratoires publics**: INRIA ([France](https://fr.wikipedia.org/wiki/France)), CSIRO ([Australie](https://fr.wikipedia.org/wiki/Australie)), AIST ([Japon](https://fr.wikipedia.org/wiki/Japon))
-
-Ces institutions forment les talents, publient des recherches fondamentales et collaborent souvent avec l'industrie. La "porte tournante" entre recherche académique et entreprises privées caractérise le domaine, avec de nombreux chercheurs naviguant entre ces deux mondes.
-
-### Organismes gouvernementaux et institutions publiques
-
-Les États et organisations publiques jouent un rôle croissant à plusieurs niveaux:
-
-- **Financement de la recherche**: DARPA, NSF (États-Unis), [Horizon Europe](https://fr.wikipedia.org/wiki/Horizon_Europe), ANR ([France](https://fr.wikipedia.org/wiki/France)), NSFC ([Chine](https://fr.wikipedia.org/wiki/Chine))
-- **[Régulation](https://fr.wikipedia.org/wiki/Régulation) et standardisation**: [Commission européenne](https://fr.wikipedia.org/wiki/Commission_européenne), FTC, NIST, organismes de standardisation
-- **Déploiement public**: utilisation de l'IA dans l'administration, la santé, la défense
-- **[Stratégies](https://fr.wikipedia.org/wiki/Stratégies) nationales**: plans et feuilles de route pour le développement de l'IA
-
-L'implication gouvernementale reflète la reconnaissance du caractère stratégique de l'IA pour la compétitivité économique, la sécurité nationale et le développement social.
-
-### Organisations internationales et think tanks
-
-Ces structures contribuent à la réflexion collective et à l'élaboration de normes partagées:
-
-- **Organisations internationales**: OCDE, UNESCO, ONU, UIT
-- **Think tanks spécialisés**: Partnership on AI, Future of Life Institute, [AI Now Institute](https://fr.wikipedia.org/wiki/AI_Now_Institute)
-- **ONG et associations**: IEEE, ACM, associations professionnelles nationales
-
-Leur rôle est essentiel pour développer des cadres éthiques, favoriser la coopération internationale et anticiper les impacts sociétaux.
-
-### Communautés open source et collaboratives
-
-L'innovation ouverte joue un rôle crucial dans la démocratisation de l'IA:
-
-- **Frameworks open source**: TensorFlow, PyTorch, Hugging Face
-- **Communautés de développeurs**: GitHub, [Kaggle](https://fr.wikipedia.org/wiki/Kaggle), forums spécialisés
-- **Initiatives collaboratives**: BigScience, BLOOM, modèles open weights
-- **Hackathons et compétitions**: encourageant l'innovation collective
-
-Ces communautés favorisent la diffusion des connaissances, l'accessibilité des outils et la diversification des applications.
-
-La dynamique entre ces différents acteurs, faite de collaboration et de compétition, détermine l'orientation du développement de l'IA, ses priorités et ses impacts sur la société.
+Enfin, des organisations internationales comme l'[OCDE](https://fr.wikipedia.org/wiki/Organisation_de_coopération_et_de_développement_économiques) (principes sur l'IA), UNESCO (éthique de l'IA) et ONU (groupe sur l'IA), ainsi que des think tanks comme Partnership on AI (fondé en 2016), Future of Life Institute et AI Now Institute contribuent à la réflexion collective sur les enjeux de l'intelligence artificielle.

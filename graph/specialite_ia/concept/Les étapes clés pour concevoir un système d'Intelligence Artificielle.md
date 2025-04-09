@@ -21,59 +21,66 @@ seeAlso:
 - '[[Déploiement d''un modèle d''IA]]'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-# Les étapes clés pour concevoir un système d'Intelligence Artificielle
-
 ## Généralité
 
-La conception d'un système d'intelligence artificielle suit un processus méthodique comprenant plusieurs étapes essentielles, de la préparation des données au déploiement, garantissant la pertinence et l'efficacité de la solution finale.
+L'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) (IA) désigne l'ensemble des théories et techniques mises en œuvre pour créer des machines capables de simuler l'intelligence humaine. Le domaine de l'IA moderne a émergé en 1956 lors de la [conférence de Dartmouth](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth), considérée comme l'acte fondateur de la discipline.
+
+La conception d'un système d'IA suit un processus méthodique qui combine principes d'informatique moderne et techniques avancées comme le [machine learning](https://fr.wikipedia.org/wiki/Apprentissage_automatique), le [deep learning](https://fr.wikipedia.org/wiki/Apprentissage_profond) et le traitement du langage naturel.
 
 ## Points clés
 
-- Processus structuré en cinq étapes principales: préparation des données, choix du modèle, définition des métriques, optimisation et déploiement
-- La qualité des données est fondamentale pour la performance du système
-- Le choix du modèle doit s'adapter à la nature du problème et aux contraintes opérationnelles
-- L'évaluation continue et la maintenance sont nécessaires après le déploiement
+- **Méthodologie structurée** : Suit généralement le cadre [CRISP-DM](https://fr.wikipedia.org/wiki/CRISP-DM) (Cross Industry Standard Process for Data Mining)
+- **Importance des données** : La préparation des données représente 60-80% du temps dans un projet de machine learning
+- **Choix du modèle** : Doit s'adapter au type de problème (supervisé, non-supervisé ou par renforcement) et aux contraintes opérationnelles
+- **Types d'IA** :
+  - IA faibles (spécialisées dans une tâche spécifique)
+  - IA fortes (concept théorique d'intelligence générale)
 
 ## Détails
 
-La conception d'un système d'intelligence artificielle repose sur un processus méthodique en cinq étapes clés, garantissant la performance et la robustesse du modèle final. Ce processus transforme des données brutes en une solution opérationnelle adaptée aux exigences d'un problème donné. Il s'articule autour des phases suivantes :
+### Processus de conception
 
-### 1. Préparation des données
+La conception d'un système d'IA implique plusieurs étapes fondamentales :
 
-La première étape consiste à constituer une base de données de qualité, indispensable pour l'apprentissage du modèle. Cette phase inclut :
+1. **Préparation des données** :
+   - Nettoyage et normalisation
+   - Imputation des valeurs manquantes
+   - Détection des outliers
+   - Feature engineering
 
-- **Collecte des données brutes :** Rassembler les informations provenant de diverses sources.
-- **Nettoyage :** Gérer les valeurs manquantes, supprimer les doublons et corriger les incohérences pour assurer la fiabilité des données.
-- **Transformation :** Normaliser les données et encoder les variables catégorielles pour faciliter leur exploitation par le modèle.
-- **Découpage :** Diviser les données en ensembles d'entraînement, de validation et de test pour une évaluation objective.
+2. **Choix du modèle** :
+   - Algorithmes de classification ou régression
+   - [Réseaux neuronaux](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) pour les problèmes complexes
+   - Définition des métriques (précision, rappel, F1-score)
 
-### 2. Choix du modèle
+3. **Optimisation** :
+   - Réglage des hyperparamètres
+   - Techniques comme Grid Search
 
-Une fois les données prêtes, il faut sélectionner l'architecture la mieux adaptée au problème à résoudre :
+4. **Déploiement** :
+   - Intégration via APIs ou conteneurs Docker
+   - Monitoring des performances en production
+   - Détection de concept drift
+   - Rafraîchissement des données d'entraînement
 
-- **Sélection de l'architecture :** Choisir parmi des méthodes telles que la régression, les réseaux de neurones, les SVM, etc.
-- **Adaptation aux spécificités des données :** Prendre en compte la nature (linéaire ou non linéaire) et la dimensionnalité des données.
-- **[Définition](https://fr.wikipedia.org/wiki/Définition) des hyperparamètres initiaux :** Fixer des paramètres de départ qui orienteront le processus d'apprentissage.
+### Catégories d'IA
 
-### 3. Choix de la mesure d'erreur
+Les systèmes d'IA se répartissent en deux grandes catégories :
 
-Pour orienter l'optimisation du modèle, il est essentiel de définir une métrique qui permettra d'évaluer sa performance :
+- **IA faibles (ou étroites)** :
+  - Spécialisées dans une tâche spécifique
+  - Exemples : assistants vocaux, systèmes de recommandation
+  - Représentent la quasi-totalité des systèmes actuels
 
-- **Sélection d'une métrique adaptée :** Utiliser des indicateurs comme la MSE, MAE ou la cross-entropy, selon que le problème soit de régression ou de classification.
-- **Évaluation comparative :** Appliquer cette métrique sur l'ensemble de validation pour comparer différentes configurations.
+- **IA fortes (ou générales)** :
+  - Concept théorique visant à reproduire l'intelligence humaine
+  - Relève encore de la recherche fondamentale
+  - Pas de réalisation concrète à ce jour
 
-### 4. Choix de la fonction de minimisation
+### Bonnes pratiques
 
-L'optimisation du modèle repose sur la minimisation d'une fonction de coût qui quantifie l'erreur :
-
-- **[Définition](https://fr.wikipedia.org/wiki/Définition) de la fonction de coût :** Choisir une fonction de perte qui reflète précisément l'écart entre les prédictions et les valeurs réelles.
-- **Méthode d'optimisation :** Utiliser des algorithmes comme la descente de gradient, [Adam](https://fr.wikipedia.org/wiki/Adam) ou RMSprop pour ajuster les paramètres.
-- **Itérations d'ajustement :** Répéter l'optimisation pour réduire progressivement l'erreur et améliorer les performances.
-
-### 5. Déploiement
-
-La phase finale consiste à intégrer le modèle dans un environnement opérationnel afin qu'il puisse être utilisé en conditions réelles :
-
-- **Intégration dans l'environnement cible :** Mettre en production le modèle dans l'application ou le système souhaité.
-- **Suivi et maintenance :** Surveiller les performances du modèle en production, effectuer des mises à jour et ajuster les paramètres si nécessaire.
-- **Mise à l'échelle :** Adapter l'infrastructure pour répondre à la demande et garantir la robustesse et la fiabilité du système.
+Une conception efficace nécessite :
+- Compréhension approfondie des algorithmes et infrastructures
+- Approche méthodique couvrant tout le cycle de développement
+- Évaluation continue après le déploiement
+- Maintenance régulière pour maintenir les performances

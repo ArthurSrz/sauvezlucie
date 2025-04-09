@@ -16,56 +16,70 @@ date_creation: '2025-03-13'
 date_modification: '2025-03-13'
 isPartOf: '[[Google]]'
 ---
-# [Google](https://fr.wikipedia.org/wiki/Google) DeepMind
+## Généralité
 
-##Généralité
+[Google DeepMind](https://fr.wikipedia.org/wiki/Google_DeepMind) (anciennement DeepMind Technologies) est une entreprise britannique spécialisée en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), fondée en septembre 2010 à Londres par Demis Hassabis, Shane Legg et Mustafa Suleyman. Acquise par Google en janvier 2014 pour environ 500 millions de dollars, elle opère désormais comme filiale d'Alphabet Inc.
 
-Google DeepMind (anciennement DeepMind Technologies) est une organisation de recherche en intelligence artificielle fondée en 2010 à [Londres](https://fr.wikipedia.org/wiki/Londres) et acquise par Google en 2014. Elle est reconnue mondialement pour ses avancées révolutionnaires dans le domaine de l'IA, notamment dans l'apprentissage par renforcement profond et les systèmes d'IA capables d'apprendre et de résoudre des problèmes complexes de manière autonome.
+L'organisation est reconnue mondialement pour ses avancées significatives dans le domaine de l'IA, notamment dans l'[apprentissage par renforcement](https://fr.wikipedia.org/wiki/Apprentissage_par_renforcement) profond et les systèmes d'IA capables d'apprendre et de résoudre des problèmes complexes de manière autonome.
 
 ## Points clés
 
-- Pionnière dans le développement de l'apprentissage par renforcement profond, combinant réseaux de neurones profonds et apprentissage par renforcement
-- Créatrice d'[AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo), première IA à battre un champion du monde au jeu de Go en 2016, considéré comme un jalon historique en IA
-- Développe des applications d'IA dans divers domaines comme la santé, la science des protéines (AlphaFold), la prévision météorologique et la fusion nucléaire
-- Engagée dans la recherche sur l'IA générale (AGI) avec une attention particulière à la sécurité et l'éthique de l'IA
+- Pionnière dans le développement de l'[apprentissage par renforcement profond](https://fr.wikipedia.org/wiki/Apprentissage_par_renforcement), combinant [réseaux de neurones profonds](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_profond) et apprentissage par renforcement
+- Créatrice d'AlphaGo, première IA à battre un champion du monde au [jeu de Go](https://fr.wikipedia.org/wiki/Go_(jeu)) en 2016
+- Développe des applications d'IA dans divers domaines comme la santé, la science des protéines et la prévision météorologique
+- Engagée dans la recherche sur l'[IA générale](https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale) (AGI) avec une attention particulière à la sécurité et l'éthique
+- A développé MuZero, un algorithme capable de maîtriser plusieurs jeux en apprenant leurs règles par lui-même
 
 ## Détails
 
 ### Histoire et évolution
 
-Fondée par [Demis Hassabis](https://fr.wikipedia.org/wiki/Demis_Hassabis), [Shane Legg](https://fr.wikipedia.org/wiki/Shane_Legg) et [Mustafa Suleyman](https://fr.wikipedia.org/wiki/Mustafa_Suleyman), DeepMind a été acquise par Google en 2014 pour environ 500 millions de dollars. En 2023, elle a fusionné avec l'équipe Google Brain pour former Google DeepMind, consolidant ainsi les efforts de recherche en IA avancée de Google.
+Fondée en septembre 2010 à [Londres](https://fr.wikipedia.org/wiki/Londres) par [Demis Hassabis](https://fr.wikipedia.org/wiki/Demis_Hassabis), Shane Legg et Mustafa Suleyman, DeepMind était à l'origine une startup indépendante avant d'être acquise par [Google](https://fr.wikipedia.org/wiki/Google) en janvier 2014. En 2023, elle a fusionné avec l'équipe Google Brain pour former Google DeepMind.
 
 ### Réalisations majeures
 
 #### AlphaGo et ses successeurs
-AlphaGo a marqué l'histoire en battant [Lee Sedol](https://fr.wikipedia.org/wiki/Lee_Sedol), champion du monde de Go, en 2016. Cette victoire était significative car le Go était considéré comme trop complexe pour les ordinateurs en raison du nombre astronomique de configurations possibles. DeepMind a ensuite développé [AlphaGo Zero](https://fr.wikipedia.org/wiki/AlphaGo_Zero), qui a appris à jouer sans données humaines, puis AlphaZero, capable de maîtriser plusieurs jeux (Go, échecs, shogi).
+AlphaGo a marqué l'histoire en battant Lee Sedol, champion du monde de [Go](https://fr.wikipedia.org/wiki/Go_(jeu)), en mars 2016. DeepMind a ensuite développé AlphaGo Zero en 2017, qui a appris à jouer sans données humaines uniquement par auto-apprentissage. Puis vint AlphaZero (2018), capable de maîtriser plusieurs jeux (Go, échecs, shogi) à partir de zéro.
 
 #### AlphaFold
-En 2020-2021, DeepMind a révolutionné la biologie structurale avec AlphaFold 2, un système capable de prédire la structure 3D des protéines avec une précision sans précédent. Cette avancée, considérée comme une solution au "problème du repliement des protéines", a des implications majeures pour la recherche médicale et le développement de médicaments.
+En 2020-2021, DeepMind a révolutionné la biologie structurale avec AlphaFold 2, résolvant ainsi le "problème du repliement des protéines" qui durait depuis 50 ans. En 2022, DeepMind a publié les structures prédites pour près de toutes les protéines connues (~200 millions) dans la base de données AlphaFold DB.
 
 #### Autres innovations
-- Gemini : Modèle multimodal avancé rivalisant avec GPT-4
-- AlphaTensor : Premier algorithme découvrant de nouvelles méthodes de multiplication matricielle
-- AlphaCode : Système de programmation automatique résolvant des problèmes de compétition
-- WaveNet : Technologie de synthèse vocale utilisée dans Google Assistant
+- **Gemini** : Modèle multimodal avancé
+- **AlphaTensor** : Algorithme découvrant de nouvelles méthodes de multiplication matricielle
+- **AlphaCode** : Système de programmation automatique
+- **WaveNet** : Technologie pionnière de synthèse vocale neuronale
+- **GraphCast** : Modèle de prévision météorologique
 
 ### Approche et philosophie
 
-Google DeepMind poursuit l'objectif ambitieux de développer une intelligence artificielle générale (AGI) - des systèmes capables d'apprendre et de résoudre n'importe quel problème intellectuel comme un humain. L'organisation met l'accent sur:
+Google DeepMind poursuit l'objectif ambitieux de développer une intelligence artificielle générale (AGI). Son approche combine:
+- L'apprentissage par renforcement profond
+- Les neurosciences computationnelles
+- La résolution de problèmes complexes via des architectures hybrides
 
-- L'apprentissage par renforcement comme paradigme central
-- La création de systèmes capables d'apprendre de manière autonome
-- La résolution de problèmes scientifiques complexes
-- Le développement responsable de l'IA avec considération des implications éthiques
+L'organisation insiste particulièrement sur:
+1. Le développement de systèmes capables d'apprentissage autonome
+2. L'application de l'IA à des défis scientifiques majeurs
+3. La recherche sur la sécurité et l'alignement des systèmes d'IA
+4. La transparence scientifique
 
-### [Impact](https://fr.wikipedia.org/wiki/Impact) et controverses
+### Impact et controverses
 
-Bien que ses avancées soient largement célébrées, DeepMind a également fait face à des controverses, notamment concernant l'accès aux données de santé via sa collaboration avec le NHS britannique. L'organisation a depuis établi un comité d'éthique et s'est engagée dans des initiatives pour le développement responsable de l'IA.
+Les contributions de DeepMind ont transformé plusieurs domaines:
+- En biologie structurale (AlphaFold)
+- Dans les jeux stratégiques (AlphaGo)
+- En santé (détection précoce des maladies oculaires)
+
+Cependant, l'entreprise a fait face à des critiques concernant:
+- Son accès aux données médicales du [NHS](https://fr.wikipedia.org/wiki/National_Health_Service)
+- Les implications éthiques de l'AGI
 
 ### Orientation future
 
-Google DeepMind continue de repousser les frontières de l'IA en se concentrant sur:
-- Le développement de systèmes d'IA plus généraux et polyvalents
-- L'application de l'IA à des défis scientifiques majeurs
-- La recherche sur la sécurité et l'alignement de l'IA
-- L'intégration de ses technologies dans les produits et services Google
+Google DeepMind continue d'explorer plusieurs axes majeurs:
+- Le développement de systèmes d'IA plus généraux
+- L'application à des défis scientifiques
+- La recherche fondamentale sur l'apprentissage autonome
+- L'intégration dans les produits Google
+- La collaboration scientifique

@@ -18,52 +18,40 @@ subClassOf: '[[Impact du choix des fonctions d''activation sur l''apprentissage 
 ---
 ## Généralité
 
-Les fonctions d'activation Swish et Mish sont des fonctions non linéaires relativement récentes qui ont gagné en popularité dans les réseaux de neurones profonds. Introduites respectivement par Google Brain (Swish) en 2017 et par Diganta Misra (Mish) en 2019, ces fonctions représentent une alternative aux activations traditionnelles comme ReLU, en offrant des propriétés mathématiques avantageuses qui améliorent la performance et la convergence des modèles de deep learning.
+Les fonctions d'activation [Swish](https://fr.wikipedia.org/wiki/Fonction_d%27activation#Swish) et [Mish](https://fr.wikipedia.org/wiki/Fonction_d%27activation) sont des fonctions non linéaires relativement récentes utilisées dans les [réseaux de neurones profonds](https://fr.wikipedia.org/wiki/Réseau_de_neurones_artificiels).
 
 ## Points clés
 
-- Swish est définie par f(x) = x · sigmoid(βx), combinant une multiplication par x et la fonction sigmoïde, où β est un paramètre ajustable
-- Mish est définie par f(x) = x · tanh(softplus(x)), offrant une continuité C∞ et des dérivées non monotones
-- Ces fonctions résolvent le problème du "dying ReLU" en permettant des gradients pour les valeurs négatives
-- Swish et Mish sont auto-régularisantes et améliorent généralement la précision des modèles profonds sans coût computationnel significatif
+- Fonctions d'activation modernes dérivables partout
+- Améliorent la propagation du gradient lors de l'apprentissage
+- Offrent de meilleures performances que ReLU dans certains cas
+- Combinaison de propriétés linéaires et non-linéaires
+- Auto-gated: la sortie dépend dynamiquement de l'entrée
 
 ## Détails
 
-### Fonction Swish
+La fonction Swish, proposée par Google en 2017, est définie par f(x) = x * sigmoïde(βx). Elle présente plusieurs avantages:
+- Conserve l'information pour les entrées positives (comme ReLU)
+- Permet une légère rétropropagation pour les entrées négatives (contrairement à ReLU)
+- Paramètre β apprenable qui permet d'adapter la non-linéarité
 
-Swish, développée par les chercheurs de Google Brain, est définie mathématiquement comme:
+La fonction Mish, introduite en 2019, est définie par f(x) = x * tanh(softplus(x)). Ses caractéristiques incluent:
+- Continuité différentiable sur tout son domaine
+- Minorée pour éviter l'évanouissement du gradient
+- Meilleure conservation de l'information que Swish dans les couches profondes
 
-f(x) = x · sigmoid(βx) = x / (1 + e^(-βx))
+Ces fonctions sont particulièrement efficaces pour:
+- Les architectures profondes (>50 couches)
+- Les tâches de classification complexe
+- Les problèmes où ReLU montre des limitations
 
-Où β est un paramètre qui peut être fixe ou appris pendant l'entraînement. Lorsque β = 1, on parle simplement de Swish. Cette fonction possède plusieurs propriétés intéressantes:
+Comparaison avec ReLU:
+- Meilleure propagation du gradient
+- Moins sensible à l'initialisation des poids
+- Réduction des neurones "morts"
+- Coût computationnel légèrement supérieur
 
-- Elle est non bornée pour les valeurs positives (comme ReLU)
-- Elle est légèrement négative pour certaines valeurs négatives d'entrée
-- Elle est lisse et différentiable partout, contrairement à ReLU
-- Sa dérivée ne souffre pas du problème de saturation comme la sigmoïde
-
-Quand β tend vers l'infini, Swish se comporte comme ReLU, et quand β tend vers 0, elle se rapproche d'une fonction linéaire.
-
-### Fonction Mish
-
-Mish, proposée par Diganta Misra, est définie par:
-
-f(x) = x · tanh(softplus(x)) = x · tanh(ln(1 + e^x))
-
-Mish présente plusieurs avantages:
-
-- Elle est continuellement différentiable (C∞)
-- Elle préserve une légère information négative, ce qui aide à la régularisation
-- Sa dérivée est non-monotone, permettant un meilleur flux de gradient
-- Elle est bornée inférieurement mais non bornée supérieurement
-
-### Comparaison et applications
-
-Les expériences empiriques montrent que Swish et Mish surpassent généralement ReLU dans les architectures profondes comme ResNet, DenseNet et EfficientNet. Mish tend à offrir une légère amélioration par rapport à Swish dans plusieurs benchmarks.
-
-Ces fonctions sont particulièrement efficaces dans:
-- Les réseaux de neurones convolutifs profonds (CNN)
-- Les tâches de classification d'images
-- Les architectures avec de nombreuses couches
-
-L'implémentation de ces fonctions est simple dans les frameworks modernes comme TensorFlow et PyTorch, avec un coût computationnel comparable à d'autres activations courantes, ce qui les rend pratiques pour une utilisation dans des applications réelles.
+Applications typiques:
+- Vision par ordinateur (classification d'images)
+- Traitement du langage naturel
+- Réseaux génératifs profonds

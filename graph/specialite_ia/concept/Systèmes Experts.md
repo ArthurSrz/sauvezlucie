@@ -9,8 +9,8 @@ tags:
 - connaissances
 - expertise
 - systèmes d'aide à la décision
-date_creation: '2025-03-15'
-date_modification: '2025-03-15'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
 ##Généralité
@@ -44,13 +44,13 @@ Un système expert typique comprend plusieurs composants essentiels :
 
 - **MYCIN** (1970s) : Développé à Stanford pour diagnostiquer des infections bactériennes du sang et recommander des antibiotiques.
 - **DENDRAL** : Conçu pour identifier les structures moléculaires en chimie organique.
-- **XCON/R1** : Utilisé par [Digital Equipment Corporation](https://fr.wikipedia.org/wiki/Digital_Equipment_Corporation) pour configurer des systèmes informatiques.
+- **XCON/R1** : Utilisé par Digital Equipment Corporation pour configurer des systèmes informatiques.
 - **PROSPECTOR** : Employé pour l'exploration géologique et la découverte de gisements minéraux.
 
 ### Avantages et limites
 
 **Avantages :**
-- [Conservation](https://fr.wikipedia.org/wiki/Conservation) et diffusion de l'expertise rare ou coûteuse
+- Conservation et diffusion de l'expertise rare ou coûteuse
 - Cohérence dans la prise de décision
 - Capacité à traiter des problèmes complexes
 - Transparence du raisonnement

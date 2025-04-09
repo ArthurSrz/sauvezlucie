@@ -11,48 +11,60 @@ tags:
 - fréquence de termes
 - traitement du langage naturel
 - indexation
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 seeAlso: '[[Algorithme BM25 pour la recherche d''information]]'
 isPartOf: '[[Traitement du langage naturel (NLP)]]'
 relatedTo: '[[Word Embeddings et représentations vectorielles]]'
 ---
 ## Généralité
 
-[TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF) ([Term Frequency-Inverse Document Frequency](https://fr.wikipedia.org/wiki/Term_Frequency-Inverse_Document_Frequency)) est une méthode statistique de pondération utilisée en recherche d'information et en fouille de textes pour évaluer l'importance d'un terme dans un document par rapport à une collection de documents. Cette technique combine deux mesures : la fréquence d'un terme dans un document (TF) et l'inverse de la fréquence de ce terme dans l'ensemble des documents (IDF). TF-IDF permet de mettre en évidence les termes qui sont caractéristiques d'un document tout en minimisant l'importance des termes communs à tous les documents.
+[TF-IDF](https://fr.wikipedia.org/wiki/TF-IDF) (Term Frequency-Inverse Document Frequency) est une méthode statistique de pondération utilisée en [recherche d'information](https://fr.wikipedia.org/wiki/Recherche_d%27information) et en fouille de textes. Développée dans les années 1960-1970 par [Karen Spärck Jones](https://fr.wikipedia.org/wiki/Karen_Sp%C3%A4rck_Jones) et popularisée par Gerard Salton, elle permet d'évaluer l'importance d'un terme dans un document par rapport à une collection de documents.
 
 ## Points clés
 
-- TF-IDF combine la fréquence d'un terme dans un document (TF) avec sa rareté dans l'ensemble du corpus (IDF)
-- Les termes avec un score TF-IDF élevé sont considérés comme plus pertinents et distinctifs pour un document
-- Cette méthode est fondamentale pour de nombreuses applications comme la recherche documentaire, la classification de textes et le résumé automatique
-- TF-IDF permet de filtrer les mots vides (stopwords) qui apparaissent fréquemment dans tous les documents
-- La pondération TF-IDF transforme les documents textuels en vecteurs numériques exploitables par des algorithmes d'apprentissage
+- Combine deux mesures : **Term Frequency (TF)** (fréquence relative dans un document) et **Inverse Document Frequency (IDF)** (importance globale dans le corpus)
+- Met en évidence les termes caractéristiques d'un document tout en minimisant l'importance des termes communs
+- Transforme les documents textuels en vecteurs numériques exploitables par des algorithmes
+- Fondamentale pour les moteurs de recherche, classification de textes et systèmes de recommandation
+- Reste largement utilisée comme baseline en [TALN](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel) malgré des techniques plus récentes
 
 ## Détails
 
-La formule TF-IDF se décompose en deux parties principales :
+La formule complète est :  
+\[ \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t) \]  
+avec  
+\[ \text{IDF}(t) = \log\left(\frac{N}{n_t}\right) \]  
+où :
+- \(N\) = nombre total de documents
+- \(n_t\) = nombre de documents contenant le terme \(t\)
 
-1. **Term Frequency (TF)** : Mesure la fréquence d'apparition d'un terme dans un document. Plusieurs variantes existent :
+Les composantes principales sont :
+1. **Term Frequency (TF)** :
    - TF brute : nombre d'occurrences du terme
    - TF normalisée : fréquence divisée par le nombre total de termes
    - TF logarithmique : 1 + log(fréquence) pour atténuer l'impact des termes très fréquents
 
-2. **[Inverse Document Frequency](https://fr.wikipedia.org/wiki/Inverse_Document_Frequency) (IDF)** : Mesure la rareté d'un terme dans l'ensemble du corpus :
-   - IDF = log(N/df) où N est le nombre total de documents et df le nombre de documents contenant le terme
-   - Plus un terme est rare dans le corpus, plus sa valeur IDF est élevée
+2. **Inverse Document Frequency (IDF)** :
+   - IDF = log(N/df) où df = nombre de documents contenant le terme
+   - Formulation originale de Karen Spärck Jones (1972) : log(N/df + 1)
 
-Le score final TF-IDF est le produit de ces deux mesures : TF-IDF = TF × IDF.
+Parmi les applications pratiques de TF-IDF, on trouve :
+- Amélioration de la pertinence des résultats des [moteurs de recherche](https://fr.wikipedia.org/wiki/Moteur_de_recherche) (système [SMART](https://fr.wikipedia.org/wiki/Syst%C3%A8me_SMART))
+- Extraction des mots-clés représentatifs d'un document
+- Construction de matrices document-terme pour l'analyse de similarité
+- Prétraitement pour des algorithmes (K-means, Naive Bayes)
+- Filtrage automatique des stopwords (termes très fréquents comme "le", "un")
 
-Cette pondération présente plusieurs avantages :
-- Elle attribue un poids faible aux termes apparaissant dans de nombreux documents (comme les articles et prépositions)
-- Elle valorise les termes qui apparaissent fréquemment dans un document mais rarement dans les autres
-- Elle permet de représenter chaque document comme un vecteur dans un espace vectoriel où chaque dimension correspond à un terme
+Cette méthode présente plusieurs avantages :
+- Attribution d'un poids faible aux termes apparaissant dans de nombreux documents
+- Valorisation des termes fréquents dans un document mais rares dans les autres
+- Permet une représentation vectorielle dans un [espace vectoriel](https://fr.wikipedia.org/wiki/Espace_vectoriel)
+- Méthode robuste et interprétable
 
-Dans les applications pratiques, TF-IDF est utilisé pour :
-- Améliorer la pertinence des résultats des moteurs de recherche
-- Extraire les mots-clés représentatifs d'un document
-- Construire des matrices document-terme pour l'analyse de similarité entre textes
-- Servir de prétraitement pour des algorithmes de clustering ou de classification
+Cependant, elle a quelques limitations :
+- Ne capture pas les relations sémantiques entre termes
+- Sensible à la taille et à la composition du corpus
+- Nécessite souvent des ajustements (listes de stopwords, normalisation)
 
-Malgré sa simplicité, TF-IDF reste une méthode efficace et largement utilisée, même avec l'avènement de techniques plus sophistiquées comme les embeddings de mots et les modèles de langage. Elle constitue souvent une baseline solide pour comparer les performances d'autres algorithmes de traitement du langage naturel.
+Selon les travaux de [Gerard Salton](https://fr.wikipedia.org/wiki/Gerard_Salton), cette représentation vectorielle est particulièrement efficace pour calculer la similarité entre documents via la similarité cosinus.

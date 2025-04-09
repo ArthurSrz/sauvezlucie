@@ -11,60 +11,57 @@ tags:
 - réseaux de neurones
 - apprentissage automatique
 - traitement d'images
-date_creation: '2025-03-19'
-date_modification: '2025-03-19'
-subClassOf: '[[Apprentissage automatique (Machine Learning)]]'
-uses: '[[Auto-encodeurs convolutifs]]'
+date_creation: '2025-03-29'
+date_modification: '2025-04-04'
+subClassOf:
+- '[[Apprentissage automatique (Machine Learning)]]'
+- '[[Réseaux neuronaux en IA]]'
 relatedTo: '[[Techniques de l''intelligence artificielle]]'
+seeAlso: '[[Architectures résiduelles (ResNets)]]'
 ---
-##Généralité
+## Généralité
 
-Un réseau neuronal convolutif (CNN ou ConvNet) est un type spécialisé de réseau de neurones artificiels conçu principalement pour traiter des données structurées en grille, comme les images. Inspiré par l'organisation du cortex visuel animal, il utilise des opérations mathématiques appelées convolutions pour extraire automatiquement des caractéristiques hiérarchiques à partir des données d'entrée. Les CNN sont devenus la pierre angulaire de nombreuses applications de vision par ordinateur et de traitement d'images.
+Un [réseau neuronal convolutif](https://fr.wikipedia.org/wiki/R%C3%A9seau_neuronal_convolutif) (CNN ou ConvNet) est un type spécialisé de [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) conçu principalement pour traiter des données structurées en grille, comme les images. Inspiré par l'organisation du [cortex visuel](https://fr.wikipedia.org/wiki/Cortex_visuel) animal, il utilise des opérations mathématiques appelées convolutions pour extraire automatiquement des caractéristiques hiérarchiques à partir des données d'entrée.
+
+Développés à partir des années 1980 avec le réseau Neocognitron de Kunihiko Fukushima, les CNN ont connu un essor majeur en 2012 grâce à [AlexNet](https://fr.wikipedia.org/wiki/AlexNet) qui a effectivement marqué une avancée significative dans la classification d'images. Depuis, ils sont devenus fondamentaux pour de nombreuses applications de [vision par ordinateur](https://fr.wikipedia.org/wiki/Vision_par_ordinateur) et de traitement d'images.
 
 ## Points clés
 
-- Les CNN utilisent des couches de convolution qui appliquent des filtres sur les données d'entrée pour détecter des motifs locaux
-- L'architecture typique combine des couches de convolution, de pooling (sous-échantillonnage) et des couches entièrement connectées
-- Les CNN réduisent considérablement le nombre de paramètres par rapport aux réseaux entièrement connectés grâce au partage de poids
-- Ils sont particulièrement efficaces pour la reconnaissance d'images, la détection d'objets et la segmentation sémantique
+- Les CNN utilisent des couches de convolution qui appliquent des filtres sur les données d'entrée pour détecter des motifs locaux, apprenant automatiquement des caractéristiques hiérarchiques (des bords simples aux formes complexes)
+- L'architecture typique combine des couches de convolution (avec [ReLU](https://fr.wikipedia.org/wiki/Rectifier_(r%C3%A9seau_de_neurones))), de pooling et des couches entièrement connectées, popularisée par [LeNet-5](https://fr.wikipedia.org/wiki/LeNet) puis perfectionnée par AlexNet
+- Les CNN réduisent considérablement le nombre de paramètres grâce au partage de poids et à la connectivité locale
+- Particulièrement efficaces pour la reconnaissance d'images (avec [VGG](https://fr.wikipedia.org/wiki/VGG_(r%C3%A9seau_de_neurones)), ResNet), détection d'objets et segmentation sémantique ([U-Net](https://fr.wikipedia.org/wiki/U-Net))
+- Applications modernes incluent le traitement du langage naturel, la génération d'images ([GANs](https://fr.wikipedia.org/wiki/R%C3%A9seaux_antagonistes_g%C3%A9n%C3%A9ratifs)) et l'analyse médicale
 
 ## Détails
 
 ### Architecture fondamentale
 
-L'architecture d'un CNN se compose généralement de plusieurs types de couches:
+L'architecture d'un [CNN](https://fr.wikipedia.org/wiki/R%C3%A9seau_neuronal_convolutif) se compose généralement de :
 
-1. **[Couches](https://fr.wikipedia.org/wiki/Couches) de convolution**: Ces couches appliquent des filtres (ou noyaux) aux données d'entrée pour produire des cartes de caractéristiques. Chaque filtre détecte un motif spécifique (comme des bords, des textures ou des formes) à différentes positions de l'entrée. Le partage des poids dans ces filtres permet de réduire considérablement le nombre de paramètres.
-
-2. **Fonction d'activation**: Généralement ReLU (Rectified Linear Unit), qui introduit une [non-linéarité](https://fr.wikipedia.org/wiki/non-linéarité) dans le réseau en remplaçant toutes les valeurs négatives par zéro.
-
-3. **[Couches](https://fr.wikipedia.org/wiki/Couches) de pooling**: Ces couches réduisent la dimension spatiale des cartes de caractéristiques, diminuant ainsi la quantité de paramètres et de calculs dans le réseau. Le max-pooling, qui conserve la valeur maximale dans une fenêtre, est couramment utilisé.
-
-4. **[Couches](https://fr.wikipedia.org/wiki/Couches) entièrement connectées**: Situées généralement à la fin du réseau, elles utilisent les caractéristiques extraites pour effectuer la classification finale.
+1. **Couches de convolution**: Appliquent des filtres aux données d'entrée pour produire des cartes de caractéristiques, inspirées des récepteurs locaux du cortex visuel primaire.
+2. **Fonction d'activation**: Généralement [ReLU](https://fr.wikipedia.org/wiki/Rectifier_(neural_networks)), qui introduit une non-linéarité dans le réseau.
+3. **Couches de pooling**: Réduisent la dimension spatiale des cartes de caractéristiques (max-pooling courant).
+4. **Couches entièrement connectées**: Utilisent les caractéristiques extraites pour la classification finale, parfois remplacées dans architectures récentes comme [ResNet](https://fr.wikipedia.org/wiki/Residual_neural_network).
 
 ### Avantages des CNN
 
-- **Invariance à la translation**: Les CNN peuvent reconnaître des objets indépendamment de leur position dans l'image.
-- **Extraction hiérarchique de caractéristiques**: Les premières couches détectent des caractéristiques simples (bords, coins), tandis que les couches plus profondes combinent ces caractéristiques pour détecter des structures plus complexes.
-- **Réduction du nombre de paramètres**: Grâce au partage de poids et aux opérations de pooling, les CNN nécessitent moins de paramètres que les réseaux entièrement connectés.
+- **Invariance à la translation**: Reconnaître des objets indépendamment de leur position dans l'image
+- **Extraction hiérarchique de caractéristiques**: Des caractéristiques simples (bords) vers complexes (formes)
+- **Réduction du nombre de paramètres**: Grâce au partage de poids et aux opérations de pooling
 
 ### Applications principales
 
-Les CNN ont révolutionné de nombreux domaines:
+- **Classification d'images**: Identification du contenu principal ([ImageNet](https://fr.wikipedia.org/wiki/ImageNet))
+- **Détection d'objets**: Localisation et identification de multiples objets (YOLO, SSD)
+- **Segmentation sémantique**: Attribution d'une classe à chaque pixel (U-Net en imagerie médicale)
+- **Reconnaissance faciale**: Identification de visages et d'expressions (FaceNet)
+- **Analyse médicale**: Détection d'anomalies dans des images médicale
 
-- **[Classification](https://fr.wikipedia.org/wiki/Classification) d'images**: Identification du contenu principal d'une image (ex: [ImageNet](https://fr.wikipedia.org/wiki/ImageNet))
-- **Détection d'objets**: Localisation et identification de multiples objets dans une image (ex: YOLO, SSD, Faster R-CNN)
-- **Segmentation sémantique**: Attribution d'une classe à chaque pixel d'une image
-- **Reconnaissance faciale**: Identification de visages et d'expressions
-- **Analyse médicale**: Détection d'anomalies dans des images médicales (radiographies, IRM)
+### Architectures célèbres
 
-### [Architectures](https://fr.wikipedia.org/wiki/Architectures) célèbres
-
-Plusieurs architectures CNN ont marqué l'évolution de ce domaine:
-- **LeNet-5** (1998): Pionnier des CNN modernes
-- **AlexNet** (2012): Premier CNN profond à remporter la compétition [ImageNet](https://fr.wikipedia.org/wiki/ImageNet)
-- **VGG** (2014): Architecture simple mais profonde
-- **GoogLeNet/Inception** (2014): Introduction des modules Inception
-- **ResNet** (2015): Introduction des connexions résiduelles permettant l'entraînement de réseaux très profonds
-
-Les réseaux neuronaux convolutifs continuent d'évoluer avec des innovations comme les connexions denses (DenseNet), les convolutions séparables en profondeur, et les architectures efficientes comme EfficientNet.
+- **LeNet-5** (1998): Yann LeCun pour la reconnaissance de chiffres manuscrits
+- **AlexNet** (2012): Premier CNN profond à remporter ImageNet
+- **VGG** (2014): Convolutions 3x3 empilées
+- **GoogLeNet/Inception** (2014): Modules Inception
+- **ResNet** (2015): Connexions résiduelles pour réseaux profonds

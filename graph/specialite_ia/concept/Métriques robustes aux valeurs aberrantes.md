@@ -20,41 +20,48 @@ hasPart: '[[Validation croisée et évaluation de modèles]]'
 ---
 ## Généralité
 
-Les métriques robustes aux valeurs aberrantes sont des mesures statistiques conçues pour maintenir leur fiabilité même en présence de données extrêmes ou atypiques. Contrairement aux métriques classiques comme la moyenne ou l'écart-type, qui peuvent être fortement influencées par des valeurs aberrantes, les métriques robustes offrent une représentation plus fidèle de la tendance centrale et de la dispersion des données dans des contextes réels souvent imparfaits.
+Les métriques robustes aux valeurs aberrantes sont des mesures statistiques conçues pour maintenir leur fiabilité même en présence de données extrêmes ou atypiques. Contrairement aux métriques classiques comme la [moyenne](https://fr.wikipedia.org/wiki/Moyenne) ou l'[écart-type](https://fr.wikipedia.org/wiki/%C3%89cart_type), ces métriques offrent une représentation plus fidèle de la tendance centrale et de la dispersion des données dans des contextes réels souvent imparfaits. Elles trouvent leurs origines dans le domaine de la [statistique robuste](https://fr.wikipedia.org/wiki/Statistique_robuste), un champ d'étude formalisé notamment par [Peter Huber](https://fr.wikipedia.org/wiki/Peter_Huber).
 
 ## Points clés
 
-- Les métriques robustes minimisent l'influence des valeurs aberrantes sans nécessiter leur identification ou suppression préalable
-- Elles sont essentielles dans les domaines où les données contiennent naturellement des observations extrêmes (finance, détection d'anomalies, traitement d'images)
-- Le compromis entre robustesse et efficience statistique doit être considéré lors du choix d'une métrique
-- Les métriques robustes sont souvent caractérisées par leur point de rupture, qui quantifie la proportion de données aberrantes qu'elles peuvent tolérer
+- **Minimisent l'influence des [valeurs aberrantes](https://fr.wikipedia.org/wiki/Valeur_aberrante)** sans nécessiter leur identification ou suppression préalable (approche formalisée par [Tukey](https://fr.wikipedia.org/wiki/John_Tukey))
+- **Essentielles dans les domaines avec observations extrêmes** ([finance](https://fr.wikipedia.org/wiki/Finance), détection d'anomalies, traitement d'images)
+- **Caractérisées par leur point de rupture** (proportion de données aberrantes tolérées), notion développée par Frank Hampel
+- **Compromis entre robustesse et efficience statistique** (ex: médiane a 50% de point de rupture mais 64% d'efficience)
+- **Applications émergentes** dans l'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) et l'analyse de données satellitaires
 
 ## Détails
 
-### [Mesures](https://fr.wikipedia.org/wiki/Mesures) de tendance centrale robustes
+### Mesures de tendance centrale robustes
 
-La médiane est la métrique robuste la plus connue pour estimer la tendance centrale. Contrairement à la moyenne arithmétique, la médiane n'est pas affectée par l'amplitude des valeurs extrêmes, mais uniquement par leur nombre. Son point de rupture est de 50%, ce qui signifie qu'elle reste fiable même si près de la moitié des données sont aberrantes.
+La [médiane](https://fr.wikipedia.org/wiki/M%C3%A9diane_(statistiques)) est la métrique robuste la plus connue avec un point de rupture de 50%. D'autres estimateurs incluent :
 
-D'autres estimateurs robustes de tendance centrale incluent :
-- La moyenne tronquée : calcule la moyenne après avoir éliminé un pourcentage fixe des valeurs les plus extrêmes
-- La moyenne winsorisée : remplace les valeurs extrêmes par les valeurs les plus proches non considérées comme aberrantes
-- Les M-estimateurs : généralisent la notion de maximum de vraisemblance avec des fonctions de perte moins sensibles aux valeurs extrêmes
+- [Moyenne tronquée](https://fr.wikipedia.org/wiki/Moyenne_tronqu%C3%A9e) (popularisée par Tukey)
+- Moyenne winsorisée (utile en finance)
+- [M-estimateurs](https://fr.wikipedia.org/wiki/M-estimateur) comme celui de Huber (efficience de 95%)
 
-### [Mesures](https://fr.wikipedia.org/wiki/Mesures) de dispersion robustes
+### Mesures de dispersion robustes
 
-L'écart absolu médian (MAD) est l'équivalent robuste de l'écart-type. Il est défini comme la médiane des écarts absolus par rapport à la médiane des données. D'autres mesures robustes de dispersion incluent :
-- L'écart interquartile (IQR) : différence entre le 3ème et le 1er quartile
-- L'écart-type tronqué ou winsorisé
-- Les estimateurs de dispersion basés sur les rangs
+- [Écart absolu médian](https://fr.wikipedia.org/wiki/%C3%89cart_absolu_m%C3%A9dian) (MAD) - point de rupture de 50%
+- [Écart interquartile](https://fr.wikipedia.org/wiki/%C3%89cart_interquartile) (IQR) - utilisé dans les boxplots
+- Écart-type tronqué/winsorisé
+- Estimateurs basés sur les rangs
 
 ### Applications pratiques
 
-En apprentissage automatique, les métriques robustes sont particulièrement utiles pour :
-- L'évaluation de modèles sur des données bruitées (MAE vs MSE)
-- La détection d'anomalies et de fraudes
-- Le prétraitement des données sans élimination manuelle des valeurs aberrantes
-- Les algorithmes d'apprentissage robustes comme RANSAC (Random Sample Consensus)
+En [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique), les métriques robustes servent à :
+
+- Évaluer des modèles sur données bruitées (MAE vs MSE)
+- Détection d'anomalies et fraudes
+- Prétraitement des données (méthodes comme [RANSAC](https://fr.wikipedia.org/wiki/RANSAC))
+- Traitement d'images (filtrage du bruit impulsionnel)
 
 ### Limites et considérations
 
-Bien que les métriques robustes offrent une protection contre les valeurs aberrantes, elles présentent généralement une efficacité statistique moindre lorsque les données suivent parfaitement une distribution normale. Le choix entre métriques classiques et robustes dépend donc du contexte d'application, de la qualité des données et de l'importance relative accordée à la robustesse par rapport à l'efficacité statistique.
+- Efficacité statistique moindre pour données normalement distribuées (médiane: 64% vs moyenne: 100%)
+- Choix dépend du contexte :
+  - Sciences environnementales/météorologie : méthodes robustes préférées
+  - Données propres/normalement distribuées : métriques classiques
+  - Applications émergentes : hybrides comme estimateurs de Huber
+
+Cette discipline continue d'évoluer avec des applications dans des domaines variés.

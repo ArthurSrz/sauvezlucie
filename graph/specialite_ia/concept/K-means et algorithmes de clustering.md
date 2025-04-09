@@ -12,49 +12,58 @@ tags:
 - machine learning
 - algorithmes
 - classification
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
-subClassOf: '[[Apprentissage non supervisé]]'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
+subClassOf: '[[Méthodes de clustering]]'
+hasPart: '[[Segmentation adaptative par modulation des seuils de densité pour distributions
+  irrégulières]]'
 ---
 ## Généralité
 
-Le clustering est une technique d'apprentissage non supervisé qui consiste à regrouper des données similaires en clusters (groupes) sans connaissance préalable des étiquettes. Parmi les nombreux algorithmes de clustering, K-means est l'un des plus populaires et des plus simples à comprendre. Il vise à partitionner n observations en k clusters, où chaque observation appartient au cluster dont la moyenne (centroïde) est la plus proche.
+Le clustering est une technique d'[apprentissage non supervisé](https://fr.wikipedia.org/wiki/Apprentissage_non_supervis%C3%A9) qui consiste à regrouper des données similaires en clusters (groupes) sans connaissance préalable des étiquettes. Cette méthode de partitionnement de données est particulièrement utile pour l'[exploration de données](https://fr.wikipedia.org/wiki/Exploration_de_donn%C3%A9es), la segmentation de marché ou l'analyse d'images. Parmi les nombreux algorithmes de clustering, [K-means](https://fr.wikipedia.org/wiki/K-moyennes) est l'un des plus populaires et des plus simples à comprendre.
 
 ## Points clés
 
-- K-means minimise la somme des distances au carré entre les points de données et le centroïde de leur cluster assigné
-- L'algorithme nécessite de spécifier à l'avance le nombre k de clusters souhaités
-- K-means converge toujours, mais peut atteindre un minimum local plutôt que global
-- La complexité temporelle est généralement O(n×k×d×i) où n est le nombre d'échantillons, k le nombre de clusters, d la dimension et i le nombre d'itérations
+- [K-means](https://fr.wikipedia.org/wiki/K-moyennes) minimise la somme des distances au carré entre les points de données et le centroïde de leur cluster assigné (méthode connue sous le nom de "critère d'inertie intra-classe")
+- L'algorithme nécessite de spécifier à l'avance le nombre k de clusters souhaités, déterminé par des méthodes comme la [méthode du coude](https://fr.wikipedia.org/wiki/M%C3%A9thode_du_coude) ou l'indice de silhouette
+- K-means converge toujours mais peut atteindre un minimum local plutôt que global (d'où la pratique des initialisations multiples)
+- L'algorithme est sensible aux outliers et fonctionne mieux avec des données sphériques et bien séparées
+- Une variante courante est [K-means++](https://fr.wikipedia.org/wiki/K-moyennes#K-moyennes_++), qui améliore l'initialisation des centroïdes
 
 ## Détails
 
 ### Fonctionnement de K-means
 
-L'algorithme K-means suit un processus itératif simple :
-1. Initialisation : sélection aléatoire de k points comme centroïdes initiaux
-2. Affectation : chaque point de données est assigné au centroïde le plus proche
-3. Mise à jour : recalcul des centroïdes comme moyenne des points assignés à chaque cluster
-4. Répétition des étapes 2 et 3 jusqu'à convergence (les centroïdes ne changent plus significativement)
+L'algorithme [K-means](https://fr.wikipedia.org/wiki/K-moyennes) suit un processus itératif :
+1. Initialisation : sélection aléatoire de k points comme centroïdes initiaux (les points de données peuvent être utilisés). La méthode [K-means++](https://fr.wikipedia.org/wiki/K-moyennes#Initialisation) améliore ce processus en choisissant des centroïdes initiaux bien espacés.
+2. Affectation : chaque point de données est assigné au centroïde le plus proche selon la distance [euclidienne](https://fr.wikipedia.org/wiki/Distance_euclidienne).
+3. Mise à jour : recalcul des centroïdes comme moyenne des points assignés à chaque cluster.
+4. Répétition des étapes 2 et 3 jusqu'à convergence.
 
-L'initialisation des centroïdes peut influencer considérablement le résultat final. Pour améliorer cela, la variante K-means++ propose une méthode d'initialisation plus robuste qui sélectionne les centroïdes initiaux de manière à ce qu'ils soient bien espacés.
+Proposé initialement par [Stuart Lloyd](https://fr.wikipedia.org/wiki/Stuart_Lloyd) en 1957 pour la quantification vectorielle, K-means a une complexité temporelle de O(n×k×d×i) où n est le nombre d'échantillons, k le nombre de clusters, d la dimension et i le nombre d'itérations.
+
+### Limitations de K-means
+
+- Nécessité de spécifier k à l'avance
+- Sensibilité aux outliers (pouvant être atténuée par des techniques de prétraitement)
+- Préférence pour des clusters de forme sphérique et taille similaire
+- Difficulté avec des clusters de densité variable ou de formes complexes
 
 ### Autres algorithmes de clustering
 
-Bien que K-means soit populaire, il présente certaines limitations, notamment sa sensibilité aux valeurs aberrantes et sa tendance à créer des clusters de taille similaire et de forme sphérique. D'autres algorithmes de clustering offrent des alternatives :
+- **[DBSCAN](https://fr.wikipedia.org/wiki/DBSCAN)** : Identifie des clusters de forme arbitraire basés sur la densité, avec deux paramètres clés (ε et minPts). Particulièrement efficace pour détecter du bruit et des clusters imbriqués.
+  
+- **Clustering hiérarchique** : Produit un dendrogramme montrant les relations hiérarchiques entre clusters.
 
-- **DBSCAN** (Density-Based Spatial Clustering of Applications with [Noise](https://fr.wikipedia.org/wiki/Noise)) : identifie les clusters comme des zones de haute densité séparées par des zones de faible densité, sans nécessiter de spécifier le nombre de clusters
-- **Clustering hiérarchique** : construit une hiérarchie de clusters, soit par agglomération (bottom-up) soit par division (top-down)
-- **Gaussian Mixture Models (GMM)** : modélise les clusters comme un mélange de distributions gaussiennes
-- **Mean-shift** : algorithme non paramétrique qui ne nécessite pas de spécifier le nombre de clusters
-- **[OPTICS](https://fr.wikipedia.org/wiki/OPTICS)** : extension de DBSCAN qui gère mieux les clusters de densités variables
+- **[Gaussian Mixture Models](https://fr.wikipedia.org/wiki/M%C3%A9lange_gaussien) (GMM)** : Modèle probabiliste où chaque cluster suit une distribution gaussienne multivariée.
+
+- **[Mean-shift](https://fr.wikipedia.org/wiki/Mean_shift)** : Détecte automatiquement le nombre de clusters en trouvant les modes de la distribution de densité.
 
 ### Évaluation des clusters
 
-Pour évaluer la qualité d'un clustering, plusieurs métriques existent :
-- Inertie (somme des distances au carré à l'intérieur des clusters)
-- Indice de silhouette (mesure la cohésion et la séparation des clusters)
-- Indice de Davies-Bouldin (ratio entre la dispersion intra-cluster et la séparation inter-clusters)
-- Indice de Calinski-Harabasz (ratio entre la variance inter-clusters et intra-clusters)
+- **Inertie** : Somme des distances au carré, utilisée dans la "méthode du coude" pour estimer k optimal.
+- **[Indice de silhouette](https://fr.wikipedia.org/wiki/Silhouette_(clustering))** : Combine cohésion intra-cluster et séparation inter-clusters.
+- **Indice de Davies-Bouldin** : Minimal pour un bon clustering.
+- **Indice de Calinski-Harabasz** : Ratio entre la dispersion inter-clusters et intra-clusters.
 
-Le choix de l'algorithme de clustering dépend de la nature des données, de la forme attendue des clusters et des contraintes spécifiques au problème.
+Pour des données étiquetées, on peut utiliser des métriques supervisées comme l'ARI (Adjusted Rand Index) ou l'AMI (Adjusted Mutual Information).

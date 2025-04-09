@@ -10,55 +10,55 @@ tags:
 - apprentissage automatique
 - données d'entraînement
 - efficacité computationnelle
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 relatedTo: '[[Apprentissage profond (Deep Learning)]]'
 isPartOf: '[[Entraînement d''un modèle d''IA]]'
+seeAlso: '[[Fine-Tuning par Renforcement]]'
 ---
 ## Généralité
 
-L'apprentissage par transfert (transfer learning) est une technique d'apprentissage automatique où un modèle développé pour une tâche est réutilisé comme point de départ pour un modèle sur une seconde tâche. Cette approche permet de capitaliser sur les connaissances acquises lors de la résolution d'un problème pour en résoudre un autre similaire, réduisant ainsi le besoin en données d'entraînement et en temps de calcul pour la nouvelle tâche.
+L'[appel à l'action](https://fr.wikipedia.org/wiki/Call_to_action) (Call to Action ou CTA) est une technique [marketing](https://fr.wikipedia.org/wiki/Marketing) visant à inciter l'utilisateur ou le client à effectuer une action spécifique immédiate. 
+
+L'[apprentissage par transfert](https://fr.wikipedia.org/wiki/Apprentissage_par_transfert) permet d'exploiter les connaissances d'un domaine source pour améliorer l'apprentissage dans un domaine cible. Ces deux concepts sont largement utilisés dans leurs domaines respectifs pour optimiser les performances.
 
 ## Points clés
 
-- L'apprentissage par transfert permet d'exploiter les connaissances d'un domaine source pour améliorer l'apprentissage dans un domaine cible
-- Cette technique est particulièrement utile lorsque les données d'entraînement pour la tâche cible sont limitées
-- On distingue plusieurs approches : transfert de paramètres, transfert de représentations, transfert d'instances
-- Les réseaux de neurones profonds pré-entraînés constituent l'application la plus courante de l'apprentissage par transfert
+- **Pour l'appel à l'action**:
+  - Formes variées : boutons cliquables, liens hypertextes ou instructions verbales
+  - Principes psychologiques clés : urgence, rareté, récompense
+  - Caractéristiques essentielles : clarté, visibilité, langage actionnable
+  - Optimisation via [tests A/B](https://fr.wikipedia.org/wiki/Test_A/B)
+
+- **Pour l'apprentissage par transfert**:
+  - Solution efficace pour les données d'entraînement limitées
+  - Approches multiples : transfert de paramètres, représentations ou instances
+  - Applications majeures dans les réseaux neuronaux profonds
+  - Économies potentielles de données et de temps de calcul
 
 ## Détails
 
-L'apprentissage par transfert repose sur l'idée que les caractéristiques apprises pour résoudre une tâche peuvent être pertinentes pour d'autres tâches. Par exemple, un modèle entraîné à reconnaître des chats pourrait utiliser certaines de ses connaissances (détection de contours, de textures, etc.) pour reconnaître des chiens, même avec peu d'exemples de chiens.
+### Appel à l'action
+Technique importante pour guider les visiteurs dans le parcours client. L'efficacité dépend de plusieurs facteurs :
+- Placement stratégique (above the fold, emails, etc.)
+- Design visuel (couleurs contrastées, taille appropriée)
+- Formulation avec verbes d'action ("Découvrir", "Télécharger")
+L'impact peut varier selon les contextes et les audiences cibles.
 
-### Types d'apprentissage par transfert
+### Apprentissage par transfert
+#### Types principaux
+1. **Transfert inductif** : domaines identiques, tâches différentes
+2. **Transfert transductif** : tâches identiques, domaines différents
+3. **Apprentissage non supervisé** : adaptation pour tâches non supervisées
 
-1. **Transfert inductif** : les domaines source et cible sont les mêmes, mais les tâches diffèrent.
-2. **Transfert transductif** : les tâches source et cible sont les mêmes, mais les domaines diffèrent.
-3. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) non supervisé par transfert** : similaire au transfert inductif, mais se concentre sur des tâches non supervisées.
+#### Méthodes courantes
+- **[Fine-tuning](https://fr.wikipedia.org/wiki/Fine-tuning)** : réentraînement partiel des modèles
+- **Feature extraction** : utilisation comme extracteur de features
+- **Domain adaptation** : adaptation pour domaines connexes
 
-### Méthodes courantes
+#### Applications pratiques
+- **[Vision par ordinateur](https://fr.wikipedia.org/wiki/Vision_par_ordinateur)** (ResNet, VGG)
+- **[Traitement du langage naturel](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel)** (BERT, GPT)
+- Reconnaissance vocale
 
-- **Fine-tuning** : On prend un modèle pré-entraîné et on réentraîne certaines de ses couches (généralement les dernières) sur les nouvelles données.
-- **Feature extraction** : On utilise un modèle pré-entraîné comme extracteur de caractéristiques fixes, puis on entraîne un nouveau classifieur sur ces caractéristiques.
-- **Domain adaptation** : On adapte un modèle pour qu'il fonctionne sur un domaine différent mais lié.
-
-### Applications pratiques
-
-L'apprentissage par transfert est largement utilisé dans:
-- **Vision par ordinateur** : Des modèles comme ResNet, VGG ou Inception pré-entraînés sur [ImageNet](https://fr.wikipedia.org/wiki/ImageNet) sont adaptés à des tâches spécifiques.
-- **Traitement du langage naturel** : Des modèles comme BERT, GPT ou Word2Vec sont affinés pour des tâches spécifiques comme la classification de texte ou la réponse aux questions.
-- **Reconnaissance vocale** : Des modèles pré-entraînés sur de grandes quantités de données audio sont adaptés à des langues ou accents spécifiques.
-
-### Avantages et limites
-
-**Avantages**:
-- Réduit considérablement le temps d'entraînement
-- Nécessite moins de données d'entraînement
-- Peut améliorer les performances sur des tâches avec peu de données
-
-**Limites**:
-- Le transfert négatif peut se produire si les tâches source et cible sont trop différentes
-- Nécessite une certaine expertise pour choisir le bon modèle source et la bonne stratégie de transfert
-- Peut perpétuer ou amplifier les biais présents dans le modèle source
-
-L'apprentissage par transfert représente une avancée majeure dans le domaine de l'apprentissage automatique, permettant de développer des modèles performants même avec des ressources limitées.
+Les défis incluent le "negative transfer" (baisse de performance) et la nécessité d'un ajustement précis aux tâches cibles. Les performances peuvent varier selon la similarité entre domaines source et cible.

@@ -2,73 +2,47 @@
 title: Apprentissage par renforcement
 type: concept
 tags:
-- intelligence artificielle
-- machine learning
-- apprentissage par renforcement
-- IA
 - algorithmes
-- renforcement
+- environnement
+- agent intelligent
+- décision
+- récompense
+- intelligence artificielle
 - apprentissage automatique
-- informatique
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
-subClassOf: '[[Techniques de l''intelligence artificielle]]'
-hasPart: '[[Exploration vs exploitation dans l''apprentissage par renforcement]]'
-seeAlso: '[[Algorithmes de bandit manchot et exploration-exploitation]]'
+date_creation: '2025-04-08'
+date_modification: '2025-04-09'
+link:
+- '[[Techniques de l''intelligence artificielle]]'
+- '[[Exploration vs exploitation dans l''apprentissage par renforcement]]'
+seeAlso:
+- '[[Apprentissage par renforcement par démonstration]]'
+- '[[Apprentissage par renforcement hiérarchique]]'
+- '[[Apprentissage par renforcement inverse]]'
+- '[[Apprentissage par renforcement profond]]'
 ---
-##Généralité
+## Généralité  
 
-L'apprentissage par renforcement (RL - Reinforcement Learning) est un paradigme d'apprentissage automatique où un agent apprend à prendre des décisions en interagissant avec un environnement. Contrairement à l'apprentissage supervisé, l'agent n'a pas accès à des exemples étiquetés, mais reçoit des récompenses ou des pénalités en fonction des actions qu'il entreprend. L'objectif de l'agent est de maximiser la somme des récompenses cumulées au fil du temps en développant une stratégie optimale (politique).
+L'[apprentissage par renforcement](https://fr.wikipedia.org/wiki/Apprentissage_par_renforcement) (RL - Reinforcement Learning) est un paradigme d'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) où un agent apprend à prendre des décisions en interagissant avec un environnement. Contrairement à l'apprentissage supervisé, l'agent n'a pas accès à des exemples étiquetés, mais reçoit des récompenses ou des pénalités en fonction des actions qu'il entreprend. L'objectif de l'agent est de maximiser la somme des récompenses cumulées au fil du temps en développant une stratégie optimale (politique).  
 
-## Points clés
+Ce domaine trouve ses origines dans les travaux de [Richard Bellman](https://fr.wikipedia.org/wiki/Richard_Bellman) sur la programmation dynamique dans les années 1950, et a été popularisé par des succès récents comme AlphaGo de DeepMind. L'apprentissage par renforcement s'applique aujourd'hui à de nombreux domaines, notamment la robotique, les systèmes de recommandation et la finance algorithmique.
 
-- L'agent interagit avec l'environnement à travers un cycle d'actions, observations et récompenses
-- L'objectif est de trouver une politique optimale qui maximise les récompenses cumulées
-- Le compromis exploration-exploitation est fondamental dans l'apprentissage par renforcement
-- Les algorithmes majeurs incluent [Q-learning](https://fr.wikipedia.org/wiki/Q-learning), SARSA, et les méthodes de politique par gradient
-- Les applications couvrent la robotique, les jeux, la finance, et les systèmes de recommandation
+## Points clés  
 
-## Détails
+- **Interaction agent-environnement** : Cadre [Markov Decision Process](https://fr.wikipedia.org/wiki/Processus_de_d%C3%A9cision_markovien) (MDP) où chaque état possède la propriété markovienne  
+- **Objectif principal** : Maximiser les récompenses cumulées via une politique optimale, formalisé par la [Q-function](https://fr.wikipedia.org/wiki/Algorithme_Q-learning)  
+- **Compromis fondamental** : Dilemme [exploration-exploitation](https://fr.wikipedia.org/wiki/Bandit_manchot_(math%C3%A9matiques)) illustré par le problème du bandit manchot  
+- **Algorithmes majeurs** : Q-learning (méthode basée sur la valeur), SARSA (méthode sur politique), REINFORCE (méthode de politique par gradient)  
+- **Applications principales** : Robotique (locomotion), jeux (AlphaGo), finance algorithmique, systèmes de recommandation  
 
-### Composants fondamentaux
+## Détails  
 
-L'apprentissage par renforcement repose sur plusieurs composants essentiels:
-- **Agent**: l'entité qui prend des décisions et agit
-- **Environnement**: le monde avec lequel l'agent interagit
-- **[État](https://fr.wikipedia.org/wiki/État) (S)**: représentation de la situation actuelle
-- **Action (A)**: choix possibles que l'agent peut faire
-- **Récompense (R)**: signal numérique que l'agent reçoit après chaque action
-- **Politique (π)**: stratégie que l'agent utilise pour déterminer ses actions
+L'apprentissage par renforcement repose sur plusieurs éléments essentiels : un [agent](https://fr.wikipedia.org/wiki/Agent_intelligent) prenant des décisions, un [environnement](https://fr.wikipedia.org/wiki/Environnement_(intelligence_artificielle)) d'interaction, des [états](https://fr.wikipedia.org/wiki/%C3%89tat_(informatique)) représentant la situation actuelle, des [actions](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux) possibles, des signaux de [récompense](https://fr.wikipedia.org/wiki/Fonction_d%27utilit%C3%A9) guidant l'apprentissage et une [politique](https://fr.wikipedia.org/wiki/Politique_(apprentissage_automatique)) définissant la stratégie de décision.
 
-### Processus de décision markovien (MDP)
+Le cadre mathématique standard est le Processus de Décision Markovien (MDP) qui comprend un ensemble d'états, un ensemble d'actions, une fonction de transition, une fonction de récompense et un facteur d'actualisation.
 
-Le cadre mathématique standard pour formuler les problèmes d'apprentissage par renforcement est le processus de décision markovien, caractérisé par:
-- Un ensemble d'états S
-- Un ensemble d'actions A
-- Une fonction de transition P(s'|s,a) qui définit la probabilité d'atteindre l'état s' en prenant l'action a dans l'état s
-- Une fonction de récompense R(s,a,s')
-- Un facteur d'actualisation γ qui détermine l'importance des récompenses futures
+Les algorithmes principaux se divisent en trois catégories :
+1. **Méthodes basées sur la valeur** comme le [Q-learning](https://fr.wikipedia.org/wiki/Q-learning) (apprentissage hors politique) et SARSA (apprentissage sur politique)
+2. **Méthodes basées sur la politique** comme REINFORCE (optimisation directe) et [Actor-Critic](https://fr.wikipedia.org/wiki/Actor-critic) (combinaison valeur-politique)
+3. **Apprentissage par renforcement profond** avec [DQN](https://fr.wikipedia.org/wiki/Deep_Q-Network) (Q-learning avec réseaux profonds), [PPO](https://fr.wikipedia.org/wiki/Proximal_Policy_Optimization) (optimisation robuste) et [A3C](https://fr.wikipedia.org/wiki/Asynchronous_Advantage_Actor-Critic) (apprentissage asynchrone)
 
-### Algorithmes principaux
-
-1. **Méthodes basées sur la valeur**:
-   - **[Q-learning](https://fr.wikipedia.org/wiki/Q-learning)**: algorithme hors politique qui apprend la fonction de valeur action-état optimale
-   - **SARSA**: algorithme sur politique qui apprend en suivant la politique actuelle
-
-2. **Méthodes basées sur la politique**:
-   - **Méthodes de politique par gradient**: optimisent directement la politique sans estimer de fonction de valeur
-   - **Actor-Critic**: combinent l'apprentissage de la fonction de valeur et l'optimisation directe de la politique
-
-3. **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par renforcement profond**:
-   - **DQN (Deep Q-Network)**: combine [Q-learning](https://fr.wikipedia.org/wiki/Q-learning) avec des réseaux de neurones profonds
-   - **PPO ([Proximal Policy Optimization](https://fr.wikipedia.org/wiki/Proximal_Policy_Optimization))**: méthode robuste pour l'optimisation de politique
-   - **A3C (Asynchronous Advantage Actor-Critic)**: utilise plusieurs agents parallèles pour stabiliser l'apprentissage
-
-### Défis et considérations
-
-- **Dilemme exploration-exploitation**: équilibrer la découverte de nouvelles stratégies (exploration) et l'utilisation des connaissances acquises (exploitation)
-- **[Crédit](https://fr.wikipedia.org/wiki/Crédit) assignment problem**: déterminer quelles actions passées sont responsables des récompenses actuelles
-- **Stabilité de l'apprentissage**: les algorithmes de RL peuvent être instables, particulièrement avec des réseaux neuronaux profonds
-- **Efficacité des échantillons**: l'apprentissage par renforcement nécessite souvent de nombreuses interactions avec l'environnement
-
-L'apprentissage par renforcement continue d'évoluer rapidement, avec des avancées significatives comme [AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo) de DeepMind qui a battu les champions mondiaux de Go, démontrant la puissance de cette approche pour résoudre des problèmes complexes de prise de décision.
+Les principaux défis incluent le [dilemme exploration-exploitation](https://fr.wikipedia.org/wiki/Dilemme_du_bandit_manchot), le problème d'attribution de crédit, la stabilité de l'apprentissage et l'efficacité des échantillons. Ce domaine continue d'évoluer avec des avancées majeures comme [AlphaGo](https://fr.wikipedia.org/wiki/AlphaGo) et [AlphaFold](https://fr.wikipedia.org/wiki/AlphaFold), démontrant son potentiel pour résoudre des problèmes complexes de prise de décision.

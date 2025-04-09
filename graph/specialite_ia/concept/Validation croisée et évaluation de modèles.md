@@ -11,51 +11,72 @@ tags:
 - statistiques
 - modélisation
 - apprentissage automatique
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-03-30'
+date_modification: '2025-03-30'
 subClassOf: '[[Validation croisée en apprentissage automatique]]'
 relatedTo: '[[Optimisation bayésienne pour l''hyperparamétrage]]'
 isPartOf: '[[Métriques robustes aux valeurs aberrantes]]'
+seeAlso: '[[Méthodes d''évaluation des modèles]]'
 ---
 ## Généralité
 
-La validation croisée et l'évaluation de modèles sont des techniques essentielles en apprentissage automatique permettant d'estimer la performance d'un modèle sur des données non vues et de détecter les problèmes de sur-apprentissage ou sous-apprentissage. Ces méthodes consistent à diviser les données disponibles en sous-ensembles pour entraîner et tester le modèle de manière rigoureuse, garantissant ainsi une évaluation plus fiable de sa capacité de généralisation.
+La [validation croisée](https://fr.wikipedia.org/wiki/Validation_crois%C3%A9e_(statistiques)) et l'[évaluation de modèles](https://fr.wikipedia.org/wiki/%C3%89valuation_d%27un_algorithme_d%27apprentissage_automatique) sont des techniques essentielles en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) permettant d'estimer la performance d'un modèle sur des données non vues. Ces méthodes, formalisées dans les années 1970 par des statisticiens comme [Seymour Geisser](https://fr.wikipedia.org/wiki/Seymour_Geisser), consistent à diviser les données disponibles en sous-ensembles pour entraîner et tester le modèle de manière rigoureuse.
 
 ## Points clés
 
-- La validation croisée permet d'évaluer la performance d'un modèle en utilisant différentes partitions des données d'entraînement et de test
-- Les métriques d'évaluation (précision, rappel, F1-score, AUC-ROC, etc.) doivent être choisies en fonction du problème spécifique à résoudre
-- La validation croisée k-fold est la technique la plus courante, divisant les données en k sous-ensembles de taille égale
-- L'évaluation de modèles aide à détecter et corriger les problèmes de sur-apprentissage (overfitting) et sous-apprentissage (underfitting)
+- La [validation croisée](https://fr.wikipedia.org/wiki/Validation_croisée) permet d'évaluer la performance d'un modèle en utilisant différentes partitions des données (entraînement/test)
+- Les métriques d'évaluation ([précision](https://fr.wikipedia.org/wiki/Précision_et_rappel), [rappel](https://fr.wikipedia.org/wiki/Précision_et_rappel), [AUC-ROC](https://fr.wikipedia.org/wiki/Courbe_ROC)) doivent être adaptées au problème
+- La validation croisée k-fold (k=5 ou 10) est la technique la plus courante selon Wikipédia
+- Ces méthodes détectent les problèmes de [sur-apprentissage](https://fr.wikipedia.org/wiki/Surapprentissage) et sous-apprentissage
+- La validation croisée stratifiée préserve les proportions des classes dans les partitions
 
 ## Détails
 
-### Types de validation croisée
+### Techniques principales
 
-1. **K-fold cross-validation** : Les données sont divisées en k sous-ensembles (folds) de taille égale. Le modèle est entraîné sur k-1 sous-ensembles et testé sur le sous-ensemble restant. Ce processus est répété k fois, chaque sous-ensemble servant une fois de test. La performance finale est la moyenne des k évaluations.
+1. **K-fold cross-validation**  
+   Les données sont divisées en k sous-ensembles. Le modèle est entraîné sur k-1 sous-ensembles et testé sur le reste, avec rotation. Performance finale = moyenne des k évaluations. k=10 est un bon compromis (source Wikipédia).
 
-2. **[Leave-one-out cross-validation](https://fr.wikipedia.org/wiki/Leave-one-out_cross-validation) (LOOCV)** : Cas particulier où k est égal au nombre d'observations. Chaque observation sert une fois de test, tandis que toutes les autres sont utilisées pour l'entraînement. Cette méthode est coûteuse en calcul mais utile pour les petits jeux de données.
+2. **Leave-one-out (LOOCV)**  
+   Cas particulier où k = nombre d'observations. Chaque observation sert une fois de test. Méthode précise mais computationnellement intensive (O(N²)).
 
-3. **Stratified k-fold** : Variante du k-fold qui préserve la proportion des classes dans chaque fold, particulièrement importante pour les problèmes de classification avec des classes déséquilibrées.
+3. **Stratified k-fold**  
+   Préserve la distribution des classes dans chaque fold, essentielle pour les données déséquilibrées.
 
-4. **Time series cross-validation** : Pour les données temporelles, où les observations futures ne peuvent pas être utilisées pour prédire les observations passées.
+4. **Time series cross-validation**  
+   Méthode spécialisée pour données temporelles, préservant l'ordre chronologique ("walk-forward validation").
 
-### Métriques d'évaluation courantes
+5. **Repeated k-fold**  
+   Répétition de la procédure k-fold avec différentes initialisations aléatoires pour une estimation plus robuste.
 
-- **Classification** : Précision, rappel, F1-score, AUC-ROC, matrice de confusion
-- **Régression** : MSE (Mean Squared Error), RMSE (Root Mean Squared Error), MAE (Mean Absolute Error), R²
-- **Clustering** : Silhouette score, indice de Davies-Bouldin, indice de Calinski-Harabasz
+### Métriques d'évaluation
+
+**Classification**:
+- Précision: TP/(TP+FP)  
+- Rappel: TP/(TP+FN)  
+- F1-score: moyenne harmonique précision/rappel  
+- AUC-ROC: surface sous la courbe ROC (entre 0.5 et 1)  
+- Matrice de confusion  
+
+**Régression**:
+- MSE (Mean Squared Error)  
+- RMSE (Racine carrée du MSE)  
+- MAE (Mean Absolute Error)  
+- R² (Coefficient de détermination)  
+
+**Clustering**:
+- Silhouette score (-1 à +1)  
+- Indice de Davies-Bouldin  
+- Indice de Calinski-Harabasz  
 
 ### Bonnes pratiques
 
-1. **Séparation des données** : Diviser les données en ensembles d'entraînement, de validation et de test avant toute analyse pour éviter les fuites de données.
+1. **Séparation des données**: Utiliser la méthode holdout (train/val/test split) avec proportions adaptées.
 
-2. **Hyperparamètres** : Utiliser la validation croisée pour optimiser les hyperparamètres du modèle, mais jamais sur l'ensemble de test final.
+2. **Hyperparamètres**: Optimiser uniquement sur l'ensemble de test via validation croisée ou ensemble dédié.
 
-3. **[Reproductibilité](https://fr.wikipedia.org/wiki/Reproductibilité)** : Fixer une graine aléatoire (random seed) pour assurer la reproductibilité des résultats.
+3. **Reproductibilité**: Fixer une graine aléatoire (random seed) pour garantir la reproductibilité.
 
-4. **Équilibrage des classes** : Pour les problèmes de classification déséquilibrée, utiliser des techniques comme la stratification ou le rééchantillonnage.
+4. **Équilibrage des classes**: Utiliser [SMOTE](https://fr.wikipedia.org/wiki/SMOTE) (Synthetic Minority Oversampling Technique) pour les classes déséquilibrées.
 
-5. **Interprétation des résultats** : Ne pas se fier uniquement aux métriques numériques, mais aussi analyser les erreurs du modèle pour comprendre ses limites.
-
-La validation croisée et l'évaluation rigoureuse des modèles sont des étapes cruciales pour développer des modèles d'apprentissage automatique robustes et fiables, capables de généraliser correctement sur de nouvelles données.
+5. **Interprétation**: Analyser les erreurs caractéristiques et examiner l'importance des features.

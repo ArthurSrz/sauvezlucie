@@ -11,45 +11,55 @@ tags:
 - modélisation
 - data science
 - algorithmes
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 ---
 ## Généralité
 
-L'optimisation bayésienne est une approche probabiliste pour trouver les valeurs optimales des hyperparamètres dans les algorithmes d'apprentissage automatique. Contrairement aux méthodes traditionnelles comme la recherche par grille ou aléatoire, l'optimisation bayésienne construit un modèle probabiliste de la fonction objectif (généralement la performance du modèle) et l'utilise pour sélectionner intelligemment les prochains hyperparamètres à évaluer, réduisant ainsi considérablement le temps et les ressources nécessaires pour trouver une configuration optimale.
+L'[optimisation bayésienne](https://fr.wikipedia.org/wiki/Optimisation_bay%C3%A9sienne) est une méthode d'optimisation séquentielle pour les fonctions coûteuses à évaluer, particulièrement efficace pour le réglage des hyperparamètres en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique). Elle combine un modèle probabiliste (typiquement un processus gaussien) avec une fonction d'acquisition pour guider intelligemment la recherche des meilleurs hyperparamètres.
+
+Cette approche s'appuie sur le [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) pour mettre à jour les croyances a priori sur la fonction objectif à mesure que de nouvelles observations sont collectées. Historiquement, les bases théoriques remontent aux travaux de Kushner (1964) et Mockus (1975).
 
 ## Points clés
 
-- L'optimisation bayésienne utilise un processus gaussien (ou d'autres modèles probabilistes) pour modéliser la relation entre les hyperparamètres et la performance du modèle
-- Elle emploie une fonction d'acquisition pour équilibrer l'exploration (tester de nouvelles zones) et l'exploitation (affiner les zones prometteuses)
-- Cette méthode est particulièrement efficace pour l'optimisation de fonctions coûteuses à évaluer, comme l'entraînement de réseaux de neurones profonds
-- Elle converge généralement vers l'optimum global avec moins d'évaluations que les méthodes de recherche par grille ou aléatoire
+- Méthode efficace pour optimiser des fonctions coûteuses avec peu d'évaluations (typiquement moins de 20-100 itérations selon les applications)
+- Combine modélisation probabiliste (souvent avec [processus gaussien](https://fr.wikipedia.org/wiki/Processus_gaussien)) et stratégie d'exploration/exploitation via une fonction d'acquisition
+- Particulièrement adaptée au [réglage des hyperparamètres](https://fr.wikipedia.org/wiki/Hyperparam%C3%A8tre) en ML, où chaque évaluation peut prendre des heures ou jours de calcul
+- Surpasse souvent les méthodes comme la recherche aléatoire ou grid search, notamment dans les espaces de grande dimension
+- Utilise un compromis intelligent entre exploration et exploitation via des fonctions comme Expected Improvement (EI), Upper Confidence Bound (UCB) ou Probabilité d'amélioration (PI)
 
 ## Détails
 
-L'optimisation bayésienne fonctionne en deux étapes principales qui s'alternent de manière itérative:
+L'optimisation bayésienne repose sur deux composants principaux : un **modèle substitut** (généralement un [processus gaussien](https://fr.wikipedia.org/wiki/Processus_gaussien) qui modélise la distribution a posteriori de la fonction objectif) et une **fonction d'acquisition** qui détermine les points suivants à évaluer en équilibrant exploration et exploitation.
 
-1. **Construction du modèle probabiliste** : Un processus gaussien (GP) est généralement utilisé pour modéliser la distribution de probabilité sur toutes les fonctions possibles qui pourraient correspondre aux observations actuelles. Ce modèle capture l'incertitude sur la fonction objectif.
+Cette méthode présente plusieurs avantages par rapport aux autres approches :
+- **Efficacité** : Nécessite généralement moins d'évaluations que grid search ou random search
+- **Capacité à gérer le bruit** : Peut fonctionner avec des fonctions objectif bruitées grâce à sa modélisation probabiliste
+- **Mémoire des évaluations passées** : Utilise l'historique pour guider les recherches futures via le [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes)
+- **Adaptabilité** : S'ajuste dynamiquement en fonction des résultats obtenus
 
-2. **Optimisation de la fonction d'acquisition** : Cette fonction détermine quels hyperparamètres tester ensuite en équilibrant:
-   - L'exploitation des régions où le modèle prédit une bonne performance
-   - L'exploration des régions où l'incertitude est élevée
+Le processus typique comprend :
+1. Initialisation avec quelques points aléatoires (entre 5-20 selon la dimension du problème)
+2. Construction du modèle probabiliste
+3. Sélection du prochain point via la fonction d'acquisition
+4. Évaluation de la fonction objectif sur ce point
+5. Mise à jour du modèle avec les nouvelles observations
+6. Répétition jusqu'à convergence ou épuisement du budget
 
-Les fonctions d'acquisition couramment utilisées incluent:
-- **Expected Improvement (EI)** : Maximise l'amélioration attendue par rapport à la meilleure observation actuelle
-- **Upper Confidence Bound (UCB)** : Équilibre directement l'exploration et l'exploitation via un paramètre ajustable
-- **Probability of Improvement (PI)** : Maximise la probabilité d'améliorer la meilleure observation actuelle
+Les principales applications en machine learning incluent :
+- Réglage des hyperparamètres des modèles complexes (réseaux neuronaux, SVM)
+- Optimisation des architectures de réseaux neuronaux (NAS)
+- Sélection de features pour les datasets à haute dimension
+- Optimisation des pipelines de traitement
 
-L'optimisation bayésienne est particulièrement avantageuse dans les scénarios suivants:
-- Lorsque l'évaluation de la fonction objectif est coûteuse (en temps ou en ressources)
-- Quand l'espace des hyperparamètres est complexe et difficile à explorer exhaustivement
-- Pour les modèles avec de nombreux hyperparamètres interdépendants
+Parmi les fonctions d'acquisition courantes, on trouve :
+- Expected Improvement (EI) : La plus populaire selon la littérature
+- Probability of Improvement (PI) : Plus simple mais tend à trop exploiter
+- Upper Confidence Bound (UCB) : Utile pour les problèmes à bruit gaussien
+- Entropy Search : Minimise l'entropie de la distribution de l'optimum
 
-Des bibliothèques comme Hyperopt, Optuna, et scikit-optimize implémentent l'optimisation bayésienne et facilitent son intégration dans les workflows d'apprentissage automatique. Ces outils offrent également des visualisations qui aident à comprendre l'espace des hyperparamètres et l'évolution de l'optimisation.
-
-## Limitations
-
-- La complexité computationnelle augmente avec le nombre d'évaluations (O(n³) pour les processus gaussiens standards)
-- L'efficacité diminue généralement dans les espaces de très haute dimension (>20 hyperparamètres)
-- Le choix du prior et de la fonction d'acquisition peut influencer significativement les résultats
-- Les contraintes entre hyperparamètres peuvent être difficiles à modéliser
+Cependant, cette approche présente certaines limitations :
+- Difficulté à scaler en haute dimension (>10-20 paramètres) - phénomène connu sous le nom de "[fléau de la dimension](https://fr.wikipedia.org/wiki/Fl%C3%A9au_de_la_dimension)"
+- Coût de calcul du modèle substitut qui augmente cubiquement avec le nombre d'observations
+- Sensibilité aux hyperparamètres du modèle substitut lui-même
+- Performance dépendante de la qualité de la fonction d'acquisition choisie

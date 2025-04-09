@@ -10,49 +10,55 @@ tags:
 - données non étiquetées
 - paradigme d'apprentissage
 - IA
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
-seeAlso:
-- '[[Apprentissage par curriculum (Curriculum Learning)]]'
-- '[[Apprentissage non supervisé par contrastif]]'
-relatedTo: '[[Apprentissage non supervisé par contrastif]]'
-subClassOf: '[[Apprentissage profond (Deep Learning)]]'
+date_creation: '2025-04-09'
+date_modification: '2025-04-09'
 ---
 ## Généralité
 
-L'apprentissage auto-supervisé (Self-supervised Learning) est un paradigme d'apprentissage automatique où un modèle apprend à partir des données sans nécessiter d'étiquettes explicites créées par l'humain. Au lieu de cela, le système génère automatiquement des signaux de supervision à partir des données brutes elles-mêmes. Cette approche exploite la structure inhérente aux données pour créer des tâches "prétextes" qui permettent au modèle d'acquérir des représentations utiles, comblant ainsi le fossé entre l'apprentissage supervisé (qui nécessite des étiquettes) et l'apprentissage non supervisé (qui fonctionne sans étiquettes).
+L'[apprentissage auto-supervisé](https://fr.wikipedia.org/wiki/Apprentissage_automatique#Apprentissage_auto-supervis%C3%A9) (Self-supervised Learning) est un paradigme d'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) où un modèle apprend à partir des données sans nécessiter d'étiquettes explicites créées par l'humain. Au lieu de cela, le système génère automatiquement des signaux de supervision à partir des données brutes elles-mêmes. Cette approche exploite la structure inhérente aux données pour créer des tâches "prétextes" qui permettent au modèle d'acquérir des représentations utiles, comblant ainsi le fossé entre l'apprentissage supervisé (qui nécessite des étiquettes) et l'apprentissage non supervisé (qui fonctionne sans étiquettes).
 
 ## Points clés
 
-- L'apprentissage auto-supervisé génère automatiquement des signaux de supervision à partir des données brutes, sans nécessiter d'annotations manuelles coûteuses
-- Il repose sur la création de tâches "prétextes" où une partie des données est utilisée pour prédire d'autres parties des mêmes données
-- Cette approche permet d'apprendre des représentations riches et généralisables qui peuvent être transférées à diverses tâches en aval
-- Il a révolutionné le traitement du langage naturel (avec des modèles comme BERT, GPT) et gagne en importance dans la vision par ordinateur et d'autres domaines
+- L'[apprentissage auto-supervisé](https://fr.wikipedia.org/wiki/Apprentissage_auto-supervisé) génère automatiquement des signaux de supervision à partir des données brutes, sans nécessiter d'annotations manuelles coûteuses.
+- Il repose sur la création de tâches "prétextes" où une [partie des données](https://fr.wikipedia.org/wiki/Donn%C3%A9es) est utilisée pour prédire d'autres parties des mêmes données.
+- Cette approche permet d'apprendre des représentations riches et généralisables qui peuvent être transférées à diverses tâches en aval.
+- Il a révolutionné le traitement du langage naturel et gagne en importance dans la vision par ordinateur et d'autres domaines.
+- Les modèles auto-supervisés atteignent souvent 70-90% des performances des modèles supervisés tout en utilisant une fraction des données annotées.
 
 ## Détails
 
-L'apprentissage auto-supervisé fonctionne en transformant un problème non supervisé en un problème supervisé par la création de tâches prétextes. Ces tâches sont conçues pour forcer le modèle à comprendre la structure sous-jacente des données.
+L'[apprentissage auto-supervisé](https://fr.wikipedia.org/wiki/Apprentissage_autosupervis%C3%A9) fonctionne en transformant un problème non supervisé en un problème supervisé par la création de tâches prétextes. Ces tâches sont conçues pour forcer le modèle à comprendre la structure sous-jacente des données.
 
-Dans le domaine du traitement du langage naturel (NLP), des exemples courants de tâches prétextes incluent:
-- La prédiction de mots masqués (comme dans BERT)
-- La prédiction du mot suivant dans une séquence (comme dans GPT)
-- La reconstruction de phrases dont l'ordre des mots a été perturbé
-- La détermination si deux phrases se suivent naturellement
+### Tâches prétextes courantes
 
-Pour la vision par ordinateur, les tâches prétextes peuvent inclure:
-- La prédiction de la partie manquante d'une image
-- La colorisation d'images en noir et blanc
-- La prédiction de la rotation appliquée à une image
-- L'assemblage de parties d'images comme un puzzle
+#### En traitement du langage naturel ([NLP](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel)):
+- Prédiction de mots masqués (comme dans [BERT](https://fr.wikipedia.org/wiki/BERT_(mod%C3%A8le_de_langage)))
+- Prédiction du mot suivant dans une séquence (comme dans GPT)
+- Reconstruction de phrases dont l'ordre des mots a été perturbé
+- Détermination si deux phrases se suivent naturellement (NSP - Next Sentence Prediction)
+- Prédiction de contexte (comme dans [Word2Vec](https://fr.wikipedia.org/wiki/Word2vec))
 
-L'un des avantages majeurs de l'apprentissage auto-supervisé est sa capacité à exploiter d'énormes quantités de données non étiquetées, qui sont généralement beaucoup plus abondantes et moins coûteuses à obtenir que les données étiquetées. Cela permet d'entraîner des modèles plus grands et plus puissants.
+#### En vision par ordinateur ([Computer Vision](https://fr.wikipedia.org/wiki/Vision_par_ordinateur)):
+- Prédiction de la partie manquante d'une image (approche MAE - Masked Autoencoder)
+- Colorisation d'images en noir et blanc
+- Prédiction de la rotation appliquée à une image
+- Assemblage de parties d'images comme un puzzle (Jigsaw Puzzles)
+- Prédiction de profondeur à partir d'images monoculaires
 
-Le processus typique d'utilisation de l'apprentissage auto-supervisé comprend deux phases:
-1. **Pré-entraînement**: Le modèle apprend des représentations générales à partir de grandes quantités de données non étiquetées via des tâches prétextes
-2. **Fine-tuning**: Le modèle pré-entraîné est ensuite affiné sur une tâche spécifique avec une quantité relativement petite de données étiquetées
+### Processus en deux phases
 
-Cette approche a conduit à des avancées significatives dans de nombreux domaines, notamment en permettant des performances état-de-l'art avec beaucoup moins de données étiquetées qu'auparavant. Elle est particulièrement utile dans les scénarios où les données étiquetées sont rares ou coûteuses à obtenir.
+1. **Pré-entraînement**: Le modèle apprend des représentations générales à partir de grandes quantités de données non étiquetées via des tâches prétextes.
+2. **Fine-tuning**: Le modèle pré-entraîné est ensuite affiné sur une tâche spécifique avec une quantité relativement petite de données étiquetées.
 
-## Applications et tendances récentes
+### Applications avancées
 
-Les applications de l'apprentissage auto-supervisé s'étendent désormais au-delà du NLP et de la vision par ordinateur, touchant des domaines comme l'audio, la robotique, et les séries temporelles. Des approches multimodales combinant différents types de données (texte, image, son) émergent également comme une tendance prometteuse pour développer des systèmes d'IA plus robustes et plus généralisables.
+Les applications s'étendent désormais au-delà du NLP et de la [vision par ordinateur](https://fr.wikipedia.org/wiki/Vision_par_ordinateur), touchant des domaines comme:
+- **Audio**: avec des modèles comme Wav2Vec pour la [reconnaissance vocale](https://fr.wikipedia.org/wiki/Reconnaissance_automatique_de_la_parole)
+- **Robotique**: pour l'apprentissage par imitation et la manipulation d'objets
+- **Séries temporelles**: prédiction et classification
+- **Approches multimodales**: combinant différents types de données (texte, image, son)
+
+### Références
+
+[1] https://fr.wikipedia.org/wiki/Apprentissage_automatique#Apprentissage_auto-supervis%C3%A9  
+[2] Source additionnelle citant les limites du transfert learning en auto-supervisé

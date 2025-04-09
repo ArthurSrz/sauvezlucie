@@ -10,8 +10,8 @@ tags:
 - algorithmes
 - machine learning
 - IA
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
+date_creation: '2025-04-09'
+date_modification: '2025-04-09'
 subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 precedes: '[[Déploiement d''un modèle d''IA]]'
 follows: '[[Choix de la mesure d''erreur]]'
@@ -22,53 +22,56 @@ hasPart:
 - '[[Apprentissage par renforcement]]'
 - '[[Recherche par essaim de particules (PSO)]]'
 - '[[Apprentissage par curriculum (Curriculum Learning)]]'
+seeAlso:
+- '[[Méthodes de régularisation en machine learning]]'
+- '[[Taux d''apprentissage (Learning Rate)]]'
 ---
-##Généralité
+## Généralité
 
-L'entraînement d'un modèle d'intelligence artificielle est le processus par lequel un algorithme apprend à partir de données pour effectuer une tâche spécifique. Ce processus implique l'exposition du modèle à des exemples annotés ou non, lui permettant d'ajuster ses paramètres internes pour minimiser l'erreur de prédiction et améliorer ses performances au fil du temps.
+L'[entraînement](https://fr.wikipedia.org/wiki/Apprentissage_automatique) d'un modèle d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) est le processus par lequel un algorithme apprend à partir de données pour effectuer une tâche spécifique. Ce processus implique l'exposition du modèle à des exemples annotés (apprentissage supervisé) ou non annotés (apprentissage non supervisé), lui permettant d'ajuster ses paramètres internes pour minimiser l'erreur de prédiction et améliorer ses performances au fil du temps.
 
 ## Points clés
 
-- L'entraînement nécessite des données de qualité, représentatives et en quantité suffisante
+- L'entraînement nécessite des [données de qualité](https://fr.wikipedia.org/wiki/Qualit%C3%A9_des_donn%C3%A9es), représentatives et en quantité suffisante
 - Le processus implique généralement une phase d'apprentissage et une phase d'évaluation
-- La sélection d'hyperparamètres et d'architectures appropriés est cruciale pour obtenir de bonnes performances
-- L'équilibre entre sous-apprentissage et surapprentissage représente un défi majeur
+- La sélection d'hyperparamètres et d'architectures appropriés est cruciale
+- L'équilibre entre sous-apprentissage (high bias) et surapprentissage (high variance) représente un défi majeur
+- Les trois principaux types d'apprentissage machine :
+  - Apprentissage supervisé (données labellisées)
+  - Apprentissage non supervisé (données non labellisées)
+  - Apprentissage par renforcement (récompenses/pénalités)
 
 ## Détails
 
-### Types d'apprentissage
+### Processus d'entraînement
+Selon Wikipédia, l'entraînement des modèles d'IA repose généralement sur des méthodes d'[optimisation mathématique](https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)), comme la descente de gradient, qui ajuste itérativement les paramètres du modèle pour minimiser une fonction de coût. Ce processus peut nécessiter des quantités importantes de données et de puissance de calcul, notamment pour les architectures profondes comme les [réseaux neuronaux](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurone).
 
-L'entraînement d'un modèle d'IA peut se faire selon plusieurs paradigmes :
+### Aspects techniques
+- **Données d'entraînement** : Des techniques comme la [validation croisée](https://fr.wikipedia.org/wiki/Validation_crois%C3%A9e_(statistiques)) (k-fold) et le rééquilibrage de classes sont souvent employées
+- **Évaluation** : La métrique d'évaluation dépend de la tâche (précision/rappel pour la classification, MSE pour la régression)
+- **Hyperparamètres** : Choix du taux d'apprentissage (learning rate), de la fonction d'activation (ReLU, sigmoïde), ou de la profondeur du réseau
+- **Régularisation** : Techniques comme le [dropout](https://fr.wikipedia.org/wiki/Dropout), la pénalité L1/L2, ou l'arrêt précoce (early stopping)
 
-- **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) supervisé** : Le modèle apprend à partir d'exemples étiquetés (entrées associées à leurs sorties attendues)
-- **Apprentissage non supervisé** : Le modèle découvre des structures dans les données sans étiquettes
-- **Apprentissage par renforcement** : Le modèle apprend par essais et erreurs en interagissant avec un environnement
-- **Apprentissage semi-supervisé** : Combinaison de données étiquetées et non étiquetées
+### Historique et applications
+Historiquement, le concept remonte aux travaux de Frank Rosenblatt sur le perceptron dans les années 1950, mais a connu un essor significatif avec l'avènement du deep learning au début des années 2010. Les applications modernes vont de la reconnaissance d'images au traitement automatique du langage naturel, en passant par les systèmes de recommandation.
 
-### Étapes du processus d'entraînement
+### Techniques de traitement d'image
+Les méthodes de filtrage d'image incluent :
 
-1. **Préparation des données** : Collecte, nettoyage, normalisation et division des données en ensembles d'entraînement, de validation et de test
-2. **[Définition](https://fr.wikipedia.org/wiki/Définition) de l'architecture** : Choix du type de modèle et de sa structure interne
-3. **Configuration des hyperparamètres** : Réglage des paramètres qui contrôlent le processus d'apprentissage (taux d'apprentissage, taille des lots, etc.)
-4. **Entraînement itératif** : Exposition répétée du modèle aux données d'entraînement avec ajustement des poids selon une fonction de perte
-5. **[Validation](https://fr.wikipedia.org/wiki/Validation)** : [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) périodique sur des données non vues pour éviter le surapprentissage
-6. **Test final** : [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) des performances sur un ensemble de test indépendant
-7. **Ajustements et réentraînement** : Modifications itératives pour améliorer les performances
+1. **Filtrage moyen** ([均值滤波](https://fr.wikipedia.org/wiki/Filtre_moyenneur)) :
+   - Principe : Remplacement des pixels par la moyenne des valeurs du voisinage
+   - Avantages : Simple à implémenter, efficace contre le bruit gaussien
+   - Inconvénients : Flou important, inefficace contre le bruit impulsionnel
 
-### Défis courants
+2. **Filtrage gaussien** ([高斯滤波](https://fr.wikipedia.org/wiki/Filtre_gaussien)) :
+   - Principe : Moyenne pondérée selon une distribution gaussienne
+   - Avantages : Meilleure préservation des contours que le filtre moyen
+   - Inconvénients : Calcul plus complexe, sensible au choix des paramètres
 
-- **[Surapprentissage](https://fr.wikipedia.org/wiki/Surapprentissage) (overfitting)** : Le modèle mémorise les données d'entraînement au lieu de généraliser, performant bien sur les données d'entraînement mais mal sur de nouvelles données
-- **Sous-apprentissage (underfitting)** : Le modèle est trop simple pour capturer la complexité des données
-- **Déséquilibre des classes** : Certaines classes sont sous-représentées dans les données d'entraînement
-- **Données bruitées ou incomplètes** : Affectent la qualité de l'apprentissage
-- **Coût computationnel** : Les modèles complexes nécessitent d'importantes ressources de calcul
+3. **Filtrage médian** ([中值滤波](https://fr.wikipedia.org/wiki/Filtre_m%C3%A9dian)) :
+   - Principe : Remplacement par la médiane du voisinage
+   - Avantages : Efficace contre le bruit impulsionnel, préserve mieux les contours
+   - Inconvénients : Plus coûteux en calcul que le filtre moyen
 
-### Techniques d'optimisation
-
-- **Régularisation** : Techniques comme le dropout, la régularisation L1/L2 pour prévenir le surapprentissage
-- **Augmentation de données** : Création artificielle de nouvelles données d'entraînement par transformation des données existantes
-- **Transfert d'apprentissage** : Utilisation d'un modèle pré-entraîné comme point de départ
-- **Apprentissage par curriculum** : Présentation des exemples dans un ordre de difficulté croissante
-- **[Validation](https://fr.wikipedia.org/wiki/Validation) croisée** : Division des données en plusieurs sous-ensembles pour une évaluation plus robuste
-
-L'entraînement d'un modèle d'IA est un processus itératif qui nécessite une compréhension approfondie des données, des algorithmes et des techniques d'optimisation. Le succès dépend souvent de l'expérimentation méthodique et de l'ajustement continu basé sur les résultats observés.
+### Importance de la qualité des données
+La qualité des données d'entraînement est cruciale : selon le principe "garbage in, garbage out", des données biaisées ou de mauvaise qualité peuvent conduire à des modèles peu performants ou discriminatoires. Des techniques comme l'augmentation de données ou le transfert learning sont souvent employées pour améliorer l'efficacité de l'entraînement.

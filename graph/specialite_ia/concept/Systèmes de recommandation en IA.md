@@ -27,41 +27,26 @@ seeAlso:
 ---
 ## Généralité
 
-Les systèmes de recommandation sont des applications d'intelligence artificielle qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences, comportements passés ou similitudes avec d'autres utilisateurs. Ces systèmes constituent aujourd'hui un élément fondamental des plateformes numériques comme Netflix, [Amazon](https://fr.wikipedia.org/wiki/Amazon), [Spotify](https://fr.wikipedia.org/wiki/Spotify) ou YouTube, où ils personnalisent l'expérience utilisateur et optimisent l'engagement tout en facilitant la découverte de nouveaux contenus.
+Les systèmes de recommandation sont des applications d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences, comportements passés ou similitudes avec d'autres utilisateurs. Apparus dans les années 1990 avec les premiers [filtres collaboratifs](https://fr.wikipedia.org/wiki/Filtrage_collaboratif), ils constituent aujourd'hui un élément fondamental des plateformes comme [Netflix](https://fr.wikipedia.org/wiki/Netflix), [Amazon](https://fr.wikipedia.org/wiki/Amazon), Spotify ou YouTube, transformant les données utilisateur en suggestions personnalisées tout en soulevant des questions éthiques importantes.
 
 ## Points clés
 
-- Les systèmes de recommandation utilisent principalement trois approches: le filtrage collaboratif, le filtrage basé sur le contenu et les méthodes hybrides
-- Ils transforment les données utilisateur (explicites comme les notes ou implicites comme le temps passé) en suggestions personnalisées
-- L'équilibre entre l'exploitation (recommander des éléments similaires aux préférences connues) et l'exploration (suggérer des nouveautés) constitue un défi majeur
-- Les métriques d'évaluation incluent la précision, le rappel, la diversité et la sérendipité des recommandations
+- **Approches principales**: [Filtrage collaboratif](https://fr.wikipedia.org/wiki/Filtrage_collaboratif), filtrage basé sur le contenu et méthodes hybrides combinant ces approches
+- **Impact économique**: Génèrent 35% des revenus d'Amazon, influencent 80% du contenu visionné sur Netflix, augmentent de 20-30% le panier moyen sur les sites [e-commerce](https://fr.wikipedia.org/wiki/Commerce_%C3%A9lectronique)
+- **Technologies clés**: [Apprentissage profond](https://fr.wikipedia.org/wiki/Apprentissage_profond), modèles d'embedding, algorithmes de bandits multi-bras et factorisation matricielle
 
 ## Détails
 
-### Principales approches
+Les systèmes de recommandation utilisent principalement trois approches techniques. Le **filtrage collaboratif** se divise en deux catégories: basé sur l'utilisateur (comme les suggestions "Les clients ayant acheté ce produit..." sur [Amazon](https://fr.wikipedia.org/wiki/Amazon)) et basé sur les items (comme "Parce que vous avez regardé..." sur [Netflix](https://fr.wikipedia.org/wiki/Netflix)). 
 
-Le **filtrage collaboratif** repose sur l'idée que les utilisateurs ayant des goûts similaires dans le passé auront probablement des préférences similaires à l'avenir. Cette méthode analyse les relations entre utilisateurs et entre items pour identifier des modèles. Elle se divise en deux catégories:
-- Basé sur l'utilisateur: recommande des items appréciés par des utilisateurs similaires
-- Basé sur les items: recommande des items similaires à ceux que l'utilisateur a appréciés
+Le **filtrage basé sur le contenu** analyse les caractéristiques des items (genres, acteurs, etc.), efficace contre le problème du "cold item" mais pouvant causer une sur-spécialisation. Les **approches hybrides** compensent les faiblesses des autres méthodes. Par exemple, [Spotify](https://fr.wikipedia.org/wiki/Spotify) combine filtrage collaboratif pour Discover Weekly et analyse de contenu pour les recommandations par genre.
 
-Le **filtrage basé sur le contenu** recommande des items similaires à ceux que l'utilisateur a aimés précédemment, en analysant les caractéristiques des items (genres, acteurs, auteurs, etc.) plutôt que les comportements d'autres utilisateurs.
+Les technologies avancées incluent les réseaux de neurones profonds (utilisés par YouTube), les modèles d'embedding comme Word2Vec (Amazon), les algorithmes de bandits multi-bras ([LinkedIn](https://fr.wikipedia.org/wiki/LinkedIn)) et la factorisation matricielle (SVD dans le Netflix Prize). Les systèmes modernes intègrent également des données contextuelles (localisation, moment, appareil) et des techniques de reinforcement learning.
 
-Les **approches hybrides** combinent ces méthodes pour compenser leurs faiblesses respectives, notamment le problème du "démarrage à froid" (manque de données pour les nouveaux utilisateurs ou items).
+Parmi les principaux défis et considérations éthiques, on note:
+- **Bulles de filtre**: Limitation de l'exposition à des contenus diversifiés (étudié sur [Facebook](https://fr.wikipedia.org/wiki/Facebook))
+- **Biais algorithmiques**: Amplification des préjugés existants
+- **Confidentialité**: Réglementée par le [RGPD](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es) en Europe
+- **Explicabilité**: Nécessité d'expliquer les recommandations
 
-### Technologies avancées
-
-Les systèmes modernes de recommandation s'appuient sur:
-- L'apprentissage profond, notamment les réseaux de neurones pour modéliser des interactions complexes
-- Les modèles d'embedding qui représentent utilisateurs et items dans un espace vectoriel commun
-- Les algorithmes de bandits multi-bras pour optimiser l'équilibre exploration/exploitation
-- Les modèles de factorisation matricielle qui décomposent la matrice utilisateurs-items en facteurs latents
-
-### Défis et considérations éthiques
-
-Les systèmes de recommandation font face à plusieurs défis:
-- La création de "bulles de filtre" qui limitent l'exposition à des contenus diversifiés
-- Les biais algorithmiques qui peuvent amplifier les préjugés existants
-- Les préoccupations de confidentialité liées à la collecte massive de données comportementales
-- La nécessité d'expliquer les recommandations (IA explicable)
-
-L'évolution des systèmes de recommandation tend vers une personnalisation toujours plus fine, intégrant le contexte (heure, localisation, appareil), les émotions et les objectifs à long terme des utilisateurs, tout en cherchant à maintenir un équilibre éthique.
+L'évolution future tend vers la personnalisation contextuelle (heure, localisation), la détection d'émotions (applications expérimentales) et l'adaptation aux objectifs à long terme des utilisateurs.

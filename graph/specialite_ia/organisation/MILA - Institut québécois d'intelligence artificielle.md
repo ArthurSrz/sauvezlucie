@@ -18,39 +18,26 @@ isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
 ## Généralité
 
-Le Mila (Institut québécois d'intelligence artificielle) est un institut de recherche en intelligence artificielle fondé en 1993 par le professeur [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio) à [Montréal](https://fr.wikipedia.org/wiki/Montréal), [Québec](https://fr.wikipedia.org/wiki/Québec). Initialement créé comme laboratoire à l'[Université de Montréal](https://fr.wikipedia.org/wiki/Université_de_Montréal), il s'est transformé en 2017 en une organisation à but non lucratif indépendante, tout en maintenant des liens étroits avec plusieurs universités québécoises. Le Mila est aujourd'hui reconnu comme l'un des centres de recherche en IA les plus importants au monde, spécialisé dans l'apprentissage profond (deep learning) et l'apprentissage automatique (machine learning).
+Le [Mila](https://fr.wikipedia.org/wiki/Mila_(institut)) (Institut québécois d'intelligence artificielle) est un institut de recherche en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) fondé en 1993 par le professeur [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio) à Montréal, Québec. Aujourd'hui reconnu comme l'un des centres de recherche en IA les plus importants au monde, il est spécialisé dans l'[apprentissage profond](https://fr.wikipedia.org/wiki/Apprentissage_profond) et compte plus de 900 chercheurs en 2023. Le Mila joue un rôle clé dans l'écosystème québécois de l'IA, contribuant à positionner Montréal comme pôle mondial de recherche.
 
 ## Points clés
 
-- Le Mila rassemble plus de 500 chercheurs spécialisés en apprentissage automatique, faisant de lui la plus grande concentration académique de chercheurs en apprentissage profond au monde
-- L'institut est dirigé par [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio), lauréat du prix Turing 2018 (considéré comme le "Nobel de l'informatique"), pionnier de l'apprentissage profond
-- Le Mila fonctionne selon un modèle de collaboration unique entre quatre institutions académiques ([Université de Montréal](https://fr.wikipedia.org/wiki/Université_de_Montréal), McGill University, [Polytechnique Montréal](https://fr.wikipedia.org/wiki/Polytechnique_Montréal) et [HEC Montréal](https://fr.wikipedia.org/wiki/HEC_Montréal)) et entretient des partenariats avec plus de 90 entreprises
-- L'institut contribue activement au développement de l'écosystème d'IA de Montréal, reconnu mondialement comme un pôle d'excellence en intelligence artificielle
+- Le Mila rassemble plus de 900 chercheurs spécialisés en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique), formant la plus grande concentration académique de chercheurs en apprentissage profond au monde
+- Dirigé par [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio), lauréat du [prix Turing](https://fr.wikipedia.org/wiki/Prix_Turing) 2018 et pionnier de l'apprentissage profond
+- Collabore avec plus de 90 entreprises dont [Microsoft](https://fr.wikipedia.org/wiki/Microsoft), [Google](https://fr.wikipedia.org/wiki/Google) et [IBM](https://fr.wikipedia.org/wiki/IBM), finançant 30% de la recherche
+- A contribué à la Stratégie québécoise de recherche en IA (2017), attirant 1 milliard CAD d'investissements
+- Publie des recherches influentes comme l'article "Deep Learning" dans [Nature](https://fr.wikipedia.org/wiki/Nature_(revue)) et forme 300 étudiants/an
 
 ## Détails
 
-### Structure et organisation
+Le Mila opère depuis un bâtiment moderne dans le [Mile-Ex](https://fr.wikipedia.org/wiki/Mile_Ex) à Montréal, conçu pour favoriser la collaboration. Sa structure organisationnelle unique combine recherche fondamentale et applications industrielles, avec un conseil d'administration mixte (universités et secteur privé).
 
-Le Mila opère depuis un bâtiment moderne dans le Mile-Ex à Montréal, conçu pour favoriser la collaboration entre chercheurs académiques et industriels. Sa structure organisationnelle unique permet de combiner recherche fondamentale de pointe et applications industrielles concrètes. L'institut est gouverné par un conseil d'administration composé de représentants des universités partenaires et du secteur privé.
+Les travaux de recherche couvrent principalement l'apprentissage profond et réseaux de neurones, le traitement du langage naturel, la vision par ordinateur, l'apprentissage par renforcement, ainsi que l'IA appliquée à la santé et l'environnement et l'IA pour le bien social. L'institut a publié plus de 1000 articles scientifiques depuis 2017.
 
-### Domaines de recherche
+Le Mila a contribué aux avancées majeures en IA moderne, avec des publications parmi les plus citées du domaine. Il a attiré des investissements internationaux et héberge l'Observatoire international sur les impacts sociétaux de l'IA.
 
-Les chercheurs du Mila travaillent sur un large éventail de domaines liés à l'apprentissage automatique, notamment:
-- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) profond et réseaux de neurones
-- Traitement du langage naturel
-- Vision par ordinateur
-- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par renforcement
-- IA pour la science (biologie, chimie, physique)
-- IA pour le bien social et l'environnement
+En formation, le Mila forme environ 300 étudiants annuellement via des programmes de maîtrise/doctorat avec ses universités partenaires (Université de Montréal, McGill, Polytechnique, HEC Montréal). Il propose aussi des formations continues pour professionnels.
 
-### [Impact](https://fr.wikipedia.org/wiki/Impact) et rayonnement
+L'institut promeut une IA éthique et responsable, appliquant la technologie à des défis sociétaux comme le climat et la santé publique. Yoshua Bengio porte cette vision humaniste du développement technologique.
 
-Le Mila a contribué de façon significative aux avancées en apprentissage profond qui ont révolutionné l'IA moderne. Les publications de ses chercheurs comptent parmi les plus citées dans le domaine. L'institut a également joué un rôle crucial dans l'établissement de Montréal comme centre mondial de l'IA, attirant des investissements majeurs d'entreprises technologiques internationales comme [Google](https://fr.wikipedia.org/wiki/Google), [Microsoft](https://fr.wikipedia.org/wiki/Microsoft), Facebook et Samsung.
-
-### Formation et transfert de connaissances
-
-En plus de la recherche, le Mila joue un rôle important dans la formation de la prochaine génération de chercheurs en IA. L'institut propose des programmes de maîtrise et de doctorat en collaboration avec ses universités partenaires. Il offre également des programmes de formation continue pour les professionnels et les entreprises souhaitant développer leurs compétences en IA.
-
-### Engagement social
-
-Le Mila se distingue par son engagement envers une IA éthique, responsable et bénéfique pour la société. L'institut mène plusieurs initiatives visant à appliquer l'IA à des défis sociétaux comme les changements climatiques, la santé publique et l'accessibilité. Cette vision, portée par son directeur [Yoshua Bengio](https://fr.wikipedia.org/wiki/Yoshua_Bengio), place l'humain au centre des préoccupations dans le développement des technologies d'IA.
+[Note : Le statut de "plus grand centre universitaire" est nuancé car certains rapports mentionnent d'autres centres de taille comparable comme l'Institut Alan Turing à Londres.]

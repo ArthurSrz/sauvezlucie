@@ -10,16 +10,21 @@ tags:
 - Réseaux neuronaux
 - Vaswani
 - Architecture
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 uses: '[[Modèles de langage génératifs pré-entraînés]]'
 subClassOf: '[[Apprentissage profond (Deep Learning)]]'
 sameAs: '[[Transformers et attention en NLP]]'
 relatedTo: '[[Apprentissage auto-supervisé (Self-supervised Learning)]]'
+isPartOf: '[[Sauvegarde différentielle des états contextuels LLM]]'
+hasPart: '[[Mécanismes d''attention multi-tête]]'
+seeAlso:
+- '[[Attention différentielle pour les séries temporelles]]'
+- '[[Architectures neuronales à couches d''attention emboîtées pour l''analyse multiniveau]]'
 ---
 ## Généralité
 
-Les [Transformers](https://fr.wikipedia.org/wiki/Transformers) sont une architecture de réseau neuronal introduite en 2017 par Vaswani et al. dans l'article "Attention Is All You Need". Cette architecture révolutionnaire a supplanté les réseaux récurrents (RNN) et convolutifs (CNN) dans de nombreuses tâches de traitement du langage naturel (NLP) grâce à son mécanisme d'attention, qui permet de modéliser efficacement les dépendances à longue distance dans les séquences de données.
+Les Transformers sont une architecture de réseau neuronal introduite en 2017 par Vaswani et al. dans l'article "Attention Is All You Need". Cette architecture révolutionnaire a supplanté les réseaux récurrents (RNN) et convolutifs (CNN) dans de nombreuses tâches de traitement du langage naturel (NLP) grâce à son mécanisme d'attention, qui permet de modéliser efficacement les dépendances à longue distance dans les séquences de données.
 
 ## Points clés
 
@@ -62,7 +67,7 @@ Un Transformer complet comprend:
 ### Avantages des Transformers
 
 - **Parallélisation**: Contrairement aux RNN, les Transformers peuvent traiter tous les éléments d'une séquence en parallèle.
-- **[Modélisation](https://fr.wikipedia.org/wiki/Modélisation) des dépendances à longue distance**: Le mécanisme d'attention permet de capturer directement les relations entre des éléments éloignés dans une séquence.
+- **Modélisation des dépendances à longue distance**: Le mécanisme d'attention permet de capturer directement les relations entre des éléments éloignés dans une séquence.
 - **Représentations contextuelles**: Chaque token est représenté en fonction de son contexte complet.
 - **Scalabilité**: L'architecture peut être facilement étendue à des modèles de très grande taille avec des milliards de paramètres.
 

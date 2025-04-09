@@ -23,52 +23,44 @@ subClassOf: '[[Réseaux de neurones récurrents (RNN)]]'
 ---
 ## Généralité
 
-Les GRU (Gated Recurrent Units) sont un type de réseau de neurones récurrents (RNN) introduit par Cho et al. en 2014 comme une alternative simplifiée aux LSTM (Long Short-Term Memory). Les GRU sont conçus pour résoudre le problème de disparition du gradient dans les RNN traditionnels tout en maintenant une architecture plus légère que les LSTM. Cette architecture permet aux GRU de modéliser efficacement des dépendances temporelles à long terme dans des séquences de données, ce qui les rend particulièrement utiles pour le traitement du langage naturel, la reconnaissance vocale et d'autres tâches impliquant des données séquentielles.
+Les [GRU](https://fr.wikipedia.org/wiki/Gated_recurrent_unit) (Gated Recurrent Units) sont un type de [réseau de neurones récurrents](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_r%C3%A9currents) (RNN) introduit comme alternative simplifiée aux [LSTM](https://fr.wikipedia.org/wiki/Long_short-term_memory). Conçus pour résoudre le problème de disparition du gradient dans les RNN traditionnels, les GRU maintiennent une architecture plus légère que les LSTM avec seulement deux portes (update gate et reset gate) [Source: Wikipedia - Gated Recurrent Unit].
 
 ## Points clés
 
-- Les GRU utilisent deux portes principales (gates) : la porte de mise à jour (update gate) et la porte de réinitialisation (reset gate), contrairement aux LSTM qui en utilisent trois.
-- Ils sont généralement plus rapides à entraîner que les LSTM tout en offrant des performances comparables sur de nombreuses tâches.
-- Les GRU peuvent mémoriser des informations sur de longues séquences sans souffrir du problème de disparition du gradient.
-- Leur architecture simplifiée nécessite moins de paramètres, ce qui réduit les besoins en mémoire et en puissance de calcul.
-- Ils sont particulièrement efficaces pour les tâches de modélisation de séquences où les dépendances à long terme sont importantes.
+- Architecture simplifiée avec seulement 2 portes (contre 3 pour les LSTM) et environ 30% de paramètres en moins
+- Résolution efficace du problème de [disparition du gradient](https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_gradient_disparaisant) dans les RNN
+- Performance souvent comparable aux LSTM tout en étant plus rapides à entraîner
+- Applications étendues en [traitement du langage naturel](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel), traduction automatique et analyse de séries temporelles
+- Flexibilité pour apprendre différentes dépendances temporelles (court et long terme)
 
 ## Détails
 
-### Architecture et fonctionnement
+L'architecture [GRU](https://fr.wikipedia.org/wiki/Unit%C3%A9_r%C3%A9currente_%C3%A0_grille) repose sur deux mécanismes de porte :
 
-L'architecture GRU repose sur deux mécanismes de porte qui contrôlent le flux d'information :
+1. **Porte de mise à jour (z)** : Détermine la proportion d'information précédente à conserver et de nouvelle information à intégrer, cruciale pour mémoriser des informations sur de longues séquences.
 
-1. **Porte de mise à jour (z)** : Détermine quelle proportion de l'information précédente doit être conservée et quelle proportion de la nouvelle information doit être intégrée. Elle fonctionne comme un mécanisme de mémoire à long terme.
+2. **Porte de réinitialisation (r)** : Contrôle la quantité d'information passée à oublier, permettant aux GRU d'apprendre différents types de dépendances temporelles.
 
-2. **Porte de réinitialisation (r)** : Contrôle combien d'information passée doit être oubliée. Lorsque cette porte est proche de 0, l'unité est forcée d'ignorer l'état précédent et de se réinitialiser.
-
-Les équations qui régissent le fonctionnement d'une cellule GRU sont :
+Les équations gouvernant une cellule GRU sont :
 
 - z_t = σ(W_z·[h_{t-1}, x_t] + b_z)
 - r_t = σ(W_r·[h_{t-1}, x_t] + b_r)
 - h̃_t = tanh(W·[r_t * h_{t-1}, x_t] + b)
 - h_t = (1 - z_t) * h_{t-1} + z_t * h̃_t
 
-Où σ est la fonction sigmoïde, * représente la multiplication élément par élément, et h_t est l'état caché à l'instant t.
+Contrairement aux [LSTM](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_r%C3%A9current_%C3%A0_m%C3%A9moire_long_terme), les GRU intègrent la fonction de mémoire directement dans leur état caché, simplifiant le flux d'information tout en maintenant une capacité similaire à capturer des motifs complexes [Source: Wikipedia - Gated Recurrent Unit].
 
-### Avantages par rapport aux LSTM
+Les avantages principaux des GRU par rapport aux LSTM incluent :
 
-Les GRU présentent plusieurs avantages par rapport aux LSTM :
+- **Simplicité** : Architecture réduite avec moins de paramètres
+- **Efficacité computationnelle** : Moins de mémoire et calculs nécessaires
+- **Convergence rapide** : Jusqu'à 30% plus rapide sur certaines tâches comme la modélisation de langage
 
-- **Simplicité** : Avec moins de paramètres à apprendre, les GRU sont généralement plus rapides à entraîner.
-- **Efficacité computationnelle** : Ils nécessitent moins de mémoire et de calculs.
-- **Convergence plus rapide** : Sur certaines tâches, les GRU peuvent converger plus rapidement que les LSTM.
+Les GRU sont largement utilisés dans de nombreuses applications, notamment :
 
-### Applications courantes
+- Traitement du langage naturel (traduction automatique, génération de texte)
+- Reconnaissance vocale
+- Analyse de séries temporelles
+- Prédiction de séquences biologiques
 
-Les GRU sont largement utilisés dans :
-
-- Le traitement du langage naturel (NLP)
-- La traduction automatique
-- La génération de texte
-- La reconnaissance vocale
-- L'analyse de séries temporelles
-- La prédiction de séquences biologiques
-
-Dans la pratique, le choix entre GRU et LSTM dépend souvent de la tâche spécifique et des contraintes de ressources, les deux architectures offrant des performances similaires sur de nombreuses applications.
+Le choix entre GRU et LSTM dépend souvent de la tâche spécifique et des contraintes de ressources, avec des performances globalement comparables sur de nombreuses applications [Source: Wikipedia - Long short-term memory].

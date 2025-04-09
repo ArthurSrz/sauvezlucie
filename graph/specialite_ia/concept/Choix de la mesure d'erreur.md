@@ -10,8 +10,8 @@ tags:
 - statistiques
 - modélisation
 - erreur
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 follows: '[[Choix de la fonction de minimisation]]'
 subClassOf: '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
 precedes: '[[Entraînement d''un modèle d''IA]]'
@@ -19,61 +19,67 @@ seeAlso:
 - '[[Métriques d''évaluation pour les modèles de régression]]'
 - '[[Métriques robustes aux valeurs aberrantes]]'
 - '[[Compromis biais-variance dans la sélection de métriques]]'
+- '[[Les différentes métriques d''erreur]]'
+- '[[Fonctions de perte en apprentissage profond]]'
 hasPart: '[[Critères d''erreur pour séries temporelles]]'
 ---
 ## Généralité
 
-Le choix de la mesure d'erreur détermine comment évaluer et quantifier les performances d'un modèle d'intelligence artificielle, en définissant mathématiquement l'écart entre les prédictions et les valeurs réelles.
+La mesure d'erreur est une étape fondamentale en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) et en [statistiques](https://fr.wikipedia.org/wiki/Statistique). Elle permet d'évaluer et quantifier les performances d'un modèle d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) en définissant mathématiquement l'écart entre les prédictions du modèle et les valeurs réelles (ground truth). Son choix influence directement le comportement du modèle pendant l'apprentissage via la [descente de gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient).
 
 ## Points clés
 
-- Doit être alignée avec l'objectif métier du projet d'IA
-- [Varie](https://fr.wikipedia.org/wiki/Varie) selon le type de problème (classification, régression, ranking, etc.)
-- Influence directement le comportement du modèle pendant l'apprentissage
-- Peut nécessiter des ajustements pour les cas déséquilibrés ou les coûts d'erreur asymétriques
+- **Dépend du type de problème** :
+  - Classification : perte logistique, [entropie croisée](https://fr.wikipedia.org/wiki/Entropie_crois%C3%A9e)
+  - Régression : [MSE](https://fr.wikipedia.org/wiki/Erreur_quadratique_moyenne), MAE, Huber
+  - Ranking : NDCG, précision moyenne
+
+- **Doit être alignée avec l'objectif métier** (ex: minimiser les faux négatifs en détection de fraude)
+
+- **Caractéristiques importantes** :
+  - Différentiabilité (comme le MSE) pour permettre l'optimisation
+  - Robustesse aux valeurs aberrantes (comme MAE)
+  - Adaptation aux cas déséquilibrés (F1-score, MCC)
 
 ## Détails
 
-La mesure d'erreur (ou métrique d'évaluation) joue un rôle critique dans le développement d'un système d'intelligence artificielle. Elle permet non seulement d'évaluer les performances d'un modèle, mais influence également son comportement pendant l'apprentissage et guide les choix d'optimisation.
+### Mesures d'erreur courantes
+
+Selon Wikipédia, plusieurs types de mesures sont couramment utilisées :
+- [Erreur quadratique moyenne](https://fr.wikipedia.org/wiki/Erreur_quadratique_moyenne) (MSE) : pénalise fortement les grandes erreurs
+- [Erreur absolue moyenne](https://fr.wikipedia.org/wiki/Erreur_absolue_moyenne) (MAE) : moins sensible aux outliers
+- Perte logistique : principalement pour les problèmes de classification binaire
+- [Divergence de Kullback-Leibler](https://fr.wikipedia.org/wiki/Divergence_de_Kullback-Leibler) : dissimilarité entre distributions
 
 ### Métriques pour les problèmes de régression
 
-Pour les problèmes prédisant des valeurs continues:
+Pour les problèmes prédisant des valeurs continues :
 
-- **Erreur Quadratique Moyenne (MSE)**: Moyenne des carrés des différences entre prédictions et valeurs réelles. Particulièrement sensible aux valeurs aberrantes en raison de l'élévation au carré.
-  
-- **Erreur Absolue Moyenne (MAE)**: Moyenne des valeurs absolues des erreurs. Plus robuste aux outliers que la MSE.
-  
-- **Erreur Relative Moyenne (MAPE)**: Exprime l'erreur en pourcentage relatif à la valeur réelle, utile quand l'échelle des valeurs est importante.
-  
-- **R²**: Coefficient de détermination indiquant la proportion de variance expliquée par le modèle. [Varie](https://fr.wikipedia.org/wiki/Varie) entre 0 et 1 (ou négatif si le modèle est pire qu'une simple moyenne).
+- **MSE** : Moyenne des carrés des différences. Sensible aux valeurs aberrantes.
+- **MAE** : Moyenne des valeurs absolues des erreurs. Plus robuste mais non différentiable en zéro.
+- **MAPE** : Erreur en pourcentage relatif. Indéfinie quand la valeur réelle est nulle.
+- **R²** : Coefficient de détermination (varie entre -∞ et 1).
+- **Perte de Huber** : Combinaison du MSE et MAE, robuste et différentiable.
 
 ### Métriques pour les problèmes de classification
 
-Pour les problèmes d'attribution d'étiquettes:
+Pour les problèmes d'attribution d'étiquettes :
 
-- **Précision (Accuracy)**: Proportion de prédictions correctes. Problématique pour les jeux de données déséquilibrés.
-  
-- **Précision et Rappel**: 
-  - Précision: Proportion des instances identifiées comme positives qui sont correctes
-  - Rappel: Proportion des instances positives réelles qui ont été correctement identifiées
-  
-- **F1-Score**: Moyenne harmonique de la précision et du rappel, équilibrant ces deux aspects.
-  
-- **AUC-ROC**: Mesure la capacité du modèle à distinguer les classes à différents seuils de décision.
-  
-- **Log Loss (Cross-Entropy)**: Pénalise fortement les probabilités confiantes mais incorrectes, encourageant la calibration du modèle.
+- **Précision (Accuracy)** : Proportion de prédictions correctes. Problématique pour données déséquilibrées.
+- **Précision et Rappel** :
+  - Précision : Pertinente quand les faux positifs sont coûteux
+  - Rappel : Crucial pour applications comme le [diagnostic médical](https://fr.wikipedia.org/wiki/Diagnostic_m%C3%A9dical)
+- **F1-Score** : Moyenne harmonique de précision et rappel. Utile pour données déséquilibrées.
+- **AUC-ROC** : Capacité à distinguer les classes à différents seuils.
+- **Log Loss** : Pénalise les probabilités confiantes mais incorrectes.
+- **Matrice de confusion** : Outil visuel complet montrant vrais/faux positifs/négatifs.
 
 ### Considérations pour le choix de la métrique
 
-La sélection d'une métrique appropriée dépend de plusieurs facteurs:
+1. **Contexte métier** : Impacts différents selon le domaine (ex: faux négatifs en détection de fraude)
+2. **Distribution des données** : Métriques adaptées aux jeux déséquilibrés (MCC)
+3. **Interprétabilité** : Certaines métriques plus compréhensibles (MAPE en pourcentage)
+4. **Objectif d'optimisation** : Influence le comportement du modèle
+5. **Propriétés mathématiques** : Convexité, différentiabilité
 
-1. **Contexte métier**: Les conséquences des différents types d'erreurs (faux positifs vs faux négatifs) peuvent avoir des impacts très différents selon le domaine (médical, financier, etc.).
-
-2. **Distribution des données**: Pour les jeux déséquilibrés, des métriques comme l'accuracy peuvent être trompeuses.
-
-3. **Interprétabilité**: Certaines métriques sont plus facilement compréhensibles par les parties prenantes non techniques.
-
-4. **Objectif d'optimisation**: La métrique choisie guidera l'algorithme d'apprentissage et influencera le comportement du modèle.
-
-Il est souvent judicieux d'utiliser plusieurs métriques complémentaires pour obtenir une vision plus complète des performances du modèle et éviter les optimisations trop ciblées qui pourraient masquer certaines faiblesses.
+Il est souvent judicieux d'utiliser plusieurs métriques complémentaires pour une évaluation complète des performances du modèle.

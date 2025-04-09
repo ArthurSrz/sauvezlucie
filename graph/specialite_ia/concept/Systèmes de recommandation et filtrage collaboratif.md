@@ -19,47 +19,29 @@ uses: '[[Entreprises technologiques et géants du numérique dans le domaine de 
 ---
 ## Généralité
 
-Les systèmes de recommandation sont des outils d'intelligence artificielle qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences et comportements. Le filtrage collaboratif est l'une des techniques les plus populaires utilisées dans ces systèmes, qui exploite les similarités entre utilisateurs ou entre items pour générer des recommandations personnalisées.
+Les [systèmes de recommandation](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_recommandation) sont des outils d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) qui suggèrent des produits, services ou contenus pertinents aux utilisateurs en fonction de leurs préférences et comportements. Ces systèmes visent à résoudre le problème de surcharge d'information en proposant des contenus personnalisés et permettent de traiter le "paradoxe du choix" où trop d'options peuvent paralyser la décision.
 
 ## Points clés
 
-- Les systèmes de recommandation visent à résoudre le problème de surcharge d'information en proposant des contenus personnalisés
-- Le filtrage collaboratif se base sur l'hypothèse que les utilisateurs qui ont eu des préférences similaires dans le passé auront des goûts similaires à l'avenir
-- Deux approches principales existent : le filtrage collaboratif basé sur les utilisateurs et celui basé sur les items
-- Ces systèmes sont omniprésents dans le commerce électronique, les plateformes de streaming et les réseaux sociaux
+- Le [filtrage collaboratif](https://fr.wikipedia.org/wiki/Filtrage_collaboratif) est la technique la plus populaire, avec deux approches principales : basée sur les utilisateurs et basée sur les items
+- Ces systèmes sont omniprésents dans le [commerce électronique](https://fr.wikipedia.org/wiki/Commerce_%C3%A9lectronique), les plateformes de streaming et les réseaux sociaux
+- Les défis principaux incluent le "cold start", les problèmes de vie privée et la nécessité d'approches hybrides combinant [apprentissage profond](https://fr.wikipedia.org/wiki/Apprentissage_profond) et signaux contextuels
 
 ## Détails
 
-### Types de systèmes de recommandation
+Le filtrage collaboratif utilise les comportements et préférences collectives des utilisateurs. Selon [Wikipédia](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_recommandation), cette technique a été popularisée par le système Tapestry développé au [Xerox PARC](https://fr.wikipedia.org/wiki/PARC_(entreprise)) en 1992. Il existe deux approches principales :
 
-1. **Filtrage collaboratif** : Utilise les comportements et préférences collectives des utilisateurs.
-   - **Basé sur les utilisateurs** : Recommande des items appréciés par des utilisateurs similaires.
-   - **Basé sur les items** : Recommande des items similaires à ceux que l'utilisateur a appréciés.
+- **Basé sur les utilisateurs** : Recommande des items appréciés par des utilisateurs similaires. Utilise souvent des algorithmes de voisinage comme [k-NN](https://fr.wikipedia.org/wiki/Plus_proches_voisins).
+- **Basé sur les items** : Recommande des items similaires à ceux que l'utilisateur a appréciés.
 
-2. **Filtrage basé sur le contenu** : Recommande des items similaires à ceux que l'utilisateur a aimés dans le passé, en se basant sur les caractéristiques des items.
+Le filtrage collaboratif repose sur une matrice utilisateur-item où chaque cellule représente l'interaction (notation, achat, visionnage). Pour le filtrage collaboratif basé sur les utilisateurs, l'algorithme identifie d'abord les utilisateurs similaires (voisins) à l'aide de mesures de similarité comme le cosinus ou la [corrélation de Pearson](https://fr.wikipedia.org/wiki/Corr%C3%A9lation_(statistiques)), puis agrège leurs préférences pour prédire les notes manquantes. Pour l'approche basée sur les items, l'algorithme calcule d'abord la similarité entre les items avant d'utiliser les items déjà notés pour prédire l'intérêt pour d'autres items similaires.
 
-3. **Systèmes hybrides** : Combinent plusieurs approches pour améliorer la précision des recommandations.
+Les systèmes hybrides combinent plusieurs approches pour améliorer la précision des recommandations. Ils permettent notamment de surmonter certains défis majeurs comme :
 
-### Fonctionnement du filtrage collaboratif
+- **Démarrage à froid** : Difficulté avec nouveaux items/utilisateurs sans historique
+- **Problème de sparsité** : Matrice utilisateur-item souvent <1% remplie
+- **Scalabilité** : Ressources importantes nécessaires pour traiter des millions d'entrées
+- **Diversité** : Éviter l'effet de "bulle de filtre"
+- **Vie privée** : Questions de confidentialité avec la collecte de données, particulièrement depuis le [RGPD](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es)
 
-Le filtrage collaboratif repose sur une matrice utilisateur-item où chaque cellule représente l'interaction (notation, achat, visionnage) d'un utilisateur avec un item. L'algorithme identifie des motifs dans cette matrice pour prédire les préférences futures.
-
-Pour le filtrage collaboratif basé sur les utilisateurs, l'algorithme :
-1. Identifie les utilisateurs similaires (voisins)
-2. Agrège leurs préférences pour prédire les notes manquantes
-3. Recommande les items avec les prédictions les plus élevées
-
-Pour le filtrage collaboratif basé sur les items, l'algorithme :
-1. Calcule la similarité entre les items
-2. Utilise les items déjà notés par l'utilisateur pour prédire son intérêt pour d'autres items similaires
-
-### Défis et limitations
-
-- **Démarrage à froid** : Difficulté à recommander des items nouveaux ou à des utilisateurs nouveaux
-- **Problème de sparsité** : La matrice utilisateur-item est généralement très creuse
-- **Scalabilité** : Traiter des millions d'utilisateurs et d'items nécessite des ressources importantes
-- **Diversité et sérendipité** : Éviter l'effet de "bulle de filtre" en proposant des recommandations variées
-
-### Applications
-
-Les systèmes de recommandation sont utilisés par [Amazon](https://fr.wikipedia.org/wiki/Amazon) pour suggérer des produits, Netflix pour recommander des films, [Spotify](https://fr.wikipedia.org/wiki/Spotify) pour créer des playlists personnalisées, et YouTube pour proposer des vidéos. Ils représentent un élément crucial dans l'expérience utilisateur moderne et peuvent significativement augmenter l'engagement et les revenus des plateformes.
+Ces systèmes sont largement utilisés par des plateformes majeures comme [Amazon](https://fr.wikipedia.org/wiki/Amazon) (environ 35% des ventes), [Netflix](https://fr.wikipedia.org/wiki/Netflix) (réduction de l'attrition), [Spotify](https://fr.wikipedia.org/wiki/Spotify) (playlists personnalisées) et [YouTube](https://fr.wikipedia.org/wiki/YouTube) (recommandation de vidéos), démontrant ainsi leur importance dans l'écosystème numérique actuel.

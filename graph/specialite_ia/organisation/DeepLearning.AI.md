@@ -12,31 +12,28 @@ tags:
 - télécommunications
 - standards
 - publications techniques
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
 ## Généralité
 
-DeepLearning.AI est une organisation éducative fondée par [Andrew Ng](https://fr.wikipedia.org/wiki/Andrew_Ng) en 2017, dédiée à la démocratisation de l'intelligence artificielle et du deep learning. L'organisation propose des cours en ligne, des certifications et des ressources pédagogiques pour aider les professionnels et les étudiants à acquérir des compétences pratiques en IA. DeepLearning.AI s'est imposée comme l'une des principales plateformes d'apprentissage dans le domaine de l'intelligence artificielle, avec une approche pédagogique qui combine théorie et applications pratiques.
+DeepLearning.AI est une organisation éducative fondée en 2017 par [Andrew Ng](https://fr.wikipedia.org/wiki/Andrew_Ng), pionnier de l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) (ancien chef scientifique de [Baidu](https://fr.wikipedia.org/wiki/Baidu) et co-fondateur de Google Brain et [Coursera](https://fr.wikipedia.org/wiki/Coursera)). Basée aux États-Unis, elle s'est donnée pour mission de démocratiser l'éducation en IA et [deep learning](https://fr.wikipedia.org/wiki/Apprentissage_profond) à travers des contenus pédagogiques de haute qualité accessibles à un large public international.
 
 ## Points clés
 
-- Fondée par [Andrew Ng](https://fr.wikipedia.org/wiki/Andrew_Ng), pionnier de l'IA et co-fondateur de [Coursera](https://fr.wikipedia.org/wiki/Coursera), pour rendre l'éducation en IA accessible à tous
-- [Propose](https://fr.wikipedia.org/wiki/Propose) des programmes de formation reconnus comme les spécialisations "Deep Learning" et "AI for Everyone" sur [Coursera](https://fr.wikipedia.org/wiki/Coursera)
-- Collabore avec des entreprises technologiques majeures pour développer des cours alignés sur les besoins de l'industrie
-- Met l'accent sur l'apprentissage pratique avec des projets concrets et des études de cas réelles
+- Propose des programmes phares comme la "Deep Learning Specialization" (série de 5 cours) et "AI for Everyone", disponibles sur Coursera en plusieurs langues
+- Approche pédagogique pratique combinant théorie et applications concrètes, avec projets inspirés de défis industriels
+- Collaborations avec entreprises technologiques (Google, IBM, Amazon) et institutions académiques (Stanford, IIT)
+- Certifications reconnues dans l'industrie, comme le "TensorFlow Developer Professional Certificate"
+- Communauté mondiale de centaines de milliers d'apprenants et professionnels formés
 
 ## Détails
 
-DeepLearning.AI s'est donné pour mission de former la prochaine génération de talents en IA à travers des contenus éducatifs de haute qualité. L'organisation est particulièrement connue pour sa spécialisation "Deep Learning" sur [Coursera](https://fr.wikipedia.org/wiki/Coursera), une série de cinq cours qui couvrent les fondamentaux des réseaux de neurones, l'amélioration des algorithmes de deep learning, la structuration des projets d'apprentissage automatique, les réseaux de neurones convolutifs et les réseaux de neurones récurrents.
+DeepLearning.AI est particulièrement connu pour sa spécialisation "Deep Learning" sur Coursera, qui couvre les fondamentaux des réseaux de neurones, l'amélioration des algorithmes de deep learning, la structuration des projets ML, les réseaux de neurones convolutifs et les réseaux de neurones récurrents.
 
-En plus de cette spécialisation phare, DeepLearning.AI a développé plusieurs autres programmes, dont "AI for Everyone", un cours non technique destiné aux décideurs et aux professionnels de tous secteurs souhaitant comprendre les implications de l'IA pour leur entreprise. L'organisation propose également le "TensorFlow Developer Professional Certificate" et le "TensorFlow: Advanced Techniques Specialization" en partenariat avec [Google](https://fr.wikipedia.org/wiki/Google).
+L'organisation propose également d'autres programmes notables incluant "AI for Everyone" (destiné aux non-techniciens), des formations certifiantes en TensorFlow, ainsi que de nouveaux programmes en éthique de l'IA et applications sectorielles (santé, finance).
 
-DeepLearning.AI se distingue par son approche pédagogique qui privilégie la clarté et l'accessibilité, même pour des concepts complexes. Les cours incluent des vidéos explicatives, des quiz interactifs, des exercices de programmation et des projets pratiques qui permettent aux apprenants d'appliquer directement leurs connaissances.
+En termes de reconnaissance et d'impact, DeepLearning.AI a reçu en 2021 le prix "Open Education Excellence" de l'Open Education Consortium. Ses certifications sont valorisées dans l'industrie et ont aidé de nombreux professionnels dans leur reconversion. L'organisation publie régulièrement du contenu éducatif gratuit comme la newsletter "The Batch", le podcast "AI Unconfidential" et organise des événements en ligne.
 
-L'organisation publie régulièrement du contenu éducatif gratuit, notamment via sa newsletter "The Batch" qui présente les dernières avancées en IA, et son podcast "AI Unconfidential" où [Andrew Ng](https://fr.wikipedia.org/wiki/Andrew_Ng) discute avec des experts du domaine. DeepLearning.AI organise également des événements en ligne comme des webinaires et des sessions de questions-réponses avec des spécialistes de l'IA.
-
-## [Impact](https://fr.wikipedia.org/wiki/Impact) et reconnaissance
-
-DeepLearning.AI a formé des millions d'apprenants à travers le monde, contribuant significativement à combler le déficit de compétences en IA. Ses certifications sont reconnues par l'industrie et peuvent constituer un atout précieux pour les professionnels cherchant à évoluer dans le domaine de l'intelligence artificielle. L'organisation continue d'élargir son offre éducative pour répondre aux besoins d'un domaine en constante évolution, tout en maintenant son engagement envers une éducation en IA accessible et de qualité.
+La méthodologie pédagogique se distingue par des vidéos explicatives et quiz interactifs, des exercices pratiques basés sur des études de cas réelles, une approche progressive des concepts fondamentaux aux avancés, et une disponibilité en plusieurs langues (anglais, espagnol, français, portugais, mandarin).

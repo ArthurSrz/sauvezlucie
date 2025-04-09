@@ -19,35 +19,28 @@ relatedTo: '[[Fonctions d''activation Swish et Mish en deep learning]]'
 ---
 ## Généralité
 
-La fonction d'activation ReLU (Rectified Linear Unit) est l'une des fonctions d'activation les plus populaires dans les réseaux de neurones profonds. Introduite pour résoudre le problème de disparition du gradient rencontré avec les fonctions sigmoïde et tangente hyperbolique, ReLU est définie mathématiquement comme f(x) = max(0, x). Elle renvoie simplement la valeur d'entrée si celle-ci est positive, sinon elle renvoie zéro. Sa simplicité computationnelle et son efficacité ont conduit au développement de plusieurs variantes pour surmonter certaines de ses limitations.
+La fonction d'activation [ReLU](https://fr.wikipedia.org/wiki/Fonction_d%27activation#ReLU_(Rectified_Linear_Unit)) (Rectified Linear Unit) est l'une des fonctions d'activation les plus populaires dans les [réseaux de neurones profonds](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_profond). Introduite pour résoudre le problème de [disparition du gradient](https://fr.wikipedia.org/wiki/Disparition_du_gradient) rencontré avec les fonctions sigmoïde et tangente hyperbolique, ReLU est définie mathématiquement comme f(x) = max(0, x). Elle renvoie simplement la valeur d'entrée si celle-ci est positive, sinon elle renvoie zéro.
 
 ## Points clés
 
-- ReLU est définie par f(x) = max(0, x), ce qui signifie qu'elle produit 0 pour toute entrée négative et conserve les valeurs positives telles quelles
+- [ReLU](https://fr.wikipedia.org/wiki/Fonction_d%27activation#ReLU) est définie par f(x) = max(0, x), ce qui signifie qu'elle produit 0 pour toute entrée négative et conserve les valeurs positives telles quelles
 - Le principal avantage de ReLU est sa capacité à accélérer la convergence des réseaux profonds grâce à sa non-saturation pour les valeurs positives
-- Le "problème des neurones morts" est la principale limitation de ReLU, où les neurones peuvent cesser d'apprendre si trop d'activations deviennent négatives
+- Le "problème des neurones morts" est une limitation connue de ReLU, où les neurones peuvent cesser d'apprendre si trop d'activations deviennent négatives
 - Plusieurs variantes comme Leaky ReLU, PReLU, ELU et SELU ont été développées pour résoudre les limitations de la ReLU originale
+- Historiquement, ReLU a été proposée dès 1969 par [Kunihiko Fukushima](https://fr.wikipedia.org/wiki/Kunihiko_Fukushima) mais popularisée après 2012
 
 ## Détails
 
-### ReLU standard
+La ReLU standard présente plusieurs avantages majeurs. Sa dérivée est soit 0 (pour les entrées négatives), soit 1 (pour les entrées positives), ce qui permet d'éviter la saturation du gradient pour les valeurs positives. 
 
-La ReLU standard présente plusieurs avantages majeurs. Sa dérivée est soit 0 (pour les entrées négatives), soit 1 (pour les entrées positives), ce qui permet d'éviter la saturation du gradient pour les valeurs positives. Cette propriété accélère considérablement l'apprentissage par rapport aux fonctions sigmoïde ou tangente hyperbolique. De plus, sa mise en œuvre computationnelle est extrêmement efficace.
+Cette propriété accélère considérablement l'apprentissage par rapport aux fonctions [sigmoïde](https://fr.wikipedia.org/wiki/Sigmo%C3%AFde_(math%C3%A9matiques)) ou [tangente hyperbolique](https://fr.wikipedia.org/wiki/Tangente_hyperbolique). De plus, sa mise en œuvre computationnelle est extrêmement efficace. Cependant, ReLU souffre du "problème des neurones morts" (Dying ReLU) : lorsqu'un neurone produit systématiquement des sorties négatives, sa dérivée devient nulle, empêchant toute mise à jour des poids pendant la rétropropagation.
 
-Cependant, ReLU souffre du "problème des neurones morts" : lorsqu'un neurone produit systématiquement des sorties négatives, sa dérivée devient nulle, empêchant toute mise à jour des poids pendant la rétropropagation. Ce neurone devient alors "mort" et inutile pour le réseau.
+Parmi les variantes principales, on trouve :
+- **Leaky ReLU** : f(x) = max(αx, x) où α est un petit coefficient positif
+- **Parametric ReLU (PReLU)** : Similaire à Leaky ReLU, mais avec α appris pendant l'entraînement
+- **Exponential Linear Unit (ELU)** : f(x) = x si x ≥ 0, sinon α(e^x - 1)
+- **Scaled Exponential Linear Unit (SELU)** : Version d'ELU avec auto-normalisation
+- **Swish** : f(x) = x·sigmoid(βx)
+- **GELU** : xΦ(x), populaire dans les modèles comme [GPT](https://fr.wikipedia.org/wiki/Generative_Pre-trained_Transformer)
 
-### Variantes principales
-
-**Leaky ReLU** : Définie par f(x) = max(αx, x) où α est un petit coefficient positif (typiquement 0.01). Elle permet une petite pente pour les valeurs négatives, évitant ainsi les neurones morts.
-
-**Parametric ReLU (PReLU)** : Similaire à Leaky ReLU, mais le coefficient α devient un paramètre appris pendant l'entraînement, permettant au réseau de déterminer la pente optimale pour les valeurs négatives.
-
-**Exponential Linear Unit (ELU)** : Définie par f(x) = x si x ≥ 0, sinon α(e^x - 1). ELU utilise une fonction exponentielle pour les valeurs négatives, ce qui peut aider à rapprocher la moyenne des activations vers zéro, accélérant l'apprentissage.
-
-**Scaled Exponential Linear Unit (SELU)** : Une version d'ELU avec des paramètres spécifiques qui garantissent l'auto-normalisation des activations, réduisant le besoin de techniques comme la normalisation par lots.
-
-**Swish** : Proposée par [Google](https://fr.wikipedia.org/wiki/Google), définie par f(x) = x·sigmoid(βx), où β est un paramètre. Cette fonction a montré des performances supérieures dans certains réseaux profonds.
-
-### Choix de la fonction d'activation
-
-Le choix entre ReLU et ses variantes dépend souvent de l'architecture du réseau et de la tâche à accomplir. ReLU reste le choix par défaut pour de nombreuses applications en raison de sa simplicité et de son efficacité. Cependant, pour les réseaux très profonds ou les tâches où le problème des neurones morts est critique, les variantes comme Leaky ReLU ou ELU peuvent offrir de meilleures performances.
+Le choix entre ReLU et ses variantes dépend de l'architecture du réseau et de la tâche. ReLU reste le choix par défaut pour sa simplicité et efficacité, tandis que ses variantes peuvent offrir de meilleures performances dans certains cas spécifiques.

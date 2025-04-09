@@ -14,56 +14,42 @@ tags:
 - nature
 - systèmes adaptatifs
 - biomimétisme
-date_creation: '2025-03-20'
-date_modification: '2025-03-22'
+date_creation: '2025-04-04'
+date_modification: '2025-04-04'
 seeAlso:
 - '[[Algorithmes génétiques en IA]]'
 - '[[Recherche par essaim de particules (PSO)]]'
 - '[[Algorithmes génétiques pour l''optimisation combinatoire]]'
+- '[[Réseaux neuronaux spiking pour le traitement temporel]]'
+- '[[Mémoires associatives bio-inspirées pour le stockage distribué]]'
+- '[[Architectures neuro-évolutives embryonnaires]]'
+- '[[Algorithmes de croissance végétale pour la planification de réseaux]]'
+- '[[Optimisation par essaim de lucioles]]'
+- '[[Algorithmes de coopération inspirés des microbiomes]]'
+- '[[Optimisation par mimétisme bactérien]]'
+- '[[Architectures neuronales inspirées des céphalopodes]]'
+- '[[Systèmes de décision inspirés des cerveaux aviaires]]'
 subClassOf: '[[Techniques de l''intelligence artificielle]]'
 ---
-##Généralité
+## Généralité
 
-Les techniques bio-inspirées en [Intelligence Artificielle](https://fr.wikipedia.org/wiki/Intelligence_Artificielle) (IA) sont des approches qui s'inspirent des systèmes biologiques, des comportements naturels et des processus évolutifs pour résoudre des problèmes complexes. Ces méthodes imitent les principes observés dans la nature pour créer des algorithmes et des systèmes d'IA plus efficaces, adaptatifs et robustes. Elles représentent un pont entre les sciences naturelles et l'informatique, exploitant des millions d'années d'optimisation évolutive pour développer des solutions innovantes.
+Les techniques bio-inspirées en [Intelligence Artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) (IA) sont des approches qui s'inspirent des systèmes biologiques, des comportements naturels et des processus évolutifs pour résoudre des problèmes complexes. Ces méthodes imitent les principes observés dans la nature pour créer des algorithmes et des systèmes d'IA plus efficaces, adaptatifs et robustes.
 
 ## Points clés
 
-- Les algorithmes génétiques et évolutionnaires simulent le processus de sélection naturelle pour optimiser des solutions à des problèmes complexes
-- Les réseaux de neurones artificiels s'inspirent du fonctionnement du cerveau humain et constituent la base de l'apprentissage profond
-- L'intelligence en essaim modélise le comportement collectif d'organismes sociaux comme les fourmis ou les abeilles pour résoudre des problèmes de façon décentralisée
-- Les systèmes immunitaires artificiels reproduisent les mécanismes de défense biologique pour la détection d'anomalies et la cybersécurité
+- **Algorithmes génétiques** : Inspirés de la théorie de l'évolution darwinienne ([sélection naturelle](https://fr.wikipedia.org/wiki/S%C3%A9lection_naturelle), [mutation](https://fr.wikipedia.org/wiki/Mutation_(g%C3%A9n%C3%A9tique)) et [recombinaison génétique](https://fr.wikipedia.org/wiki/Recombinaison_g%C3%A9n%C3%A9tique))
+- **Réseaux de neurones artificiels** : Architecture bio-inspirée composée de couches de neurones interconnectés ([Wikipedia](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels))
+- **Intelligence en essaim** : Modélise les comportements collectifs auto-organisés observés chez les insectes sociaux et autres espèces animales ([Wikipedia](https://fr.wikipedia.org/wiki/Intelligence_en_essaim))
+- **Systèmes immunitaires artificiels** : S'inspirent des mécanismes de défense adaptatifs du [système immunitaire](https://fr.wikipedia.org/wiki/Syst%C3%A8me_immunitaire) biologique
 
 ## Détails
 
-### Algorithmes génétiques et évolutionnaires
+Les algorithmes génétiques et évolutionnaires s'inspirent de la [théorie de l'évolution](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27%C3%A9volution) de Darwin et ont été formalisés par [John Holland](https://fr.wikipedia.org/wiki/John_Henry_Holland) dans les années 1970. Ils utilisent des mécanismes comme la sélection naturelle, le croisement (recombinaison génétique) et la mutation pour faire évoluer une population de solutions candidates. Applications principales : optimisation de paramètres, conception de circuits électroniques, planification d'itinéraires, et conception de médicaments. Un exemple notable est leur utilisation par la [NASA](https://fr.wikipedia.org/wiki/NASA) pour l'optimisation de trajectoires spatiales.
 
-Ces algorithmes s'inspirent de la théorie de l'évolution de Darwin. Ils utilisent des mécanismes comme la sélection, le croisement et la mutation pour faire évoluer une population de solutions candidates vers une solution optimale. Chaque solution est représentée par un "chromosome" et évaluée par une fonction d'aptitude (fitness). Les solutions les plus performantes ont plus de chances de se reproduire et de transmettre leurs caractéristiques aux générations suivantes.
+Les réseaux de neurones artificiels sont inspirés par la structure et le fonctionnement des [neurones biologiques](https://fr.wikipedia.org/wiki/Neurone). Ces réseaux sont composés d'unités de calcul interconnectées. Le perceptron, introduit par Frank Rosenblatt en 1958, en est une forme primitive. Les architectures modernes comme les réseaux convolutifs (CNN) et récurrents (RNN) s'inspirent respectivement du cortex visuel et de la mémoire temporelle du cerveau. Principales applications : reconnaissance d'images, traitement du langage naturel, prévision de séries temporelles, et systèmes de recommandation.
 
-Applications : optimisation de paramètres, conception de circuits électroniques, planification d'itinéraires, et conception de médicaments.
+L'intelligence en essaim modélise le comportement collectif auto-organisé d'organismes sociaux comme les colonies de fourmis, les essaims d'abeilles ou les bancs de poissons. Deux algorithmes majeurs : l'optimisation par colonies de fourmis (ACO) pour les problèmes de chemin optimal et l'optimisation par essaim particulaire (PSO) pour l'optimisation continue. Applications typiques : logistique, robotique collective et optimisation de réseaux.
 
-### Réseaux de neurones artificiels
+Les systèmes immunitaires artificiels s'inspirent des mécanismes de défense adaptatifs du système immunitaire biologique. Trois principes clés : détection d'anomalies, apprentissage immunitaire et mémoire immunologique. Utilisations principales : détection d'intrusions réseau, bio-informatique et diagnostic médical.
 
-Inspirés par la structure et le fonctionnement des neurones biologiques, ces réseaux sont composés d'unités de calcul interconnectées qui traitent l'information de manière parallèle. Ils apprennent à partir de données en ajustant les poids des connexions entre les neurones. Les architectures modernes comme les réseaux convolutifs (CNN) et récurrents (RNN) s'inspirent respectivement du cortex visuel et de la mémoire temporelle du cerveau.
-
-Applications : reconnaissance d'images, traitement du langage naturel, prévision de séries temporelles, et systèmes de recommandation.
-
-### [Intelligence](https://fr.wikipedia.org/wiki/Intelligence) en essaim
-
-Ces techniques s'inspirent du comportement collectif d'organismes sociaux comme les colonies de fourmis, les essaims d'abeilles ou les bancs de poissons. Elles reposent sur des agents simples qui interagissent localement et suivent des règles élémentaires, produisant une intelligence collective émergente sans contrôle centralisé.
-
-Exemples notables :
-- L'optimisation par colonies de fourmis (ACO) utilise des "phéromones virtuelles" pour trouver des chemins optimaux
-- L'optimisation par essaims particulaires (PSO) simule le mouvement coordonné des oiseaux en vol
-- L'algorithme des abeilles artificielles (ABC) modélise la recherche de nourriture des abeilles
-
-### [Systèmes immunitaires artificiels](https://fr.wikipedia.org/wiki/Systèmes_immunitaires_artificiels)
-
-Ces systèmes s'inspirent des mécanismes de défense du système immunitaire biologique, notamment sa capacité à distinguer les cellules du soi et du non-soi, et à s'adapter aux nouvelles menaces. Ils sont particulièrement efficaces pour la détection d'anomalies et la classification.
-
-Applications : cybersécurité, détection de fraudes, diagnostic médical, et robotique adaptative.
-
-### Avantages et défis
-
-Les techniques bio-inspirées offrent plusieurs avantages : robustesse face au bruit, capacité d'adaptation à des environnements changeants, et efficacité pour explorer de vastes espaces de solutions. Cependant, elles présentent aussi des défis comme la difficulté de paramétrage, le coût computationnel parfois élevé, et la complexité d'interprétation des résultats.
-
-L'avenir des techniques bio-inspirées en IA réside dans leur intégration avec d'autres approches d'IA et dans l'exploration de nouveaux modèles biologiques comme la morphogenèse, la cognition incarnée, et les systèmes auto-organisés.
+Le domaine de l'IA bio-inspirée puise ses fondements théoriques dans divers champs scientifiques comme la [biologie évolutive](https://fr.wikipedia.org/wiki/Biologie_%C3%A9volutive), les neurosciences et l'éthologie. Historiquement, ces approches ont connu un développement significatif à partir des années 1950, avec les travaux d'[Alan Turing](https://fr.wikipedia.org/wiki/Alan_Turing) sur les systèmes morphogénétiques.

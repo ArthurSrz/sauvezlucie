@@ -12,53 +12,67 @@ tags:
 - algorithmes
 - machine learning
 - IA
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 relatedTo: '[[Apprentissage profond (Deep Learning)]]'
 subClassOf: '[[Choix de la mesure d''erreur]]'
 isPartOf: '[[Apprentissage non supervisé par contrastif]]'
 ---
 ## Généralité
 
-Les fonctions de perte (loss functions) sont des composants essentiels en apprentissage profond qui quantifient l'écart entre les prédictions d'un modèle et les valeurs réelles attendues. Elles définissent l'objectif que l'algorithme d'optimisation cherche à minimiser pendant l'entraînement. Le choix de la fonction de perte est crucial car il influence directement la convergence du modèle, sa capacité de généralisation et ses performances globales.
+Les [fonctions de perte](https://fr.wikipedia.org/wiki/Fonction_de_perte) (loss functions) sont des composants essentiels en [apprentissage profond](https://fr.wikipedia.org/wiki/Apprentissage_profond) qui quantifient l'écart entre les prédictions d'un modèle et les valeurs réelles attendues. Elles définissent l'objectif que l'algorithme d'optimisation cherche à minimiser pendant l'entraînement.
 
 ## Points clés
 
-- La fonction de perte mesure la différence entre les prédictions du modèle et les valeurs cibles, fournissant un signal pour ajuster les paramètres du réseau
-- Le choix de la fonction de perte dépend de la nature du problème (classification, régression, génération, etc.)
-- Les fonctions de perte sont souvent combinées avec des termes de régularisation pour éviter le surapprentissage
-- L'optimisation du modèle vise à minimiser la valeur de la fonction de perte sur l'ensemble d'entraînement
+- Le choix de la fonction de perte est crucial car il influence directement la convergence du modèle et ses performances
+- Les fonctions principales diffèrent selon le type de problème : régression, classification ou ranking
+- Elles doivent généralement être continues et différentiables pour permettre l'optimisation par [descente de gradient](https://fr.wikipedia.org/wiki/Algorithme_du_gradient)
+- Les fonctions de perte sont souvent combinées avec des termes de [régularisation](https://fr.wikipedia.org/wiki/R%C3%A9gularisation_(math%C3%A9matiques))
+- Le développement de nouvelles fonctions constitue un domaine de recherche actif en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique)
 
 ## Détails
 
-### Fonctions de perte courantes pour la classification
+### Types de fonctions selon les problèmes
 
-1. **Entropie croisée binaire (Binary Cross-Entropy)** : Utilisée pour les problèmes de classification binaire, elle mesure la divergence entre deux distributions de probabilité.
-   
-2. **Entropie croisée catégorielle (Categorical Cross-Entropy)** : Extension de l'entropie croisée binaire pour les problèmes multi-classes, particulièrement efficace lorsque les classes sont mutuellement exclusives.
+Les fonctions de perte peuvent être classées en plusieurs catégories selon le type de problème :
 
-3. **Sparse Categorical Cross-Entropy** : Variante optimisée de l'entropie croisée catégorielle lorsque les étiquettes sont des entiers plutôt que des vecteurs one-hot.
+**Pour les problèmes de régression** :
+- L'erreur quadratique moyenne (MSE)
+- L'erreur absolue moyenne (MAE)
+- La fonction de perte Huber (robuste aux valeurs aberrantes)
 
-4. **Hinge Loss** : Utilisée notamment dans les SVM et certains réseaux de neurones, elle pénalise les prédictions incorrectes mais aussi les prédictions correctes qui ne sont pas suffisamment confiantes.
+**Pour les problèmes de classification** :
+- L'[entropie croisée](https://fr.wikipedia.org/wiki/Entropie_crois%C3%A9e) (cross-entropy)
+  - Binaire (Binary Cross-Entropy)
+  - Catégorielle (Categorical Cross-Entropy)
+  - Sparse Categorical Cross-Entropy
+- Hinge Loss (utilisée notamment dans les [SVM](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteurs_de_support))
 
-### Fonctions de perte pour la régression
+**Pour les tâches de ranking** :
+- Triplet loss (notamment en reconnaissance faciale)
 
-1. **Erreur quadratique moyenne (Mean Squared Error, MSE)** : Mesure la moyenne des carrés des erreurs entre les valeurs prédites et réelles, sensible aux valeurs aberrantes.
+### Propriétés importantes
 
-2. **Erreur absolue moyenne (Mean Absolute Error, MAE)** : Calcule la moyenne des valeurs absolues des erreurs, plus robuste aux valeurs aberrantes que la MSE.
+Les principales propriétés des fonctions de perte incluent :
+- **Continuité et différentiabilité** : Généralement nécessaires pour les méthodes de descente de gradient
+- **Sensibilité appropriée aux erreurs** : Pour éviter à la fois le surapprentissage et le sous-apprentissage
+- **Robustesse aux valeurs aberrantes** : Certaines fonctions comme Huber loss sont conçues spécifiquement pour cela
 
-3. **Huber Loss** : [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages de MSE et MAE, se comportant comme MSE pour les petites erreurs et comme MAE pour les grandes erreurs.
+### Applications avancées
 
-### Fonctions de perte spécialisées
+Les développements récents incluent :
+- Fonctions de perte adverses (adversarial loss) utilisées dans les GANs ([Generative adversarial network](https://fr.wikipedia.org/wiki/Generative_adversarial_network))
+- Fonctions de perte contrastives (contrastive loss) appliquées en apprentissage par similarité ([Contrastive learning](https://fr.wikipedia.org/wiki/Contrastive_learning))
+- Combinaison de l'entropie croisée avec la fonction d'activation [softmax](https://fr.wikipedia.org/wiki/Fonction_softmax) pour les problèmes de classification multi-classes
 
-1. **[Kullback-Leibler Divergence](https://fr.wikipedia.org/wiki/Kullback-Leibler_Divergence)** : Mesure la différence entre deux distributions de probabilité, souvent utilisée dans les autoencodeurs variationnels.
+### Fonctions spécifiques détaillées
 
-2. **Dice Loss** : Particulièrement adaptée à la segmentation d'image, optimisant directement le coefficient de Dice.
+**Pour la classification** :
+- **Entropie croisée binaire** : Pour les problèmes de [classification binaire](https://fr.wikipedia.org/wiki/Classification_binaire), strictement convexe facilitant l'optimisation
+- **Entropie croisée catégorielle** : Pour les problèmes multi-classes, utilisée avec la fonction softmax en couche de sortie
+- **Sparse Categorical Cross-Entropy** : Optimisée pour les étiquettes entières, efficace en mémoire pour les problèmes avec nombreuses classes
+- **Hinge Loss** : Utilisée dans les SVM pour maximiser la marge entre classes
 
-3. **Focal Loss** : Modification de l'entropie croisée qui donne plus de poids aux exemples difficiles à classer, utile pour les jeux de données déséquilibrés.
-
-### Considérations pratiques
-
-Le choix de la fonction de perte doit tenir compte de plusieurs facteurs, notamment la distribution des données, la présence de valeurs aberrantes, et la sensibilité aux erreurs de différentes magnitudes. Dans certains cas, des fonctions de perte personnalisées peuvent être développées pour répondre à des besoins spécifiques.
-
-La combinaison de plusieurs fonctions de perte est également courante dans les architectures complexes comme les GAN ([Generative Adversarial Networks](https://fr.wikipedia.org/wiki/Generative_Adversarial_Networks)) ou les modèles multi-tâches, où différents composants du modèle peuvent être optimisés selon des critères distincts.
+**Pour la régression** :
+- **MSE (Mean Squared Error)** : Différentiable partout mais sensible aux outliers
+- **MAE (Mean Absolute Error)** : Plus robuste aux valeurs aberrantes que la MSE mais moins sensible aux erreurs

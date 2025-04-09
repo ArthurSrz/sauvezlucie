@@ -9,8 +9,8 @@ tags:
 - mathématiques
 - prédiction
 - variables multiples
-date_creation: '2025-03-17'
-date_modification: '2025-03-17'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 isPartOf: '[[La régression linéaire]]'
 ---
 ##Généralité
@@ -42,7 +42,7 @@ Où :
 ### Hypothèses du modèle
 
 Pour que le modèle de régression linéaire multiple soit valide, plusieurs hypothèses doivent être respectées :
-1. [Linéarité](https://fr.wikipedia.org/wiki/Linéarité) : la relation entre les variables explicatives et la variable dépendante est linéaire
+1. Linéarité : la relation entre les variables explicatives et la variable dépendante est linéaire
 2. Indépendance : les observations sont indépendantes les unes des autres
 3. Homoscédasticité : la variance des erreurs est constante
 4. Normalité : les erreurs suivent une distribution normale
@@ -56,7 +56,7 @@ Les coefficients β sont généralement estimés par la méthode des moindres ca
 
 Où X est la matrice des variables explicatives et Y le vecteur de la variable dépendante.
 
-### [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) du modèle
+### Évaluation du modèle
 
 Plusieurs indicateurs permettent d'évaluer la qualité d'un modèle de régression linéaire multiple :
 

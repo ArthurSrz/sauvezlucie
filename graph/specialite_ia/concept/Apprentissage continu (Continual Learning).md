@@ -9,50 +9,27 @@ tags:
 - machine learning
 - apprentissage continu
 - modèles adaptatifs
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
-relatedTo:
-- '[[Fonctions de perte en apprentissage profond]]'
-- '[[Apprentissage par renforcement]]'
-uses: '[[Véhicules autonomes et systèmes de navigation IA]]'
-subClassOf: '[[Apprentissage non supervisé]]'
+date_creation: '2025-04-09'
+date_modification: '2025-04-09'
 ---
 ## Généralité
 
-L'apprentissage continu (Continual Learning) est un domaine de l'intelligence artificielle qui se concentre sur la capacité d'un système d'apprentissage automatique à acquérir de nouvelles connaissances tout en conservant les compétences précédemment apprises, sans oublier ces dernières. Contrairement aux approches traditionnelles d'apprentissage automatique où les modèles sont entraînés une seule fois sur un ensemble de données statique, l'apprentissage continu vise à développer des systèmes capables d'apprendre de manière incrémentale à partir de flux de données en évolution, tout comme les humains apprennent tout au long de leur vie.
+L'[apprentissage continu](https://fr.wikipedia.org/wiki/Apprentissage_continu) (Continual Learning ou Lifelong Learning en anglais) est un domaine de l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) qui se concentre sur la capacité d'un système d'apprentissage automatique à acquérir de nouvelles connaissances tout en conservant les compétences précédemment apprises, sans oublier ces dernières. Cette approche vise à développer des systèmes capables d'apprendre de manière incrémentale à partir de flux de données en évolution, similairement à la manière dont les humains apprennent tout au long de leur vie.
 
 ## Points clés
 
-- L'apprentissage continu cherche à résoudre le problème de l'oubli catastrophique (catastrophic forgetting), où les modèles perdent leurs connaissances antérieures lorsqu'ils sont entraînés sur de nouvelles données.
-- Il permet aux systèmes d'IA d'adapter leurs connaissances dans des environnements dynamiques et de s'améliorer progressivement sans nécessiter un réentraînement complet.
-- Les applications incluent la robotique, les assistants personnels, les systèmes de recommandation et tout système d'IA devant évoluer avec le temps.
-- Différentes stratégies sont employées, comme la régularisation, la répétition d'expériences passées, et l'architecture modulaire.
+- Résout le problème de l'[oubli catastrophique](https://fr.wikipedia.org/wiki/Oubli_catastrophique) où les modèles perdent leurs connaissances antérieures lors de l'apprentissage de nouvelles données
+- Permet aux systèmes d'IA d'adapter leurs connaissances dans des environnements dynamiques sans réentraînement complet
+- Applications incluent robotique, assistants personnels, systèmes de recommandation et véhicules autonomes
+- Principales approches : régularisation (EWC), méthodes basées sur la mémoire et architectures dynamiques
+- Considéré comme une étape clé vers le développement de systèmes d'IA capables d'[apprentissage tout au long de la vie](https://fr.wikipedia.org/wiki/Apprentissage_tout_au_long_de_la_vie)
 
 ## Détails
 
-### Défis de l'apprentissage continu
+Le principal défi de l'apprentissage continu est l'[oubli catastrophique](https://fr.wikipedia.org/wiki/Oubli_catastrophique), où les [réseaux de neurones](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) perdent massivement les connaissances antérieures lors de l'apprentissage de nouvelles informations. Ce problème est particulièrement prononcé dans les réseaux de neurones profonds et constitue un obstacle majeur au développement d'une [intelligence artificielle générale](https://fr.wikipedia.org/wiki/Intelligence_artificielle_g%C3%A9n%C3%A9rale).
 
-Le principal défi de l'apprentissage continu est l'oubli catastrophique. Lorsqu'un réseau neuronal est entraîné sur de nouvelles données, les poids du réseau sont ajustés pour minimiser l'erreur sur ces nouvelles données, ce qui peut effacer ou altérer significativement les connaissances précédemment acquises. Ce phénomène est particulièrement problématique dans les environnements réels où les données et les tâches évoluent constamment.
+Les approches techniques se divisent en plusieurs catégories. Les méthodes basées sur la régularisation incluent l'[Elastic Weight Consolidation](https://fr.wikipedia.org/wiki/Consolidation_%C3%A9lastique_des_poids) (EWC) qui pénalise les changements des poids importants et Synaptic Intelligence qui calcule l'importance de chaque synapse. Les méthodes basées sur la mémoire comprennent iCaRL (Incremental Classifier and Representation Learning) et Experience Replay qui maintient des exemples des tâches précédentes. Les méthodes architecturales incluent Progressive Neural Networks qui ajoutent de nouvelles colonnes de neurones et PathNet permettant de sélectionner dynamiquement des sous-réseaux. Il existe également des méthodes hybrides combinant plusieurs approches pour de meilleures performances.
 
-### Approches principales
+Les applications pratiques sont nombreuses : adaptation des robots à de nouveaux environnements domestiques ou industriels, amélioration continue des assistants virtuels comme Siri ou Alexa via les interactions utilisateurs, intégration de nouvelles connaissances médicales pour le diagnostic, adaptation des véhicules autonomes aux nouvelles conditions routières, et suivi de l'évolution des préférences utilisateurs dans les systèmes de recommandation (Netflix, Amazon).
 
-Plusieurs approches ont été développées pour aborder ces défis :
-
-1. **Méthodes basées sur la régularisation** : Elles ajoutent des contraintes lors de l'apprentissage de nouvelles tâches pour préserver les connaissances importantes des tâches précédentes. Des exemples incluent Elastic Weight Consolidation (EWC) et Synaptic Intelligence.
-
-2. **Méthodes basées sur la mémoire** : Elles maintiennent un ensemble d'exemples représentatifs des tâches précédentes (replay buffer) et les réutilisent lors de l'apprentissage de nouvelles tâches. Des techniques comme iCaRL et Experience Replay entrent dans cette catégorie.
-
-3. **Méthodes architecturales** : Elles modifient l'architecture du réseau pour accommoder de nouvelles tâches sans perturber les connaissances existantes. Progressive Neural Networks et PathNet sont des exemples de cette approche.
-
-4. **Méthodes hybrides** : Elles combinent plusieurs des approches ci-dessus pour obtenir de meilleures performances.
-
-### Applications pratiques
-
-L'apprentissage continu est crucial pour les systèmes d'IA déployés dans le monde réel qui doivent s'adapter à des environnements changeants :
-
-- Les robots qui doivent apprendre de nouvelles tâches sans oublier les précédentes
-- Les assistants virtuels qui s'améliorent avec l'interaction utilisateur
-- Les systèmes de diagnostic médical qui intègrent de nouvelles connaissances médicales
-- Les véhicules autonomes qui doivent s'adapter à de nouvelles conditions routières
-
-L'apprentissage continu représente une étape importante vers des systèmes d'IA plus adaptatifs et autonomes, capables d'apprendre et d'évoluer de manière similaire aux humains, en accumulant des connaissances tout au long de leur "vie".
+L'apprentissage continu représente une avancée significative vers des systèmes d'IA plus adaptatifs, bien que de nombreux défis techniques subsistent avant d'atteindre une véritable autonomie dans des environnements complexes.

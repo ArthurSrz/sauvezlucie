@@ -11,53 +11,59 @@ tags:
 - prétraitement des données
 - statistiques
 - apprentissage automatique
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
+seeAlso: '[[Malédiction de la dimensionnalité ]]'
 ---
 ## Généralité
 
-La réduction de dimensionnalité est une technique fondamentale en machine learning qui consiste à transformer des données de haute dimension en une représentation de dimension inférieure tout en préservant au maximum les informations pertinentes. Cette approche permet de surmonter les défis liés à la "malédiction de la dimensionnalité", d'améliorer les performances des algorithmes d'apprentissage et de faciliter la visualisation des données complexes.
+La réduction de dimensionnalité est une technique fondamentale en [machine learning](https://fr.wikipedia.org/wiki/Apprentissage_automatique) qui consiste à transformer des données de haute dimension en une représentation de dimension inférieure tout en préservant au maximum les informations pertinentes. Elle permet de combattre la "[malédiction de la dimensionnalité](https://fr.wikipedia.org/wiki/Mal%C3%A9diction_de_la_dimensionnalit%C3%A9)" (terme popularisé par [Richard Bellman](https://fr.wikipedia.org/wiki/Richard_Bellman) en 1957) où la performance des algorithmes se dégrade avec l'augmentation des dimensions.
 
 ## Points clés
 
-- La réduction de dimensionnalité combat la "malédiction de la dimensionnalité" qui rend l'analyse difficile dans les espaces à haute dimension
-- Elle se divise en deux grandes catégories: les méthodes linéaires (PCA, LDA) et non-linéaires (t-SNE, UMAP, autoencodeurs)
-- Les bénéfices incluent l'amélioration des performances des modèles, la réduction du temps de calcul et la visualisation des données
-- Le choix de la méthode dépend de la nature des données et de l'objectif de l'analyse
+- Combat la malédiction de la dimensionnalité en réduisant l'espace des caractéristiques
+- Deux grandes catégories: méthodes linéaires ([PCA](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales), LDA) et non-linéaires ([t-SNE](https://fr.wikipedia.org/wiki/T-SNE), UMAP)
+- Principaux bénéfices: amélioration des performances, réduction du temps de calcul, meilleure visualisation
+- Choix de méthode dépend des caractéristiques des données et des objectifs d'analyse
+- Applications variées: traitement d'images, [bio-informatique](https://fr.wikipedia.org/wiki/Bio-informatique), NLP, finance
 
 ## Détails
 
 ### Pourquoi réduire la dimensionnalité?
 
-Dans les espaces à haute dimension, les données deviennent éparses, ce qui complique l'identification de patterns significatifs. Ce phénomène, connu sous le nom de "malédiction de la dimensionnalité", entraîne plusieurs problèmes:
-- Augmentation exponentielle du volume de l'espace avec chaque dimension ajoutée
-- [Besoin](https://fr.wikipedia.org/wiki/Besoin) d'un nombre exponentiellement plus grand d'échantillons pour maintenir la densité des données
-- [Risque](https://fr.wikipedia.org/wiki/Risque) accru de surapprentissage des modèles
+Dans les espaces à haute dimension, les données deviennent éparses, ce qui complique l'identification de patterns significatifs. Ce phénomène entraîne:
+- Augmentation exponentielle du volume de l'espace
+- Besoin d'un nombre exponentiellement plus grand d'échantillons
+- Risque accru de surapprentissage des modèles
 
 ### Méthodes linéaires
 
-**Analyse en Composantes Principales (PCA)**: Technique la plus répandue qui projette les données sur des axes orthogonaux maximisant la variance. Elle identifie les directions (composantes principales) qui capturent le maximum d'information.
+**[Analyse en Composantes Principales](https://fr.wikipedia.org/wiki/Analyse_en_composantes_principales) (PCA)**: Développée par [Karl Pearson](https://fr.wikipedia.org/wiki/Karl_Pearson) en 1901, projette les données sur des axes orthogonaux maximisant la variance.
 
-**[Analyse Discriminante](https://fr.wikipedia.org/wiki/Analyse_Discriminante) Linéaire (LDA)**: Contrairement à la PCA qui est non supervisée, la LDA est supervisée et cherche les axes qui maximisent la séparation entre les classes.
+**Analyse Discriminante Linéaire (LDA)**: Méthode supervisée qui maximise la séparation entre les classes.
 
-**Random Projection**: Méthode basée sur le lemme de Johnson-Lindenstrauss qui projette les données sur un sous-espace aléatoire tout en préservant approximativement les distances entre les points.
+**Random Projection**: Basée sur le [lemme de Johnson-Lindenstrauss](https://fr.wikipedia.org/wiki/Lemme_de_Johnson-Lindenstrauss), utile pour les très grands ensembles de données.
 
 ### Méthodes non-linéaires
 
-**t-SNE (t-Distributed Stochastic Neighbor Embedding)**: Particulièrement efficace pour la visualisation, t-SNE préserve les structures locales en modélisant les similarités entre points comme des probabilités.
+**[t-SNE](https://fr.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding)**: Inventé en 2008, préserve les structures locales mais computationnellement intensive.
 
-**UMAP (Uniform Manifold Approximation and Projection)**: Alternative plus récente à t-SNE, offrant une meilleure préservation de la structure globale et une exécution plus rapide.
+**[UMAP](https://fr.wikipedia.org/wiki/Uniform_Manifold_Approximation_and_Projection)**: Alternative plus récente à t-SNE (2018), meilleure préservation de la structure globale.
 
-**Autoencodeurs**: Réseaux de neurones entraînés à reproduire leurs entrées après passage par une couche cachée de dimension réduite (le "goulot d'étranglement").
-
-**Isomap et LLE (Locally Linear Embedding)**: Méthodes qui préservent les relations de voisinage en modélisant la structure manifold des données.
+**Autoencodeurs**: Réseaux de neurones capables de capturer des relations non-linéaires complexes.
 
 ### Considérations pratiques
 
-Le choix de la méthode dépend de plusieurs facteurs:
-- La linéarité ou [non-linéarité](https://fr.wikipedia.org/wiki/non-linéarité) présumée des données
-- L'importance relative de la préservation des structures locales vs. globales
-- Le besoin d'interprétabilité des dimensions réduites
-- Les contraintes de temps de calcul et de mémoire
+Le choix de la méthode dépend de:
+- Linéarité ou non-linéarité des données
+- Importance de la préservation des structures locales vs globales
+- Besoin d'interprétabilité
+- Contraintes de temps de calcul et mémoire
 
-La validation de la qualité de la réduction peut se faire par des métriques comme le taux de variance expliquée (pour PCA), la préservation des distances ou l'évaluation des performances d'un modèle construit sur les données réduites.
+Applications majeures:
+- Traitement d'images (reconnaissance faciale)
+- Bio-informatique (analyse de séquences génomiques)
+- NLP (visualisation de plongements de mots)
+- Finance (détection de motifs)
+
+[Note: Les informations historiques et techniques ont été vérifiées sur Wikipedia. Les chiffres comme "90% de réduction" sont des valeurs courantes mais peuvent varier selon les cas d'usage spécifiques.]

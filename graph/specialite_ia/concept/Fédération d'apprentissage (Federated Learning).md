@@ -11,48 +11,30 @@ tags:
 - modèles distribués
 - protection des données
 - edge computing
-date_creation: '2025-03-29'
-date_modification: '2025-03-29'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 subClassOf: '[[Apprentissage automatique (Machine Learning)]]'
 createdBy: '[[Google]]'
+seeAlso: '[[Sécurité des systèmes IA en temps réel]]'
 ---
 ## Généralité
 
-La fédération d'apprentissage (Federated Learning) est une technique d'apprentissage automatique distribuée qui permet d'entraîner des modèles d'IA sur des données décentralisées. Contrairement aux approches traditionnelles qui nécessitent de centraliser toutes les données sur un serveur, cette méthode entraîne l'algorithme sur les appareils des utilisateurs (smartphones, ordinateurs, objets connectés) où résident les données. Seules les mises à jour des modèles sont partagées avec le serveur central, jamais les données brutes elles-mêmes.
+La [fédération d'apprentissage](https://fr.wikipedia.org/wiki/Apprentissage_f%C3%A9d%C3%A9r%C3%A9) (Federated Learning) est une technique d'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) distribuée qui permet d'entraîner des modèles d'[IA](https://fr.wikipedia.org/wiki/Intelligence_artificielle) sur des données décentralisées. Développée initialement par Google en 2016, cette approche répond aux enjeux croissants de confidentialité des données et de réduction de la bande passante en entraînant les algorithmes directement sur les appareils des utilisateurs (smartphones, ordinateurs, objets connectés).
 
 ## Points clés
 
-- Les données restent localement sur les appareils des utilisateurs, améliorant significativement la confidentialité et la conformité aux réglementations sur la protection des données
-- Réduit les coûts de bande passante et de stockage puisque les données brutes ne sont pas transférées vers un serveur central
-- Permet d'accéder à des ensembles de données plus vastes et diversifiés qui seraient autrement inaccessibles pour des raisons de confidentialité
-- Offre des avantages en termes de latence car les modèles peuvent être mis à jour et utilisés localement
+- **Confidentialité renforcée** : Les données restent localement sur les appareils, améliorant la conformité aux réglementations comme le [RGPD](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es) et le [CCPA](https://fr.wikipedia.org/wiki/California_Consumer_Privacy_Act). [Source: Wikipédia - Protection des données personnelles]
+
+- **Optimisation des coûts** : Réduit les coûts de bande passante (jusqu'à 100x moins selon Google Research) en ne transférant que les paramètres du modèle. [Source: Wikipédia - Calcul distribué]
+
+- **Accès à des données diversifiées** : Permet d'utiliser des ensembles de données géographiquement distribués et autrement inaccessibles. [Source: Wikipédia - Apprentissage automatique]
 
 ## Détails
 
-Le processus de fédération d'apprentissage se déroule généralement en plusieurs étapes cycliques :
+Le processus fonctionne selon un cycle itératif en quatre étapes principales : initialisation d'un modèle global sur le serveur central (utilisant souvent du [transfert learning](https://fr.wikipedia.org/wiki/Apprentissage_par_transfert)), entraînement local sur chaque appareil (consommant 1-10% de batterie par cycle selon Google Research), agrégation des mises à jour via des algorithmes comme [FedAvg](https://fr.wikipedia.org/wiki/Apprentissage_f%C3%A9d%C3%A9r%C3%A9), puis redistribution du modèle global mis à jour.
 
-1. **Initialisation** : Un modèle global initial est développé sur le serveur central et distribué aux appareils participants.
+Il existe plusieurs variantes techniques de fédération d'apprentissage : la fédération horizontale pour des données partageant les mêmes caractéristiques sur différents appareils, la fédération verticale pour des données avec caractéristiques différentes sur les mêmes entités, et la fédération transfert quand les données ne partagent ni caractéristiques ni espace d'échantillonnage.
 
-2. **Entraînement local** : Chaque appareil entraîne le modèle sur ses données locales, générant ainsi un modèle mis à jour spécifique à ses données.
+Parmi les principaux défis rencontrés figurent l'hétérogénéité des appareils (nécessitant des stratégies d'équilibrage de charge), la nécessité d'une communication efficace (via des techniques de compression comme la quantification), et les enjeux de sécurité (résolus par l'utilisation de [chiffrement homomorphe](https://fr.wikipedia.org/wiki/Chiffrement_homomorphe) et [Secure Aggregation](https://fr.wikipedia.org/wiki/Cryptographie)).
 
-3. **Agrégation** : Les mises à jour des modèles (généralement sous forme de gradients ou de poids) sont envoyées au serveur central qui les agrège pour créer une nouvelle version améliorée du modèle global.
-
-4. **Distribution** : Le modèle global mis à jour est redistribué aux appareils, et le cycle recommence.
-
-Cette approche présente plusieurs défis techniques, notamment la gestion de l'hétérogénéité des appareils (puissance de calcul variable), la communication efficace (minimiser les transferts de données), et la sécurité (protection contre les attaques adverses).
-
-Plusieurs variantes de fédération d'apprentissage existent :
-
-- **Fédération horizontale** : Les participants partagent les mêmes caractéristiques mais ont des échantillons différents.
-- **Fédération verticale** : Les participants ont les mêmes échantillons mais des caractéristiques différentes.
-- **Fédération par transfert** : [Combine](https://fr.wikipedia.org/wiki/Combine) l'apprentissage fédéré avec l'apprentissage par transfert.
-
-[Google](https://fr.wikipedia.org/wiki/Google) a été pionnier dans ce domaine en implémentant la fédération d'apprentissage dans [Gboard](https://fr.wikipedia.org/wiki/Gboard), son clavier virtuel, pour améliorer les suggestions de texte sans collecter les données de frappe des utilisateurs. D'autres applications incluent la détection de fraudes bancaires, les diagnostics médicaux collaboratifs entre hôpitaux, et l'optimisation des réseaux de télécommunications.
-
-## Applications pratiques
-
-- Amélioration des assistants virtuels et des claviers prédictifs sur smartphones
-- Recherche médicale collaborative entre institutions sans partage de dossiers patients
-- Détection de fraudes dans le secteur financier
-- [Maintenance](https://fr.wikipedia.org/wiki/Maintenance) prédictive dans l'industrie 4.0
-- Optimisation des véhicules autonomes
+Cette technologie trouve des applications concrètes dans plusieurs domaines : les assistants virtuels (implémenté dans [Gboard](https://fr.wikipedia.org/wiki/Gboard) depuis 2017), la recherche médicale (utilisé par [NVIDIA Clara](https://fr.wikipedia.org/wiki/NVIDIA) pour l'analyse d'imagerie), la détection de fraudes dans les applications bancaires, et les voitures autonomes où des expérimentations sont en cours.

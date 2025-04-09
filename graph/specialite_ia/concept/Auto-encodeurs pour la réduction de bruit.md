@@ -17,35 +17,24 @@ subClassOf: '[[Les auto-encodeurs]]'
 ---
 ## Généralité
 
-Les auto-encodeurs pour la réduction de bruit (Denoising Autoencoders ou DAE) sont une variante spécialisée des auto-encodeurs, conçus spécifiquement pour éliminer le bruit des données d'entrée. Contrairement aux auto-encodeurs classiques qui apprennent simplement à reproduire leurs entrées, les DAE sont entraînés à reconstruire des versions propres de données corrompues par du bruit, ce qui les rend particulièrement utiles pour le prétraitement des données, la restauration d'images et l'extraction de caractéristiques robustes.
+Les [auto-encodeurs](https://fr.wikipedia.org/wiki/Autoencodeur) pour la réduction de bruit (Denoising Autoencoders ou DAE) sont une variante spécialisée des auto-encodeurs, conçus spécifiquement pour éliminer le bruit des données d'entrée. Contrairement aux auto-encodeurs classiques qui apprennent simplement à reproduire leurs entrées, les DAE sont entraînés à reconstruire des versions propres de données corrompues par du bruit, ce qui les rend particulièrement utiles pour le [prétraitement des données](https://fr.wikipedia.org/wiki/Pr%C3%A9traitement_de_donn%C3%A9es), la restauration d'images et l'extraction de caractéristiques robustes.
+
+Le concept a été popularisé par Pascal Vincent et ses collaborateurs en 2008 (selon l'article "Extracting and Composing Robust Features with Denoising Autoencoders"), s'inspirant des travaux antérieurs sur les auto-encodeurs et les réseaux de neurones.
 
 ## Points clés
 
-- Les auto-encodeurs débruiteurs sont entraînés sur des paires d'entrées (version bruitée et version propre) pour apprendre à éliminer le bruit
-- Ils agissent comme des filtres non linéaires qui peuvent traiter différents types de bruit (gaussien, impulsionnel, structuré)
-- Ils apprennent des représentations plus robustes que les auto-encodeurs classiques car ils doivent extraire les caractéristiques essentielles pour reconstruire les données propres
+- Les DAE apprennent à reconstruire des données propres à partir d'entrées artificiellement corrompues ([apprentissage supervisé](https://fr.wikipedia.org/wiki/Apprentissage_supervis%C3%A9))
+- Ils agissent comme des filtres non linéaires capables de traiter différents types de bruit (gaussien, impulsionnel, structuré)
+- Ils apprennent des représentations plus robustes que les auto-encodeurs classiques
 - Ils constituent souvent une étape de prétraitement pour d'autres tâches d'apprentissage automatique
+- Ils peuvent apprendre à traiter des types de bruit complexes spécifiques au domaine d'application
 
 ## Détails
 
-Le fonctionnement d'un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) débruiteur repose sur un processus en trois étapes. Premièrement, les données d'origine sont artificiellement corrompues par l'ajout de bruit (par exemple, en ajoutant un bruit gaussien, en masquant aléatoirement certaines parties, ou en appliquant d'autres types de perturbations). Deuxièmement, ces données bruitées sont passées à travers l'encodeur qui les compresse en une représentation latente de dimension inférieure. Troisièmement, le décodeur tente de reconstruire les données originales non bruitées à partir de cette représentation latente.
+Le fonctionnement d'un [auto-encodeur](https://fr.wikipedia.org/wiki/Auto-encodeur) débruiteur repose sur un processus en trois étapes:
 
-La fonction de perte typiquement utilisée est l'erreur quadratique moyenne entre la sortie reconstruite et les données originales propres (non les données bruitées). Cette approche force le réseau à apprendre à distinguer le signal du bruit plutôt que de simplement copier l'entrée.
+1. Les données d'origine sont artificiellement corrompues par l'ajout de bruit (par exemple, en ajoutant un [bruit gaussien](https://fr.wikipedia.org/wiki/Bruit_gaussien))
+2. Ces données bruitées sont passées à travers l'encodeur qui les compresse en une représentation latente
+3. Le décodeur tente de reconstruire les données originales non bruitées à partir de cette représentation latente
 
 Mathématiquement, si x est l'entrée originale, x̃ est la version bruitée, et f(x̃) est la sortie reconstruite, la fonction de perte peut s'exprimer comme:
-L(x, f(x̃)) = ||x - f(x̃)||²
-
-Les auto-encodeurs débruiteurs présentent plusieurs avantages par rapport aux auto-encodeurs classiques:
-
-1. Ils sont moins susceptibles de simplement apprendre la fonction identité, car la tâche de débruitage est plus complexe
-2. Ils apprennent des caractéristiques plus robustes et plus généralisables
-3. Ils peuvent être utilisés comme prétraitement pour améliorer les performances d'autres algorithmes
-
-En pratique, les DAE sont utilisés dans de nombreuses applications:
-- Restauration d'images et de vidéos
-- Amélioration de la qualité audio
-- Prétraitement de données médicales (IRM, CT-scan)
-- Extraction de caractéristiques robustes pour la classification
-- Initialisation de réseaux profonds plus complexes
-
-Les variantes modernes incluent les auto-encodeurs débruiteurs variationnels (VDAE) qui combinent les principes des auto-encodeurs variationnels avec le débruitage, et les auto-encodeurs débruiteurs empilés qui forment des architectures profondes pour traiter des bruits plus complexes.

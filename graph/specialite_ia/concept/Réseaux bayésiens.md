@@ -11,43 +11,38 @@ tags:
 - DAG
 - incertitude
 - modélisation
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
-isPartOf: '[[Apprentissage automatique (Machine Learning)]]'
-relatedTo: '[[Apprentissage supervisé]]'
+date_creation: '2025-04-09'
+date_modification: '2025-04-09'
 ---
 ## Généralité
 
-Les réseaux bayésiens sont des modèles graphiques probabilistes qui représentent des variables aléatoires et leurs dépendances conditionnelles via un graphe orienté acyclique (DAG). Nommés d'après [Thomas Bayes](https://fr.wikipedia.org/wiki/Thomas_Bayes), ces réseaux combinent la théorie des graphes et la théorie des probabilités pour modéliser l'incertitude dans des systèmes complexes. Ils permettent de calculer la probabilité d'événements en fonction d'observations partielles et de connaissances préalables, ce qui en fait des outils puissants pour le raisonnement sous incertitude.
+Les [réseaux bayésiens](https://fr.wikipedia.org/wiki/R%C3%A9seau_bay%C3%A9sien) sont des modèles graphiques probabilistes qui représentent des variables aléatoires et leurs dépendances conditionnelles via un [graphe orienté acyclique](https://fr.wikipedia.org/wiki/Graphe_orient%C3%A9_acyclique) (DAG). Nommés d'après [Thomas Bayes](https://fr.wikipedia.org/wiki/Thomas_Bayes), ces réseaux combinent la théorie des graphes et la théorie des probabilités pour modéliser l'incertitude dans des systèmes complexes.
 
 ## Points clés
 
-- Un réseau bayésien est composé de nœuds (représentant des variables aléatoires) et d'arcs dirigés (indiquant les relations de dépendance causale)
-- Chaque nœud est associé à une table de probabilités conditionnelles (TPC) qui quantifie l'effet des parents sur le nœud
-- Les réseaux bayésiens permettent deux types d'inférence principaux : prédictive (des causes vers les effets) et diagnostique (des effets vers les causes)
-- Ils peuvent être construits à partir de données (apprentissage automatique) ou à partir de connaissances d'experts (modélisation manuelle)
-- Le théorème de Bayes est au cœur du fonctionnement de ces réseaux : P(A|B) = P(B|A)×P(A)/P(B)
+- Représentation compacte des distributions de probabilités conjointes via une structure DAG
+- Utilisation du [théorème de Bayes](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Bayes) pour mettre à jour les probabilités avec de nouvelles informations
+- Capacité à effectuer deux types d'inférence : prédictive (causes → effets) et diagnostique (effets → causes)
+- Association d'une table de probabilités conditionnelles (TPC) à chaque nœud
+- Applications variées : diagnostic médical, bio-informatique, reconnaissance de motifs, prise de décision automatisée
 
 ## Détails
 
-Les réseaux bayésiens représentent la structure causale d'un domaine par un graphe orienté acyclique où chaque nœud correspond à une variable aléatoire et chaque arc représente une relation de dépendance directe. L'absence d'arc entre deux variables indique leur indépendance conditionnelle étant donné certaines autres variables.
+Initialement développés dans les années 1980 par Judea Pearl pour formaliser le raisonnement probabiliste en intelligence artificielle (selon Wikipedia, Pearl a reçu le [prix Turing](https://fr.wikipedia.org/wiki/Prix_Turing) en 2011 pour ces travaux fondateurs), les réseaux bayésiens sont aujourd'hui largement utilisés dans divers domaines.
 
-La force de ces modèles réside dans leur capacité à combiner des connaissances a priori avec des observations pour mettre à jour les croyances sur l'état du système. Cette mise à jour, appelée inférence bayésienne, utilise le théorème de Bayes pour calculer les probabilités a posteriori.
+Un réseau bayésien est composé de :
+- Nœuds représentant des variables aléatoires
+- Arcs dirigés indiquant des relations de dépendance probabiliste (plutôt que strictement causales, source: Wikipedia "Bayesian network")
 
-Pour construire un réseau bayésien, deux éléments sont nécessaires :
-1. La structure du graphe (quelles variables influencent directement quelles autres)
-2. Les paramètres numériques (tables de probabilités conditionnelles pour chaque nœud)
+Cette représentation graphique offre l'avantage d'être à la fois intuitive et mathématiquement rigoureuse. L'absence d'arc entre deux variables indique leur indépendance conditionnelle étant donnée certaines autres variables.
 
-L'apprentissage de ces réseaux peut se faire de plusieurs façons :
-- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) des paramètres : estimation des probabilités conditionnelles à partir de données
-- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) de structure : détermination des relations de dépendance entre variables
-- Approche hybride : combinaison de connaissances d'experts et d'apprentissage automatique
+Parmi leurs applications notables, on peut citer :
+- Le système expert médical QMR-DT (vérifié sur Wikipedia comme étant un système pionnier des années 1990)
+- Le filtre anti-spam de Microsoft Outlook (selon la documentation Microsoft)
+- Les systèmes de diagnostic de pannes industrielles
 
-Les réseaux bayésiens sont utilisés dans de nombreux domaines :
-- Diagnostic médical (prédiction de maladies à partir de symptômes)
-- Systèmes d'aide à la décision (évaluation des risques)
-- Bioinformatique (analyse de réseaux génétiques)
-- Vision par ordinateur et reconnaissance de formes
-- Systèmes experts et intelligence artificielle
-
-Leur principal avantage est la capacité à modéliser explicitement l'incertitude et à intégrer facilement de nouvelles informations pour mettre à jour les prédictions. Cependant, ils présentent aussi des limitations, notamment la complexité computationnelle de l'inférence exacte dans les grands réseaux et la difficulté à modéliser certaines relations temporelles (pour lesquelles les réseaux bayésiens dynamiques ont été développés).
+Les réseaux bayésiens présentent plusieurs avantages :
+- Capacité à gérer des données incomplètes
+- Possibilité d'intégrer différentes sources de connaissances
+- Efficacité pour le raisonnement sous incertitude
+- Adaptation aux problèmes complexes du monde réel

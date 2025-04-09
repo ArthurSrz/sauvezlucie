@@ -19,32 +19,57 @@ hasPart:
 ---
 ## Généralité
 
-L'éthique de l'intelligence artificielle est un domaine interdisciplinaire qui examine les implications morales, sociales et juridiques du développement et de l'utilisation des systèmes d'IA. Elle vise à établir des principes directeurs pour garantir que les technologies d'IA soient conçues, déployées et utilisées de manière responsable, équitable et bénéfique pour l'humanité, tout en minimisant les risques et les préjudices potentiels.
+L'[éthique de l'intelligence artificielle](https://fr.wikipedia.org/wiki/%C3%89thique_de_l%27intelligence_artificielle) est un domaine interdisciplinaire qui examine les implications morales, sociales et juridiques du développement et de l'utilisation des systèmes d'IA. Elle vise à établir des principes directeurs pour garantir que les technologies d'IA soient conçues, déployées et utilisées de manière responsable, équitable et bénéfique pour l'humanité, tout en minimisant les risques et les préjudices potentiels.
 
 ## Points clés
 
-- L'éthique de l'IA aborde des questions fondamentales comme la transparence, l'équité, la responsabilité, la vie privée et l'autonomie humaine
-- Les biais algorithmiques représentent un défi majeur car ils peuvent perpétuer ou amplifier les discriminations existantes
-- La gouvernance de l'IA implique un équilibre entre l'innovation technologique et la protection des valeurs humaines fondamentales
-- L'alignement des systèmes d'IA sur les valeurs humaines est essentiel pour éviter des conséquences imprévues ou nuisibles
+- **Transparence et explicabilité**: Les systèmes d'IA doivent être compréhensibles, notamment les modèles complexes comme les [réseaux neuronaux profonds](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_profonds)
+- **Équité et prévention des biais**: Les algorithmes doivent éviter de perpétuer des discriminations (ex: système de recrutement d'Amazon en 2018)
+- **Protection de la vie privée**: Respect du [RGPD](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es) et des données personnelles
+- **Responsabilité et autonomie humaine**: Détermination claire de la responsabilité et maintien du contrôle humain sur les décisions critiques
+- **Alignement sur les valeurs humaines**: Recherches menées par des institutions comme le [Future of Humanity Institute](https://fr.wikipedia.org/wiki/Future_of_Humanity_Institute)
 
 ## Détails
 
-L'éthique de l'IA s'articule autour de plusieurs principes fondamentaux. La transparence exige que les processus décisionnels des systèmes d'IA soient explicables et compréhensibles, ce qui pose un défi particulier pour les systèmes d'apprentissage profond souvent qualifiés de "boîtes noires". L'équité concerne la prévention des biais et des discriminations dans les algorithmes, qui peuvent résulter de données d'entraînement biaisées ou de choix de conception problématiques.
+### Principes fondamentaux
 
-La responsabilité implique de déterminer qui est imputable lorsqu'un système d'IA cause un préjudice. Cette question devient particulièrement complexe avec les systèmes autonomes. La protection de la vie privée est également cruciale, car les systèmes d'IA collectent et analysent d'énormes quantités de données personnelles, soulevant des préoccupations sur la surveillance et l'utilisation abusive des informations.
+L'éthique de l'IA s'articule autour de plusieurs principes fondamentaux formalisés dans des cadres comme les Principes d'Asilomar (2017) ou les Lignes directrices de l'UE pour une IA digne de confiance (2019). Ces principes mettent l'accent sur :
+- La bienfaisance
+- La non-malveillance 
+- L'autonomie humaine
+- La justice
 
-Le respect de l'autonomie humaine signifie que les systèmes d'IA devraient augmenter les capacités humaines plutôt que de les remplacer ou de les diminuer. Cela inclut des questions sur le degré d'autonomie à accorder aux systèmes d'IA et les domaines où la prise de décision humaine devrait rester primordiale.
+### Enjeux majeurs
 
-Les approches pour aborder ces questions éthiques sont diverses. Certaines organisations développent des cadres éthiques et des lignes directrices, comme les Principes d'IA de l'OCDE ou les recommandations de l'UNESCO sur l'éthique de l'IA. D'autres préconisent des réglementations gouvernementales, comme le Règlement sur l'IA de l'[Union européenne](https://fr.wikipedia.org/wiki/Union_européenne). Des méthodes techniques comme l'IA explicable (XAI) et l'équité algorithmique sont également développées pour résoudre certains problèmes éthiques à la source.
+#### Biais algorithmiques
+Les [biais algorithmiques](https://fr.wikipedia.org/wiki/Biais_algorithmique) représentent un défi majeur illustré par :
+- Le système COMPAS de justice prédictive (discrimination raciale)
+- Le système de recrutement d'Amazon (biais de genre)
 
-## Applications pratiques
+#### Gouvernance et régulation
+Plusieurs initiatives internationales existent :
+- Norme de l'[UNESCO](https://fr.wikipedia.org/wiki/Organisation_des_Nations_unies_pour_l%27%C3%A9ducation,_la_science_et_la_culture) sur l'éthique de l'IA (2021)
+- Principes d'IA de l'[OCDE](https://fr.wikipedia.org/wiki/Organisation_de_coop%C3%A9ration_et_de_d%C3%A9veloppement_%C3%A9conomiques) (2019)
+- Règlement sur l'IA de l'Union européenne (en cours)
 
-L'éthique de l'IA s'applique à de nombreux domaines, notamment:
+### Applications sectorielles
 
-- Dans la santé: équilibrer l'efficacité diagnostique avec la confidentialité des données médicales
-- Dans la justice pénale: éviter les biais dans les systèmes de prédiction des risques
-- Dans les transports: déterminer comment les véhicules autonomes devraient prendre des décisions en cas d'accident inévitable
-- Dans l'emploi: garantir que les systèmes de recrutement automatisés n'amplifient pas les discriminations
+#### Santé
+- Algorithmes comme [IBM Watson Health](https://fr.wikipedia.org/wiki/Watson_(intelligence_artificielle)) pour le diagnostic
+- Enjeux de confidentialité avec des partenariats comme Google DeepMind/NHS
 
-L'éthique de l'IA n'est pas statique mais évolue avec les avancées technologiques et la compréhension sociétale de leurs implications, nécessitant un dialogue continu entre technologues, éthiciens, décideurs politiques et le grand public.
+#### Justice
+- Systèmes de prédiction des risques (ex: COMPAS)
+- Nécessité d'audits algorithmiques
+
+#### Transports
+- Dilemmes éthiques des véhicules autonomes
+- Normes comme [ISO 21448](https://fr.wikipedia.org/wiki/ISO_21448) pour la sécurité
+
+#### Emploi
+- Systèmes de recrutement automatisés
+- Obligations d'équité et de transparence
+
+### Perspectives futures
+
+L'éthique de l'IA évolue avec les avancées technologiques, nécessitant une collaboration internationale via des initiatives comme la [Global Partnership on AI](https://fr.wikipedia.org/wiki/Global_Partnership_on_Artificial_Intelligence) (GPAI), lancée en 2020.

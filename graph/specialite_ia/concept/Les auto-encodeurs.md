@@ -10,57 +10,45 @@ tags:
 - représentation de données
 - encodage
 - réduction de dimension
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 isPartOf: '[[Apprentissage non supervisé]]'
 uses: '[[Réduction de dimensionnalité en machine learning]]'
 seeAlso:
-- '[[Auto-encodeurs convolutifs]]'
 - '[[Auto-encodeurs pour la réduction de bruit]]'
 - '[[Auto-encodeurs variationnels (VAE)]]'
 - '[[Auto-encodeurs adversariaux]]'
 - '[[Auto-encodeurs contractifs]]'
+- '[[Auto-encodeurs convolutifs]]'
 ---
 ## Généralité
 
-Un [auto-encodeur](https://fr.wikipedia.org/wiki/auto-encodeur) est un type de réseau de neurones artificiels utilisé pour l'apprentissage non supervisé de représentations de données efficaces. Sa structure particulière lui permet d'apprendre à compresser puis à reconstruire ses données d'entrée avec une perte minimale d'information. L'objectif principal n'est pas la reconstruction elle-même, mais plutôt l'apprentissage d'une représentation utile (encodage) des données d'entrée, généralement dans un espace de dimension réduite.
+Un [auto-encodeur](https://fr.wikipedia.org/wiki/Auto-encodeur) est un type de [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) utilisé pour l'apprentissage non supervisé de représentations de données efficaces. Initialement proposé dans les années 1980 par [Geoffrey Hinton](https://fr.wikipedia.org/wiki/Geoffrey_Hinton), il permet d'apprendre à compresser puis reconstruire des données avec une perte minimale d'information.
 
 ## Points clés
 
-- Un auto-encodeur se compose de deux parties principales : un encodeur qui compresse les données d'entrée en une représentation latente, et un décodeur qui tente de reconstruire les données originales à partir de cette représentation.
-- L'espace latent (ou code) est généralement de dimension inférieure à l'espace d'entrée, forçant le réseau à apprendre les caractéristiques les plus importantes des données.
-- Les auto-encodeurs sont entraînés en minimisant l'erreur de reconstruction entre les données d'entrée et leur version reconstruite.
-- Ils peuvent être utilisés pour la réduction de dimensionnalité, la détection d'anomalies, le débruitage d'images et la génération de données.
+- Structure symétrique composée d'un encodeur (compression) et d'un décodeur (reconstruction)
+- Apprentissage d'une représentation utile dans un espace latent de dimension réduite
+- Applications variées en vision par ordinateur, traitement du langage et recommandation
+- Entraînement par minimisation de l'erreur de reconstruction (erreur quadratique moyenne ou entropie croisée)
+- Principales variantes : débruiteurs, variationnels, contractifs et épars
 
 ## Détails
 
-### Architecture
+L'architecture des auto-encodeurs est symétrique avec un goulot d'étranglement central. L'encodeur transforme l'entrée en représentation compressée (espace latent), tandis que le décodeur reconstruit l'entrée originale. La fonction de coût typique est l'erreur quadratique moyenne ||x - x'||² entre entrée x et reconstruction x'. D'autres fonctions comme l'entropie croisée peuvent être utilisées pour des données binaires.
 
-L'architecture d'un auto-encodeur est symétrique, avec un goulot d'étranglement au milieu. L'encodeur transforme progressivement l'entrée en une représentation compressée (le code ou l'espace latent), tandis que le décodeur fait l'opération inverse pour reconstruire l'entrée originale.
+Les applications principales incluent :
+- [Réduction de dimensionnalité](https://fr.wikipedia.org/wiki/R%C3%A9duction_de_dimensionnalit%C3%A9) (alternative non linéaire à l'ACP)
+- Détection d'anomalies via l'identification d'échantillons avec fortes erreurs de reconstruction
+- Débruitage d'images grâce aux auto-encodeurs débruiteurs
+- Génération de données particulièrement avec les auto-encodeurs variationnels
+- Étape de pré-traitement avant classification ou initialisation des poids dans réseaux profonds
 
-La fonction de coût typique est l'erreur quadratique moyenne entre l'entrée originale et sa reconstruction. Pour une entrée x et sa reconstruction x', on cherche à minimiser ||x - x'||².
+Les variantes notables comprennent :
+1. **Auto-encodeurs sous-complets** : Espace latent de dimension inférieure à l'entrée, forme classique de compression.
+2. **Auto-encodeurs débruitants** : Reconstruisent des entrées propres à partir de versions bruitées.
+3. **[Auto-encodeurs variationnels (VAE)](https://fr.wikipedia.org/wiki/Auto-encodeur_variationnel)** : Apprennent une distribution de probabilité dans l'espace latent.
+4. **Auto-encodeurs contractifs** : Ajoutent une régularisation pour des caractéristiques plus robustes.
+5. **Auto-encodeurs épars** : Imposent une contrainte de parcimonie sur les activations.
 
-### Variantes principales
-
-1. **Auto-encodeurs sous-complets** : La dimension de l'espace latent est inférieure à celle de l'entrée, forçant le réseau à apprendre une représentation compressée.
-
-2. **Auto-encodeurs débruitants** : Entraînés à reconstruire des entrées propres à partir de versions bruitées, ce qui les rend robustes aux perturbations.
-
-3. **Auto-encodeurs variationnels (VAE)** : Introduisent une contrainte probabiliste sur l'espace latent, permettant la génération de nouvelles données.
-
-4. **Auto-encodeurs convolutifs** : Utilisent des couches convolutives pour traiter efficacement les données d'image.
-
-5. **Auto-encodeurs contractifs** : Ajoutent une pénalité qui force le modèle à être moins sensible aux variations dans les données d'entrée.
-
-### Applications
-
-Les auto-encodeurs trouvent des applications dans de nombreux domaines :
-
-- **Réduction de dimensionnalité** : Alternative non-linéaire à des méthodes comme l'ACP.
-- **Détection d'anomalies** : Les données anormales produisent généralement une erreur de reconstruction plus élevée.
-- **[Débruitage](https://fr.wikipedia.org/wiki/Débruitage) et restauration d'images** : Particulièrement avec les auto-encodeurs débruitants.
-- **Compression de données** : Bien que rarement utilisés en production pour cette tâche.
-- **Pré-entraînement de réseaux profonds** : Historiquement utilisés pour initialiser les poids des réseaux profonds.
-- **Génération de données** : Particulièrement avec les VAE qui peuvent générer de nouvelles instances similaires aux données d'entraînement.
-
-Les auto-encodeurs constituent une famille polyvalente de modèles qui continuent d'évoluer et de trouver de nouvelles applications dans le domaine de l'apprentissage automatique.
+Ces différentes approches offrent des solutions adaptées à divers problèmes d'apprentissage automatique, tout en conservant le principe fondamental d'apprentissage de représentations efficaces.

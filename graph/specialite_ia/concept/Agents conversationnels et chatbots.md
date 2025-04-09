@@ -10,55 +10,67 @@ tags:
 - interfaces utilisateur
 - intelligence artificielle
 - interaction homme-machine
-date_creation: '2025-03-18'
-date_modification: '2025-03-18'
+date_creation: '2025-04-04'
+date_modification: '2025-04-04'
+hasPart: '[[Synthèse vocale (TTS)]]'
 ---
 ## Généralité
 
-Les agents conversationnels et chatbots sont des systèmes informatiques conçus pour interagir avec les humains en langage naturel. Ils simulent une conversation humaine à travers des interfaces textuelles ou vocales. Ces technologies utilisent diverses techniques d'intelligence artificielle, notamment le traitement du langage naturel (NLP), l'apprentissage automatique et la reconnaissance vocale pour comprendre les requêtes des utilisateurs et y répondre de manière appropriée.
+Les [agents conversationnels](https://fr.wikipedia.org/wiki/Agent_conversationnel) et [chatbots](https://fr.wikipedia.org/wiki/Chatbot) sont des systèmes informatiques conçus pour interagir avec les humains en langage naturel. Ils simulent une conversation humaine à travers des interfaces textuelles ou vocales. Ces technologies ont émergé dans les années 1960 avec le premier chatbot [ELIZA](https://fr.wikipedia.org/wiki/ELIZA) et ont connu un développement majeur avec les progrès récents en intelligence artificielle et en traitement du langage naturel.
 
 ## Points clés
 
-- Les chatbots peuvent être classés en deux catégories principales : les chatbots basés sur des règles (scripts prédéfinis) et les chatbots basés sur l'IA (capables d'apprentissage et d'adaptation)
-- Ils sont déployés dans divers secteurs comme le service client, la santé, l'éducation et le commerce électronique pour automatiser les interactions répétitives
-- L'évolution récente des grands modèles de langage (LLM) comme GPT a considérablement amélioré les capacités conversationnelles des agents virtuels
-- Les considérations éthiques et de confidentialité sont essentielles dans leur conception et déploiement
+- Les chatbots utilisent des techniques d'IA comme le [traitement du langage naturel](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel), l'apprentissage automatique et la reconnaissance vocale
+- On distingue deux types principaux : systèmes à règles simples et modèles basés sur l'apprentissage automatique
+- Applications majeures : service client, assistance virtuelle, éducation, santé et commerce électronique
+- Défis actuels : gestion des conversations ambiguës, prévention des biais, compréhension des nuances culturelles
+- Perspectives : intégration avec les bases de connaissances et personnalisation accrue des interactions
 
 ## Détails
 
 ### Types d'agents conversationnels
 
-1. **Chatbots basés sur des règles** : Fonctionnent selon des scénarios prédéfinis avec des réponses programmées pour des mots-clés ou phrases spécifiques. Ils sont relativement simples à développer mais limités dans leur capacité à gérer des conversations complexes ou imprévues.
+1. **Chatbots basés sur des règles** : 
+   - Fonctionnent selon des scénarios prédéfinis avec des réponses programmées
+   - Utilisent des arbres de décision prédéfinis
+   - Limités dans leur capacité à gérer des conversations complexes
+   - Exemple historique : [ELIZA](https://fr.wikipedia.org/wiki/ELIZA) (1966)
 
-2. **Chatbots basés sur l'IA** : Utilisent des algorithmes d'apprentissage automatique pour comprendre le contexte, apprendre des interactions passées et générer des réponses plus naturelles. Ils peuvent s'améliorer avec le temps grâce à l'analyse des conversations.
+2. **Chatbots basés sur l'IA** :
+   - Utilisent des algorithmes d'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique)
+   - Peuvent apprendre des interactions passées
+   - Modèles modernes comme [GPT-3](https://fr.wikipedia.org/wiki/GPT-3) avec 175 milliards de paramètres
 
-3. **Assistants vocaux** : Comme Siri, Alexa ou Google Assistant, ils utilisent la reconnaissance vocale pour interpréter les commandes orales et y répondre.
+3. **Assistants vocaux** :
+   - Combinaison de technologies avancées de NLP et NLU
+   - Exemples : Siri, Alexa, Google Assistant
+   - Utilisent la [reconnaissance vocale](https://fr.wikipedia.org/wiki/Reconnaissance_vocale)
 
 ### Technologies sous-jacentes
 
-Les agents conversationnels modernes s'appuient sur plusieurs technologies clés :
-- **NLP ([Natural Language Processing](https://fr.wikipedia.org/wiki/Natural_Language_Processing))** : Pour comprendre et interpréter le langage humain
-- **NLU ([Natural Language Understanding](https://fr.wikipedia.org/wiki/Natural_Language_Understanding))** : Pour saisir l'intention derrière les requêtes
-- **NLG ([Natural Language Generation](https://fr.wikipedia.org/wiki/Natural_Language_Generation))** : Pour formuler des réponses cohérentes et contextuelles
-- **[Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) automatique** : Pour améliorer les performances au fil du temps
-- **Analyse des sentiments** : Pour détecter l'état émotionnel de l'utilisateur
+Les agents conversationnels modernes s'appuient sur :
+- **NLP (Natural Language Processing)** : compréhension du langage humain
+- **NLU (Natural Language Understanding)** : saisie de l'intention derrière les requêtes
+- **NLG (Natural Language Generation)** : formulation de réponses cohérentes
+- **Apprentissage automatique** : amélioration continue via réseaux neuronaux
+- **Analyse des sentiments** : adaptation aux états émotionnels
 
 ### Applications pratiques
 
-Les chatbots sont désormais omniprésents dans de nombreux domaines :
-- **Service client** : Réponse aux questions fréquentes, résolution de problèmes simples
-- **Santé** : Triage initial, suivi de symptômes, rappels de médicaments
-- **Finance** : Vérification de solde, transferts d'argent, alertes de transactions
-- **E-commerce** : Recommandations de produits, assistance à l'achat
-- **Éducation** : [Tutorat](https://fr.wikipedia.org/wiki/Tutorat) personnalisé, réponses aux questions des étudiants
+Domaines d'application principaux :
+- **Service client** : Assistants virtuels 24/7 (marché estimé à 10,5 milliards de dollars d'ici 2026)
+- **Santé** : Suivi médical (ex: Woebot), triage initial
+- **Finance** : Vérifications de solde, alertes de transactions
+- **E-commerce** : Recommandations personnalisées
+- **Éducation** : Tutoriels interactifs, assistance aux étudiants
 
 ### Défis et considérations
 
-Malgré leurs avancées, les agents conversationnels font face à plusieurs défis :
-- Compréhension limitée des nuances linguistiques et culturelles
-- Difficultés à maintenir une conversation cohérente sur plusieurs tours
-- Questions de confidentialité et de sécurité des données
-- [Risque](https://fr.wikipedia.org/wiki/Risque) de perpétuer des biais présents dans les données d'entraînement
-- Acceptation par les utilisateurs et gestion des attentes
+Principaux enjeux :
+- Limitations dans la compréhension des nuances culturelles
+- Cohérence des conversations longues (améliorée mais limitée avec les LLM comme GPT-3)
+- Questions de confidentialité (régulations comme le [RGPD](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es))
+- Risques de biais algorithmiques (ex: chatbot Tay de Microsoft)
+- Nécessité de cadres éthiques (IEEE, UE)
 
-L'avenir des agents conversationnels tend vers des systèmes multimodaux capables d'intégrer texte, voix, images et contexte situationnel pour des interactions toujours plus naturelles et utiles.
+L'évolution tend vers des systèmes multimodaux intégrant texte, voix et images pour des interactions plus naturelles, avec une meilleure personnalisation et intégration des connaissances.

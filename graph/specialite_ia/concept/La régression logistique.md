@@ -1,6 +1,6 @@
 ---
 title: La régression logistique
-type: '[[Algorithme de classification]]'
+type: concept
 tags:
 - régression logistique
 - statistiques
@@ -8,25 +8,24 @@ tags:
 - analyse prédictive
 - machine learning
 - classification
-date_creation: '2025-03-17'
-date_modification: '2025-03-17'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 isPartOf: '[[Apprentissage supervisé]]'
+subClassOf: '[[Algorithme de classification]]'
 ---
-##Généralité
+## Généralité
 
-La régression logistique est une méthode statistique d'apprentissage supervisé utilisée pour la classification binaire. Contrairement à son nom, il s'agit d'un algorithme de classification et non de régression. Elle modélise la probabilité qu'une observation appartienne à une catégorie particulière en utilisant une fonction logistique (sigmoïde) pour transformer une combinaison linéaire de variables prédictives en une probabilité comprise entre 0 et 1.
+La [régression logistique](https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique) est une méthode statistique d'apprentissage supervisé utilisée principalement pour la classification binaire, bien qu'elle puisse être étendue à des problèmes multi-classes. Contrairement à son nom, il s'agit d'un algorithme de classification et non de régression. Développée initialement par [David Cox](https://fr.wikipedia.org/wiki/David_Cox_(statisticien)) et d'autres statisticiens, cette technique modélise la probabilité qu'une observation appartienne à une catégorie particulière en utilisant une [fonction logistique](https://fr.wikipedia.org/wiki/Fonction_logistique) (sigmoïde) pour transformer une combinaison linéaire de variables prédictives en une probabilité comprise entre 0 et 1.
 
 ## Points clés
 
-- La régression logistique prédit la probabilité d'appartenance à une classe plutôt qu'une valeur numérique continue
-- Elle utilise la fonction sigmoïde pour transformer une entrée linéaire en une probabilité entre 0 et 1
-- Bien qu'elle soit simple, elle reste très efficace pour de nombreux problèmes de classification binaire
-- Elle offre une bonne interprétabilité des coefficients en termes de rapport de cotes (odds ratio)
-- Elle peut être étendue à la classification multi-classes via des approches one-vs-rest ou softmax
+- Prédit la probabilité d'appartenance à une classe via la [fonction sigmoïde](https://fr.wikipedia.org/wiki/Sigmo%C3%AFde) σ(z) = 1/(1+e^-z)
+- Offre une interprétabilité des coefficients en termes de rapport de cotes (odds ratio)
+- Peut être étendue à la classification multi-classes via des approches one-vs-rest ou [softmax](https://fr.wikipedia.org/wiki/Fonction_softmax)
+- Fait partie des [modèles linéaires généralisés](https://fr.wikipedia.org/wiki/Mod%C3%A8le_lin%C3%A9aire_g%C3%A9n%C3%A9ralis%C3%A9)
+- Utilise la méthode du [maximum de vraisemblance](https://fr.wikipedia.org/wiki/Maximum_de_vraisemblance) pour l'estimation des paramètres
 
 ## Détails
-
-### Fondement mathématique
 
 La régression logistique modélise la probabilité qu'une observation appartienne à la classe positive (y=1) comme suit:
 
@@ -34,35 +33,36 @@ P(y=1|x) = 1 / (1 + e^(-z))
 
 où z = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ est une combinaison linéaire des variables prédictives x₁, x₂, ..., xₙ et des coefficients β.
 
-La fonction 1/(1+e^(-z)) est appelée fonction sigmoïde ou logistique, qui transforme n'importe quelle valeur réelle en une valeur entre 0 et 1, interprétable comme une probabilité.
+La fonction sigmoïde présente plusieurs propriétés mathématiques intéressantes :
+- Sa dérivée est simple : σ'(z) = σ(z)(1-σ(z))
+- Elle est symétrique autour de z=0 : σ(-z) = 1-σ(z)
 
-### Estimation des paramètres
+Les coefficients β sont estimés par la méthode du maximum de vraisemblance, utilisant des méthodes d'optimisation itératives comme :
+- Descente de gradient
+- Algorithme Newton-Raphson
 
-Les coefficients β sont généralement estimés par la méthode du maximum de vraisemblance. Contrairement à la régression linéaire, il n'existe pas de solution analytique, et des méthodes d'optimisation itératives comme la descente de gradient sont utilisées.
+Le coefficient βᵢ représente :
+- Changement dans le logarithme du rapport de cotes lorsque xᵢ augmente d'une unité
+- L'exponentielle de βᵢ donne le rapport de cotes (ex: 2 signifie que la cote double)
 
-### Interprétation des coefficients
+Métriques d'évaluation principales :
+- Précision (accuracy)
+- Matrice de confusion
+- Courbe ROC et aire sous la courbe (AUC)
+- Log-vraisemblance
+- Test du rapport de vraisemblance
+- Statistiques d'information (AIC, BIC)
 
-Un avantage majeur de la régression logistique est l'interprétabilité de ses coefficients. Le coefficient βᵢ représente le changement dans le logarithme du rapport de cotes (log-odds) lorsque la variable xᵢ augmente d'une unité, toutes les autres variables restant constantes. L'exponentielle de βᵢ donne directement le rapport de cotes.
+Techniques de régularisation pour éviter le surapprentissage :
+- L1 (Lasso) : sélection automatique des variables
+- L2 (Ridge) : réduction d'amplitude des coefficients
+- Elastic Net : combinaison de L1 et L2
 
-### [Évaluation](https://fr.wikipedia.org/wiki/Évaluation) du modèle
+Extensions possibles :
+- Classification multi-classes (fonction softmax)
+- Problèmes ordinaux (modèles proportionnels de cotes)
+- Données séquentielles (modèles logistiques conditionnels)
+- Modèles mixtes pour données groupées
+- Régression logistique pénalisée pour haute dimension
 
-La performance d'un modèle de régression logistique peut être évaluée par diverses métriques:
-- Précision (accuracy): proportion de prédictions correctes
-- Matrice de confusion: tableau des vrais/faux positifs/négatifs
-- Courbe ROC et aire sous la courbe (AUC): évaluation de la capacité discriminative
-- Log-vraisemblance: mesure de l'ajustement du modèle
-
-### Régularisation
-
-Pour éviter le surapprentissage, particulièrement avec de nombreuses variables ou des données limitées, on peut appliquer une régularisation:
-- L1 (Lasso): favorise la parcimonie en réduisant certains coefficients à zéro
-- L2 (Ridge): réduit l'amplitude de tous les coefficients
-
-### Extensions
-
-La régression logistique peut être étendue à:
-- [Classification](https://fr.wikipedia.org/wiki/Classification) multi-classes via la régression logistique multinomiale
-- Problèmes ordinaux via la régression logistique ordinale
-- Données séquentielles via des modèles logistiques conditionnels
-
-Malgré sa simplicité relative par rapport aux méthodes d'apprentissage profond, la régression logistique reste un outil fondamental en statistique et en apprentissage automatique, offrant un bon équilibre entre performance, interprétabilité et efficacité computationnelle.
+Malgré sa simplicité relative, la régression logistique reste un outil fondamental en statistique et en apprentissage automatique, offrant un bon équilibre entre performance, interprétabilité et efficacité computationnelle.

@@ -18,34 +18,34 @@ isPartOf: '[[Agrégation de voisinage dans les réseaux neuronaux de graphes]]'
 ---
 ## Généralité
 
-L'apprentissage par représentation de graphes (Graph Representation Learning) est un domaine de l'apprentissage automatique qui vise à encoder les structures de graphes dans un espace vectoriel de faible dimension tout en préservant leurs propriétés topologiques et sémantiques. Cette approche permet de transformer des données relationnelles complexes en représentations vectorielles (embeddings) qui peuvent être utilisées efficacement par des algorithmes d'apprentissage automatique traditionnels pour diverses tâches comme la classification de nœuds, la prédiction de liens ou la classification de graphes.
+L'[apprentissage par représentation de graphes](https://fr.wikipedia.org/wiki/Apprentissage_automatique#Apprentissage_par_repr%C3%A9sentation) (Graph Representation Learning) est un domaine de l'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) qui vise à encoder les structures de graphes dans un espace vectoriel de faible dimension tout en préservant leurs propriétés topologiques et sémantiques. Cette approche permet de transformer des données relationnelles complexes en représentations vectorielles (embeddings) qui peuvent être utilisées efficacement par des algorithmes d'apprentissage automatique traditionnels.
 
 ## Points clés
 
-- L'objectif principal est de transformer des structures de graphes en vecteurs de dimension fixe qui capturent les caractéristiques essentielles du graphe
-- Les méthodes modernes incluent les marches aléatoires (DeepWalk, node2vec), les réseaux de neurones convolutifs sur graphes (GCN) et les modèles d'auto-encodeurs de graphes
-- Les représentations apprises permettent de résoudre des problèmes comme la classification de nœuds, la prédiction de liens, la détection de communautés et la génération de graphes
-- Ces techniques sont applicables à de nombreux domaines: réseaux sociaux, biologie moléculaire, chimie, recommandation, etc.
+- Transforme des structures de [graphes](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes) en vecteurs de dimension fixe ([embeddings](https://fr.wikipedia.org/wiki/Incorporation_de_mots))
+- Capture à la fois la structure locale (voisinages) et globale (communautés) du graphe
+- Applications principales : classification de nœuds, prédiction de liens, détection de communautés
+- Méthodes principales : marches aléatoires (DeepWalk, node2vec), réseaux neuronaux (GCN, GAT), autoencodeurs
+- Domaines d'application : réseaux sociaux, bioinformatique, chimie, systèmes de recommandation
 
 ## Détails
 
-Les méthodes d'apprentissage par représentation de graphes peuvent être classées en plusieurs catégories principales:
+Cette discipline émerge des travaux en [théorie des graphes](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_graphes) et en apprentissage automatique. Elle combine notamment des méthodes de factorisation matricielle (comme la décomposition en valeurs singulières) avec des approches neuronales modernes (comme les Graph Neural Networks ou GNNs).
 
-**Méthodes basées sur les marches aléatoires**: Ces approches (comme DeepWalk, node2vec) génèrent des séquences de nœuds par des marches aléatoires sur le graphe, puis utilisent des techniques similaires à word2vec pour apprendre des représentations vectorielles. La différence entre ces méthodes réside dans la stratégie de marche aléatoire utilisée pour explorer le graphe.
+Les représentations apprises capturent à la fois la structure locale (voisinages des nœuds) et globale (communautés) du graphe, tout en intégrant souvent des caractéristiques supplémentaires (attributs des nœuds et arêtes). Parmi les algorithmes pionniers, on peut citer DeepWalk (2014) et node2vec (2016).
 
-**Méthodes basées sur la factorisation de matrices**: Ces approches (comme GraRep, HOPE) définissent des matrices de similarité entre nœuds basées sur différentes mesures de proximité structurelle, puis appliquent des techniques de factorisation pour obtenir des représentations de dimension inférieure.
+Les méthodes principales comprennent:
 
-**Réseaux de neurones convolutifs sur graphes (GCN)**: Ces modèles étendent le concept de convolution aux données de graphe en agrégeant les caractéristiques des nœuds voisins. Chaque couche d'un GCN propage et transforme l'information à travers la structure du graphe.
+- **Méthodes basées sur les marches aléatoires** comme [DeepWalk](https://fr.wikipedia.org/wiki/DeepWalk) et [node2vec](https://fr.wikipedia.org/wiki/Node2vec), qui génèrent des séquences de nœuds par des marches aléatoires, inspirées des modèles de langage NLP (comme [word2vec](https://fr.wikipedia.org/wiki/Word2vec)). Node2vec introduit une marche aléatoire biaisée explorant voisinages locaux et structures globales.
 
-**Graph Attention Networks (GAT)**: Ces réseaux introduisent des mécanismes d'attention qui permettent de pondérer différemment l'importance des voisins lors de l'agrégation des caractéristiques.
+- **Méthodes basées sur la factorisation de matrices** telles que GraRep et HOPE, utilisant des techniques comme la [décomposition en valeurs singulières](https://fr.wikipedia.org/wiki/D%C3%A9composition_en_valeurs_singuli%C3%A8res) (SVD). Elles offrent une bonne interprétabilité mathématique mais peuvent avoir des limitations d'évolutivité pour les très grands graphes.
 
-**Graph Autoencoders**: Ces modèles encodent la structure du graphe dans un espace latent puis tentent de reconstruire le graphe original, apprenant ainsi des représentations qui capturent ses propriétés essentielles.
+- **Réseaux de neurones convolutifs sur graphes (GCN)**, popularisés par Kipf & Welling en 2017, qui étendent le concept de convolution aux données de graphe, avec des variantes récentes pour graphes hétérogènes.
 
-Les défis actuels dans ce domaine incluent:
-- L'apprentissage de représentations pour des graphes dynamiques qui évoluent dans le temps
-- Le passage à l'échelle pour des graphes de très grande taille
-- L'intégration d'attributs hétérogènes sur les nœuds et les arêtes
-- L'interprétabilité des représentations apprises
-- Le transfert d'apprentissage entre différents graphes
+- **Graph Attention Networks (GAT)**, introduits en 2018, utilisant des mécanismes d'attention multi-têtes pour pondérer différemment l'importance des voisins.
 
-L'apprentissage par représentation de graphes a révolutionné l'analyse de données relationnelles en permettant d'appliquer des techniques d'apprentissage automatique standard à des structures de graphes complexes, ouvrant ainsi de nouvelles possibilités dans de nombreux domaines d'application.
+- **Graph Autoencoders** qui encodent la structure du graphe dans un espace latent, avec des versions modernes comme VGAE ([autoencodeurs variationnels](https://fr.wikipedia.org/wiki/Autoencodeur_variationnel)).
+
+Les applications sont variées: [réseaux sociaux](https://fr.wikipedia.org/wiki/R%C3%A9seau_social) (recommandation d'amis, analyse des relations), bioinformatique (analyse de réseaux protéine-protéine), chimie (représentation de molécules), systèmes de recommandation (e-commerce), optimisation des transports (réseaux routiers) et sécurité informatique (détection de fraudes).
+
+Les défis actuels incluent l'apprentissage pour graphes dynamiques, le passage à l'échelle pour très grands graphes, l'intégration d'attributs hétérogènes, l'interprétabilité des représentations et le transfert d'apprentissage entre différents graphes.

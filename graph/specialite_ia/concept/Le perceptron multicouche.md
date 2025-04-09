@@ -8,56 +8,32 @@ tags:
 - apprentissage automatique
 - deep learning
 - modèles computationnels
-date_creation: '2025-03-17'
-date_modification: '2025-03-17'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 subClassOf: '[[Réseaux neuronaux en IA]]'
 uses: '[[L''algorithme du gradient]]'
 isPartOf: '[[Apprentissage profond (Deep Learning)]]'
+seeAlso: '[[Architecture d''un réseau neuronal ]]'
 ---
-##Généralité
+## Généralité
 
-Le perceptron multicouche (PMC ou MLP pour Multi-Layer Perceptron en anglais) est un type de réseau de neurones artificiels composé de plusieurs couches de neurones interconnectés. Contrairement au perceptron simple qui ne peut résoudre que des problèmes linéairement séparables, le perceptron multicouche peut modéliser des relations complexes et non linéaires entre les entrées et les sorties, ce qui en fait un outil puissant pour l'apprentissage automatique et la reconnaissance de formes.
+Le [perceptron multicouche](https://fr.wikipedia.org/wiki/Perceptron_multicouche) (PMC ou MLP pour Multi-Layer Perceptron en anglais) est un type de [réseau de neurones artificiels](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels) composé de plusieurs couches de neurones interconnectés. Contrairement au perceptron simple qui ne peut résoudre que des problèmes linéairement séparables, le perceptron multicouche peut modéliser des relations complexes et non linéaires entre les entrées et les sorties, ce qui en fait un outil puissant pour l'apprentissage automatique et la reconnaissance de formes.
 
 ## Points clés
 
-- Architecture composée d'une couche d'entrée, une ou plusieurs couches cachées, et une couche de sortie
-- Utilise des fonctions d'activation non linéaires (comme la sigmoïde, tanh ou ReLU) pour traiter les données
-- [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par rétropropagation du gradient pour ajuster les poids des connexions
-- Capable de résoudre des problèmes non linéairement séparables, contrairement au perceptron simple
-- Forme la base de l'apprentissage profond moderne lorsqu'il comporte de nombreuses couches cachées
+- Architecture composée d'une couche d'entrée, une ou plusieurs couches cachées, et une couche de sortie (selon [Wikipédia](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels), cette structure minimale à 3 couches est nécessaire pour obtenir une capacité d'approximation universelle, comme démontré par [Cybenko](https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_d%27approximation_universelle) en 1989 et [Hornik](https://fr.wikipedia.org/wiki/Kurt_Hornik) en 1991)
+- Utilise des [fonctions d'activation](https://fr.wikipedia.org/wiki/Fonction_d%27activation) non linéaires (comme la sigmoïde, tanh ou ReLU) pour traiter les données - la [ReLU](https://fr.wikipedia.org/wiki/Rectified_linear_unit) (Rectified Linear Unit) est particulièrement populaire dans les réseaux profonds pour sa capacité à éviter le problème de gradient disparaissant
+- Apprentissage par [rétropropagation du gradient](https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient) pour ajuster les poids des connexions (algorithme popularisé dans les années 1980 par Rumelhart et Hinton)
+- Capable de résoudre des problèmes non linéairement séparables, contrairement au perceptron simple (grâce au théorème d'approximation universelle)
 
 ## Détails
 
-### Architecture et fonctionnement
+Un [perceptron multicouche](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_artificiels#Perceptron_multicouche) (PMC ou MLP) est structuré en couches successives de neurones, comprenant au minimum une couche d'entrée, une ou plusieurs couches cachées et une couche de sortie. Chaque neurone d'une couche est connecté à tous les neurones de la couche suivante (architecture dite "fully connected"), formant ainsi un réseau entièrement connecté. Chaque connexion entre deux neurones possède un poids qui détermine l'importance du signal transmis. Chaque neurone applique une [fonction d'activation](https://fr.wikipedia.org/wiki/Fonction_d%27activation) non linéaire à la somme pondérée de ses entrées pour produire sa sortie.
 
-Un perceptron multicouche est structuré en couches successives de neurones. Chaque neurone d'une couche est connecté à tous les neurones de la couche suivante, formant ainsi un réseau entièrement connecté (fully connected). L'information circule de la couche d'entrée vers la couche de sortie en passant par les couches cachées intermédiaires.
-
-Chaque connexion entre deux neurones possède un poids qui détermine l'importance du signal transmis. Chaque neurone applique une fonction d'activation à la somme pondérée de ses entrées pour produire sa sortie. Les fonctions d'activation non linéaires comme la sigmoïde, la tangente hyperbolique (tanh) ou la ReLU (Rectified Linear Unit) permettent au réseau de modéliser des relations complexes.
-
-### [Apprentissage](https://fr.wikipedia.org/wiki/Apprentissage) par rétropropagation
-
-L'apprentissage d'un perceptron multicouche se fait généralement par l'algorithme de rétropropagation du gradient (backpropagation). Ce processus comporte deux phases principales :
-
+L'apprentissage d'un perceptron multicouche se fait généralement par l'algorithme de [rétropropagation du gradient](https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient) (backpropagation). Ce processus comporte deux phases principales :
 1. **Propagation avant** : Les données d'entrée sont transmises à travers le réseau pour générer une prédiction.
-2. **Rétropropagation** : L'erreur entre la prédiction et la valeur attendue est calculée, puis propagée en arrière à travers le réseau pour ajuster les poids des connexions.
+2. **Rétropropagation** : L'erreur entre la prédiction et la valeur cible est calculée via une fonction de coût, puis propagée en arrière à travers le réseau pour ajuster les poids des connexions.
 
-L'objectif est de minimiser une fonction de coût (ou fonction de perte) qui mesure l'écart entre les prédictions du réseau et les valeurs réelles. Cette minimisation est généralement réalisée par descente de gradient.
+Le perceptron multicouche est utilisé dans de nombreux domaines comme la classification d'images, la reconnaissance de formes, la prévision de séries temporelles, le traitement du langage naturel, l'approximation de fonctions complexes, les systèmes de recommandation, le diagnostic médical et la reconnaissance de la parole.
 
-### Applications
-
-Le perceptron multicouche est utilisé dans de nombreux domaines :
-
-- [Classification](https://fr.wikipedia.org/wiki/Classification) d'images et reconnaissance de formes
-- [Prévision](https://fr.wikipedia.org/wiki/Prévision) de séries temporelles
-- Traitement du langage naturel
-- Approximation de fonctions complexes
-- Systèmes de recommandation
-
-### Limites et évolutions
-
-Malgré sa puissance, le perceptron multicouche présente certaines limitations :
-- [Risque](https://fr.wikipedia.org/wiki/Risque) de surapprentissage (overfitting) sur des données d'entraînement limitées
-- Difficulté à déterminer l'architecture optimale (nombre de couches et de neurones)
-- Problèmes de disparition ou d'explosion du gradient dans les réseaux profonds
-
-Ces limitations ont conduit au développement d'architectures plus avancées comme les réseaux convolutifs (CNN), les réseaux récurrents (RNN) et les transformers, qui sont mieux adaptés à certains types de données et de problèmes spécifiques.
+Malgré sa puissance, le perceptron multicouche présente certaines limitations comme le risque de surapprentissage, la difficulté à déterminer l'architecture optimale, les problèmes de disparition ou d'explosion du gradient, et le grand nombre de paramètres dans les architectures fully connected. Ces limitations ont conduit au développement d'architectures plus spécialisées comme les réseaux convolutifs ([CNN](https://fr.wikipedia.org/wiki/R%C3%A9seau_neuronal_convolutif)), les réseaux récurrents (RNN, LSTM), les [Transformers](https://fr.wikipedia.org/wiki/Transformer_(machine_learning)) et les architectures à connexions résiduelles (ResNet).

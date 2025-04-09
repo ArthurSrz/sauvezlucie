@@ -26,48 +26,21 @@ subClassOf:
 - '[[Apprentissage profond (Deep Learning)]]'
 - '[[Réseaux neuronaux en IA]]'
 ---
-## Généralité
+où f et g sont des fonctions d'activation, W représente les matrices de poids et b les biais. L'état caché h_t encode ainsi l'information des étapes précédentes.
 
-Les Réseaux de Neurones Récurrents (RNN) sont une classe de réseaux de neurones artificiels spécialement conçus pour traiter des données séquentielles. Contrairement aux réseaux de neurones traditionnels qui traitent les entrées de manière indépendante, les RNN possèdent une "mémoire" qui leur permet de prendre en compte les informations précédemment traitées. Cette caractéristique les rend particulièrement adaptés pour l'analyse de séries temporelles, le traitement du langage naturel, la reconnaissance vocale et d'autres tâches où le contexte temporel est important.
+Le principal défi des RNN classiques est leur difficulté à capturer les dépendances à long terme dans les séquences. Ce phénomène, connu sous le nom de problème de disparition ou d'explosion du gradient, se produit lors de la rétropropagation du gradient à travers de nombreuses couches temporelles.
 
-## Points clés
-
-- Les RNN possèdent des connexions récurrentes qui forment des cycles dans le réseau, permettant à l'information de persister
-- Ils souffrent du problème de disparition ou d'explosion du gradient lors de l'apprentissage de dépendances à long terme
-- Des variantes comme LSTM (Long Short-Term Memory) et GRU (Gated Recurrent Unit) ont été développées pour résoudre ces problèmes
-- Les RNN sont fondamentaux pour de nombreuses applications modernes comme la traduction automatique, la génération de texte et la prédiction de séries temporelles
-
-## Détails
-
-### Architecture de base
-
-Un RNN standard possède une boucle interne qui permet à l'information de circuler d'une étape de temps à la suivante. À chaque pas de temps t, le réseau reçoit une entrée x_t et produit une sortie y_t, tout en mettant à jour son état caché h_t qui sera utilisé à l'étape suivante. Mathématiquement, cela peut être représenté par:
-
-h_t = f(W_hh · h_{t-1} + W_xh · x_t + b_h)
-y_t = g(W_hy · h_t + b_y)
-
-où f et g sont des fonctions d'activation, W représente les matrices de poids et b les biais.
-
-### [Problèmes](https://fr.wikipedia.org/wiki/Problèmes) et limitations
-
-Le principal défi des RNN classiques est leur difficulté à capturer les dépendances à long terme dans les séquences. Ce phénomène, connu sous le nom de problème de disparition ou d'explosion du gradient, se produit lors de la rétropropagation du gradient à travers de nombreuses couches temporelles. Lorsque les gradients deviennent trop petits, l'apprentissage devient inefficace; lorsqu'ils explosent, les poids oscillent de manière chaotique.
-
-### Variantes avancées
-
-Pour surmonter ces limitations, plusieurs architectures avancées ont été développées:
-
-- **LSTM (Long Short-Term Memory)**: Introduit des portes (d'entrée, d'oubli et de sortie) qui contrôlent le flux d'information, permettant au réseau de mémoriser ou d'oublier sélectivement des informations sur de longues périodes.
-- **GRU (Gated Recurrent Unit)**: Une version simplifiée du LSTM avec moins de paramètres, combinant les portes d'entrée et d'oubli en une seule "porte de mise à jour".
-- **Réseaux bidirectionnels**: Traitent les séquences dans les deux directions (avant et arrière) pour capturer des contextes plus riches.
-
-### Applications
+Parmi les variantes avancées des RNN, on trouve :
+- **LSTM** : Introduit par Hochreiter et Schmidhuber en 1997, utilise des portes (d'entrée, d'oubli et de sortie) qui contrôlent le flux d'information
+- **GRU** : Version simplifiée du LSTM avec moins de paramètres, proposé par Cho et al. en 2014
+- **Réseaux bidirectionnels (Bi-RNN)** : Traitent les séquences dans les deux directions pour capturer des contextes plus riches
 
 Les RNN et leurs variantes sont utilisés dans de nombreux domaines:
-- Traduction automatique (séquence à séquence)
-- Reconnaissance et synthèse vocale
-- Génération de texte et de musique
-- Prédiction de séries temporelles financières ou météorologiques
-- Analyse de sentiments et classification de textes
-- Systèmes de recommandation contextuels
+- **[Traitement du langage](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel)** : Traduction automatique, génération de texte, analyse de sentiments
+- **Traitement du signal** : Reconnaissance vocale, synthèse vocale
+- **Séries temporelles** : Prédiction boursière, modélisation météorologique
+- **Bioinformatique** : Prédiction de structure protéique, analyse de séquences ADN
+- **Création de contenu** : Génération de musique, reconnaissance d'écriture manuscrite
+- **Systèmes de recommandation** contextuels
 
-Avec l'avènement des modèles d'attention et des transformers, les RNN purs sont moins utilisés dans certaines applications de pointe, mais leurs principes fondamentaux restent essentiels pour comprendre l'évolution des architectures de deep learning pour les données séquentielles.
+Bien que d'autres architectures comme les Transformers soient désormais souvent préférées pour certaines tâches, les principes fondamentaux des RNN restent essentiels pour comprendre l'évolution des architectures de deep learning pour les données séquentielles.

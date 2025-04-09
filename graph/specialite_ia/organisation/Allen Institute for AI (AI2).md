@@ -12,33 +12,33 @@ tags:
 - intelligence artificielle
 - bien commun
 - innovation
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
+date_creation: '2025-04-08'
+date_modification: '2025-04-08'
 isPartOf: '[[Les acteurs de l''intelligence artificielle]]'
 ---
 ## Généralité
 
-L'Allen Institute for AI (AI2) est un institut de recherche à but non lucratif fondé en 2014 par [Paul Allen](https://fr.wikipedia.org/wiki/Paul_Allen), co-fondateur de [Microsoft](https://fr.wikipedia.org/wiki/Microsoft). Basé à [Seattle](https://fr.wikipedia.org/wiki/Seattle), Washington, AI2 se consacre à la recherche fondamentale en intelligence artificielle avec pour mission de contribuer au bien commun et de faire progresser la science. L'institut vise à développer une IA capable de raisonner, d'apprendre et de lire pour comprendre le monde, tout en abordant des défis scientifiques et sociétaux complexes.
+L'[Allen Institute for AI](https://fr.wikipedia.org/wiki/Allen_Institute_for_Artificial_Intelligence) (AI2) est un institut de recherche à but non lucratif fondé en 2014 par [Paul Allen](https://fr.wikipedia.org/wiki/Paul_Allen), co-fondateur de Microsoft. Basé à Seattle, Washington, AI2 se consacre à la recherche fondamentale en [intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) avec pour mission de contribuer au bien commun et de faire progresser la science.
 
 ## Points clés
 
-- Fondé par [Paul Allen](https://fr.wikipedia.org/wiki/Paul_Allen) en 2014 avec la mission de conduire une recherche en IA de haute qualité et de haut impact pour le bien commun
-- Se concentre sur plusieurs domaines clés incluant le traitement du langage naturel, la vision par ordinateur, le raisonnement commun et l'IA pour la science
-- Développe des outils et ressources open-source largement utilisés par la communauté scientifique, comme Semantic Scholar et AllenNLP
-- Combine la recherche fondamentale avec des applications pratiques visant à résoudre des problèmes concrets dans des domaines comme la médecine, l'éducation et la recherche scientifique
+- **Financement initial** : 125 millions de dollars (confirmé par GeekWire et le site officiel d'AI2)
+- **Domaines de recherche** : 
+  - Traitement du langage naturel ([AllenNLP](https://fr.wikipedia.org/wiki/Traitement_automatique_du_langage_naturel))
+  - Vision par ordinateur
+  - Raisonnement scientifique (projet Aristo)
+- **Outils majeurs** :
+  - [Semantic Scholar](https://fr.wikipedia.org/wiki/Semantic_Scholar) : moteur de recherche académique
+  - AllenNLP : bibliothèque pour le traitement du langage naturel
+- **Effectif** : Plus de 200 employés (chiffres 2021)
+- **Modèle unique** : Combine recherche académique et ingénierie à grande échelle
 
 ## Détails
 
-L'AI2 structure ses activités autour de plusieurs programmes de recherche distincts mais interconnectés. Parmi les plus notables figure Semantic Scholar, un moteur de recherche académique alimenté par l'IA qui indexe plus de 200 millions d'articles scientifiques et utilise des techniques avancées de traitement du langage naturel pour améliorer la découverte et l'analyse de la littérature scientifique.
+L'AI2 s'organise autour de plusieurs divisions de recherche spécialisées, notamment Semantic Scholar (moteur de recherche académique utilisant l'IA qui indexe plus de 200 millions de publications), Mosaic (dédié au machine learning), Aristo (système de raisonnement scientifique) et l'AI2 Incubator qui soutient les startups en IA avec des financements pouvant atteindre 1 million de dollars par startup.
 
-Le programme AllenNLP fournit une bibliothèque open-source pour la recherche en traitement du langage naturel (NLP), facilitant le développement de modèles sophistiqués pour la compréhension du langage. Cette plateforme est largement adoptée par les chercheurs en IA du monde entier.
+Parmi les principaux projets phares de l'institut, on trouve AllenNLP (bibliothèque open-source pour la recherche en NLP publiée en 2017), Aristo (système ayant obtenu 90% au test New York Regents 8th Grade Science Exam en 2019) et le Alexa Prize visant à améliorer les interactions avec les assistants vocaux.
 
-L'institut a également développé Aristo, un système conçu pour répondre à des questions de niveau scolaire, démontrant une compréhension du langage naturel et un raisonnement de base. En 2019, Aristo a atteint un score de plus de 90% sur des examens standardisés de sciences au niveau du collège, marquant une étape importante dans la compréhension du langage naturel.
+L'institut collabore étroitement avec des universités prestigieuses comme l'[Université de Washington](https://fr.wikipedia.org/wiki/Universit%C3%A9_de_Washington) et publie régulièrement dans les grandes conférences telles que NeurIPS, ICML, ACL et CVPR, avec 38 articles présentés en 2020 selon leur rapport annuel.
 
-AI2 Incubator est une autre initiative importante qui soutient les entrepreneurs construisant des startups basées sur l'IA, en leur fournissant financement, mentorat et accès à l'expertise technique.
-
-L'institut maintient des collaborations étroites avec des universités de premier plan, notamment l'[Université de Washington](https://fr.wikipedia.org/wiki/Université_de_Washington), et publie régulièrement dans les conférences et revues les plus prestigieuses du domaine de l'IA comme NeurIPS, ICML, ACL et CVPR.
-
-Contrairement à de nombreuses organisations de recherche en IA, AI2 met fortement l'accent sur la création d'une IA bénéfique et responsable. L'institut s'engage dans des discussions sur l'éthique de l'IA et travaille à développer des technologies qui augmentent les capacités humaines plutôt que de les remplacer.
-
-Avec plus de 200 chercheurs et ingénieurs, AI2 représente l'un des plus grands instituts de recherche en IA indépendants au monde, contribuant significativement à l'avancement de l'état de l'art en intelligence artificielle tout en maintenant une mission centrée sur l'impact sociétal positif.
+Sur le plan éthique, AI2 se distingue par son orientation vers une IA bénéfique et responsable, avec son programme "AI for the Common Good" et une philosophie centrée sur l'augmentation des capacités humaines plutôt que leur remplacement. L'institut bénéficie d'une dotation initiale importante de Paul Allen et d'un statut 501(c)(3), lui permettant de maintenir son indépendance tout en poursuivant des projets ambitieux grâce à un budget annuel conséquent.

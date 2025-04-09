@@ -18,33 +18,26 @@ subClassOf: '[[Les auto-encodeurs]]'
 ---
 ## Généralité
 
-Les Auto-encodeurs Variationnels (VAE) sont des modèles génératifs probabilistes qui étendent le concept d'auto-encodeurs traditionnels en introduisant une composante stochastique. Proposés par Kingma et Welling en 2013, les VAE apprennent à encoder des données dans un espace latent probabiliste et à les reconstruire à partir de cet espace, permettant ainsi la génération de nouvelles données similaires à celles de l'ensemble d'apprentissage. Contrairement aux auto-encodeurs classiques, les VAE ne se contentent pas de compresser l'information, mais modélisent une distribution de probabilité sur l'espace latent.
+Les [Auto-encodeurs Variationnels](https://fr.wikipedia.org/wiki/Auto-encodeur_variationnel) (VAE) sont des modèles génératifs probabilistes qui étendent le concept d'[auto-encodeurs](https://fr.wikipedia.org/wiki/Auto-encodeur) traditionnels en introduisant une composante stochastique. Proposés par Diederik P. Kingma et Max Welling dans leur article fondateur "Auto-Encoding Variational Bayes" (2013), les VAE représentent une avancée majeure dans l'[apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique) génératif. Ces modèles apprennent à encoder des données dans un espace latent probabiliste et à les reconstruire à partir de cet espace, permettant ainsi la génération de nouvelles données similaires à celles de l'ensemble d'apprentissage.
 
 ## Points clés
 
-- Les VAE encodent les entrées en distributions (généralement gaussiennes) dans l'espace latent plutôt qu'en points fixes
-- Ils utilisent une fonction de perte combinant un terme de reconstruction et un terme de régularisation (divergence KL)
+- Les VAE encodent les entrées en distributions (généralement gaussiennes) dans l'espace latent plutôt qu'en points fixes, permettant une meilleure généralisation et interpolation
+- Ils utilisent une fonction de perte combinant un terme de reconstruction et un terme de régularisation (divergence KL) qui mesure l'écart entre la distribution apprise et une distribution a priori
 - L'astuce de reparamétrisation permet l'entraînement par rétropropagation malgré la nature stochastique du modèle
 - Les VAE peuvent générer de nouvelles données en échantillonnant l'espace latent et en décodant les échantillons
+- Ils se distinguent des autres modèles génératifs comme les GAN par leur approche probabiliste explicite
 
 ## Détails
 
-L'architecture d'un VAE comprend deux composants principaux : un encodeur et un décodeur. L'encodeur transforme une donnée d'entrée x en paramètres (μ et σ) d'une distribution gaussienne dans l'espace latent. Le décodeur prend un point z échantillonné de cette distribution et tente de reconstruire la donnée originale.
+L'architecture d'un [VAE](https://fr.wikipedia.org/wiki/Autoencodeur_variationnel) comprend deux composants principaux : un **encodeur** qui transforme une donnée d'entrée en paramètres (μ et σ) d'une distribution gaussienne dans l'espace latent, et un **décodeur** qui prend un point échantillonné de cette distribution et tente de reconstruire la donnée originale. Le choix d'une distribution gaussienne est motivé par sa simplicité mathématique et la possibilité de calculer analytiquement la [divergence KL](https://fr.wikipedia.org/wiki/Divergence_de_Kullback-Leibler).
 
-La fonction de perte d'un VAE se compose de deux termes :
-1. **Terme de reconstruction** : mesure la différence entre l'entrée originale et sa reconstruction (souvent une erreur quadratique moyenne ou une log-vraisemblance négative)
-2. **Terme de régularisation** : divergence de Kullback-Leibler entre la distribution latente encodée et une distribution gaussienne standard N(0,I), encourageant l'espace latent à être bien structuré
+La fonction de perte d'un VAE se compose de deux termes : un **terme de reconstruction** qui mesure la différence entre l'entrée originale et sa reconstruction (erreur quadratique moyenne ou log-vraisemblance négative), et un **terme de régularisation** (divergence de Kullback-Leibler entre la distribution latente encodée et une distribution gaussienne standard N(0,I)).
 
-L'astuce de reparamétrisation est cruciale pour l'entraînement des VAE. Au lieu d'échantillonner directement z ~ N(μ, σ²), on calcule z = μ + σ ⊙ ε où ε ~ N(0,I). Cette formulation permet la propagation du gradient à travers l'opération d'échantillonnage.
+L'astuce de reparamétrisation est cruciale pour l'entraînement des VAE. Au lieu d'échantillonner directement z ~ N(μ, σ²), on calcule z = μ + σ ⊙ ε où ε ~ N(0,I). Cette technique permet de rendre le processus d'échantillonnage différenciable en exprimant l'échantillon aléatoire comme une transformation déterministe des paramètres du modèle et d'une variable aléatoire auxiliaire, facilitant ainsi le calcul des gradients par [rétropropagation](https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient).
 
-Les VAE présentent plusieurs avantages par rapport à d'autres modèles génératifs :
-- Ils ont une base théorique solide dans l'inférence variationnelle
-- L'entraînement est généralement stable
-- L'espace latent est continu et structuré, permettant des interpolations significatives
+Les VAE présentent plusieurs avantages : base théorique solide dans l'inférence variationnelle, entraînement généralement stable, espace latent continu et structuré permettant des interpolations significatives, et capacité à fournir une mesure quantitative de la vraisemblance des données. Cependant, ils souffrent aussi de limitations comme des reconstructions parfois floues, un compromis difficile entre qualité de reconstruction et régularisation de l'espace latent, une capacité générative parfois inférieure à d'autres modèles comme les GANs, et des performances parfois limitées sur des données multimodales complexes.
 
-Cependant, ils souffrent aussi de limitations :
-- Les reconstructions peuvent être floues, particulièrement pour des données complexes comme les images
-- Le compromis entre qualité de reconstruction et régularisation de l'espace latent est parfois difficile à équilibrer
-- La capacité générative peut être inférieure à celle d'autres modèles comme les GANs
+Les VAE ont trouvé de nombreuses applications en génération d'images (visages réalistes), traitement du langage naturel, découverte de médicaments et musique (composition algorithmique). Des variantes ont été développées comme les β-VAE (contrôle de la régularisation), VQ-VAE (espace latent discret) et VAE conditionnels (contrôle sur la génération).
 
-Les VAE ont trouvé de nombreuses applications en génération d'images, traitement du langage naturel, découverte de médicaments, et même en musique. Des variantes comme les β-VAE, VQ-VAE et VAE conditionnels ont été développées pour améliorer leurs performances ou les adapter à des tâches spécifiques.
+[Plus d'informations sur Wikipédia](https://fr.wikipedia.org/wiki/Auto-encodeur_variationnel)

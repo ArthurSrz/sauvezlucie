@@ -12,54 +12,36 @@ tags:
 - ressources limitées
 - edge computing
 - efficience
-date_creation: '2025-03-22'
-date_modification: '2025-03-22'
+date_creation: '2025-04-04'
+date_modification: '2025-04-04'
 subClassOf: '[[Déploiement d''un modèle d''IA]]'
+seeAlso: '[[Compression différentielle des connaissances dans les LLM]]'
 ---
 ## Généralité
 
-La quantification et la compression de modèles sont des techniques d'optimisation visant à réduire la taille et les besoins en ressources des modèles d'intelligence artificielle, tout en préservant au maximum leurs performances. Ces approches sont devenues essentielles face à l'augmentation constante de la taille des modèles d'IA, particulièrement pour leur déploiement sur des appareils à ressources limitées ou pour réduire les coûts d'inférence dans les environnements cloud.
+La [quantification](https://fr.wikipedia.org/wiki/Quantification_(informatique)) et la [compression de modèles](https://fr.wikipedia.org/wiki/Compression_de_données) sont des techniques d'optimisation visant à réduire la taille et les besoins en ressources des modèles d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), tout en préservant au maximum leurs performances. Ces approches sont essentielles pour le déploiement sur des appareils à ressources limitées (smartphones, IoT) ou pour réduire les coûts d'inférence dans les environnements cloud.
 
 ## Points clés
 
-- La quantification réduit la précision numérique des poids du modèle (par exemple, de float32 à int8), diminuant significativement l'empreinte mémoire
-- La compression de modèles englobe diverses techniques comme l'élagage (pruning), la distillation de connaissances et la factorisation de matrices
-- Ces techniques permettent d'accélérer l'inférence, réduire les coûts de déploiement et rendre possible l'utilisation de modèles complexes sur des appareils à ressources limitées
-- Le défi principal est de maintenir un équilibre entre la réduction de taille et la préservation des performances
+- La quantification réduit la précision numérique des poids du modèle (ex: float32 à int8), permettant typiquement une réduction de 75% de la taille du modèle avec 90-95% de précision conservée
+- La compression inclut des techniques comme l'élagage (jusqu'à 90% des poids éliminés), la distillation de connaissances et la factorisation de matrices
+- Ces techniques permettent d'accélérer l'inférence (jusqu'à 4x), réduire les coûts (jusqu'à 70% d'énergie) et déployer sur appareils mobiles/IoT
+- Les frameworks comme [TensorFlow Lite](https://fr.wikipedia.org/wiki/TensorFlow) et ONNX Runtime proposent des outils intégrés pour ces techniques
+- Le défi principal est de maintenir l'équilibre entre réduction de taille et préservation des performances
 
 ## Détails
 
-### Techniques de quantification
-
-La quantification transforme les valeurs à virgule flottante de haute précision (généralement float32) en représentations de plus faible précision comme int8 ou même int4. Cette conversion peut réduire la taille du modèle jusqu'à 75% tout en accélérant les calculs, car les opérations sur des entiers sont généralement plus rapides que celles sur des nombres à virgule flottante.
+La [quantification](https://fr.wikipedia.org/wiki/Quantification_(Machine_Learning)) transforme les valeurs float32 en représentations de plus faible précision (int8 ou int4), réduisant la taille jusqu'à 75% tout en accélérant les calculs. Elle préserve 85-95% de la précision originale selon l'architecture, étant particulièrement efficace pour les [réseaux de neurones convolutifs](https://fr.wikipedia.org/wiki/R%C3%A9seau_de_neurones_convolutifs) et certains transformers.
 
 On distingue plusieurs types de quantification :
-- **Quantification post-entraînement (PTQ)** : appliquée après l'entraînement du modèle sans réentraînement
-- **Quantification consciente de l'entraînement (QAT)** : intègre la quantification pendant l'entraînement pour mieux préserver les performances
-- **Quantification dynamique** : effectuée à l'exécution, offrant plus de flexibilité
+- **Quantification post-entraînement (PTQ)** : appliquée après l'entraînement sans réentraînement (supportée par TensorFlow Lite et ONNX Runtime)
+- **Quantification consciente de l'entraînement (QAT)** : intégrée pendant l'entraînement pour mieux préserver les performances
+- **Quantification dynamique** : effectuée à l'exécution, avec implémentations matérielles spécialisées par des entreprises comme [NVIDIA](https://fr.wikipedia.org/wiki/Nvidia)
 
-### Techniques de compression
+Parmi les techniques de compression, l'**élagage (pruning)** identifie et supprime les connexions ou neurones les moins importants. Cette technique peut éliminer jusqu'à 90% des paramètres. Le pruning structuré (suppression de couches entières) est particulièrement efficace pour l'accélération matérielle.
 
-L'**élagage (pruning)** identifie et supprime les connexions ou neurones les moins importants du réseau. Cette technique peut éliminer jusqu'à 90% des paramètres avec un impact minimal sur la précision dans certains cas.
+La **distillation de connaissances** transfère les connaissances d'un grand modèle (enseignant) vers un modèle plus petit (élève). Cette technique, validée par les travaux de Hinton et al., permet de créer des modèles compacts tout en conservant une grande partie des performances.
 
-La **distillation de connaissances** transfère les "connaissances" d'un grand modèle (enseignant) vers un modèle plus petit (élève). Le modèle élève apprend à imiter les sorties du modèle enseignant plutôt que directement des données d'entraînement.
+La **factorisation de matrices** réduit la dimensionnalité des couches denses, bien documentée dans la littérature scientifique. Des approches hybrides combinant plusieurs techniques (quantification + pruning) ont montré les meilleurs résultats selon les publications récentes (NeurIPS, ICML).
 
-La **factorisation de matrices** décompose les grandes matrices de poids en produits de matrices plus petites, réduisant ainsi le nombre total de paramètres.
-
-### Compromis et considérations
-
-L'application de ces techniques implique généralement un compromis entre :
-- Taille du modèle et consommation mémoire
-- Vitesse d'inférence
-- Précision et qualité des prédictions
-- [Consommation](https://fr.wikipedia.org/wiki/Consommation) énergétique
-
-Pour les modèles de langage de grande taille (LLM), des techniques spécifiques comme la quantification à bits mixtes sont développées, où différentes parties du modèle sont quantifiées à différentes précisions selon leur sensibilité.
-
-### Applications pratiques
-
-Ces techniques sont particulièrement importantes pour :
-- Le déploiement de modèles sur smartphones et appareils IoT
-- La réduction des coûts d'inférence dans les services cloud
-- L'accélération des modèles pour les applications en temps réel
-- L'optimisation des modèles pour des accélérateurs matériels spécifiques comme les TPU ou les puces neuromorphiques
+Ces techniques sont cruciales pour des architectures complexes comme les transformers (pouvant atteindre plusieurs centaines de Go), comme confirmé par les publications sur GPT-3. Des entreprises comme Google et NVIDIA ont développé des méthodes avancées permettant de maintenir une grande partie de la précision tout en réduisant considérablement l'empreinte mémoire et la consommation énergétique.

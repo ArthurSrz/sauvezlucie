@@ -19,67 +19,60 @@ follows: '[[Choix du modèle]]'
 precedes: '[[Choix de la mesure d''erreur]]'
 isPartOf: '[[Algorithmes d''optimisation bayésienne]]'
 ---
-# Choix de la fonction de minimisation
-
 ## Généralité
 
-Le choix de la fonction de minimisation détermine la stratégie d'optimisation qui ajustera les paramètres du modèle d'IA pour réduire l'écart entre ses prédictions et les valeurs attendues.
+Le choix d'une fonction de minimisation est une étape fondamentale en [optimisation mathématique](https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)) et en [apprentissage automatique](https://fr.wikipedia.org/wiki/Apprentissage_automatique). Selon Wikipédia, ces fonctions, souvent appelées "fonctions objectif" ou "fonctions de coût", servent à quantifier l'écart entre les valeurs prédites et les valeurs réelles dans un modèle.
+
+La fonction de minimisation constitue le mécanisme par lequel un modèle d'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle) apprend à partir des données. Elle comprend deux composantes fondamentales: la fonction de coût et l'algorithme d'optimisation qui minimise cette fonction.
+
+Historiquement, le concept de minimisation remonte aux travaux de [Gauss](https://fr.wikipedia.org/wiki/Carl_Friedrich_Gauss) et [Legendre](https://fr.wikipedia.org/wiki/Adrien-Marie_Legendre) sur la méthode des moindres carrés au début du XIXe siècle, comme le rapporte Wikipédia.
 
 ## Points clés
 
-- [Combine](https://fr.wikipedia.org/wiki/Combine) une fonction de coût (ou de perte) qui quantifie l'erreur et un algorithme d'optimisation
-- Doit être différentiable pour permettre l'application des méthodes de gradient
+- Combine une fonction de [coût](https://fr.wikipedia.org/wiki/Fonction_de_perte) (ou de perte) qui quantifie l'erreur et un algorithme d'optimisation
+- Doit être différentiable pour permettre l'application des méthodes de [gradient](https://fr.wikipedia.org/wiki/Descente_de_gradient)
 - Influence directement la vitesse de convergence et la qualité de l'apprentissage
-- Peut inclure des termes de régularisation pour éviter le surapprentissage
+- Peut inclure des termes de [régularisation](https://fr.wikipedia.org/wiki/R%C3%A9gularisation_(math%C3%A9matiques)) pour éviter le surapprentissage
+- La [convexité](https://fr.wikipedia.org/wiki/Fonction_convexe) de la fonction est un facteur important
 
 ## Détails
 
-La fonction de minimisation constitue le mécanisme par lequel un modèle d'intelligence artificielle apprend à partir des données. Elle comprend deux composantes fondamentales: la fonction de coût et l'algorithme d'optimisation qui minimise cette fonction.
-
-### Fonctions de coût (loss functions)
-
-La fonction de coût quantifie l'écart entre les prédictions du modèle et les valeurs réelles:
+La fonction de coût quantifie l'écart entre les prédictions du modèle et les valeurs réelles. Selon Wikipédia, le choix de la fonction de coût est crucial car il détermine la surface d'optimisation que l'algorithme devra parcourir.
 
 **Pour les problèmes de régression:**
-- **Erreur quadratique (MSE)**: Pénalise fortement les grandes erreurs
+- **Erreur quadratique (MSE)**: Pénalise fortement les grandes erreurs. D'après Wikipédia, cette fonction est dérivée de la [méthode des moindres carrés](https://fr.wikipedia.org/wiki/M%C3%A9thode_des_mindres_carr%C3%A9s)
 - **Erreur absolue (MAE)**: Plus robuste aux valeurs aberrantes
-- **Erreur de Huber**: [Combine](https://fr.wikipedia.org/wiki/Combine) MSE et MAE, offrant un compromis entre les deux
+- **Erreur de Huber**: Combine MSE et MAE, offrant un compromis entre les deux
 - **Erreur logarithmique (MSLE)**: Adaptée aux cibles avec une distribution exponentielle
 
 **Pour les problèmes de classification:**
 - **Entropie croisée binaire**: Pour la classification binaire
 - **Entropie croisée catégorielle**: Pour la classification multi-classes
-- **Hinge Loss**: Utilisée notamment par les SVM, maximise la marge
+- **Hinge Loss**: Utilisée notamment par les [SVM](https://fr.wikipedia.org/wiki/Machine_%C3%A0_vecteur_de_support)
 - **Focal Loss**: Adaptée aux problèmes avec fort déséquilibre de classes
 
-### Algorithmes d'optimisation
+Les algorithmes d'optimisation jouent un rôle clé dans la minimisation de ces fonctions de coût. Les principaux types incluent:
 
-Ces algorithmes déterminent comment ajuster les paramètres du modèle pour minimiser la fonction de coût:
-
-1. **Descente de gradient (GD)**: Ajuste les paramètres en suivant la direction opposée au gradient, avec différentes variantes:
-   - Batch gradient descent: utilise l'ensemble des données
-   - Mini-batch gradient descent: utilise des sous-ensembles de données
-   - Stochastic gradient descent (SGD): utilise un exemple à la fois
+1. **Descente de gradient (GD)**:
+   - Batch gradient descent
+   - Mini-batch gradient descent
+   - Stochastic gradient descent (SGD)
 
 2. **Optimiseurs avancés**:
-   - **Momentum**: Accélère la convergence en gardant une "mémoire" des gradients précédents
-   - **AdaGrad**: Adapte le taux d'apprentissage pour chaque paramètre selon sa fréquence d'actualisation
-   - **RMSprop**: Améliore AdaGrad en utilisant une moyenne mobile des gradients carrés
-   - **[Adam](https://fr.wikipedia.org/wiki/Adam)**: [Combine](https://fr.wikipedia.org/wiki/Combine) les avantages du momentum et de l'adaptation du taux d'apprentissage
-   - **FTRL**: Particulièrement efficace pour les modèles sparses
+   - Momentum
+   - AdaGrad
+   - RMSprop
+   - Adam
+   - FTRL
 
 3. **Méthodes de second ordre**:
-   - [Méthode de Newton](https://fr.wikipedia.org/wiki/Méthode_de_Newton)
-   - BFGS et L-BFGS (approximations de la matrice hessienne)
-   - Ces méthodes sont généralement plus coûteuses mais peuvent converger plus rapidement
+   - Méthode de Newton
+   - BFGS et L-BFGS
 
-### Régularisation dans la fonction de coût
+Pour contrôler la complexité du modèle et éviter le surapprentissage, différentes techniques de régularisation peuvent être incorporées dans la fonction de coût:
+- **Régularisation L1 (Lasso)**
+- **Régularisation L2 (Ridge)**
+- **ElasticNet**
+- **Dropout**
 
-Pour contrôler la complexité du modèle et éviter le surapprentissage, des termes de régularisation sont souvent ajoutés à la fonction de coût:
-
-- **Régularisation L1 (Lasso)**: Encourage la sparsité (paramètres nuls)
-- **Régularisation L2 (Ridge)**: Pénalise les valeurs élevées des paramètres
-- **ElasticNet**: Combinaison de L1 et L2
-- **Dropout**: [Technique](https://fr.wikipedia.org/wiki/Technique) spécifique aux réseaux neuronaux, désactivant aléatoirement certains neurones pendant l'entraînement
-
-Le choix optimal dépend de la nature du problème, de l'architecture du modèle, et des caractéristiques des données. Il est fréquent d'expérimenter avec différentes combinaisons pour identifier celle qui offre les meilleures performances.
+Le choix optimal dépend de la nature du problème, de l'architecture du modèle, et des caractéristiques des données. Wikipédia confirme que cette phase d'expérimentation est cruciale dans le développement des modèles d'apprentissage automatique.

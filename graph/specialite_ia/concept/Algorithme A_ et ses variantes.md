@@ -21,44 +21,44 @@ subClassOf: '[[Algorithmes de recherche heuristique en IA]]'
 ---
 ## Généralité
 
-L'algorithme A* (prononcé "A étoile") est un algorithme de recherche de chemin qui combine les avantages de l'[algorithme de Dijkstra](https://fr.wikipedia.org/wiki/algorithme_de_Dijkstra) et des algorithmes de recherche heuristique. Développé en 1968 par Peter Hart, [Nils Nilsson](https://fr.wikipedia.org/wiki/Nils_Nilsson) et [Bertram Raphael](https://fr.wikipedia.org/wiki/Bertram_Raphael), A* est largement utilisé dans les domaines de l'intelligence artificielle, de la robotique et des jeux vidéo pour trouver le chemin optimal entre deux points dans un graphe. Sa popularité vient de son efficacité et de sa complétude, garantissant de trouver le chemin le plus court lorsqu'une heuristique admissible est utilisée.
+L'[algorithme A*](https://fr.wikipedia.org/wiki/Algorithme_A*) (prononcé "A étoile") est un algorithme de recherche de chemin qui combine les avantages de l'[algorithme de Dijkstra](https://fr.wikipedia.org/wiki/Algorithme_de_Dijkstra) et des algorithmes de recherche heuristique. Développé en 1968 par Peter Hart, Nils Nilsson et Bertram Raphael, il est largement utilisé dans les domaines de l'[intelligence artificielle](https://fr.wikipedia.org/wiki/Intelligence_artificielle), de la robotique et des jeux vidéo pour trouver le chemin optimal entre deux points dans un graphe.
 
 ## Points clés
 
-- A* utilise une fonction d'évaluation f(n) = g(n) + h(n), où g(n) est le coût réel du chemin depuis le départ jusqu'au nœud n, et h(n) est une heuristique estimant le coût du chemin de n jusqu'à la destination
-- L'algorithme est optimal lorsque l'heuristique est admissible (ne surestime jamais le coût réel) et cohérente (respecte l'inégalité triangulaire)
-- Plusieurs variantes d'A* ont été développées pour améliorer ses performances dans différents contextes, comme IDA*, D*, ARA* et autres
-- A* maintient deux ensembles de nœuds: une liste ouverte (nœuds à explorer) et une liste fermée (nœuds déjà explorés)
+- Utilise une fonction d'évaluation f(n) = g(n) + h(n) combinant coût réel et estimation heuristique
+- Garantit un chemin optimal lorsque l'heuristique est admissible et cohérente
+- Maintient deux ensembles de nœuds : liste ouverte (à explorer) et liste fermée (déjà explorés)
+- Dispose de plusieurs variantes adaptées à différents contextes (IDA*, D*, ARA*)
+- Large application dans les jeux vidéo, navigation GPS, robotique et systèmes autonomes
 
 ## Détails
 
-### Fonctionnement de base d'A*
+A* maintient une liste ouverte de nœuds à explorer, triée par ordre croissant de la fonction d'évaluation f(n). À chaque itération, l'algorithme sélectionne le nœud avec la valeur f(n) la plus basse, l'examine, puis ajoute ses voisins à la liste ouverte.
 
-A* maintient une liste ouverte de nœuds à explorer, triée par ordre croissant de la fonction d'évaluation f(n). À chaque itération, l'algorithme sélectionne le nœud avec la valeur f(n) la plus basse, l'examine, puis ajoute ses voisins à la liste ouverte s'ils n'y sont pas déjà ou s'ils peuvent être atteints par un chemin moins coûteux.
+L'algorithme utilise deux structures principales :
+- **Liste ouverte** : File de priorité basée sur f(n), souvent implémentée avec un [tas binaire](https://fr.wikipedia.org/wiki/Tas_binaire)
+- **Liste fermée** : Table de hachage contenant les nœuds déjà explorés
 
-La fonction d'évaluation f(n) = g(n) + h(n) combine:
+La fonction d'évaluation f(n) = g(n) + h(n) combine :
 - g(n): le coût réel du chemin depuis le nœud de départ jusqu'au nœud n
-- h(n): une estimation heuristique du coût pour atteindre la destination depuis n
+- h(n): une estimation heuristique du coût pour atteindre la destination depuis n (distance [euclidienne](https://fr.wikipedia.org/wiki/Distance_euclidienne) ou de [Manhattan](https://fr.wikipedia.org/wiki/Distance_de_Manhattan))
 
-### [Principales](https://fr.wikipedia.org/wiki/Principales) variantes d'A*
+Pour garantir l'optimalité :
+- **Heuristique admissible** : Ne jamais surestimer le coût réel
+- **Heuristique cohérente** : Respecte l'inégalité triangulaire h(n) ≤ c(n,n') + h(n')
 
-1. **IDA* (Iterative Deepening A*)**: Utilise moins de mémoire en effectuant des recherches en profondeur itératives avec des limites de coût croissantes. Particulièrement utile pour les problèmes avec un grand espace d'états.
+Les principales variantes incluent :
+- **[IDA*](https://fr.wikipedia.org/wiki/IDA*)** (Iterative Deepening A*) qui utilise moins de mémoire via des recherches en profondeur itératives
+- **D*** conçu pour les environnements dynamiques
+- **ARA*** qui trouve rapidement une solution initiale puis l'améliore progressivement
+- **Weighted A*** utilisant une heuristique pondérée
+- **Bidirectional A*** effectuant deux recherches simultanées
 
-2. **D* (Dynamic A*)**: Conçu pour la planification de chemin dans des environnements dynamiques où les coûts peuvent changer. Très utilisé en robotique mobile.
+A* et ses variantes trouvent des applications dans :
+- Jeux vidéo (Civilization, Starcraft)
+- Robotique (rovers martiens)
+- Systèmes GPS ([Google Maps](https://fr.wikipedia.org/wiki/Google_Maps), Waze)
+- Véhicules autonomes (Tesla, Waymo)
+- Systèmes d'aide à la décision (logistique, transport)
 
-3. **ARA* (Anytime Repairing A*)**: Un algorithme "anytime" qui trouve rapidement une solution initiale, puis l'améliore progressivement si du temps supplémentaire est disponible.
-
-4. **Weighted A***: Utilise une heuristique pondérée (w × h(n)) pour accélérer la recherche au détriment de l'optimalité. Plus w est grand, plus la recherche est rapide mais moins optimale.
-
-5. **Bidirectional A***: Effectue deux recherches simultanées, une depuis le point de départ et une depuis la destination, pour accélérer la découverte du chemin.
-
-### Applications
-
-A* et ses variantes sont largement utilisés dans:
-- Les jeux vidéo pour la navigation des personnages
-- La robotique pour la planification de trajectoires
-- Les systèmes GPS et de navigation
-- La planification de missions pour les véhicules autonomes
-- Les systèmes d'aide à la décision
-
-Le choix de la variante appropriée dépend des contraintes spécifiques du problème, comme les limitations de mémoire, les exigences de temps réel, ou la nature dynamique de l'environnement.
+La complexité temporelle dans le pire cas est exponentielle (O(b^d)), mais réduite significativement avec une bonne heuristique.
