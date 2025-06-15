@@ -8,7 +8,7 @@ subclass of:
 has list: "[[graph/list of probability distributions]]"
 studied in:
   - "[[probability theory]]"
-  - "[[graph/statistics]]"
+  - "[[statistics]]"
 topic's main template:
   - "[[graph/Template_Infobox probability distribution]]"
   - "[[graph/Template_Theory of probability distributions]]"
@@ -37,7 +37,7 @@ properties for this type:
   - excess kurtosis
   - skewness
   - moment-generating function
-facet of: "[[graph/statistics]]"
+facet of: "[[statistics]]"
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Standard%20deviation%20diagram.svg
 Commons category: Probability distributions
 wikidata entity id: Q200726
