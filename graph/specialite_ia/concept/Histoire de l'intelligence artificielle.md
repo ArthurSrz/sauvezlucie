@@ -2,22 +2,22 @@
 title: Histoire de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- histoire
-- IA
-- technologie
-- informatique
-- évolution technologique
-- sciences
-date_creation: '2025-04-09'
-date_modification: '2025-04-09'
-subClassOf: '[[Intelligence artificielle]]'
+  - intelligence artificielle
+  - histoire
+  - IA
+  - technologie
+  - informatique
+  - évolution technologique
+  - sciences
+date_creation: 2025-04-09
+date_modification: 2025-04-09
+subClassOf: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
 hasPart:
-- '[[La conférence de Dartmouth]]'
-- '[[Yann LeCun]]'
-- '[[Walter Pitts]]'
-- '[[Warren McCulloch]]'
-seeAlso: '[[Alan Turing]]'
+  - "[[La conférence de Dartmouth]]"
+  - "[[Yann LeCun]]"
+  - "[[Walter Pitts]]"
+  - "[[Warren McCulloch]]"
+seeAlso: "[[Alan Turing]]"
 ---
 # Histoire de l'intelligence artificielle
 

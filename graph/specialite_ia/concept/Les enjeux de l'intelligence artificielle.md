@@ -2,22 +2,22 @@
 title: Les enjeux de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- IA
-- technologie
-- éthique
-- enjeux technologiques
-- innovation
-- futur
-date_creation: '2025-03-30'
-date_modification: '2025-03-30'
-subClassOf: '[[Intelligence artificielle]]'
+  - intelligence artificielle
+  - IA
+  - technologie
+  - éthique
+  - enjeux technologiques
+  - innovation
+  - futur
+date_creation: 2025-03-30
+date_modification: 2025-03-30
+subClassOf: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
 seeAlso:
-- '[[Intelligence artificielle générale]]'
-- '[[Les enjeux géopolitique de l''intelligence artificielle]]'
+  - "[[Intelligence artificielle générale]]"
+  - "[[Les enjeux géopolitique de l'intelligence artificielle]]"
 hasPart:
-- '[[Éthique de l''intelligence artificielle]]'
-- '[[Biais et équité dans les systèmes d''IA]]'
+  - "[[Éthique de l'intelligence artificielle]]"
+  - "[[Biais et équité dans les systèmes d'IA]]"
 ---
 ## Généralité
 

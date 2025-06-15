@@ -2,19 +2,19 @@
 title: La philosophie de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- philosophie
-- éthique
-- concepts
-- IA
-- technologie
-- pensée
-- conscience artificielle
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
-subClassOf: '[[Intelligence artificielle]]'
-seeAlso: '[[Intelligence artificielle générale]]'
-hasPart: '[[Test de Turing]]'
+  - intelligence artificielle
+  - philosophie
+  - éthique
+  - concepts
+  - IA
+  - technologie
+  - pensée
+  - conscience artificielle
+date_creation: 2025-03-20
+date_modification: 2025-03-20
+subClassOf: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
+seeAlso: "[[Intelligence artificielle générale]]"
+hasPart: "[[Test de Turing]]"
 ---
 ## Généralité
 

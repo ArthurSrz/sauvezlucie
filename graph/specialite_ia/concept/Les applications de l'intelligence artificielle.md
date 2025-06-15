@@ -2,25 +2,25 @@
 title: Les applications de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- IA
-- applications
-- technologie
-- innovation
-- informatique
-date_creation: '2025-04-08'
-date_modification: '2025-04-08'
-subClassOf: '[[Intelligence artificielle]]'
+  - intelligence artificielle
+  - IA
+  - applications
+  - technologie
+  - innovation
+  - informatique
+date_creation: 2025-04-08
+date_modification: 2025-04-08
+subClassOf: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
 hasPart:
-- '[[Véhicules autonomes et systèmes de navigation IA]]'
-- '[[Diagnostic médical assisté par IA]]'
-- '[[Systèmes multi-agents en intelligence artificielle]]'
-- '[[Détection d''émotions dans la voix]]'
-- '[[AI dans la modélisation climatique prédictive]]'
+  - "[[Véhicules autonomes et systèmes de navigation IA]]"
+  - "[[Diagnostic médical assisté par IA]]"
+  - "[[Systèmes multi-agents en intelligence artificielle]]"
+  - "[[Détection d'émotions dans la voix]]"
+  - "[[AI dans la modélisation climatique prédictive]]"
 seeAlso:
-- '[[Intelligence artificielle dans les jeux vidéo]]'
-- '[[Agents conversationnels et chatbots]]'
-- '[[Apprentissage en ligne (Online Learning)]]'
+  - "[[Intelligence artificielle dans les jeux vidéo]]"
+  - "[[Agents conversationnels et chatbots]]"
+  - "[[Apprentissage en ligne (Online Learning)]]"
 ---
 ```
 ## Généralité

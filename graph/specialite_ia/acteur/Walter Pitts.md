@@ -2,18 +2,18 @@
 title: Walter Pitts
 type: acteur
 tags:
-- Walter Pitts
-- neurosciences
-- intelligence artificielle
-- McCulloch-Pitts
-- cybernétique
-- logique
-- réseaux neuronaux
-- histoire des sciences
-date_creation: '2025-04-08'
-date_modification: '2025-04-08'
-contributedTo: '[[Intelligence artificielle]]'
-isPartOf: '[[Histoire de l''intelligence artificielle]]'
+  - Walter Pitts
+  - neurosciences
+  - intelligence artificielle
+  - McCulloch-Pitts
+  - cybernétique
+  - logique
+  - réseaux neuronaux
+  - histoire des sciences
+date_creation: 2025-04-08
+date_modification: 2025-04-08
+contributedTo: "[[graph/intelligence artificielle]]"
+isPartOf: "[[Histoire de l'intelligence artificielle]]"
 ---
 ## Généralité
 

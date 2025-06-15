@@ -2,19 +2,19 @@
 title: Test de Turing
 type: concept
 tags:
-- intelligence artificielle
-- test de Turing
-- informatique
-- philosophie
-- Alan Turing
-- cognition
-- IA
-- évaluation
-date_creation: '2025-03-15'
-date_modification: '2025-03-15'
-createdBy: '[[Alan Turing]]'
-relatedTo: '[[Intelligence artificielle]]'
-isPartOf: '[[La philosophie de l''intelligence artificielle]]'
+  - intelligence artificielle
+  - test de Turing
+  - informatique
+  - philosophie
+  - Alan Turing
+  - cognition
+  - IA
+  - évaluation
+date_creation: 2025-03-15
+date_modification: 2025-03-15
+createdBy: "[[Alan Turing]]"
+relatedTo: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
+isPartOf: "[[La philosophie de l'intelligence artificielle]]"
 ---
 ## Généralité
 

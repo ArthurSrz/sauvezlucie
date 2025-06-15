@@ -2,24 +2,23 @@
 title: Les acteurs de l'intelligence artificielle
 type: concept
 tags:
-- entreprises tech
-- institutions académiques
-- acteurs technologiques
-- gouvernance IA
-- intelligence artificielle
-- startups IA
-- open source
-- écosystème IA
-date_creation: '2025-03-20'
-date_modification: '2025-03-20'
-internal_link: '[[Intelligence artificielle]]'
-seeAlso: '[[Entreprises technologiques et géants du numérique dans le domaine de l''intelligence
-  artificielle]]'
+  - entreprises tech
+  - institutions académiques
+  - acteurs technologiques
+  - gouvernance IA
+  - intelligence artificielle
+  - startups IA
+  - open source
+  - écosystème IA
+date_creation: 2025-03-20
+date_modification: 2025-03-20
+internal_link: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
+seeAlso: "[[Entreprises technologiques et géants du numérique dans le domaine de l'intelligence artificielle]]"
 hasPart:
-- '[[INRIA - Institut national de recherche en sciences et technologies du numérique]]'
-- '[[Allen Institute for AI (AI2)]]'
-- '[[MILA - Institut québécois d''intelligence artificielle]]'
-- '[[DeepLearning.AI]]'
+  - "[[INRIA - Institut national de recherche en sciences et technologies du numérique]]"
+  - "[[Allen Institute for AI (AI2)]]"
+  - "[[MILA - Institut québécois d'intelligence artificielle]]"
+  - "[[DeepLearning.AI]]"
 ---
 ## Généralité
 

@@ -2,36 +2,36 @@
 title: Techniques de l'intelligence artificielle
 type: concept
 tags:
-- intelligence artificielle
-- IA
-- techniques
-- informatique
-- technologies
-- apprentissage automatique
-- concepts IA
-date_creation: '2025-04-08'
-date_modification: '2025-04-08'
-subClassOf: '[[Intelligence artificielle]]'
+  - intelligence artificielle
+  - IA
+  - techniques
+  - informatique
+  - technologies
+  - apprentissage automatique
+  - concepts IA
+date_creation: 2025-04-08
+date_modification: 2025-04-08
+subClassOf: "[[graph/specialite_ia/concept/Intelligence artificielle]]"
 seeAlso:
-- '[[Traitement du langage naturel (NLP)]]'
-- '[[Systèmes Experts]]'
-- '[[Apprentissage supervisé]]'
-- '[[Apprentissage non supervisé]]'
-- '[[Apprentissage par renforcement:]]'
-- '[[Apprentissage profond (Deep Learning)]]'
-- '[[Apprentissage automatique (Machine Learning)]]'
-- '[[Traitement automatique des données multimodales]]'
-- '[[Les étapes clés pour concevoir un système d''Intelligence Artificielle]]'
-- '[[Approches exploratoires et de recherche d''espace]]'
-- '[[Système de développement d''IA, principaux langages de programmation et frameworks]]'
-- '[[Représentation de connaissances formelles]]'
-- '[[Apprentissage semi-supervisé]]'
-- '[[Apprentissage actif]]'
-- '[[Initialisation des poids]]'
-- '[[Méthodes de réduction de variance]]'
+  - "[[Traitement du langage naturel (NLP)]]"
+  - "[[Systèmes Experts]]"
+  - "[[Apprentissage supervisé]]"
+  - "[[Apprentissage non supervisé]]"
+  - "[[Apprentissage par renforcement:]]"
+  - "[[Apprentissage profond (Deep Learning)]]"
+  - "[[Apprentissage automatique (Machine Learning)]]"
+  - "[[Traitement automatique des données multimodales]]"
+  - "[[Les étapes clés pour concevoir un système d'Intelligence Artificielle]]"
+  - "[[Approches exploratoires et de recherche d'espace]]"
+  - "[[Système de développement d'IA, principaux langages de programmation et frameworks]]"
+  - "[[Représentation de connaissances formelles]]"
+  - "[[Apprentissage semi-supervisé]]"
+  - "[[Apprentissage actif]]"
+  - "[[Initialisation des poids]]"
+  - "[[Méthodes de réduction de variance]]"
 hasPart:
-- '[[IA et calcul à haute performance]]'
-- '[[Inférence bayésienne]]'
+  - "[[IA et calcul à haute performance]]"
+  - "[[Inférence bayésienne]]"
 ---
 ## Généralité
 
